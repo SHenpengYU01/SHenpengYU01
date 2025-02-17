@@ -1,0 +1,126 @@
+site_name: Cool Tea
+site_url: https://www.baidu.com/
+site_description: A site for learning and sharing.
+
+
+
+repo_url: https://github.com/SHenpengYU01/3
+repo_name: cool-tea
+edit_uri: edit/main/docs
+
+theme:
+  name: material
+  language: en
+  favicon: img/favicon.png
+  custom_dir: overrides
+  icon:
+    logo: material/tea
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    # search: material/search
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: youtube
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: blue grey
+      accent: blue
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+      primary: blue grey
+      accent: blue
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.prefectch
+    - navigation.instant.progress
+    - navigation.tracking
+    # - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - instant
+    - content.code.annotate
+    - content.code.copy
+    - content.code.copy_button
+
+# extra:
+#   homepage: https://www.baidu.com/
+
+
+nav:
+  # - Home: home.md
+  # - Study:
+  - Maths:
+    - study/math/index.md
+    - Linear Algebra: 
+      - study/math/linear algebra/index.md
+      - Startup: study/math/linear algebra/linear algebra.md
+      - SVD: study/math/linear algebra/SVD.md
+    - Mathematics Analysis: 
+      - study/math/maths analysis/index.md
+      - Startup: study/math/maths analysis/maths analysis.md
+    - Discrete Mathematics: 
+      - study/math/discrete/index.md
+      - Startup: study/math/discrete/discrete mathematics.md
+    - Probability Theory: 
+      - study/math/probability/index.md
+  - Computer Science: 
+    - Datestructure: study/cs/datastructure.md
+    - Network: study/cs/network.md
+  - Animation: Animation/animation.md
+  - About: about.md
+
+
+plugins:
+  - tags
+  - search
+  - meta
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets #引入外部文件 {% include 'snippets/my_code.py' %}
+  - admonition
+  - pymdownx.superfences #支持嵌套代码块
+  - pymdownx.details  # 可以使用??? note: 其实就是可展开的details标签：<details><summary>点击展开</summary>内容</details>
+  - pymdownx.arithmatex:  # 启用数学公式扩展
+      generic: true
+  # - pymdownx.tabbed: # 选项卡log.
+      # alternate_style: true
+  - pymdownx.tasklist:  # 任务列表
+      custom_checkbox: true # 自定义复选框
+  - footnotes  # 脚注,例：用[^1]标注，然后在文末[^1]:这是脚注
+
+
+
+extra_javascript:
+  - js/custom.js
+  - js/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+extra_css:
+  # - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+
+copyright: >
+  Copyright &copy; 2024-2025 Myth Logos –
+  <a href="#__consent">Change cookie settings</a>

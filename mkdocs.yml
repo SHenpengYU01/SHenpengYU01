@@ -68,12 +68,15 @@ nav:
       - Startup: study/math/maths analysis/maths analysis.md
     - Discrete Mathematics: 
       - study/math/discrete/index.md
-      - Startup: study/math/discrete/discrete mathematics.md
+      - Startup: study/math/discrete/discrete maths.md
     - Probability Theory: 
       - study/math/probability/index.md
   - Computer Science: 
     - Datestructure: study/cs/datastructure.md
-    - Network: study/cs/network.md
+    - Network:
+      - study/network/index.md
+      - Introduction: study/network/introduction.md
+      - The Application Layer: study/network/application layer.md
   - Animation: Animation/animation.md
   - About: about.md
 
@@ -119,6 +122,7 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+  static_dir: img
 
 
 copyright: >

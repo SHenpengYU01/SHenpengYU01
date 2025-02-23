@@ -2,66 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.baidu.com/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/about/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/home/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/Animation/animation/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/Animation/good%20anime/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/cs/datastructure/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/discrete/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
-         <loc>https://www.baidu.com/study/math/discrete/discrete%20math/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <loc>https://www.baidu.com/study/math/discrete/discrete%20maths/</loc>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/discrete/quadratic-probing/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/linear%20algebra/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/linear%20algebra/SVD/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/linear%20algebra/linear%20algebra/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/maths%20analysis/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/maths%20analysis/maths%20analysis/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>https://www.baidu.com/study/math/probability/</loc>
-         <lastmod>2025-02-17</lastmod>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/network/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/network/application%20layer/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/network/internet%20layer/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/network/introduction/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/network/link%20layer/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/network/transport%20layer/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/oop/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>https://www.baidu.com/study/oop/introduction/</loc>
+         <lastmod>2025-02-23</lastmod>
     </url>
 </urlset>

@@ -72,6 +72,8 @@ nav:
     - Probability Theory: 
       - study/math/probability/index.md
   - Computer Science: 
+    - Computer system:
+      - Chapter1: study/cs/system.md
     - Datestructure: study/cs/datastructure.md
     - Network:
       - study/network/index.md

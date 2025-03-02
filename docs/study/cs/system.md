@@ -2,9 +2,9 @@
 
 ## Quantitative approaches
 
-$CPU Time=IC\times CPI\times Clock Pereiod$
+$CPU\_Time=IC\times CPI\times Clock Pereiod$
 
-$CPU Time=\frac{Instructions}{program}\times \frac{clock cycles}{Instruction}\times \frac{Seconds}{Clock cycle}$
+$CPU\_Time=\frac{Instructions}{Program}\times \frac{Clock\_cycles}{Instructions}\times \frac{Seconds}{Clock\_cycles}$
 
 IC: instruction count
 
@@ -12,7 +12,7 @@ IC: instruction count
 
 Clock Cycles=$\sum_{i=1}^{n}(CPI_i\times IC_i)$
 
-CPI=$\frac{Clock Cycles}{IC}=\sum_{i=1}{n}(CPI_i\times \frac{IC_i}{IC}$
+CPI=$\frac{Clock Cycles}{IC}=\sum_{i=1}^{n}(CPI_i\times \frac{IC_i}{IC})$
 
 ### Principles of computer design
 
@@ -23,20 +23,20 @@ CPI=$\frac{Clock Cycles}{IC}=\sum_{i=1}{n}(CPI_i\times \frac{IC_i}{IC}$
 - Focus on the common case: Amdahl's Law
 
 **Amdahl's Law**:
-$T_{improved}=\frac{T_{affected}{improvement factor}+T_{unaffected}$
+$T_{improved}=\frac{T_{affected}}{improvement factor}+T_{unaffected}$
 
 $Fraction_{enhanced}$ :proportion of segment can be enhanced
 
 $$
-Execution time_{new}=Exe time_{can't be enhanced}+Ece time_{enhanced}
+Execution\_time_{new}=Exe\_time_{can't be enhanced}+Ece time_{enhanced}
 $$
 
 $$
-=Execution time_{old}((1-Fraction_{enhanced})+\frac{Fraction_{enhanced}{Speedup_{enhanced}}})
+=Execution\_time_{old}((1-Fraction_{enhanced})+\frac{Fraction_{enhanced}}{Speedup_{enhanced}})
 $$
 
 $$
-Speedup_{overall}=\frac{Exe time_{old}}{Exe time_{new}}=\frac{1}{(1-Fraction_{enhanced})+\frac{Fraction_{enhanced}{Speedup_{enhanced}}}}
+Speedup_{overall}=\frac{Exe\_time_{old}}{Exe\_time_{new}}=\frac{1}{(1-Fraction_{enhanced})+\frac{Fraction_{enhanced}}{Speedup_{enhanced}}}
 $$
 
 An example:

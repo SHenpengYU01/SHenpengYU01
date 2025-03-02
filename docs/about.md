@@ -6,6 +6,14 @@ hide:
 ---
 
 
-# About me
+# About cool tea
 
-You can find me on the earth in the vast universe.
+The tea usually gets cooler over time.
+
+Tea that cools may get bitter.
+
+There are more than 1 person serving the tea.
+
+The tea contains some trival knowledge.
+
+Maybe it is a prove to show what the servers have served.

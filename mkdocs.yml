@@ -55,8 +55,7 @@ theme:
 
 
 nav:
-  # - Home: home.md
-  # - Study:
+  - Home: index.md
   - Maths:
     - study/math/index.md
     - Linear Algebra: 
@@ -71,16 +70,40 @@ nav:
       - Startup: study/math/discrete/discrete maths.md
     - Probability Theory: 
       - study/math/probability/index.md
+
+  
   - Computer Science: 
+    - Computer system2:
+      - Summary: study/cs/sys2.md
     - Computer system:
+      - study/cs/index.md
       - Chapter1: study/cs/system.md
-    - Datestructure: study/cs/datastructure.md
+  
     - Network:
       - study/network/index.md
       - Introduction: study/network/introduction.md
       - The Application Layer: study/network/application layer.md
-  - Animation: Animation/animation.md
+      - The Transport Layer: study/network/transport layer.md
+      - The Internet Layer: study/network/internet layer.md
+      - The Link Layer: study/network/link layer.md
+
+
+  - AI:
+    - AI Logic:
+      - study/ailogic/index.md
+      - Introduction: study/ailogic/introduction.md
+
+
+  - Programming:
+    - OOP:
+      - study/oop/index.md
+      - Cpp basis: study/oop/cpp.md
+    - Data Structure:
+      - study/cs/datastructure.md
+
   - About: about.md
+
+  - Links: link.md
 
 
 plugins:

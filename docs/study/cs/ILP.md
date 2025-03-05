@@ -1,3 +1,0 @@
-# ILP(Instruction level parallelism)
-
-

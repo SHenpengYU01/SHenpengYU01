@@ -1,5 +1,5 @@
 site_name: Cool Tea
-site_url: https://www.baidu.com/
+site_url: https://note.mythlogos.top
 site_description: A site for learning and sharing.
 
 
@@ -73,11 +73,14 @@ nav:
 
   
   - Computer Science: 
+    - study/cs/index.md
     - Computer system2:
-      - Summary: study/cs/sys2.md
-    - Computer system:
-      - study/cs/index.md
-      - Chapter1: study/cs/system.md
+      - study/cs/sys2/index.md
+      - Summary: study/cs/sys2/sys2.md
+    - Computer system3:
+      - study/cs/sys3/index.md
+      - Quantitative Approaches: study/cs/sys3/quantitative.md
+      - Instruction Level Parallelism: study/cs/sys3/ILP.md
   
     - Network:
       - study/network/index.md
@@ -91,15 +94,18 @@ nav:
   - AI:
     - AI Logic:
       - study/ailogic/index.md
-      - Introduction: study/ailogic/introduction.md
-
+      - 引论: study/ailogic/introduction.md
+      - 命题逻辑: study/ailogic/proposition.md
 
   - Programming:
     - OOP:
       - study/oop/index.md
       - Cpp basis: study/oop/cpp.md
     - Data Structure:
-      - study/cs/datastructure.md
+      - Graph: study/datastructure/graph.md
+      - Data Structure: study/datastructure/midterm.md
+      - Algorithm: study/datastructure/algorithm.md
+      - Practice: study/datastructure/practice.md
 
   - About: about.md
 
@@ -151,5 +157,5 @@ extra:
 
 
 copyright: >
-  Copyright &copy; 2024-2025 Myth Logos –
+  Copyright &copy; 2024-2025 Myth Logos 
   <a href="#__consent">Change cookie settings</a>

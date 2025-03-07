@@ -63,4 +63,46 @@ printValue(x);
 
 ## const
 
-C++中关键字，用于声明常量或常量表达式，表示数据不可修改。const 是在程序运行时确定的常量，编译器在编译时无法确定其值。
+C++中关键字，用于声明常量或常量表达式，表示数据不可修改。
+
+- 编译时常量：编译时就被确定下来，编译器可以直接替换常量值，不会存储在运行时内存
+  - `const int x=1;`
+- 运行时常量：运行时才能确定，编译器无法确定值：内存中储存其值
+  - `const int x;`
+
+!!! tip "使用方式"
+    `const` 可在类型前也可在类型后：`const int x;`和`int const x`相同。前者更为常见。
+
+### constexpr
+
+constexpr 声明的常量要求值在编译时可确定
+
+### pointers and const
+
+```cpp
+char* const p='123'; //p is a const pointer
+p++;//error
+*p='abc'//right
+
+const char* q='abc'; //q* is a const char
+*q='1';//error
+q++; //right
+
+char const* r = &p;//r is a const char
+```
+
+## resolver
+
+```cpp
+void Dog::eat(){
+  ::eat();//without::, eat would be recursively called
+  //::eat means eat() is a global function outside of Dog class
+  cout<<"Dog is eating";
+}
+```
+
+## Container
+
+
+
+

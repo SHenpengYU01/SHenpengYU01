@@ -85,8 +85,8 @@ But it is bothering to initiate TCP every time we want to sent a request because
 
 <img src="\img\study\network\ch2\httptime.png" alt="Response time for Non-persistent HTTP">
 
-!!! info
-    RTT is roundtrip time
+!!! info "RTT"
+    RTT is short for roundtrip time
 
 Therefore, we use persistent HTTP(HTTP1.1) more.
 Property of persistent  HTTP (HTTP1.1):
@@ -173,7 +173,7 @@ In this way, the ad.com know you have visited example.com, example2.com and so o
 
 <img src="\img\study\network\ch2\webcache.png" alt="Web caches">
 
-??? note Cache-Control
+??? note "Cache-Control"
     There is `Cache-Control` section in both HTTP request and response headers.
 
     - In request header, used to indicate how the client (usually a browser) wants to interact with caches when requesting a resource.
@@ -231,8 +231,32 @@ Once (any) name server learns mapping, it caches mapping, and immediately return
 
 ### DNS records
 
-**record types**:
-<img src="\img\study\network\ch2\dnsrecord.png" alt="DNS record types">
+DNS: distributed database storing resource records(RR)
+
+RR format:(name, value, type, ttl)
+
+**Common record types**:
+
+- A record(address record)
+  - name: domain name
+  - value: IPv4 address
+
+- AAAA record(IPv6 address record)
+  - name: domain name
+  - value: IPv6
+
+- NS record(name server)
+  - name: domain
+  - value: hostname of authoritative name server for this domain
+
+- CNAME
+  - name: alias name for some "canonical"(the real) name(another domain name who has its own records)
+  - value: canonical name
+
+- MX record(mail exchange record)
+  - name: domain name
+  - value: name of SMTP mail server associated with the domain name
+
 
 **DNS protocol messages**:
 
@@ -240,9 +264,19 @@ Once (any) name server learns mapping, it caches mapping, and immediately return
 
 <img src="\img\study\network\ch2\dnsmsg2.png" alt="DNS message">
 
-An DNS response message in wiresharp(results with display filter: dns)
+An DNS response message in wireshark(results with display filter: dns)
 
-<img src="\img\study\network\ch2\dnsmsg3.png" alt="DNS message in wiresharp">
+<img src="\img\study\network\ch2\dnsmsg3.png" alt="DNS message in wireshark">
+
+### Useful commands
+
+!!! tip "commands"
+    There are some useful commands about DNS:
+    `nslookup –option1 –option2 host-to-find dns-server`
+    nslookup is used to resolved the IP address of a specific domain.
+    With options like: `nslookup –type=NS zju.edu.cn`. This gives the DNS servers and theire IP of domain `zju.edu.cn`.
+    `ipconfig \display dns` will display the cached DNS records on your computer.
+    `ipconfig \flushdns` will flush these DNS records.
 
 
 ## P2P applications

@@ -1543,12 +1543,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="消解原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      消解推演系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      可靠性、完全性、计算复杂性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      霍恩字句逻辑
+      霍恩子句逻辑
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sat" class="md-nav__link">
+    <span class="md-ellipsis">
+      SAT
     </span>
   </a>
   
@@ -1991,12 +2024,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="消解原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      消解推演系统
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      可靠性、完全性、计算复杂性
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      霍恩字句逻辑
+      霍恩子句逻辑
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sat" class="md-nav__link">
+    <span class="md-ellipsis">
+      SAT
     </span>
   </a>
   
@@ -2056,13 +2122,15 @@ $$</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">定义：公式的真值</p>
-<p>真假赋值 𝑣 给公式指派的真值递归地定义如下：
-- <span class="arithmatex">\(p^v\in{1,0}\)</span>
-- <span class="arithmatex">\((\neg \phi)^v=\begin{cases}
+<p>真假赋值 𝑣 给公式指派的真值递归地定义如下：  </p>
+<ul>
+<li><span class="arithmatex">\(p^v\in{1,0}\)</span></li>
+<li>
+<p><span class="arithmatex">\((\neg \phi)^v=\begin{cases}
 1, &amp; \text{if}\phi^v=0\\
 0, &amp; \text{otherwise}
 \end{cases}\)</span></p>
-<ul>
+</li>
 <li>
 <p><span class="arithmatex">\((\phi \land \psi)^v =
 \begin{cases}
@@ -2130,12 +2198,80 @@ $$</p>
 <div class="admonition info">
 <p class="admonition-title">定义：合取范式</p>
 <p>命题公式 𝜙 称为命题公式 𝜓 的合取范式，如果 𝜙 |=| 𝜓，且 𝜙 呈如下形式：
-<span class="arithmatex">\(D_1\land\D_2\land\cdots\land D_m\)</span>
-其中，<span class="arithmatex">\(D_i(i=1,2,\dots,m)\)</span> 称为 <span class="arithmatex">\(\phi\)</span> 的子句，形如 <span class="arithmatex">\(L_1\lor L_2\lor\codts\lor L_n。L_j\)</span> 为原子公式或原子公式否定，称 <span class="arithmatex">\(L_i\)</span> 为子句的<strong>文字</strong>。</p>
+$ D_1 \land D_2\land\cdots\land D_m$
+其中，<span class="arithmatex">\(D_i(i=1,2,\dots,m)\)</span> 称为 <span class="arithmatex">\(\phi\)</span> 的子句，形如 $ L_1 \lor L_2 \lor \cdots \lor L_n$。   <span class="arithmatex">\(L_j\)</span> 为原子公式或原子公式否定，称 <span class="arithmatex">\(L_i\)</span> 为子句的<strong>文字</strong>。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">定理</p>
+<p>任何命题公式与它的合取范式（析取范式）等价。</p>
 </div>
 <h2 id="_6">形式推演</h2>
+<p>目标：建立一个基于规则的推理系统，来判断一个有效推理是否成立。这样的规则为推理规则。
+MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\(\phi\)</span> 和 <span class="arithmatex">\(\phi \rightarrow \psi\)</span> 可得到 <span class="arithmatex">\(\psi\)</span>。</p>
+<div class="admonition info">
+<p class="admonition-title">形式可推演</p>
+<p>给定一组前提集合 Φ = {𝜙1, 𝜙2, 𝜙3, . . . , , 𝜙𝑛} 和一个结论 𝜓, 其中 𝜙𝑖 和 𝜓 都是公式。我们说从这组前提到这个结论是形式可推演的，记作 Φ ⊢ 𝜓，如果存在一个证明：<span class="arithmatex">\(\psi_1, \psi_2,\cdots,\psi_m\)</span> 使得 <span class="arithmatex">\(\psi_m=\psi\)</span>。其中，每个 <span class="arithmatex">\(\psi_i(i=1,2,3,\dots, m)\)</span> 要么属于 {𝜙1, 𝜙2, 𝜙3, . . . , , 𝜙𝑛}，要么依据 <span class="arithmatex">\({\psi_1,\dots,\psi_{i-1}}\)</span> 中的公式通过应用一条推理规则得到。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">推理系统的可靠性和完备性</p>
+<p>设 ⊢𝑅 是由一组形式推演规则集合 𝑅 构成的推理系统，称为自然演绎系统。对于任意公式集合 Φ 和公式 𝜓, 我们说:
+- ⊢𝑅 是可靠的，当且仅当如果 Φ ⊢𝑅 𝜓，则 Φ <span class="arithmatex">\(\models\)</span> 𝜓。
+- ⊢𝑅 是完备的，当且仅当如果 Φ <span class="arithmatex">\(\models\)</span> 𝜓，则 Φ ⊢𝑅 𝜓。</p>
+</div>
+<ul>
+<li>如果一个推理系统是可靠的，那么它从一组真命题出发，通过形式推演得到的结
+论也是真的。这一点确保了推理系统的正确性。</li>
+<li>如果一个推理系统是完备的，那么从一组真命题出发，可以推出这组真命题所蕴涵的所有结论。</li>
+</ul>
 <h2 id="_7">消解原理</h2>
-<h2 id="_8">霍恩字句逻辑</h2>
+<h3 id="_8">消解推演系统</h3>
+<p>采用子句公式表示合取范式：一个子句看出一个文字的集合，一个合取范式看成子句的集合。（不考虑重复和顺序）</p>
+<div class="admonition info">
+<p class="admonition-title">子句公式</p>
+<p>子句公式是子句的集合，可理解为子句的合取。子句是文字的集合，可理解为文字的析取。为了区分这两种集合，我们把文字的集合表示为 [𝐿1, 𝐿2, . . . , 𝐿𝑛]，等价于一个析取式𝐿1∨𝐿2∨· · ·∨𝐿𝑛，其中 𝐿𝑖 (𝑖 = 1, 2, . . . , 𝑛) 是文字；把子句的集合表示为 {𝐷1, 𝐷2, . . . , 𝐷𝑚}，等价于 𝐷1 ∧ 𝐷2 ∧ · · · ∧ 𝐷𝑚，其中 𝐷𝑖 (𝑖 = 1, 2, . . . , 𝑚) 是子句。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">消解规则</p>
+<p>给定两个子句，推出一个新子句：从子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {𝐿} 推出子句 𝐷1 ∪ 𝐷2。其中，𝐷1 和 𝐷2 可为空集。𝐷1 ∪ 𝐷2 称为输入子句关于 𝐿 的消解式。其中，𝐿 称为 𝐿 的补。对于任意原子命题 𝑝：𝑝 = ¬𝑝，¬𝑝 = 𝑝。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">消解推理</p>
+<p>从一个集合 Φ 推出一个子句 𝐷 的推演，记作 Φ ⊢Res 𝐷，是一个子句序列 𝐷1, 𝐷2, . . . , 𝐷𝑛，其中 𝐷𝑛 = 𝐷, 并且对于每个 𝐷𝑖，要么 𝐷𝑖 ∈ Φ，要么 𝐷𝑖 是该推导中前面两个子句的消解式。</p>
+</div>
+<h3 id="_9">可靠性、完全性、计算复杂性</h3>
+<div class="admonition note">
+<p class="admonition-title">定理</p>
+<ol>
+<li>设有两个子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {<span class="arithmatex">\(\bar{L}\)</span>}，则 𝐷1 ∪ {𝐿}, 𝐷2 ∪ {<span class="arithmatex">\(\bar{L}\)</span>} |= 𝐷1 ∪ 𝐷2。</li>
+<li>如果 Φ ⊢Res 𝐷 则 Φ |= 𝐷（可靠性）；反之（完备性），不成立。</li>
+<li>消解系统是一个完备的否证系统，即：从一组有穷的前提集 Φ 出发，如果不存在 ⊥ 的证明，那么 Φ 是可满足的。</li>
+</ol>
+</div>
+<p>定理2 表明消解推理系统是可靠的，但是不完备。但是，当 <strong><span class="arithmatex">\(D\)</span> 为空子句</strong>时，消解推演及时可靠的又是完备的。</p>
+<p>我们说一个证明系统 𝑅 是完备的，如果每个逻辑推论都有一个证明，即如果Φ |= 𝜙 则Φ ⊢𝑅 𝜙。对于消解系统来说，它是否证完备的，即：从一组有穷的前提集 Φ 出发，如果没有⊥ 的证明，那么 Φ 是可满足的。反之，如果 Φ 是不可满足的，那么就有从 Φ 到 ⊥ 的证明，即Φ ⊢Res ⊥。这是定理3。</p>
+<div class="admonition note">
+<p class="admonition-title">消解算法复杂性</p>
+<p>存在一个数字 𝑐 &gt; 1 使得对于每个 𝑛，存在一个不可满足的公式，该公式包括 𝑛 个命题符号，其最小的消解否证包含至少 <span class="arithmatex">\(c^n\)</span> 个步骤。</p>
+</div>
+<h2 id="_10">霍恩子句逻辑</h2>
+<div class="admonition info">
+<p class="admonition-title">霍恩子句</p>
+<p>子句 𝐿1 ∨ · · · ∨ 𝐿𝑛 中如果至多包含一个正文字，那么该子句称为霍恩子句。</p>
+</div>
+<p>霍恩字句有如下四种形式：</p>
+<ol>
+<li><span class="arithmatex">\(p\leftarrow q_1,\dots,q_m(m\neq 0)\)</span></li>
+<li><span class="arithmatex">\(p\leftarrow\)</span>(上式中 <span class="arithmatex">\(m=0\)</span> )</li>
+<li><span class="arithmatex">\(\leftarrow q_1,\dots,q_m(m\neq 0)\)</span></li>
+<li><span class="arithmatex">\(\square\)</span>(空语句，上式m=0)</li>
+</ol>
+<p>其中 <span class="arithmatex">\(\leftarrow\)</span> 为逻辑编程惯例写法，约定蕴涵前件的文字之间恒为合取，而蕴涵后件（箭头尖端）的文字之间恒为析取。</p>
+<p>我们把一个形如 𝑝 ← 𝑞1, . . . , 𝑞𝑚 的霍恩子句称为一个过程，把 𝑝 称为过程名，把 {𝑞1, . . . ,𝑞𝑚} 称为过程体，各个 𝑞𝑖 可解释为过程调用。把形如 𝑝 ← 的霍恩子句看作一个事实，而把形如 ← 𝑞1, . . . , 𝑞𝑚 看作一个目标。目标全部由过程调用所组成，常用来表示一个询问。□ 可称
+为停机语句，表示程序执行（成功）终止。</p>
+<p>霍恩子句逻辑就是由这种子句组成的系统。它是命题演算系统的子系统。霍恩子句逻辑程序就是指这样一些被称为过程、目标和事实的霍恩子句的集合。</p>
+<p>当一个霍恩子句刚好包含一个肯定文字时，我们称之为肯定的（或确定的）霍恩子句。当没有肯定文字时，该子句被称为否定霍恩子句。</p>
+<p>例如，子句 [¬𝑝1, ¬𝑝2, . . . , ¬𝑝𝑛, 𝑞] 表示的是 ¬𝑝1 ∨ ¬𝑝2 ∨ · · · ∨ ¬𝑝𝑛 ∨ 𝑞。可以读作：如果 𝑝1 而且 𝑝2 而且 . . . 而且 𝑝𝑛 那么 𝑞。</p>
+<h2 id="sat">SAT</h2>
 
 
 

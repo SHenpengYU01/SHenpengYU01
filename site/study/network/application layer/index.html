@@ -1410,6 +1410,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#useful-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful commands
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2268,6 +2277,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#useful-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful commands
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2454,8 +2472,8 @@ example: P2P file sharing [BitTorrent]</li>
 <p>But it is bothering to initiate TCP every time we want to sent a request because it takes time and gets OS overhead:</p>
 <p><img src="\img\study\network\ch2\httptime.png" alt="Response time for Non-persistent HTTP"></p>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>RTT is roundtrip time</p>
+<p class="admonition-title">RTT</p>
+<p>RTT is short for roundtrip time</p>
 </div>
 <p>Therefore, we use persistent HTTP(HTTP1.1) more.
 Property of persistent  HTTP (HTTP1.1):</p>
@@ -2529,8 +2547,8 @@ Format: <code>Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; &lt;attribut
 <li>else cache requests object from origin server, caches received object, then returns object to client</li>
 </ul>
 <p><img src="\img\study\network\ch2\webcache.png" alt="Web caches"></p>
-<details class="note cache-control">
-<summary>Note</summary>
+<details class="note">
+<summary>Cache-Control</summary>
 <p>There is <code>Cache-Control</code> section in both HTTP request and response headers.</p>
 <ul>
 <li>
@@ -2581,13 +2599,57 @@ Format: <code>Set-Cookie: &lt;cookie-name&gt;=&lt;cookie-value&gt;; &lt;attribut
 <li>TLD servers typically cached in local name servers</li>
 </ul>
 <h3 id="dns-records">DNS records</h3>
-<p><strong>record types</strong>:
-<img src="\img\study\network\ch2\dnsrecord.png" alt="DNS record types"></p>
+<p>DNS: distributed database storing resource records(RR)</p>
+<p>RR format:(name, value, type, ttl)</p>
+<p><strong>Common record types</strong>:</p>
+<ul>
+<li>A record(address record)</li>
+<li>name: domain name</li>
+<li>
+<p>value: IPv4 address</p>
+</li>
+<li>
+<p>AAAA record(IPv6 address record)</p>
+</li>
+<li>name: domain name</li>
+<li>
+<p>value: IPv6</p>
+</li>
+<li>
+<p>NS record(name server)</p>
+</li>
+<li>name: domain</li>
+<li>
+<p>value: hostname of authoritative name server for this domain</p>
+</li>
+<li>
+<p>CNAME</p>
+</li>
+<li>name: alias name for some "canonical"(the real) name(another domain name who has its own records)</li>
+<li>
+<p>value: canonical name</p>
+</li>
+<li>
+<p>MX record(mail exchange record)</p>
+</li>
+<li>name: domain name</li>
+<li>value: name of SMTP mail server associated with the domain name</li>
+</ul>
 <p><strong>DNS protocol messages</strong>:</p>
 <p><img src="\img\study\network\ch2\dnsmsg1.png" alt="DNS message"></p>
 <p><img src="\img\study\network\ch2\dnsmsg2.png" alt="DNS message"></p>
-<p>An DNS response message in wiresharp(results with display filter: dns)</p>
-<p><img src="\img\study\network\ch2\dnsmsg3.png" alt="DNS message in wiresharp"></p>
+<p>An DNS response message in wireshark(results with display filter: dns)</p>
+<p><img src="\img\study\network\ch2\dnsmsg3.png" alt="DNS message in wireshark"></p>
+<h3 id="useful-commands">Useful commands</h3>
+<div class="admonition tip">
+<p class="admonition-title">commands</p>
+<p>There are some useful commands about DNS:
+<code>nslookup –option1 –option2 host-to-find dns-server</code>
+nslookup is used to resolved the IP address of a specific domain.
+With options like: <code>nslookup –type=NS zju.edu.cn</code>. This gives the DNS servers and theire IP of domain <code>zju.edu.cn</code>.
+<code>ipconfig \display dns</code> will display the cached DNS records on your computer.
+<code>ipconfig \flushdns</code> will flush these DNS records.</p>
+</div>
 <h2 id="p2p-applications">P2P applications</h2>
 <h3 id="p2p-architecture">P2P architecture</h3>
 <div class="admonition note">

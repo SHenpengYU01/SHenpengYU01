@@ -100,7 +100,13 @@ nav:
   - Programming:
     - OOP:
       - study/oop/index.md
-      - Cpp basis: study/oop/cpp.md
+      - C++ 基础语法: study/oop/cpp.md
+      - 类: study/oop/class.md
+      - 流: study/oop/stream.md
+      - 容器: study/oop/container.md
+      - 友元函数: study/oop/friend.md
+      - 重载: study/oop/overload.md
+      - 模版: study/oop/template.md
     - Data Structure:
       - Graph: study/datastructure/graph.md
       - Data Structure: study/datastructure/midterm.md
@@ -148,7 +154,7 @@ extra_css:
 extra:
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
@@ -157,5 +163,5 @@ extra:
 
 
 copyright: >
-  Copyright &copy; 2024-2025 Myth Logos 
+  Copyright &copy; 2024-2025 Cool Tea
   <a href="#__consent">Change cookie settings</a>

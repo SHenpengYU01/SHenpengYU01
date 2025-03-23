@@ -1237,6 +1237,18 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    The Transport Layer
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1247,6 +1259,85 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#transport-layer-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transport-layer services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiplexing-and-demultiplexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplexing and demultiplexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connetionless-transport-udp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connetionless transport: UDP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connetionless transport: UDP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#udp-checksum" class="md-nav__link">
+    <span class="md-ellipsis">
+      UDP checksum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles-of-reliable-data-transferrdt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principles of reliable data transfer(RDT)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-oriented-transport-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection-oriented transport: TCP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1819,6 +1910,74 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#transport-layer-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transport-layer services
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiplexing-and-demultiplexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Multiplexing and demultiplexing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connetionless-transport-udp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connetionless transport: UDP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connetionless transport: UDP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#udp-checksum" class="md-nav__link">
+    <span class="md-ellipsis">
+      UDP checksum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#principles-of-reliable-data-transferrdt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Principles of reliable data transfer(RDT)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-oriented-transport-tcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection-oriented transport: TCP
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1837,6 +1996,60 @@
 
 
 <h1 id="the-transport-layer">The transport layer</h1>
+<h2 id="transport-layer-services">Transport-layer services</h2>
+<p><strong>Services</strong>: provide logical communication between application processes running on different hosts.</p>
+<p><strong>Protocols:</strong> TCP and UDP</p>
+<h2 id="multiplexing-and-demultiplexing">Multiplexing and demultiplexing</h2>
+<p><strong>Multiplexing:</strong> Taking data from one socket (one of possibly many sockets), encapsulating a data chuck with header information – thereby creating a transport layer segment – and eventually passing this segment to the network layer.</p>
+<p><strong>Demultiplexing:</strong> Receiving a transport-layer segment from the network layer, extracting the payload (data) and delivering the data to the correct socket by using the IP address(only TCP) and port numbers in the segment.</p>
+<p><strong>Summary:</strong>  </p>
+<ul>
+<li>Multiplexing, demultiplexing: based on segment, datagram header field values</li>
+<li>UDP: demultiplexing using destination port number (only)</li>
+<li>TCP: demultiplexing using 4-tuple: source and destination IP addresses, and port numbers</li>
+<li>Multiplexing/demultiplexing happen at all layers</li>
+</ul>
+<h2 id="connetionless-transport-udp">Connetionless transport: UDP</h2>
+<p>UDP: user datagram protocol</p>
+<ul>
+<li>UDP segments may be lost or delivered out-of-order to app</li>
+<li>connectionless:</li>
+<li>no handshaking between UDP sender and reciever</li>
+<li>each UDP segment handled independently of others</li>
+</ul>
+<p><strong>Where is there UDP:</strong></p>
+<ul>
+<li>no connection estabishment(this can reduce RTT delay)</li>
+<li>simple: no connection state at sender, receiver</li>
+<li>small header size</li>
+<li>no congestion control</li>
+<li>can blast away as fast as desired</li>
+<li>can function in the face of congestion</li>
+</ul>
+<p><strong>UDP segment</strong>:</p>
+<p><img src="\img\study\network\ch3\udpsegment.png" alt="UDP segment"></p>
+<h3 id="udp-checksum">UDP checksum</h3>
+<p>To detect errors in transmitted segment.</p>
+<p>Sender:</p>
+<ul>
+<li>treat contents of UDP segment (including UDP header fields and IP addresses) as sequence of 16-bit integers</li>
+<li>compute checksum: addition (one’s complement sum) of segment content</li>
+<li>checksum value put into UDP checksum field</li>
+</ul>
+<p>Receiver:</p>
+<ul>
+<li>compute checksum of received segment</li>
+<li>check if computed checksum equals checksum field value</li>
+</ul>
+<p>An example:</p>
+<p><img src="\img\study\network\ch3\UDPchecksum.png" alt="UDP checksum"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When adding numbers, a carryout from the most significant bit needs to be added to the result.
+This kind of checksum is weak because if the above two number change at the same time, their sum may not change.</p>
+</div>
+<h2 id="principles-of-reliable-data-transferrdt">Principles of reliable data transfer(RDT)</h2>
+<h2 id="connection-oriented-transport-tcp">Connection-oriented transport: TCP</h2>
 
 
 

@@ -1,8 +1,8 @@
 # Links
 
-Here are some useful links I appreciate most.
+Here are some useful links that may be useful.
 
-[:sunny: The logos](https://blog.mythlogos.top)
+[The logos](https://blog.mythlogos.top)
 
 
 

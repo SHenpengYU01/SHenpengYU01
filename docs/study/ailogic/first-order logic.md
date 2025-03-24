@@ -111,12 +111,12 @@
     - $\bot^v=0$
 
     - $\forall x\phi^v=\begin{cases}
-    1,&\text{if}\phi^{v(x/a)}=1,\text{for any} a\in D\\
+    1,&\text{if}\phi^{v(x/a)}=1,\text{for any } a\in D\\
     0,&\text{otherwise}
     \end{cases}$
 
     - $\exist x\phi^v=\begin{cases}
-    1,&\text{if exist } a\in D s.t. \phi^{v(x/a)}=1,\\
+    1,&\text{if exist } a\in D \text{ s.t. } \phi^{v(x/a)}=1,\\
     0,&\text{otherwise}
     \end{cases}$
 

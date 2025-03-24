@@ -3,7 +3,6 @@ site_url: https://note.mythlogos.top
 site_description: A site for learning and sharing.
 
 
-
 repo_url: https://github.com/SHenpengYU01
 repo_name: cool-tea
 edit_uri: edit/main/docs
@@ -81,6 +80,7 @@ nav:
       - study/cs/sys3/index.md
       - Quantitative Approaches: study/cs/sys3/quantitative.md
       - Instruction Level Parallelism: study/cs/sys3/ILP.md
+      - Cache: study/cs/sys3/cache.md
   
     - Network:
       - study/network/index.md
@@ -96,6 +96,7 @@ nav:
       - study/ailogic/index.md
       - 引论: study/ailogic/introduction.md
       - 命题逻辑: study/ailogic/proposition.md
+      - 一阶逻辑: study/ailogi/first-order logic.md
 
   - Programming:
     - OOP:

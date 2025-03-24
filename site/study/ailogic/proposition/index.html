@@ -1671,6 +1671,18 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1724,7 +1736,139 @@
         
   
   <span class="md-ellipsis">
-    Cpp basis
+    C++ 基础语法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    类
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    流
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    容器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/friend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    友元函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/overload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    重载
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模版
     
   </span>
   
@@ -2219,8 +2363,7 @@ MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\
 - ⊢𝑅 是完备的，当且仅当如果 Φ <span class="arithmatex">\(\models\)</span> 𝜓，则 Φ ⊢𝑅 𝜓。</p>
 </div>
 <ul>
-<li>如果一个推理系统是可靠的，那么它从一组真命题出发，通过形式推演得到的结
-论也是真的。这一点确保了推理系统的正确性。</li>
+<li>如果一个推理系统是可靠的，那么它从一组真命题出发，通过形式推演得到的结论也是真的。这一点确保了推理系统的正确性。</li>
 <li>如果一个推理系统是完备的，那么从一组真命题出发，可以推出这组真命题所蕴涵的所有结论。</li>
 </ul>
 <h2 id="_7">消解原理</h2>
@@ -2232,7 +2375,7 @@ MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\
 </div>
 <div class="admonition info">
 <p class="admonition-title">消解规则</p>
-<p>给定两个子句，推出一个新子句：从子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {𝐿} 推出子句 𝐷1 ∪ 𝐷2。其中，𝐷1 和 𝐷2 可为空集。𝐷1 ∪ 𝐷2 称为输入子句关于 𝐿 的消解式。其中，𝐿 称为 𝐿 的补。对于任意原子命题 𝑝：𝑝 = ¬𝑝，¬𝑝 = 𝑝。</p>
+<p>给定两个子句，推出一个新子句：从子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {<span class="arithmatex">\(\bar{𝐿}\)</span>} 推出子句 𝐷1 ∪ 𝐷2。其中，𝐷1 和 𝐷2 可为空集。𝐷1 ∪ 𝐷2 称为输入子句关于 𝐿 的消解式。其中，𝐿 称为 𝐿 的补。对于任意原子命题 <span class="arithmatex">\(p: \bar{p}=\neg p, \bar{\bar{p}}=p\)</span></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">消解推理</p>
@@ -2272,6 +2415,8 @@ MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\
 <p>当一个霍恩子句刚好包含一个肯定文字时，我们称之为肯定的（或确定的）霍恩子句。当没有肯定文字时，该子句被称为否定霍恩子句。</p>
 <p>例如，子句 [¬𝑝1, ¬𝑝2, . . . , ¬𝑝𝑛, 𝑞] 表示的是 ¬𝑝1 ∨ ¬𝑝2 ∨ · · · ∨ ¬𝑝𝑛 ∨ 𝑞。可以读作：如果 𝑝1 而且 𝑝2 而且 . . . 而且 𝑝𝑛 那么 𝑞。</p>
 <h2 id="sat">SAT</h2>
+<p>SAT 可以被描述为一个约束满足问题。它从一组子句集合出发，寻找一个可以满足这些子句的真假赋值。例如，对于公式 (𝑝 ∨ 𝑞) ∧ (¬𝑝 ∨ 𝑟)，可以找到一个真假赋值 𝑣 满足这个公式.</p>
+<p><img src="\img\study\ai\ailogic\sat.png" alt="DPLL算法"></p>
 
 
 
@@ -2364,7 +2509,7 @@ MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2024-2025 Myth Logos  <a href="#__consent">Change cookie settings</a>
+      Copyright &copy; 2024-2025 Cool Tea <a href="#__consent">Change cookie settings</a>
     </div>
   
   

@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://note.mythlogos.top/study/cs/sys3/cache/">
       
       
+        <link rel="prev" href="../ILP/">
+      
+      
+        <link rel="next" href="../../../network/">
       
       
       <link rel="icon" href="../../../../img/favicon.png">
@@ -252,10 +256,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -844,6 +850,8 @@
       
   
   
+    
+  
   
   
     
@@ -862,14 +870,17 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
@@ -886,13 +897,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Computer Science
@@ -992,6 +1003,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1005,17 +1018,19 @@
       
         
       
+        
+      
     
     
       
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           
@@ -1038,7 +1053,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Computer system3
@@ -1086,6 +1101,315 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cache
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cache
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#different-types-of-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Different Types of Memory
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Different Types of Memory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Differences
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memory-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Memory Hierarchy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cache_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cache
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-cache-workds" class="md-nav__link">
+    <span class="md-ellipsis">
+      How cache workds
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-optimizations-of-cache-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced optimizations of cache performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced optimizations of cache performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reducing-the-miss-penalty-or-miss-rate-via-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reducing the miss penalty or miss rate via parallelism
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      HBM的技术优势
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 利用HBM提升缓存性能的具体方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 利用HBM提升缓存性能的具体方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-llc" class="md-nav__link">
+    <span class="md-ellipsis">
+      (1) 扩展末级缓存（LLC）容量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cache-hierarchy-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      (2) 分层缓存架构（Cache Hierarchy Optimization）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 高带宽并行数据预取
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-near-memory-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      (4) 近内存计算（Near-Memory Computing）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      (5) 异构缓存系统
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 实际应用案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 实际应用案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      (1) GPU显存与缓存融合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      (2) 高性能计算（HPC）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 机器学习训练与推理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 挑战与解决方案
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 挑战与解决方案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      (1) 成本与制造复杂性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (2) 散热与功耗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 软件与生态支持
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 未来发展方向
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1349,6 +1673,8 @@
       
         
       
+        
+      
     
     
       
@@ -1425,6 +1751,28 @@
   
   <span class="md-ellipsis">
     命题逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogi/first-order logic.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一阶逻辑
     
   </span>
   
@@ -1988,6 +2336,210 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-cache-workds" class="md-nav__link">
+    <span class="md-ellipsis">
+      How cache workds
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-optimizations-of-cache-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced optimizations of cache performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced optimizations of cache performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reducing-the-miss-penalty-or-miss-rate-via-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reducing the miss penalty or miss rate via parallelism
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      HBM的技术优势
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hbm" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 利用HBM提升缓存性能的具体方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 利用HBM提升缓存性能的具体方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-llc" class="md-nav__link">
+    <span class="md-ellipsis">
+      (1) 扩展末级缓存（LLC）容量
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cache-hierarchy-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      (2) 分层缓存架构（Cache Hierarchy Optimization）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 高带宽并行数据预取
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-near-memory-computing" class="md-nav__link">
+    <span class="md-ellipsis">
+      (4) 近内存计算（Near-Memory Computing）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      (5) 异构缓存系统
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 实际应用案例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 实际应用案例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      (1) GPU显存与缓存融合
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hpc" class="md-nav__link">
+    <span class="md-ellipsis">
+      (2) 高性能计算（HPC）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 机器学习训练与推理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 挑战与解决方案
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 挑战与解决方案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      (1) 成本与制造复杂性
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      (2) 散热与功耗
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      (3) 软件与生态支持
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 未来发展方向
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2094,6 +2646,115 @@
 <p>Cache: The highest or first level of the memory hierarchy encountered once the address leaves the processor. It employs buffering to reuse commonly occurring items.  </p>
 <p>Cache can be a relevant concept: the lower one is always the cache of the upper one:</p>
 <p><img src="\img\study\cs\sys3\cache1.png" alt="Storage Hierarchy"></p>
+<h2 id="how-cache-workds">How cache workds</h2>
+<h2 id="advanced-optimizations-of-cache-performance">Advanced optimizations of cache performance</h2>
+<h3 id="reducing-the-miss-penalty-or-miss-rate-via-parallelism">Reducing the miss penalty or miss rate via parallelism</h3>
+<p>Using HBM to extend the memory hierarchy:</p>
+<p><strong>什么是 HBM</strong>:<br />
+HBM（High Bandwidth Memory），也就是高带宽内存，通常以3D堆叠的形式与CPU或GPU封装在一起，提供比传统GDDR显存更高的带宽和更低的功耗。</p>
+<h3 id="hbm">HBM的技术优势</h3>
+<p>HBM是一种基于3D堆叠技术的高性能内存，其核心特点包括：
+- <strong>高带宽</strong>：通过宽总线（1024位或更高）和高速接口（如2.4 Gbps/引脚），带宽可达数百GB/s至TB/s。
+- <strong>低延迟</strong>：通过硅通孔（TSV）缩短数据传输路径，减少物理距离带来的延迟。
+- <strong>高密度</strong>：垂直堆叠多层DRAM芯片，节省空间并提升容量。
+- <strong>低功耗</strong>：相比传统GDDR，单位带宽的功耗更低。</p>
+<h3 id="2-hbm"><strong>2. 利用HBM提升缓存性能的具体方法</strong></h3>
+<h4 id="1-llc"><strong>(1) 扩展末级缓存（LLC）容量</strong></h4>
+<ul>
+<li><strong>原理</strong>：将HBM作为CPU或GPU的末级缓存（L3/L4），直接存储高频访问数据。</li>
+<li><strong>效果</strong>：</li>
+<li>减少主存访问次数，降低缓存缺失率（Miss Rate）。</li>
+<li>缓解传统DRAM带宽瓶颈，尤其适合数据密集型任务（如机器学习、科学计算）。</li>
+<li><strong>示例</strong>：</li>
+<li>AMD的Instinct MI系列加速器使用HBM作为显存，同时充当GPU的末级缓存。</li>
+<li>Intel的Xeon Phi（Knights Landing）曾集成HBM作为“MCDRAM”，支持缓存模式或直接内存模式。</li>
+</ul>
+<h4 id="2-cache-hierarchy-optimization"><strong>(2) 分层缓存架构（Cache Hierarchy Optimization）</strong></h4>
+<ul>
+<li><strong>原理</strong>：在传统缓存层次（L1/L2/L3）之外，引入HBM作为专用缓存层。</li>
+<li><strong>设计</strong>：</li>
+<li><strong>HBM与SRAM缓存协同</strong>：SRAM负责低延迟快速访问，HBM负责大容量数据暂存。</li>
+<li><strong>动态数据迁移</strong>：根据局部性将热数据保留在SRAM，冷数据移至HBM。</li>
+<li><strong>应用</strong>：适用于需要大容量缓存的场景（如数据库、实时分析）。</li>
+</ul>
+<h4 id="3"><strong>(3) 高带宽并行数据预取</strong></h4>
+<ul>
+<li><strong>原理</strong>：利用HBM的高带宽特性，支持大规模并行数据预取。</li>
+<li><strong>实现</strong>：</li>
+<li>硬件预取器可同时加载多个缓存行到HBM，覆盖更长的访问跨度。</li>
+<li>结合非阻塞缓存（Non-Blocking Cache），隐藏预取延迟。</li>
+<li><strong>效果</strong>：显著减少因缓存缺失导致的处理器停顿。</li>
+</ul>
+<h4 id="4-near-memory-computing"><strong>(4) 近内存计算（Near-Memory Computing）</strong></h4>
+<ul>
+<li><strong>原理</strong>：在HBM附近集成计算单元（如存内计算PIM），减少数据搬运开销。</li>
+<li><strong>技术</strong>：</li>
+<li><strong>HBM-PIM</strong>（三星）：在HBM中嵌入AI计算单元，直接处理存储中的数据。</li>
+<li><strong>缓存过滤</strong>：在HBM控制器中实现数据过滤逻辑，仅将必要数据传回处理器。</li>
+<li><strong>应用</strong>：AI推理、图计算等内存密集型任务。</li>
+</ul>
+<h4 id="5"><strong>(5) 异构缓存系统</strong></h4>
+<ul>
+<li><strong>原理</strong>：混合HBM与传统DRAM（如DDR4/DDR5），构建异构缓存/内存系统。</li>
+<li><strong>策略</strong>：</li>
+<li><strong>热数据分配</strong>：高频访问数据存储在HBM，低频数据存储在传统DRAM。</li>
+<li><strong>操作系统/驱动支持</strong>：通过NUMA（非统一内存访问）策略优化数据分布。</li>
+<li><strong>示例</strong>：NVIDIA的Grace Hopper超级芯片结合HBM与LPDDR5，优化AI负载。</li>
+</ul>
+<hr />
+<h3 id="3_1"><strong>3. 实际应用案例</strong></h3>
+<h4 id="1-gpu"><strong>(1) GPU显存与缓存融合</strong></h4>
+<ul>
+<li><strong>场景</strong>：NVIDIA H100 GPU使用HBM3作为显存，带宽达3 TB/s。</li>
+<li><strong>优化</strong>：</li>
+<li>HBM直接作为GPU的全局缓存，支持大规模并行线程（如CUDA核）的数据访问。</li>
+<li>通过L2缓存与HBM的紧密耦合，减少显存访问延迟。</li>
+</ul>
+<h4 id="2-hpc"><strong>(2) 高性能计算（HPC）</strong></h4>
+<ul>
+<li><strong>场景</strong>：气象模拟、分子动力学等需要TB级数据吞吐的应用。</li>
+<li><strong>优化</strong>：</li>
+<li>使用HBM作为节点本地缓存，加速分布式计算中的数据交换。</li>
+<li>结合RDMA（远程直接内存访问）技术，实现跨节点低延迟通信。</li>
+</ul>
+<h4 id="3_2"><strong>(3) 机器学习训练与推理</strong></h4>
+<ul>
+<li><strong>场景</strong>：训练大型语言模型（如GPT-4）时，需频繁访问参数和梯度数据。</li>
+<li><strong>优化</strong>：</li>
+<li>将模型参数缓存在HBM中，利用高带宽快速更新权重。</li>
+<li>使用HBM-PIM技术，在内存中直接执行部分计算（如矩阵乘加）。</li>
+</ul>
+<hr />
+<h3 id="4"><strong>4. 挑战与解决方案</strong></h3>
+<h4 id="1"><strong>(1) 成本与制造复杂性</strong></h4>
+<ul>
+<li><strong>挑战</strong>：HBM的3D堆叠工艺复杂，良率低，成本远高于传统DRAM。</li>
+<li><strong>解决方案</strong>：针对高端市场（HPC、AI芯片）优化设计，通过规模化生产降低成本。</li>
+</ul>
+<h4 id="2"><strong>(2) 散热与功耗</strong></h4>
+<ul>
+<li><strong>挑战</strong>：3D堆叠结构导致热密度高，可能引发散热问题。</li>
+<li><strong>解决方案</strong>：</li>
+<li>采用先进封装技术（如CoWoS-S）优化散热路径。</li>
+<li>动态电压频率调整（DVFS）降低功耗。</li>
+</ul>
+<h4 id="3_3"><strong>(3) 软件与生态支持</strong></h4>
+<ul>
+<li><strong>挑战</strong>：需操作系统、驱动和应用程序协同优化以发挥HBM性能。</li>
+<li><strong>解决方案</strong>：</li>
+<li>提供HBM-aware的内存分配API（如CUDA Unified Memory）。</li>
+<li>编译器优化数据布局（如优先将数组分配到HBM）。</li>
+</ul>
+<hr />
+<h3 id="5_1"><strong>5. 未来发展方向</strong></h3>
+<ul>
+<li><strong>HBM4</strong>：进一步提升堆叠层数（12层以上）和带宽（&gt;6.4 Gbps/引脚）。</li>
+<li><strong>存算一体</strong>：将计算单元更深度集成到HBM中，实现“内存即计算”。</li>
+<li><strong>异构集成</strong>：HBM与Chiplet（小芯片）技术结合，构建灵活的多核系统。</li>
+</ul>
+<hr />
+<h3 id="_1"><strong>总结</strong></h3>
+<p>通过HBM提升缓存性能的核心在于<strong>利用其高带宽和低延迟特性，扩展缓存容量、优化数据预取、减少主存访问</strong>。具体实现需结合硬件架构设计（如分层缓存、近内存计算）、软件优化（数据布局、预取策略）以及应用场景适配。尽管面临成本与散热挑战，HBM仍是高性能计算、AI和大数据领域的关键技术，未来随着3D堆叠和存算一体技术的演进，其潜力将进一步释放。</p>
 
 
 

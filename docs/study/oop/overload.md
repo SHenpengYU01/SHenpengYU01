@@ -223,7 +223,115 @@ int main() {
 }
 ```
 
-### **总结：**
+### **6. 如何重载解引用运算符 `operator*`**
+
+#### **重载目的**
+- 让自定义类型（如智能指针、迭代器）模拟指针行为。
+- 控制对象在解引用或取地址时的逻辑。
+
+#### **示例：自定义智能指针**
+
+```cpp
+#include <iostream>
+
+template <typename T>
+class SmartPtr {
+public:
+    // 构造函数
+    explicit SmartPtr(T* ptr) : ptr_(ptr) {}
+    
+    // 析构函数（示例，未实现完整 RAII）
+    ~SmartPtr() { delete ptr_; }
+
+    // 重载解引用运算符 *
+    T& operator*() const {
+        return *ptr_;
+    }
+
+    // 重载成员访问运算符 ->
+    T* operator->() const {
+        return ptr_;
+    }
+
+private:
+    T* ptr_;
+};
+
+int main() {
+    SmartPtr<int> ptr(new int(42));
+    std::cout << *ptr << std::endl; // 输出 42
+    return 0;
+}
+```
+
+#### **关键点**
+- `operator*` 返回对象的引用（`T&`），允许修改值。
+- 通常与 `operator->` 配合使用，模拟指针行为。
+
+---
+
+### 7. 重载取地址运算符 `operator&`(不建议)
+
+#### **示例：禁用取地址操作**
+
+```cpp
+class NoAddress {
+public:
+    // 重载取地址运算符 &，返回空指针
+    NoAddress* operator&() {
+        return nullptr; // 阻止获取真实地址
+    }
+};
+
+int main() {
+    NoAddress obj;
+    NoAddress* p = &obj; // p 为 nullptr
+    return 0;
+}
+```
+
+#### **注意事项**
+- 重载 `operator&` 需谨慎，可能破坏代码逻辑（如 `std::cout << &obj` 会调用自定义逻辑）。
+- 实际开发中极少需要重载此运算符。
+
+---
+
+### 8. 类型转换运算符（`operator char*` 或 `operator int*`）
+
+#### **示例：将类转换为指针类型**
+
+```cpp
+class Buffer {
+public:
+    Buffer() : data_("Hello") {}
+
+    // 重载类型转换运算符，转换为 char*
+    operator char*() {
+        return data_;
+    }
+
+private:
+    char data_[64];
+};
+
+int main() {
+    Buffer buf;
+    char* str = buf; // 隐式调用 operator char*()
+    cout << *buf << endl;// 这也会隐式调用 operator char*()把buf转化为char*，如果有operator int*()，也可能会调用
+    std::cout << str; // 输出 "Hello"
+    return 0;
+}
+
+```
+
+### **总结**
+
+| **运算符**       | **重载方式**                     | **用途**                     | **示例**               |
+|------------------|----------------------------------|------------------------------|------------------------|
+| `operator*`      | 成员函数（一元）                 | 解引用自定义指针类型         | 智能指针、迭代器       |
+| `operator&`      | 成员函数（一元）                 | 控制取地址行为（极少使用）   | 禁用取地址             |
+| `operator T*()`  | 类型转换运算符（可显式/隐式）    | 将类对象转换为指针类型       | 自定义缓冲区转 `char*` |
+
 
 - **操作符重载**允许自定义类型的对象能够使用标准操作符（如 `+`, `-`, `*`, `[]`, `==` 等）。
 - 重载操作符通常通过类的成员函数或友元函数来实现。

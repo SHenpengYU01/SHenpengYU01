@@ -6,6 +6,8 @@ site_description: A site for learning and sharing.
 repo_url: https://github.com/SHenpengYU01
 repo_name: cool-tea
 edit_uri: edit/main/docs
+# use_directory_urls: false
+
 
 theme:
   name: material
@@ -81,6 +83,8 @@ nav:
       - Quantitative Approaches: study/cs/sys3/quantitative.md
       - Instruction Level Parallelism: study/cs/sys3/ILP.md
       - Cache: study/cs/sys3/cache.md
+      - Memory: study/cs/sys3/memory.md
+      - Virtual Memory: study/cs/sys3/virtual-memory.md
   
     - Network:
       - study/network/index.md
@@ -97,17 +101,22 @@ nav:
       - 引论: study/ailogic/introduction.md
       - 命题逻辑: study/ailogic/proposition.md
       - 一阶逻辑: study/ailogi/first-order logic.md
+      - 知识图谱与描述逻辑: study/ailogic/knowledge.md
+      - 缺省逻辑: study/ailogic/default-logic.md
 
   - Programming:
     - OOP:
       - study/oop/index.md
-      - C++ 基础语法: study/oop/cpp.md
+      - C++ 基础语法: study/oop/grammar.md
       - 类: study/oop/class.md
+      - 结构体: study/oop/struct.md
+      - 内存: study/oop/memory.md
       - 流: study/oop/stream.md
       - 容器: study/oop/container.md
       - 友元函数: study/oop/friend.md
       - 重载: study/oop/overload.md
       - 模版: study/oop/template.md
+      - 设计模式: study/oop/design-pattern.md
     - Data Structure:
       - Graph: study/datastructure/graph.md
       - Data Structure: study/datastructure/midterm.md

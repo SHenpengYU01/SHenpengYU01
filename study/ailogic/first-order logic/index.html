@@ -1007,6 +1007,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1105,6 +1109,50 @@
   
   <span class="md-ellipsis">
     Cache
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/virtual-memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Memory
     
   </span>
   
@@ -1375,6 +1423,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1483,6 +1535,50 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../knowledge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    知识图谱与描述逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../default-logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    缺省逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1570,6 +1666,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
       
@@ -1619,7 +1721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/cpp/" class="md-nav__link">
+      <a href="../../oop/grammar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1646,6 +1748,50 @@
   
   <span class="md-ellipsis">
     类
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/struct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    结构体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    内存
     
   </span>
   
@@ -1756,6 +1902,28 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/design-pattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    设计模式
     
   </span>
   
@@ -2031,6 +2199,57 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      前束范式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      消解原理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="消解原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      一阶消解推演规则
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      思科伦化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      赫布兰德定理
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2192,6 +2411,43 @@
 - <span class="arithmatex">\(\psi\)</span> 是有效的，即 <span class="arithmatex">\(\models \psi\)</span> 当且仅当对于任意论域 <span class="arithmatex">\(D\)</span> 下任何赋值 <span class="arithmatex">\(v,\psi^v=1\)</span>
 - <span class="arithmatex">\(\psi\)</span> 是可满足的，当且仅当存在某个论域 <span class="arithmatex">\(D\)</span> 下的赋值 <span class="arithmatex">\(v\)</span> 使 <span class="arithmatex">\(\psi^v=1\)</span></p>
 </div>
+<h3 id="_6">前束范式</h3>
+<div class="admonition info">
+<p class="admonition-title">前束范式</p>
+<p>称一阶逻辑公式 𝜙 为前束范式，当且仅当它有如下的形式：
+$$Q_1x_1... Q_nx_n\phi' $$</p>
+<p>其中的 <span class="arithmatex">\(Q_1...Q_n\)</span> 是 ∀ 或 ∃，并且 𝜙′ 不含量词。
+称 $Q_1x_1... Q_nx_n $ 为前束词，称 𝜙′ 为母式。
+前束范式的母式可以进一步变换为合取范式或析取范式。</p>
+</div>
+<h3 id="_7">消解原理</h3>
+<h4 id="_8">一阶消解推演规则</h4>
+<p>当对包含自由变元的子句进行消解时，如果这些子句都是全称量化的，则可以去掉量词。在一阶消解中，需要考虑如何把消解规则应用于包含变元的子句。由于包含变元的子句是全称量化的，在证明可满足性时，可以使用这些字句的实例。</p>
+<ul>
+<li>例：{ [𝑃(𝑥), ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))], [𝑄(𝑥, 𝑦)]} 表示的是 ∀𝑥∀𝑦{ [𝑃(𝑥) ∨ ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))] ∧ 𝑄(𝑥, 𝑦)}。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">一阶消解推演规则</p>
+<p>给定两个子句 𝑐1 ∪ {𝐿1} 和 𝑐2 ∪ {𝐿2}，如果它们没有公共变元，且存在一个代换 𝜃，使得𝐿1𝜃 = 𝐿2𝜃，那么可以推出子句 (𝑐1 ∪ 𝑐2)𝜃。这时我们说 𝜃 是 𝐿1 和 𝐿2 的合一。</p>
+</div>
+<h4 id="_9">思科伦化</h4>
+<p>为了把包含存在量化的一阶公式转化为子句公式，需要引入斯科伦常元和斯科伦函数的概念。</p>
+<p>思想：对于包含存在量词的公式，把该存在量词所管辖的变元变成确定的个体。</p>
+<ul>
+<li>∃𝑥F(𝑥) 是可满足的，当且仅当对于某个具体的 𝑎，F(𝑎) 是可满足的，这里a就是思科伦常元。</li>
+<li>∀𝑥∃𝑦G(𝑥, 𝑦)：在这个公式中，变元 𝑦 所指称的个体受变元 𝑥 限制的个体。我们把这限制关系用函数来表达：对于某个函数 f，用 f(𝑥) 来代换 𝑦。</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">思科伦化</p>
+<p>把 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \exists y \phi\)</span> 变换为 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)\)</span></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">定理</p>
+<p>(1) ∃𝑥𝜙 是可满足的，当且仅当 𝜙𝑥𝑎 是可满足的；
+(2) <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \exists y \phi\)</span> 是可满足的，当且仅当 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)\)</span> 是可满足的。其中，𝑎 是 𝜙 中未出现过的新常元，f 是 𝜙中未出现过的新 𝑛 元函词，它们被分别称为斯科伦常元和斯科伦函词。</p>
+</div>
+<h3 id="_10">赫布兰德定理</h3>
+<p><img alt="赫布兰德定理" src="../../../img/study/ai/ailogic/hebulande.png" /></p>
 
 
 

@@ -90,7 +90,7 @@ while(i<n&&j<n){
 
 取所有点x坐标均值作为划分线将点集划分为左右两个部分，分别求其最近点对距离（递归地做），取两者间较小的$\delta$，然后找跨两区域的最近点对：
 在$x\in [\bar{x}-\delta,\bar{x}+\delta]$区域内，按区域中的点的$y_i$坐标从下到达向上计算处于区域$\{x\in[(x,y)|\bar{x}-\delta,\bar{x}+\delta],y\in [y_i,y_i+\delta]\}$中点对的距离，这个区域划分为如下八个正方形：
-![alt text](diandui.jpg)
+![alt text](\img\study\ADS\algorithm\diandui.png)
 由左右区域间最小距离为$\delta$可知，每个正方形中最多一个点，所以遍历最多$O(7n)=O(n)$次，线性时间。
 $T(n)=2T(n/2)+O(n)$
 时间复杂度$O(nlogn)$
@@ -98,6 +98,7 @@ $T(n)=2T(n/2)+O(n)$
 #### 乘法和矩阵乘法
 
 一般的竖式乘法时间复杂度为O(n^2)，我们可以把两个n位乘数$a,b$ 写为 $a=10^{n/2}a_1+b_1,b=10^{n/2}a_2+b_2$，这样$a_i,b_i$为n/2位乘法，实现了分治，而
+
 \[ab=10^na_1a_2+10^{n/2}(a_1b_2+a_2b_1)+b_1b_2\]
 
 \[a_1b_2+a_2b_1=(a_1+a_2)(b_1+b_2)-a_1a_2-b_1b_2\]
@@ -149,9 +150,9 @@ $W_n=max\{W_{n-1},W_{n-2}+wn\}$
 
 #### 最大子序列和问题2
 定义$dp[i]$为以第i个元素为结尾的最大子序列和
-\[dp[i]=max\{dp[i-1]+w_i,w_i\}\]
-O(n)时间求出dp[i],i=0,..n，然后遍历dp[i]找出最大的那个，比如为dp[k]。
-找出这个和最大的子序列：从dp[k]向前遍历，判断$dp[t]=dp[t-1]+w_t,t=k,...0$是否成立，如果成立，说明子序列可以继续向前扩充，如果不成立说明最大和子序列中止于$t$
+$dp[i]=max\{dp[i-1]+w_i,w_i\}$
+O(n)时间求出 $dp[i],i=0,...,n$，然后遍历dp[i]找出最大的那个，比如为dp[k]。
+找出这个和最大的子序列：从dp[k]向前遍历，判断 $dp[t]=dp[t-1]+w_t,t=k,...0$ 是否成立，如果成立，说明子序列可以继续向前扩充，如果不成立说明最大和子序列中止于$t$
 
 O(n)
 #### 零钱兑换问题
@@ -183,9 +184,11 @@ $i<s_j$:即背包放不下第j个物品
 
 我们考虑矩阵链相乘 M1M2 · · · Mn，每个矩阵的大小为 $r_i−1 × r_i$。
 对于n个矩阵整体而言，它最终还是要化为两个矩阵乘法:$M_{1,i}*M_{i+1,n}$，用$m_{1n}$表示从M1乘到Mn所用的最少乘法次数，则
+
 \[m_{1n}=\min\limits_{1\leq k\lt n}\{m_{1,k}+m_{k+1,n}+r_0r_kr_n\}\]
 
 进一步推广可得：
+
 \[
 m_{ij}=
 \begin{cases}
@@ -230,8 +233,10 @@ $O(n^3)$
 ### 调度问题
 假设我们现在有 n 个任务，每个任务 i 都有一个正的完成需要的时间 li 和一个权重 wi。假定我们只能按一定顺序依次执行这些任务，不能并行。记任务i完成时间为$C_i(\sigma)$,它等于调度开始到它被完成的时间。
 目标为最小化所有任务的加权完成时间之和：
+
 \[T=\min\limits_{\sigma}\sum\limits_{i=1}^{n}w_iC_i(\sigma)\]
-贪心方式：尽可能先放权重大的时间短的，计算每个任务的$w_i/l_i$按从大到小调度。
+
+贪心方式：尽可能先放权重大的时间短的，计算每个任务的 $w_i/l_i$ 按从大到小调度。
 
 
 ### Optimal prefix code(最优前缀编码)
@@ -273,8 +278,8 @@ $O(n^3)$
 
 ### 归约（reduction）
 
-- A language L1 is polynomial-time reducible to a language $L2 ( L1 \leq_p L2 )$ if there exists a polynomial-time computable function  $f : \{0, 1\}* → \{0,1\}*$ such that for all $x \in\{0, 1\}*,  x\in L1 $ iff $  f(x) \in L2$.
-$A \leq_P B$表示A可多项式时间归约到B，意味着A不比B难，或者B至少和A一样难
+- A language L1 is polynomial-time reducible to a language $L2 ( L1 \leq_p L2 )$ if there exists a polynomial-time computable function  $f : \{0, 1\}* → \{0,1\}*$ such that  $\forall x \in\{0, 1\}*,  x\in L1 $ iff $  f(x) \in L2$.
+$A \leq_P B$ 表示A可多项式时间归约到B，意味着A不比B难，或者B至少和A一样难
 
 #### 基本思想
 

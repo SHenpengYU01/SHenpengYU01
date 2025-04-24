@@ -3,7 +3,7 @@ site_url: https://note.mythlogos.top
 site_description: A site for learning and sharing.
 
 
-repo_url: https://github.com/SHenpengYU01
+repo_url: https://github.com/SHenpengYU01/SHenpengYU01
 repo_name: cool-tea
 edit_uri: edit/main/docs
 # use_directory_urls: false
@@ -18,6 +18,7 @@ theme:
     logo: material/tea
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
+    repo: fontawesome/brands/github
     # search: material/search
   palette:
     # Palette toggle for light mode
@@ -47,9 +48,10 @@ theme:
     - navigation.path
     - navigation.top
     - instant
-    - content.code.annotate
+    - content.code.annotate # to attach arbitrary content to specific sections of code blocks
     - content.code.copy
     - content.code.copy_button
+    - content.code.select
 
 # extra:
 #   homepage: https://www.baidu.com/
@@ -84,6 +86,7 @@ nav:
       - Instruction Level Parallelism: study/cs/sys3/ILP.md
       - Cache: study/cs/sys3/cache.md
       - Memory: study/cs/sys3/memory.md
+      - Main Memory: study/cs/sys3/main-memory.md
       - Virtual Memory: study/cs/sys3/virtual-memory.md
   
     - Network:
@@ -103,12 +106,19 @@ nav:
       - 一阶逻辑: study/ailogi/first-order logic.md
       - 知识图谱与描述逻辑: study/ailogic/knowledge.md
       - 缺省逻辑: study/ailogic/default-logic.md
+      - 回答集编程: study/ailogic/asp.md
 
   - Programming:
     - OOP:
       - study/oop/index.md
       - C++ 基础语法: study/oop/grammar.md
-      - 类: study/oop/class.md
+      - 类: 
+        - 基本概念: study/oop/class/class.md
+        - 构造函数: study/oop/class/ctor.md
+        - 析构函数: study/oop/class/dtor.md
+        - 初始化列表: study/oop/class/init-list.md
+        - 虚函数: study/oop/class/vfunc.md
+        - 继承: study/oop/class/inherit.md
       - 结构体: study/oop/struct.md
       - 内存: study/oop/memory.md
       - 流: study/oop/stream.md
@@ -124,7 +134,7 @@ nav:
       - Practice: study/datastructure/practice.md
 
   - About: about.md
-
+  - Test: test.md
   - Links: link.md
 
 
@@ -132,10 +142,15 @@ plugins:
   - tags
   - search
   - meta
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets #引入外部文件 {% include 'snippets/my_code.py' %}
   - admonition
@@ -148,6 +163,16 @@ markdown_extensions:
   - pymdownx.tasklist:  # 任务列表
       custom_checkbox: true # 自定义复选框
   - footnotes  # 脚注,例：用[^1]标注，然后在文末[^1]:这是脚注
+  - md_in_html
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.critic #允许在文档中标记文本的添加、删除、修改或替换。
+  - pymdownx.caret # 可使用插入符号^
+  - pymdownx.keys # 键盘快捷键 和 键值显示
+  - pymdownx.mark # 文本中添加 高亮标记
+  - pymdownx.tilde # 双重波浪号表示删除
 
 
 

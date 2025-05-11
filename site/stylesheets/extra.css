@@ -6,3 +6,7 @@
   [data-md-color-scheme="slate"] {
     --md-hue: 200; 
   }
+
+  .highlight .sb {
+    color: #44ebd2;
+  }

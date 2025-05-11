@@ -6,15 +6,15 @@
 
 !!! info "逻辑程序"
     逻辑程序由一组逻辑编程规则组成。每条逻辑编程规则形如：
-    $$a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}$$
+    $a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}$
     其中，𝑎 是原子公式, not 𝑎 称作 “失败即否定” 公式，或简称 naf 公式。
 
-给定形如上述的一条规则 𝑟，我们用 head(𝑟) 和 body(𝑟) 分别表示 𝑟 的头部和身体，即head(𝑟) = 𝑎0，body(𝑟) = {𝑎1, . . . , 𝑎𝑛, not 𝑎𝑛+1, . . . , not 𝑎𝑛+𝑘 }。为简便起见，我们也把逻辑编程规则称为规则，把逻辑程序称为程序。
+给定形如上述的一条规则 𝑟，我们用 head(𝑟) 和 body(𝑟) 分别表示 𝑟 的头部和身体，即head(𝑟) = 𝑎0，body(𝑟) = {$a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}$}。为简便起见，我们也把逻辑编程规则称为规则，把逻辑程序称为程序。
 
 一些特殊情况：
 
 - $a_0\leftarrow.(n=0,k=0)$ 称为事实
-- $\leftarrow a_1,\dots,a_n,\text{not}a_{n+1},\dots,a_{n+k}.$（头部为空或头部为$\bot$）称为约束或目标
+- $\leftarrow a_1,\dots,a_n,\text{not} a_{n+1},\dots,a_{n+k}.$（头部为空或头部为$\bot$）称为约束或目标
 - $a_0\leftarrow,\dots,a_n.(k=0)$ 称为肯定规则
 
 一个语言 $\mathcal{L}$ 的赫布兰德域，记作 $HU_{\mathcal{L}}$ ，是所有可以由 $\mathcal{L}$ 中的个体常元和函数形成的基项的集合。一个语言 $\mathcal{L}$ 的赫布兰德基底，记作 $HB_{\mathcal{L}}$ ，是所有可以由 $\mathcal{L}$ 中的谓词和 $HU_{\mathcal{L}}$ 的项形成的基原子的集合。
@@ -29,14 +29,14 @@
 
 !!! info "基程序"
     给定一个逻辑程序\Pi，定义对应的基程序如下：
-    $$ground(\Pi,\mathcal{L} = \cup_{r in \Pi} ground(r, \mathcal{L}))$$
+    $ground(\Pi,\mathcal{L} = \cup_{r \in \Pi} ground(r, \mathcal{L}))$
     通常把 $ground(\Pi,\mathcal{L(\Phi)})$ 简写成 $ground(\Pi)$.
 
 
 
 ## 程序的语义
 
-- 规则 $a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}$ 的含义是：如果 a_1, \cdots,a_n 为真，而 a_{n+1},\cdots,a_{n+k} 中没有一个为真，则 a_0 为真。
+- 规则 $a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}$ 的含义是：如果 $a_1, \cdots,a_n$ 为真，而 $a_{n+1},\cdots,a_{n+k}$ 中没有一个为真，则 $a_0$ 为真。
 - 约束 $\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}$ 的含义是：如果 $a_i(1\leq i \geq n)$ 为假或某个 $a_j(n+1\leq j \leq n+k)$ 为真。
 
 给定一个程序 Π，它的语义按照它的基程序 ground(Π) 的语义来定义。
@@ -44,7 +44,7 @@
 ### 肯定程序的语义
 
 !!! info "霍布兰德解释"
-    程序 \Pi 的一个霍布兰德解释是其基地的任意子集，记作 I\subset HB_{\Pi}。
+    程序 $\Pi$ 的一个霍布兰德解释是其基地的任意子集，记作 $I\subset HB_{\Pi}$。
 
 设 Π 是一个肯定程序，𝐼 是 Π 的一个赫布兰德解释。称 𝐼 是 Π 的一个**赫布兰德模型**，当
 如下条件成立：
@@ -58,7 +58,8 @@
     确定程序 $\Pi$ 的一个回答集是 $\Pi$ 的一个极小的赫布兰德模型。
 
 可以通过不动点方法来计算一个程序的语义。我们定义一个不动点算子 𝑇Π，该算子把程序 Π 的一组原子公式集合映射到另外一组原子公式集合，使得：
-$$T_{\pi}(X)=\{a|a\in HB_{\Pi}, \exist r\in \Pi:\text{head}(r)=a,\forall b\in \text{body}(r),b\in X\}$$
+
+$T_{\pi}(X)=\{a|a\in HB_{\Pi}, \exist r\in \Pi:\text{head}(r)=a,\forall b\in \text{body}(r),b\in X\}$
 
 不动点算子有如下性质
 
@@ -66,6 +67,7 @@ $$T_{\pi}(X)=\{a|a\in HB_{\Pi}, \exist r\in \Pi:\text{head}(r)=a,\forall b\in \t
     $T_\Pi$ 是单调的：如果 $X\subset Y\text{则}T_\Pi(X)\subset T_\Pi(Y)$
 
 于是，$T_\Pi$ 有一个最小不动点，且可以按照如下算法计算该不动点：
+
 - 设 $X_1=T_\Pi(\emptyset), k=1$。
 - 计算 $ X_{k+1} = T_{\Pi}(X_k)$。如果 $X_{k+1}=X_k$，则停止并返回 $X_k$
 - 否则，增加k并重复第二步
@@ -81,35 +83,35 @@ $$T_{\pi}(X)=\{a|a\in HB_{\Pi}, \exist r\in \Pi:\text{head}(r)=a,\forall b\in \t
 
 ### 一般程序的语义
 
-当一个逻辑程序中包含形如式 $a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}$ 的规则时，称之为一般逻辑程序或正规逻辑程序。正规逻辑程序是肯定程序的超集，因为前者允许在规则的身体部分包含算子 not。
+当一个逻辑程序中包含形如式 $a_0\leftarrow a_1,\dots,a_n \text{not}\ a_{n+1},\dots, \text{not} a_{n+k}$ 的规则时，称之为一般逻辑程序或正规逻辑程序。正规逻辑程序是肯定程序的超集，因为前者允许在规则的身体部分包含算子 not。
 
 给定一个不含约束的正规逻辑程序 Π 和一个候选回答集 𝑆，首先把 Π 转变成一个确定程序 Π
 𝑆。然后，把 𝑆 定义为Π 的一个回答集，如果 𝑆 是 $Π^𝑆$ 的回答集。
 
 !!! info "$\Pi^S$ 定义"
-    设\Pi是一个不含约束的正规逻辑程序。对于任意原子公式集合S，设\Pi^S是通过如下步骤得到的逻辑程序：
-    1.对于每条\Pi中的规则，如果它的身体部分包含 not a且 $a\in S$，则把该规则从\Pi中删除。
+    设$\Pi$是一个不含约束的正规逻辑程序。对于任意原子公式集合S，设$\Pi^S$是通过如下步骤得到的逻辑程序：
+    1.对于每条$\Pi$中的规则，如果它的身体部分包含 not a且 $a\in S$，则把该规则从$\Pi$中删除。
     2.对于剩余的每条规则，把其身体部分的每个形如 not a的文字部分删除。
 
 显然，$\Pi^S$ 不含not。因此，它是一个确定程序。如果 $\Pi^S$ 的回答集存在且恰好是S，则称S是 $\Pi$ 的一个回答集。
 
 - 例子：考虑如下程序 Π：
-𝑝 ← 𝑎.
-𝑎 ← not 𝑏.
-𝑏 ← not 𝑎.
-集合 𝑆1 = {𝑝, 𝑎} 和 𝑆2 = {𝑏} 是 Π 的回答集。理由如下：
-$Π^𝑆1$ = {𝑝 ← 𝑎., 𝑎 ← .}，且 Π𝑆1 的回答集是 𝑆1。
-$Π^𝑆2$ = {𝑝 ← 𝑎., 𝑏 ← .}，且 Π𝑆2 的回答集是 𝑆2。
-集合 𝑆 = {𝑎, 𝑏} 不是 Π 的回答集。$Π^𝑆$ = {𝑝 ← 𝑎.}，它的回答集为 ∅，与 𝑆 不同
+𝑝 ← 𝑎.  
+𝑎 ← not 𝑏.  
+𝑏 ← not 𝑎.  
+集合 𝑆1 = {𝑝, 𝑎} 和 𝑆2 = {𝑏} 是 Π 的回答集。理由如下：  
+$Π^𝑆1$ = {𝑝 ← 𝑎., 𝑎 ← .}，且 Π𝑆1 的回答集是 𝑆1。  
+$Π^𝑆2$ = {𝑝 ← 𝑎., 𝑏 ← .}，且 Π𝑆2 的回答集是 𝑆2。  
+集合 𝑆 = {𝑎, 𝑏} 不是 Π 的回答集。$Π^𝑆$ = {𝑝 ← 𝑎.}，它的回答集为 ∅，与 𝑆 不同  
 
 
-对于一个含约束的逻辑程序\Pi，把\Pi分为两个集合 $\Pi_O=\{r|r\in\Pi,r\text{的头部为空}\}$和 $\Pi_C=\Pi\\\Pi_O$。前者是一个不含约束的程序。对于一个基原子公式集合S和一个约束c：
+对于一个含约束的逻辑程序$\Pi$，把$\Pi$分为两个集合 $\Pi_O=\{r|r\in\Pi,r\text{的头部为空}\}$和 $\Pi_C=\Pi / \Pi_O$。前者是一个不含约束的程序。对于一个基原子公式集合S和一个约束c：
 $$
 \leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}
 $$
-我们说S满足c，如果 $\{a_0,\dots,a_n\}\S \neq \emptyset$ 或 $\{a_{n+1},\dots,a_{n+k}\}\cap \neq \emptyset$
+我们说S满足c，如果 $\{a_0,\dots,a_n\} \subset S$ 或 $\{a_{n+1},\dots,a_{n+k}\}\cap S\neq \emptyset$
 
 
-!!! info ""
-    一个基原子公式集合S是程序 $\Pi$ 的一个回答集，如果S是 $\Pi_O$ 的回答集，且满足ground(\Pi_C)的所有约束
+!!! info "回答集"
+    一个基原子公式集合S是程序 $\Pi$ 的一个回答集，如果S是 $\Pi_O$ 的回答集，且满足$ground(\Pi_C)$的所有约束
 

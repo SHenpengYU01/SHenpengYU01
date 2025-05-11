@@ -96,14 +96,21 @@ nav:
       - The Transport Layer: study/network/transport layer.md
       - The Internet Layer: study/network/internet layer.md
       - The Link Layer: study/network/link layer.md
-
+  - Web:
+    - study/web/index.md
+    - JavaScript:
+      - 基础语法: study/web/JS/intro.md
+      - 函数: study/web/JS/func.md
+      - 事件: study/web/JS/event.md
+      - 类: study/web/JS/class.md
+      - 数组: study/web/JS/array.md
 
   - AI:
     - AI Logic:
       - study/ailogic/index.md
       - 引论: study/ailogic/introduction.md
       - 命题逻辑: study/ailogic/proposition.md
-      - 一阶逻辑: study/ailogi/first-order logic.md
+      - 一阶逻辑: study/ailogic/first-order-logic.md
       - 知识图谱与描述逻辑: study/ailogic/knowledge.md
       - 缺省逻辑: study/ailogic/default-logic.md
       - 回答集编程: study/ailogic/asp.md
@@ -116,17 +123,17 @@ nav:
         - 基本概念: study/oop/class/class.md
         - 构造函数: study/oop/class/ctor.md
         - 析构函数: study/oop/class/dtor.md
+        - 友元函数: study/oop/class/friend.md
         - 初始化列表: study/oop/class/init-list.md
         - 虚函数: study/oop/class/vfunc.md
         - 继承: study/oop/class/inherit.md
       - 结构体: study/oop/struct.md
-      - 内存: study/oop/memory.md
+      - 内存管理: study/oop/memory.md
       - 流: study/oop/stream.md
       - 容器: study/oop/container.md
-      - 友元函数: study/oop/friend.md
       - 重载: study/oop/overload.md
       - 模版: study/oop/template.md
-      - 设计模式: study/oop/design-pattern.md
+      - 设计模式: study/oop/design-pattern/design-pattern.md
     - Data Structure:
       - Graph: study/datastructure/graph.md
       - Data Structure: study/datastructure/midterm.md

@@ -2,7 +2,7 @@
 
 在 C++ 中，**初始化列表（Initialization List）** 是构造函数中用于直接初始化类成员变量的一种机制。它在构造函数的参数列表后以冒号（`:`）开头，后跟成员变量的初始化表达式。通过初始化列表，成员变量在对象创建时被直接初始化，而不是先默认初始化再赋值。以下是关于初始化列表的详细说明：
 
----
+
 
 ## **一、初始化列表的语法**
 
@@ -27,7 +27,7 @@ private:
 };
 ```
 
----
+
 
 ## **二、初始化列表的用途**
 ### 1. **初始化 `const` 成员**
@@ -45,7 +45,7 @@ private:
 
 ### 2. **初始化引用成员**
 
-- 引用成员必须在声明时绑定到某个变量，也只能通过初始化列表完成。
+- 引用成员必须在声明时绑定到某个变量，也**只能通过初始化列表**完成。
 
    ```cpp
    class RefExample {
@@ -90,7 +90,7 @@ private:
    };
    ```
 
----
+
 
 ## **三、初始化列表的注意事项**
 ### 1. **初始化顺序**
@@ -109,31 +109,30 @@ private:
    };
    ```
 
-顺序很重要，这是一个实际的例子：
-
-```cpp
-class Vector{
-  T *m_pElements;
-  int m_nSize;
-  int m_nCapacity;
-  ...    
-};
-Vector<T>::Vector(const Vector& r):
-    m_nSize(r.m_nSize),
-    m_nCapacity(r.m_nCapacity > 0 ? r.m_nCapacity : 0),
-    m_pElements(r.m_nCapacity > 0 ? new T[m_nCapacity]: nullptr) //T[r.m_nCapacity]
-{
-    if(r.m_nCapacity > 0){
-        cout << m_nCapacity << endl;
-        for(int i=0; i < r.m_nSize; i++){
-            this->m_pElements[i] = r.m_pElements[i]; // Copy elements
+!!! note "例子"
+    下面是一个有关初始化顺序的实际例子：
+    ```cpp
+    class Vector{
+    T *m_pElements;
+    int m_nSize;
+    int m_nCapacity;
+    ...
+    };
+    Vector<T>::Vector(const Vector& r):
+        m_nSize(r.m_nSize),
+        m_nCapacity(r.m_nCapacity > 0 ? r.m_nCapacity : 0),
+        m_pElements(r.m_nCapacity > 0 ? new T[m_nCapacity]: nullptr) //T[r.m_nCapacity]
+    {
+        if(r.m_nCapacity > 0){
+            cout << m_nCapacity << endl;
+            for(int i=0; i < r.m_nSize; i++){
+                this->m_pElements[i] = r.m_pElements[i]; // Copy elements
+            }
         }
     }
-}
-```
-
-这里实现Vector的拷贝构造函数，初始化列表中先定义的 `m_pElements` 却依赖于最后定义的 `m_nCapacity`，这极大概率会导致`new`为`m_pElements`分配的内存大小错误。
-所以最好不要让初始化参数列表中的参数初始化相互耦合，即使耦合也要让初始化顺序符合声明顺序。  
+    ```
+    这里实现Vector的拷贝构造函数。在初始化列表中，类中先被声明的`m_pElements` 却依赖于类中在它后面声明的 `m_nCapacity`，这大概率会导致`new`为`m_pElements`分配的内存大小出错。
+    所以最好不要让初始化参数列表中的参数初始化相互耦合，即使耦合也要让初始化顺序符合声明顺序。  
 
 
 ### 2. **默认初始化**
@@ -141,7 +140,7 @@ Vector<T>::Vector(const Vector& r):
   - 基本类型（如 `int`、`double`）会执行默认初始化（值不确定）。
   - 类类型会调用默认构造函数。若类没有默认构造函数，**必须**通过初始化列表显式初始化。
 
----
+
 
 ## **四、继承中的初始化列表**
 在派生类构造函数中，初始化列表还可用于调用基类的构造函数：
@@ -165,7 +164,7 @@ private:
 };
 ```
 
----
+
 
 ## **五、类内成员初始化（C++11 起）**
 C++11 允许在类声明中直接为成员变量赋默认值（类内成员初始化）。但初始化列表仍可覆盖这些默认值：
@@ -180,7 +179,7 @@ private:
 };
 ```
 
----
+
 
 ## **六、总结**
 - **何时使用初始化列表？**

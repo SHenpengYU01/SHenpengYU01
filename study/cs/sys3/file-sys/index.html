@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://note.mythlogos.top/study/cs/sys3/file-sys/">
       
       
+        <link rel="prev" href="../virtual-memory/">
+      
+      
+        <link rel="next" href="../../../network/">
       
       
       <link rel="icon" href="../../../../img/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>File system - Cool Tea</title>
+        <title>File System - Cool Tea</title>
       
     
     
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              File system
+              File System
             
           </span>
         </div>
@@ -260,10 +264,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -271,6 +277,28 @@
     
   
   Computer Science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../web/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Web
 
         </a>
       </li>
@@ -748,6 +776,8 @@
       
         
       
+        
+      
     
     
     
@@ -804,6 +834,29 @@
   
   <span class="md-ellipsis">
     Startup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/discrete/quadratic-probing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    二次剩余
     
   </span>
   
@@ -892,6 +945,8 @@
       
   
   
+    
+  
   
   
     
@@ -911,14 +966,17 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -935,13 +993,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Computer Science
@@ -1043,6 +1101,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1064,6 +1124,8 @@
       
         
       
+        
+      
     
     
     
@@ -1071,11 +1133,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1098,7 +1160,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Computer system3
@@ -1240,6 +1302,365 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    File System
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    File System
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、核心概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、实现机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、结构与示例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、优点与缺点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、实际应用与命令
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、常见问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Link">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心区别对比
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acl" class="md-nav__link">
+    <span class="md-ellipsis">
+      ACL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ACL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、ACL的核心概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、ACL的类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、ACL的组成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acllinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、ACL的操作命令（Linux）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、ACL的优先级规则
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      fork后的文件操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fork后的文件操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 文件描述符的继承与共享
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 独立操作的场景
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看文件命令
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="查看文件命令">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stat" class="md-nav__link">
+    <span class="md-ellipsis">
+      stat [选项]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ln" class="md-nav__link">
+    <span class="md-ellipsis">
+      ln
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件系统实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文件系统实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-disk-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁盘结构（on-disk structure）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-memory-file-system-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      内存结构（in-memory file system structure）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      具体示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="具体示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#free-space-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free space management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1459,6 +1880,10 @@
     
       
         
+          
+        
+      
+        
       
     
     
@@ -1474,7 +1899,244 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../web/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Web
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    JavaScript
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            JavaScript
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基础语法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/func/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/event/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    事件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/class/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    类
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/array/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数组
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1487,8 +2149,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             AI
           </label>
@@ -1519,6 +2181,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1530,7 +2196,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1547,14 +2213,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
             AI Logic
           </label>
@@ -1615,7 +2281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ailogi/first-order logic.md" class="md-nav__link">
+      <a href="../../../ailogic/first-order-logic/" class="md-nav__link">
         
   
   
@@ -1700,6 +2366,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/argument/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    经典抽象论辩理论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/struct-argu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    结构化论辩理论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1739,10 +2451,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1755,8 +2467,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Programming
           </label>
@@ -1793,8 +2505,6 @@
       
         
       
-        
-      
     
     
     
@@ -1806,7 +2516,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
         
           
           <div class="md-nav__link md-nav__container">
@@ -1823,14 +2533,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
             <span class="md-nav__icon md-icon"></span>
             OOP
           </label>
@@ -1882,6 +2592,8 @@
       
         
       
+        
+      
     
     
     
@@ -1893,10 +2605,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1_3" >
         
           
-          <label class="md-nav__link" for="__nav_5_1_3" id="__nav_5_1_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6_1_3" id="__nav_6_1_3_label" tabindex="0">
             
   
   
@@ -1909,8 +2621,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_1_3">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1_3">
             <span class="md-nav__icon md-icon"></span>
             类
           </label>
@@ -1975,6 +2687,29 @@
   
   <span class="md-ellipsis">
     析构函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../oop/class/friend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    友元函数
     
   </span>
   
@@ -2097,7 +2832,7 @@
   
   
   <span class="md-ellipsis">
-    内存
+    内存管理
     
   </span>
   
@@ -2161,29 +2896,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../oop/friend/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    友元函数
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../oop/overload/" class="md-nav__link">
         
   
@@ -2230,7 +2942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../oop/design-pattern.md" class="md-nav__link">
+      <a href="../../../oop/design-pattern/design-pattern/" class="md-nav__link">
         
   
   
@@ -2264,6 +2976,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -2282,11 +2998,12 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../datastructure/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2295,15 +3012,23 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
             <span class="md-nav__icon md-icon"></span>
             Data Structure
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 
@@ -2498,6 +3223,308 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、核心概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、实现机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、结构与示例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、优点与缺点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、实际应用与命令
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、常见问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Link">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心区别对比
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acl" class="md-nav__link">
+    <span class="md-ellipsis">
+      ACL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ACL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、ACL的核心概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、ACL的类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、ACL的组成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acllinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、ACL的操作命令（Linux）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、ACL的优先级规则
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      fork后的文件操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fork后的文件操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 文件描述符的继承与共享
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 独立操作的场景
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看文件命令
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="查看文件命令">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stat" class="md-nav__link">
+    <span class="md-ellipsis">
+      stat [选项]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ln" class="md-nav__link">
+    <span class="md-ellipsis">
+      ln
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件系统实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文件系统实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-disk-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁盘结构（on-disk structure）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-memory-file-system-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      内存结构（in-memory file system structure）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      具体示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="具体示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#free-space-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free space management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2516,6 +3543,499 @@
 
 
 <h1 id="file-system">File system</h1>
+<h2 id="_1">目录</h2>
+<p><strong>无环图目录（Acyclic Graph Directory）</strong> 是文件系统中一种目录组织结构，允许文件或子目录被多个父目录共享，但整体结构不形成环路。它在树形目录的基础上扩展了灵活性，同时避免了循环引用带来的问题（如无限遍历）。以下是详细解析：</p>
+<hr />
+<h3 id="_2"><strong>一、核心概念</strong></h3>
+<ol>
+<li><strong>定义</strong>  </li>
+<li>
+<p><strong>无环图目录</strong>：目录和文件通过链接形成有向无环图（DAG），即：  </p>
+<ul>
+<li>允许一个文件或子目录被多个父目录共享（通过硬链接或符号链接）。  </li>
+<li>从根目录出发的所有路径不形成环路。  </li>
+</ul>
+</li>
+<li>
+<p><strong>与树形目录的区别</strong>  </p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>树形目录</strong></th>
+<th><strong>无环图目录</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>子目录归属</strong></td>
+<td>唯一父目录</td>
+<td>多个父目录（共享）</td>
+</tr>
+<tr>
+<td><strong>环路</strong></td>
+<td>严格禁止</td>
+<td>禁止</td>
+</tr>
+<tr>
+<td><strong>灵活性</strong></td>
+<td>低</td>
+<td>高</td>
+</tr>
+<tr>
+<td><strong>实现复杂度</strong></td>
+<td>简单</td>
+<td>较高（需管理链接与引用计数）</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li><strong>典型应用场景</strong>  </li>
+<li>共享公共配置文件（如多个项目共用同一日志目录）。  </li>
+<li>避免重复存储相同文件（节省空间）。  </li>
+</ol>
+<hr />
+<h3 id="_3"><strong>二、实现机制</strong></h3>
+<ol>
+<li><strong>链接类型</strong>  </li>
+<li><strong>硬链接（Hard Link）</strong>：  <ul>
+<li>直接指向文件的 inode，与原始文件无区别。  </li>
+<li>限制：不能跨文件系统，不能链接目录（避免环路）。  </li>
+<li>命令：<code>ln &lt;source&gt; &lt;link&gt;</code>。  </li>
+</ul>
+</li>
+<li>
+<p><strong>符号链接（Symbolic Link，软链接）</strong>：  </p>
+<ul>
+<li>存储目标路径的字符串，类似快捷方式。  </li>
+<li>允许跨文件系统、链接目录，但可能形成“悬空链接”（目标被删除后失效）。  </li>
+<li>命令：<code>ln -s &lt;source&gt; &lt;link&gt;</code>。  </li>
+</ul>
+</li>
+<li>
+<p><strong>引用计数</strong>  </p>
+</li>
+<li><strong>硬链接</strong>的 inode 中维护 <code>引用计数</code>，表示被多少个目录项指向。  </li>
+<li>
+<p>当引用计数归零时，文件数据才会被真正删除。  </p>
+</li>
+<li>
+<p><strong>环路检测</strong>  </p>
+</li>
+<li>文件系统禁止创建会导致环路的硬链接（例如，禁止对目录创建硬链接）。  </li>
+<li>符号链接可指向目录，但遍历时需检测环路（如限制递归深度或记录已访问路径）。</li>
+</ol>
+<hr />
+<h3 id="_4"><strong>三、结构与示例</strong></h3>
+<ol>
+<li><strong>无环图目录示意图</strong>  </li>
+</ol>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>/ (根目录)  
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── home  
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│   ├── user1 → /shared/docs  # 符号链接  
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│   └── user2 → /shared/docs  
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>└── shared  
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    └── docs  
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        ├── file1.txt  
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        └── file2.txt  
+</span></code></pre></div>
+<ul>
+<li>
+<p><code>user1</code> 和 <code>user2</code> 共享 <code>/shared/docs</code> 目录，但不形成环路。  </p>
+</li>
+<li>
+<p><strong>硬链接与符号链接对比</strong>  </p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>操作</strong></th>
+<th><strong>硬链接</strong></th>
+<th><strong>符号链接</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>删除原始文件</td>
+<td>文件仍存在（引用计数减1）</td>
+<td>链接失效（悬空）</td>
+</tr>
+<tr>
+<td>跨文件系统</td>
+<td>不支持</td>
+<td>支持</td>
+</tr>
+<tr>
+<td>inode 是否共享</td>
+<td>是</td>
+<td>否（链接文件有独立 inode）</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_5"><strong>四、优点与缺点</strong></h3>
+<ol>
+<li><strong>优点</strong>  </li>
+<li><strong>节省存储空间</strong>：多个目录共享同一文件或子目录。  </li>
+<li><strong>灵活性高</strong>：方便组织复杂项目或公共资源。  </li>
+<li>
+<p><strong>维护一致性</strong>：修改共享文件时，所有链接处同步更新。  </p>
+</li>
+<li>
+<p><strong>缺点</strong>  </p>
+</li>
+<li><strong>管理复杂度</strong>：需维护引用计数，防止悬空链接或误删。  </li>
+<li><strong>遍历复杂度</strong>：递归遍历目录时需避免重复访问共享节点。  </li>
+<li><strong>安全风险</strong>：符号链接可能被恶意利用（如链接到敏感路径）。</li>
+</ol>
+<hr />
+<h3 id="_6"><strong>五、实际应用与命令</strong></h3>
+<ol>
+<li><strong>创建共享目录（符号链接）</strong>  </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 创建共享目录</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>mkdir<span class="w"> </span>/shared/docs
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 为用户目录创建符号链接</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>ln<span class="w"> </span>-s<span class="w"> </span>/shared/docs<span class="w"> </span>/home/user1/docs
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>ln<span class="w"> </span>-s<span class="w"> </span>/shared/docs<span class="w"> </span>/home/user2/docs
+</span></code></pre></div>
+<ol>
+<li><strong>查看链接信息</strong>  </li>
+<li>
+<p><code>ls -l</code> 显示链接指向：  </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>lrwxrwxrwx 1 user group   11 Jan 1 12:00 docs -&gt; /shared/docs
+</span></code></pre></div>
+</li>
+<li>
+<p><code>stat &lt;file&gt;</code> 查看 inode 和硬链接数。  </p>
+</li>
+<li>
+<p><strong>删除链接</strong>  </p>
+</li>
+<li>删除硬链接：<code>unlink &lt;link&gt;</code> 或 <code>rm &lt;link&gt;</code>（仅减少引用计数）。  </li>
+<li>删除符号链接：直接删除链接文件，不影响目标。  </li>
+</ol>
+<h3 id="_7"><strong>六、常见问题</strong></h3>
+<ol>
+<li><strong>如何避免悬空链接？</strong>  </li>
+<li>尽量使用相对路径的符号链接（如 <code>ln -s ../shared/docs ./docs</code>）。  </li>
+<li>
+<p>删除目标前检查是否有符号链接依赖。  </p>
+</li>
+<li>
+<p><strong>硬链接为何不能链接目录？</strong>  </p>
+</li>
+<li>防止形成环路（目录硬链接可能导致递归遍历死循环）。  </li>
+<li>
+<p>例外：文件系统允许根目录的硬链接（如 <code>.</code> 和 <code>..</code> 目录项）。  </p>
+</li>
+<li>
+<p><strong>如何检测无环图目录中的环路？</strong>  </p>
+</li>
+<li>工具：<code>fsck</code> 检查文件系统一致性。  </li>
+<li>编程实现：深度优先遍历（DFS）时记录访问路径，检测重复节点。  </li>
+</ol>
+<h3 id="_8"><strong>总结</strong></h3>
+<p>无环图目录通过允许共享打破了树形目录的严格层级，在灵活性与安全性之间取得平衡。理解其实现机制（如硬链接、符号链接和引用计数）和潜在问题（环路、悬空链接），能够更高效地管理复杂文件组织结构。</p>
+<h2 id="link">Link</h2>
+<p><strong>硬链接（Hard Link）</strong> 和 <strong>符号链接（Symbolic Link，软链接）</strong> 是文件系统中两种不同的文件链接方式，它们在实现机制、功能和使用场景上有显著区别。以下是详细对比与分析：</p>
+<h3 id="_9"><strong>核心区别对比</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>特性</strong></th>
+<th><strong>硬链接（Hard Link）</strong></th>
+<th><strong>符号链接（Symbolic Link）</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>本质</strong></td>
+<td>直接指向文件的 inode</td>
+<td>存储目标文件的路径字符串（类似快捷方式）</td>
+</tr>
+<tr>
+<td><strong>inode</strong></td>
+<td>与源文件共享同一 inode</td>
+<td>有独立的 inode</td>
+</tr>
+<tr>
+<td><strong>跨文件系统</strong></td>
+<td>不支持（必须与源文件在同一文件系统）</td>
+<td>支持</td>
+</tr>
+<tr>
+<td><strong>链接目录</strong></td>
+<td>不允许（防止形成环路）</td>
+<td>允许</td>
+</tr>
+<tr>
+<td><strong>删除源文件</strong></td>
+<td>文件数据仍存在（引用计数减1）</td>
+<td>链接失效（成为悬空链接）</td>
+</tr>
+<tr>
+<td><strong>存储内容</strong></td>
+<td>直接关联 inode</td>
+<td>存储目标路径（如 <code>/path/to/file</code>）</td>
+</tr>
+<tr>
+<td><strong>文件大小</strong></td>
+<td>与源文件相同（不额外占用空间）</td>
+<td>占用独立空间（存储路径字符串）</td>
+</tr>
+<tr>
+<td><strong>权限与属性</strong></td>
+<td>与源文件完全一致（共享 inode 元数据）</td>
+<td>独立权限（如链接文件可设置不同权限）</td>
+</tr>
+<tr>
+<td><strong>更新行为</strong></td>
+<td>修改硬链接或源文件，内容同步更新</td>
+<td>修改符号链接本身不影响源文件</td>
+</tr>
+<tr>
+<td><strong>使用场景</strong></td>
+<td>节省空间、确保文件存在性</td>
+<td>跨文件系统、动态指向、灵活管理</td>
+</tr>
+</tbody>
+</table>
+<p><strong>总结</strong>:
+- <strong>硬链接</strong>是文件系统的底层机制，通过共享 inode 实现高效文件共享，但限制较多。<br />
+- <strong>符号链接</strong>是高层抽象，通过路径字符串提供灵活性，适合动态管理和跨文件系统操作。<br />
+- 理解两者区别后，可根据实际需求选择合适的链接类型。</p>
+<h2 id="acl">ACL</h2>
+<p><strong>ACL（Access Control List，访问控制列表）</strong> 是一种细粒度的权限管理机制，用于扩展传统的文件系统权限模型（如Unix的<code>用户/组/其他</code>基础权限）。它允许为特定用户或组定义更精确的访问规则，适用于复杂的权限管理场景。以下是ACL的详细解析：</p>
+<h3 id="acl_1"><strong>一、ACL的核心概念</strong></h3>
+<ol>
+<li><strong>传统权限模型的局限性</strong>  </li>
+<li>Unix/Linux的基础权限模型仅支持三类角色：<strong>所有者</strong>、<strong>所属组</strong>和<strong>其他用户</strong>。  </li>
+<li>
+<p>无法为多个用户或组设置不同权限，例如：允许用户A读写，用户B只读，组C禁止访问。  </p>
+</li>
+<li>
+<p><strong>ACL的扩展能力</strong>  </p>
+</li>
+<li>允许为任意数量的<strong>用户</strong>、<strong>组</strong>或<strong>其他实体</strong>单独定义权限。  </li>
+<li>支持继承规则（如目录的默认ACL），自动应用到新创建的子文件和子目录。  </li>
+</ol>
+<h3 id="acl_2"><strong>二、ACL的类型</strong></h3>
+<ol>
+<li><strong>访问型ACL（Access ACL）</strong>  </li>
+<li>定义文件或目录本身的访问规则。  </li>
+<li>
+<p>示例：用户Alice可读写，组Developers只读。  </p>
+</li>
+<li>
+<p><strong>默认型ACL（Default ACL）</strong>  </p>
+</li>
+<li><strong>仅适用于目录</strong>，定义其下新建文件/目录的默认权限。  </li>
+<li>示例：为目录<code>/data</code>设置默认ACL后，其子文件自动继承该ACL。  </li>
+</ol>
+<h3 id="acl_3"><strong>三、ACL的组成</strong></h3>
+<p>每个ACL条目包含以下字段：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&lt;类型&gt;:&lt;主体&gt;:&lt;权限&gt;  
+</span></code></pre></div>
+<ul>
+<li><strong>类型</strong>：  </li>
+<li><code>user</code>（用户）、<code>group</code>（组）、<code>mask</code>（权限掩码）、<code>other</code>（其他用户）。  </li>
+<li><strong>主体</strong>：  </li>
+<li>用户或组的名称（如<code>alice</code>或<code>developers</code>），<code>mask</code>和<code>other</code>无需指定主体。  </li>
+<li><strong>权限</strong>：  </li>
+<li>读写执行权限的组合（如<code>rwx</code>、<code>r--</code>）。  </li>
+</ul>
+<p><strong>示例</strong>：  </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>user:alice:rwx        # 用户alice拥有读写执行权限  
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>group:developers:r-x  # 组developers拥有读和执行权限  
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>mask::r-x             # 限制最大有效权限（覆盖其他条目）  
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>other::r--            # 其他用户只读  
+</span></code></pre></div>
+<h3 id="acllinux"><strong>四、ACL的操作命令（Linux）</strong></h3>
+<ol>
+<li><strong>查看ACL</strong>  </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>getfacl<span class="w"> </span>&lt;文件或目录&gt;<span class="w">  </span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="c1"># 示例：getfacl /data/report.txt  </span>
+</span></code></pre></div>
+<ol>
+<li><strong>设置ACL</strong>  </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>setfacl<span class="w"> </span>-m<span class="w"> </span>&lt;规则&gt;<span class="w"> </span>&lt;文件或目录&gt;<span class="w">  </span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># 示例：为用户bob添加读写权限  </span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>setfacl<span class="w"> </span>-m<span class="w"> </span>u:bob:rw<span class="w"> </span>/data/report.txt<span class="w">  </span>
+</span></code></pre></div>
+<ol>
+<li><strong>删除ACL</strong>  </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>setfacl<span class="w"> </span>-x<span class="w"> </span>&lt;规则&gt;<span class="w"> </span>&lt;文件或目录&gt;<span class="w">  </span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="c1"># 示例：删除用户bob的ACL条目  </span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>setfacl<span class="w"> </span>-x<span class="w"> </span>u:bob<span class="w"> </span>/data/report.txt<span class="w">  </span>
+</span></code></pre></div>
+<ol>
+<li><strong>设置默认ACL（目录）</strong>  </li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>setfacl<span class="w"> </span>-d<span class="w"> </span>-m<span class="w"> </span>&lt;规则&gt;<span class="w"> </span>&lt;目录&gt;<span class="w">  </span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="c1"># 示例：设置目录默认ACL，允许组dev读写  </span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>setfacl<span class="w"> </span>-d<span class="w"> </span>-m<span class="w"> </span>g:dev:rw<span class="w"> </span>/shared<span class="w">  </span>
+</span></code></pre></div>
+<h3 id="acl_4"><strong>五、ACL的优先级规则</strong></h3>
+<ol>
+<li><strong>精确匹配优先</strong>  </li>
+<li>用户权限 &gt; 用户所属组的权限 &gt; 其他ACL规则 &gt; 传统<code>other</code>权限。  </li>
+<li><strong>权限掩码（mask）的作用</strong>  </li>
+<li>限制除所有者和<code>other</code>外的所有ACL条目的最大权限。  </li>
+<li>例如：若mask为<code>r--</code>，即使某用户被赋予<code>rwx</code>，实际有效权限为<code>r--</code>。  </li>
+</ol>
+<h2 id="fork">fork后的文件操作</h2>
+<h3 id="1"><strong>1. 文件描述符的继承与共享</strong></h3>
+<ul>
+<li><strong>fork() 后的初始状态</strong>：<br />
+  当父进程通过 <code>fork()</code> 创建子进程时，子进程会继承父进程的所有打开的文件描述符。此时父子进程的 <strong>文件描述符表</strong>（指向内核文件表项）是<strong>完全复制</strong>的。  </li>
+<li>父子进程的 fd <strong>数值相同</strong>（如父进程的 fd 3 对应子进程的 fd 3）。  </li>
+<li>
+<p>这些 fd 指向相同的 <strong>内核文件表项</strong>（包括文件偏移量、打开模式等状态）。</p>
+</li>
+<li>
+<p><strong>共享文件偏移量</strong>：<br />
+  如果父子进程操作同一个 fd（如同时读写），它们的操作会共享文件偏移量。<br />
+<strong>示例</strong>：  </p>
+</li>
+</ul>
+<p>```c
+  // 父进程打开文件，读取部分内容
+  int fd = open("file.txt", O_RDWR);
+  read(fd, buf, 100);  // 文件偏移量移动到 100</p>
+<p>// fork() 后，子进程继承 fd
+  if (fork() == 0) {
+      // 子进程读取会从偏移量 100 继续
+      read(fd, buf, 50);  // 偏移量变为 150
+      exit(0);
+  } else {
+      // 父进程读取也会从 150 继续
+      read(fd, buf, 50);  // 偏移量变为 200
+  }
+  ```</p>
+<h3 id="2"><strong>2. 独立操作的场景</strong></h3>
+<ul>
+<li><strong>关闭 fd 的独立性</strong>：<br />
+  父子进程关闭自己的 fd 不会影响对方。<br />
+<strong>示例</strong>：  </li>
+</ul>
+<p><code>c
+  if (fork() == 0) {
+      close(fd);  // 子进程关闭 fd，不影响父进程
+      exit(0);
+  } else {
+      sleep(1);
+      write(fd, "data", 4);  // 父进程仍可写入
+  }</code></p>
+<h2 id="_10">查看文件命令</h2>
+<h3 id="ls">ls</h3>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ls</code></td>
+<td>列出当前目录的非隐藏文件（短格式）</td>
+</tr>
+<tr>
+<td><code>ls -a</code></td>
+<td>显示所有文件（包括以 <code>.</code> 开头的隐藏文件）</td>
+</tr>
+<tr>
+<td><code>ls -l</code></td>
+<td>长格式显示文件详细信息（权限、大小、时间等）</td>
+</tr>
+<tr>
+<td><code>ls -al</code></td>
+<td>组合 <code>-a</code> 和 <code>-l</code>，显示所有文件的详细信息</td>
+</tr>
+<tr>
+<td><code>ls -lh</code></td>
+<td>以易读格式显示文件大小（如 <code>K</code>, <code>M</code>, <code>G</code>）</td>
+</tr>
+<tr>
+<td><code>ls -t</code></td>
+<td>按修改时间排序（最新文件在前）</td>
+</tr>
+<tr>
+<td><code>ls -r</code></td>
+<td>反向排序（配合 <code>-t</code>、<code>-S</code> 等使用）</td>
+</tr>
+<tr>
+<td><code>ls -R</code></td>
+<td>递归列出子目录内容</td>
+</tr>
+<tr>
+<td><code>ls -d */</code></td>
+<td>仅显示当前目录的子目录（不展开内容）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stat">stat [选项] <file></h3>
+<p>显示文件或文件系统的详细元数据，包括：文件大小、inode 号、权限、所有者。
+三种时间戳：访问时间（Access）、修改时间（Modify）、状态变更时间（Change）。</p>
+<h3 id="ln">ln</h3>
+<h2 id="_11">文件系统实现</h2>
+<h3 id="on-disk-structure">磁盘结构（on-disk structure）</h3>
+<ul>
+<li>
+<p>Boot control block</p>
+</li>
+<li>
+<p>Volume control block</p>
+</li>
+<li>
+<p>directory structure</p>
+</li>
+<li>
+<p>per-file file control block</p>
+</li>
+</ul>
+<h3 id="in-memory-file-system-structure">内存结构（in-memory file system structure）</h3>
+<p>It reflects and extends on-disk structures</p>
+<ul>
+<li>
+<p>Mount table</p>
+</li>
+<li>
+<p>system-wide open-file table: contains a copy of the FCB of each file and other info</p>
+</li>
+<li>
+<p>per-process open-file table</p>
+</li>
+<li>
+<p>I/O memory buffers</p>
+</li>
+</ul>
+<h2 id="_12">具体示例</h2>
+<p>假设有64 blocks，block size = 4KB. 预留56个block给数据存储，8个block存储meta data，具体如下：
+- <strong>Inodes</strong>: 假设inode大小为256 bytes，有5个block用于存储inode，那么4KB的block可存储16个inode, 5个块共可存储80个inodes，也就是80个file(directory)
+- <strong>Bitmap</strong>: 用来管理空闲空间，分为两种，各占一个block:
+      - inode bitmap: 管理free inode
+      - data region bitmap: 管理free data region
+- <strong>Superblock</strong>:存储元信息
+      - how many inodes/data blocks
+      - where the inode table begins
+      - where the data region begins
+      - a magic number</p>
+<p><img src="\img\study\cs\sys3\fs-exa.png" alt="File system example" title="File system example"></p>
+<p>每个inode都用一个数字表示，如果要读取inode number 32的inode：</p>
+<p>inode区域地址：32*sizeof(inode) = 8KB
+最终地址：8K + 4K(super block) + 8K(BITMAP)=20K</p>
+<p><img src="\img\study\cs\sys3\fs-exa2.png" alt="File system example2" title="File system example"></p>
+<h3 id="free-space-management">Free space management</h3>
+<p><img src="\img\study\cs\sys3\fs-exa3.png" alt="File system example3" title="File system example"></p>
+<p><img src="\img\study\cs\sys3\fs-exa4.png" alt="File system example4" title="File system example"></p>
 
 
 
@@ -2538,7 +4058,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 24, 2025 13:47:32">April 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 11, 2025 15:18:09">May 11, 2025</span>
   </span>
 
     

@@ -71,6 +71,7 @@ nav:
     - Discrete Mathematics: 
       - study/math/discrete/index.md
       - Startup: study/math/discrete/discrete maths.md
+      - 二次剩余: study/math/discrete/quadratic-probing.md
     - Probability Theory: 
       - study/math/probability/index.md
 
@@ -88,6 +89,7 @@ nav:
       - Memory: study/cs/sys3/memory.md
       - Main Memory: study/cs/sys3/main-memory.md
       - Virtual Memory: study/cs/sys3/virtual-memory.md
+      - File System: study/cs/sys3/file-sys.md
   
     - Network:
       - study/network/index.md
@@ -114,6 +116,8 @@ nav:
       - 知识图谱与描述逻辑: study/ailogic/knowledge.md
       - 缺省逻辑: study/ailogic/default-logic.md
       - 回答集编程: study/ailogic/asp.md
+      - 经典抽象论辩理论: study/ailogic/argument.md
+      - 结构化论辩理论: study/ailogic/struct-argu.md
 
   - Programming:
     - OOP:
@@ -135,6 +139,7 @@ nav:
       - 模版: study/oop/template.md
       - 设计模式: study/oop/design-pattern/design-pattern.md
     - Data Structure:
+      - study/datastructure/index.md
       - Graph: study/datastructure/graph.md
       - Data Structure: study/datastructure/midterm.md
       - Algorithm: study/datastructure/algorithm.md

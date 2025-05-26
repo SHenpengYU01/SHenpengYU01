@@ -90,6 +90,8 @@ nav:
       - Main Memory: study/cs/sys3/main-memory.md
       - Virtual Memory: study/cs/sys3/virtual-memory.md
       - File System: study/cs/sys3/file-sys.md
+      - Storage Structure: study/cs/sys3/storage.md
+      - IO: study/cs/sys3/io.md
   
     - Network:
       - study/network/index.md

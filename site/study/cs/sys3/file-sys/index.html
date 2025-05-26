@@ -13,6 +13,10 @@
         <link rel="canonical" href="https://note.mythlogos.top/study/cs/sys3/file-sys/">
       
       
+        <link rel="prev" href="../virtual-memory/">
+      
+      
+        <link rel="next" href="../../../network/">
       
       
       <link rel="icon" href="../../../../img/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>File system - Cool Tea</title>
+        <title>File System - Cool Tea</title>
       
     
     
@@ -110,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              File system
+              File System
             
           </span>
         </div>
@@ -260,10 +264,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../" class="md-tabs__link">
           
   
@@ -770,6 +776,8 @@
       
         
       
+        
+      
     
     
     
@@ -826,6 +834,29 @@
   
   <span class="md-ellipsis">
     Startup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/discrete/quadratic-probing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    二次剩余
     
   </span>
   
@@ -914,6 +945,8 @@
       
   
   
+    
+  
   
   
     
@@ -933,14 +966,17 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -957,13 +993,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Computer Science
@@ -1065,6 +1101,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1086,6 +1124,8 @@
       
         
       
+        
+      
     
     
     
@@ -1093,11 +1133,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
@@ -1120,7 +1160,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Computer system3
@@ -1262,6 +1302,365 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    File System
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    File System
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      目录
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="目录">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、核心概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、实现机制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、结构与示例
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、优点与缺点
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、实际应用与命令
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、常见问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#link" class="md-nav__link">
+    <span class="md-ellipsis">
+      Link
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Link">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心区别对比
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acl" class="md-nav__link">
+    <span class="md-ellipsis">
+      ACL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ACL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      一、ACL的核心概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、ACL的类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、ACL的组成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acllinux" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、ACL的操作命令（Linux）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acl_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、ACL的优先级规则
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fork" class="md-nav__link">
+    <span class="md-ellipsis">
+      fork后的文件操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fork后的文件操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 文件描述符的继承与共享
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 独立操作的场景
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看文件命令
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="查看文件命令">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ls" class="md-nav__link">
+    <span class="md-ellipsis">
+      ls
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stat" class="md-nav__link">
+    <span class="md-ellipsis">
+      stat [选项]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ln" class="md-nav__link">
+    <span class="md-ellipsis">
+      ln
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      文件系统实现
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文件系统实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-disk-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      磁盘结构（on-disk structure）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-memory-file-system-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      内存结构（in-memory file system structure）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      具体示例
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="具体示例">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#free-space-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Free space management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1782,6 +2181,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1953,6 +2356,52 @@
   
   <span class="md-ellipsis">
     回答集编程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/argument/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    经典抽象论辩理论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/struct-argu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    结构化论辩理论
     
   </span>
   
@@ -2527,6 +2976,10 @@
     
       
         
+          
+        
+      
+        
       
         
       
@@ -2548,8 +3001,9 @@
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
         
           
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../datastructure/" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -2558,8 +3012,14 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6_2">
@@ -2567,6 +3027,8 @@
             Data Structure
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
             
               
                 

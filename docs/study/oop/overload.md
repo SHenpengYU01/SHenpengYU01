@@ -360,8 +360,9 @@ int main() {
 ```
 
 注意二者参数列表和返回值的区别：
+
 - prefix：无参数，返回原来对象的引用
-- postfix：有个形式化的参数int，返回原对象的副本
+- postfix：有个**形式化的参数int**，返回原对象的副本
 
 
 ### 8. 类型转换运算符（`operator char*` 或 `operator int*`）

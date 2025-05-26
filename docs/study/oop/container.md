@@ -52,12 +52,20 @@ int main() {
         std::cout << v << " "; // 输出: 1 2 3 4 5
     }
     std::cout << std::endl;
+    std::vector<int>::iterator q;
+    for(q=vec.begin(); q<vec.end(); q++){
+        std::cout << *q << " ";
+    }
 
     // 使用 std::list
     std::list<int> lst = {10, 20, 30};
     lst.push_front(5); // 在 list 前端添加元素
     for (int l : lst) {
         std::cout << l << " "; // 输出: 5 10 20 30
+    }
+    std::list<int>::iterator p;
+    for(p=lst.begin(); p!=lst.end(); p++){
+        std::cout << *p << " ";
     }
     std::cout << std::endl;
 
@@ -89,4 +97,139 @@ int main() {
     return 0;
 }
 ```
+
+## vector与list
+
+- list（双向链表）: 基于链表实现，存储内存不连续。迭代器为双向迭代器，仅支持双向移动（++ 和 --），不支持`<`等比较
+- vector（动态数组）: 元素存储内存连续。迭代器属于随机访问迭代器，支持所有双向迭代器操作外加比较操作等。
+
+**总结**：
+
+| 特性                | `std::list`                  | `std::vector`                |
+|---------------------|------------------------------|------------------------------|
+| **迭代器类型**       | 双向迭代器                   | 随机访问迭代器               |
+| **支持 `<` 比较**    | 否（设计禁用）               | 是（内存连续，高效）         |
+| **时间复杂度**       | 不适用                       | O(1)（地址直接比较）         |
+| **通用性建议**       | 必须用 `!=` 或 `==`          | 推荐用 `!=`，但允许 `<`       |
+
+
+## map与tuple
+
+`std::map` 和 `std::tuple` 是 C++ 标准库中两个完全不同的容器/数据结构，它们的用途、设计思想和操作方式有显著区别。以下是它们的核心区别：
+
+---
+
+### **1. 设计目的**
+- **`std::map`**  
+  - **关联容器**：用于存储键值对（`key-value`），提供基于键的快速查找（时间复杂度为 O(log n)）。  
+  - **动态结构**：元素可动态插入、删除，键是唯一的（若需重复键，使用 `std::multimap`）。  
+  - **有序性**：默认按键升序排列（基于红黑树实现）。
+
+- **`std::tuple`**  
+  - **固定大小的异构容器**：用于将多个不同类型的值组合成一个单一对象，元素的数量和类型在编译时确定。  
+  - **静态结构**：创建后不能增删元素，只能访问或修改现有元素。  
+  - **无键值概念**：元素通过位置（索引）访问。
+
+
+
+### **2. 访问方式**
+- **`std::map`**  
+  - 通过**键**访问值（类似字典）：  
+    ```cpp
+    std::map<std::string, int> scores = {{"Alice", 90}, {"Bob", 85}};
+    int alice_score = scores["Alice"]; // 90
+    ```
+  - 支持迭代器遍历（遍历键值对）：  
+    ```cpp
+    for (const auto& [key, value] : scores) {
+        std::cout << key << ": " << value << std::endl;
+    }
+    ```
+
+- **`std::tuple`**  
+  - 通过**索引**（编译时常量）访问元素：  
+    ```cpp
+    std::tuple<int, std::string, double> data(42, "Hello", 3.14);
+    int num = std::get<0>(data);      // 42
+    std::string str = std::get<1>(data); // "Hello"
+    ```
+  - 或通过**结构化绑定**（C++17+）：  
+    ```cpp
+    auto [num, str, val] = data; // num=42, str="Hello", val=3.14
+    ```
+  - **无法动态遍历**（元素类型和数量在编译时固定）。
+
+
+
+### **5. 性能对比**
+| **特性**       | **`std::map`**                | **`std::tuple`**              |
+|----------------|-------------------------------|-------------------------------|
+| **内存占用**   | 较高（树节点开销）            | 低（紧凑布局）                |
+| **查找速度**   | O(log n)（基于键）            | 不支持按内容查找              |
+| **插入/删除**  | O(log n)                      | 不支持动态增删                |
+| **遍历速度**   | O(n)（顺序遍历）              | 无法动态遍历                  |
+
+---
+
+### **6. 代码示例对比**
+#### 使用 `std::map`：
+```cpp
+#include <map>
+#include <string>
+
+int main() {
+    std::map<std::string, int> ages;
+    ages["Alice"] = 30;
+    ages["Bob"] = 25;
+
+    // 查找操作
+    if (ages.find("Alice") != ages.end()) {
+        std::cout << "Alice's age: " << ages["Alice"] << std::endl;
+    }
+    return 0;
+}
+```
+
+#### 使用 `std::tuple`
+
+```cpp
+#include <tuple>
+#include <iostream>
+
+int main() {
+    std::tuple<std::string, int, double> person("Alice", 30, 165.5);
+    
+    // 访问元素
+    std::cout << "Name: " << std::get<0>(person) << std::endl;
+    std::cout << "Age: " << std::get<1>(person) << std::endl;
+
+    // 修改元素
+    std::get<1>(person) = 31;
+    return 0;
+}
+```
+
+### **总结**
+
+- **`std::map`**：适合需要**动态管理键值对**且需要**按键快速查找**的场景。  
+- **`std::tuple`**：适合将**固定数量、不同类型的值**组合成一个轻量级对象，常用于函数多返回值或临时数据包装。  
+
+若需要固定大小的键值对，可以使用 `std::pair`（`std::tuple` 的特例，仅包含两个元素）。
+
+
+### map问题
+
+当通过 operator[]（方括号）访问一个不存在的键时，std::map 会自动插入该键，并调用值类型的默认构造函数初始化对应的值。
+即使你没有显式赋值，这个键值对也会被插入到 map 中。
+
+示例：
+
+```cpp
+if(player["winner"] == 1){...}
+m[1] = "one";//自动插入键值对
+```
+
+
+
+
 

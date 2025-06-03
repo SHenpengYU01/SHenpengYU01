@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2213,6 +2265,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2286,6 +2361,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2628,6 +2707,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2726,6 +2828,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3166,21 +3291,18 @@
 </ol>
 <p>用<strong>有效性</strong>来刻画一个演绎论证的好坏。我们说一个演绎论证是有效的当且仅当：如果该论证的前提为真，则其结论也必然为真。换句话说，如果一个演绎论证不是有效的，则它不能保真。此时，我们称之为<strong>谬误</strong>。</p>
 <blockquote>
-<p>例：
-所有M都是P。
-所有S都是M。
-因此所有S都是P。</p>
+<p>例：所有M都是P。所有S都是M。因此所有S都是P。</p>
 </blockquote>
-<p><strong>单调性</strong>指，如果一个演绎论证的结论为真，那么当出现<strong>新前提</strong>时，该结论原来的论证保持为真。</p>
+<div class="language-text highlight"><pre><span></span><code>**单调性**指，如果一个演绎论证的结论为真，那么当出现**新前提**时，该结论原来的论证保持为真。
+</code></pre></div>
 <ol>
-<li>非单调推理（拓展演绎推理）：演绎论证中信息不确定、不完备或不一致，则无法直接套用上述推理形式而得到可靠的结论。通常，把结论可以被新信息推翻的推理称为<strong>非单调推理</strong>。</li>
-</ol>
+<li>
+<p>非单调推理（拓展演绎推理）：演绎论证中信息不确定、不完备或不一致，则无法直接套用上述推理形式而得到可靠的结论。通常，把结论可以被新信息推翻的推理称为<strong>非单调推理</strong>。</p>
 <blockquote>
-<p>例：
-鸟会飞。
-多邻国是鸟。
-因此多邻国会飞。</p>
+<p>例：鸟会飞。多邻国是鸟。因此多邻国会飞。</p>
 </blockquote>
+</li>
+</ol>
 <p>“鸟会飞”命题不完备。不一定所有鸟都会飞。
 为了对不完备知识进行推理，可以在演绎推理中使用“正常性假设”，并由此形成基于假设的演绎推理。</p>
 <blockquote>
@@ -3209,13 +3331,8 @@ Tweety是鸟。
 </li>
 </ol>
 <blockquote>
-<p>如果p那么q。
-q成立。
-因此p成立。</p>
-<p>例：
-来自这个袋子的豆子都是白色的。
-这些豆子是白色的。
-因此，这些豆子来自这个袋子。</p>
+<p>如果p那么q。q成立。因此p成立。
+来自这个袋子的豆子都是白色的。这些豆子是白色的。因此，这些豆子来自这个袋子。</p>
 </blockquote>
 <h3 id="_6">关于论证的推理</h3>
 <p>关于论证的推理是一种通过构造论证、比较论证和评估论证来确定论证的可接受性的推理。如两小儿辩日，每人都说了两个论证，论证间存在反驳关系（结论矛盾）。所以如果接受一个论证就必须拒绝被其反驳的论证。</p>
@@ -3231,13 +3348,15 @@ q成立。
 </ul>
 <p>解决方式：拓展一阶逻辑推理：</p>
 <ol>
-<li>添加正常性假设而构造缺省规则。一条缺省规则由三部分组成：“如果前提条件:辩护条件，那么结论”。给定一条缺省规则，当其前提条件可证，而辩护条件的反面不可证时，可以推出结论。需要注意，新条件添加可以推翻结论。</li>
-</ol>
+<li>
+<p>添加正常性假设而构造缺省规则。一条缺省规则由三部分组成：“如果前提条件:辩护条件，那么结论”。给定一条缺省规则，当其前提条件可证，而辩护条件的反面不可证时，可以推出结论。需要注意，新条件添加可以推翻结论。</p>
 <blockquote>
 <p>例：“转动点火钥匙：发动机启动/发动机启动”是一条缺省规则。当处于“辩护条件”位置的“发动机启动”的反面，即“发动机无法启动”不可证时，可以推出“发动机启动”这个结论。</p>
 </blockquote>
-<ol>
-<li>添加可废止规则：“典型地/在一般情况下，如果A那么B”</li>
+</li>
+<li>
+<p>添加可废止规则：“典型地/在一般情况下，如果A那么B”</p>
+</li>
 </ol>
 <h3 id="_9">归纳、不确定性与因果推断</h3>
 <p><strong>归纳逻辑编程</strong>：把归纳推理与机器学习理论相结合，可以实现从案例中自动学习一般规则。给定背景知识及案例，归纳逻辑编程系统自动推导出一个逻辑程序，使其蕴涵所有的正例，而不蕴涵任何反例。</p>
@@ -3266,7 +3385,7 @@ q成立。
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 13, 2025 14:27:35">March 13, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

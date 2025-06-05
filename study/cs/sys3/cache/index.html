@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://note.mythlogos.top/study/cs/sys3/cache/">
       
       
-        <link rel="prev" href="../ILP/">
+        <link rel="prev" href="../mimd/">
       
       
         <link rel="next" href="../memory/">
@@ -1130,6 +1130,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1209,6 +1213,52 @@
   
   <span class="md-ellipsis">
     Instruction Level Parallelism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SIMD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mimd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIMD
     
   </span>
   
@@ -1348,7 +1398,7 @@
           <li class="md-nav__item">
   <a href="#2-block-identification" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Block Identification:
+      2. Block Identification
     </span>
   </a>
   
@@ -2255,6 +2305,8 @@
       
         
       
+        
+      
     
     
     
@@ -2505,6 +2557,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/bayes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    贝叶斯网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2578,6 +2653,8 @@
       
         
           
+        
+      
         
       
         
@@ -3085,6 +3162,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../oop/exception/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    异常处理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../oop/design-pattern/design-pattern/" class="md-nav__link">
         
   
@@ -3445,7 +3545,7 @@
           <li class="md-nav__item">
   <a href="#2-block-identification" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Block Identification:
+      2. Block Identification
     </span>
   </a>
   
@@ -3813,15 +3913,16 @@
 </ul>
 <p><strong>Cache terms</strong>:
 <img src="\img\study\cs\sys3\cache_terms.png" alt="Cache terms"></p>
-<h3 id="four-questions-for-cache-designers">Four questions for cache designers</h3>
+<h3 id="four-questions-for-cache-designers">Four questions for cache designers <img alt="⭐️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2b50.png" title=":star:" /></h3>
 <p><img src="\img\study\cs\sys3\cache_design.png" alt="Questions for cache design"></p>
 <h3 id="1-q1-block-placement">1. Q1: Block Placement</h3>
-<div class="language-text highlight"><pre><span></span><code>- Direct mapped: A cache structure in which each memorylocation is mapped to exactly one locationin the cache.
-- 2-way set-associative: A cache that has a fixed number oflocations (at least two) where each blockcan be placed.
-&lt;img src=&quot;\img\study\cs\sys3\2way_assosiative.png&quot; alt=&quot;2-Way Set-associative&quot;&gt;
-- Fully-associative: A cache structure in which a block can beplaced in any location in the cache.
-</code></pre></div>
-<h3 id="2-block-identification">2. Block Identification:</h3>
+<ul>
+<li>Direct mapped: A cache structure in which each memorylocation is mapped to exactly one locationin the cache.</li>
+<li>2-way set-associative: A cache that has a fixed number oflocations (at least two) where each block can be placed.
+<img src="\img\study\cs\sys3\2way_assosiative.png" alt="2-Way Set-associative"></li>
+<li>Fully-associative: A cache structure in which a block can beplaced in any location in the cache.</li>
+</ul>
+<h3 id="2-block-identification">2. Block Identification</h3>
 <p><img src="\img\study\cs\sys3\cache_block.png" alt="Cache Block Identification"></p>
 <h3 id="3-block-replacement">3. Block replacement</h3>
 <p>Which block should be replaced on a Cache/main memory miss?</p>
@@ -3849,7 +3950,8 @@
 <li>Advantage of Write back: Writes occur at speed of cache and main memory bandwidth is smaller when multiple writes occur to the same block.</li>
 </ul>
 <p><strong>Write stall</strong>: When the CPU must wait for writes to complete during write through</p>
-<p><strong>Write buffer</strong>: A small cache that can hold a few values waiting to go to main memory. This buffer helps when writes are clustered. It does not entirely eliminate stalls since it is possible for the buffer to fill if the burst is larger than the buffer.  </p>
+<p><strong>Write buffer</strong>: A small cache that can hold a few values waiting to go to main memory.
+This buffer helps when writes are clustered. It does not entirely eliminate stalls since it is possible for the buffer to fill if the burst is larger than the buffer.  </p>
 <h4 id="write-misses">Write misses</h4>
 <p>If a miss occurs on a write (the block is not present), there are two options:</p>
 <ul>
@@ -3976,96 +4078,10 @@ HBM（High Bandwidth Memory），也就是高带宽内存，通常以3D堆叠的
 
 
 
-  
-    
-  
-  
-    
-  
-
-
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 16, 2025 04:10:41">April 16, 2025</span>
-  </span>
-
-    
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Created">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 23, 2025 14:21:03">March 23, 2025</span>
-  </span>
-
-    
-    
-    
-  </aside>
 
 
 
 
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-  <script src="https://giscus.app/client.js"
-  data-repo="SHenpengYU01/giscus-mkdocs-material"
-  data-repo-id="R_kgDON4O90g"
-  data-category="Announcements"
-  data-category-id="DIC_kwDON4O90s4Cm5B_"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="dark"
-  data-lang="en"
-  crossorigin="anonymous"
-  async>
-</script>
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>

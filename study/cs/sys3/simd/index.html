@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://note.mythlogos.top/study/ailogic/struct-argu/">
+        <link rel="canonical" href="https://note.mythlogos.top/study/cs/sys3/simd/">
       
       
-        <link rel="prev" href="../argument/">
+        <link rel="prev" href="../ILP/">
       
       
-        <link rel="next" href="../game/">
+        <link rel="next" href="../mimd/">
       
       
-      <link rel="icon" href="../../../img/favicon.png">
+      <link rel="icon" href="../../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
     
     
       
-        <title>结构化论辩理论 - Cool Tea</title>
+        <title>SIMD - Cool Tea</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.2afb09e1.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +52,9 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -79,11 +79,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +89,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Cool Tea" class="md-header__button md-logo" aria-label="Cool Tea" data-md-component="logo">
+    <a href="../../../.." title="Cool Tea" class="md-header__button md-logo" aria-label="Cool Tea" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 8V5h-2v3zm0-5c.6 0 1 .2 1.4.6s.6.9.6 1.4v3c0 .6-.2 1-.6 1.4s-.8.6-1.4.6h-2v3c0 1.1-.4 2-1.2 2.8S15.1 17 14 17H8c-1.1 0-2-.4-2.8-1.2S4 14.1 4 13V3h5v2.4L7.2 6.8c-.1.1-.2.3-.2.4v4.3c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5V7.2c0-.2-.1-.3-.2-.4L10 5.4V3z"/></svg>
@@ -114,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              结构化论辩理论
+              SIMD
             
           </span>
         </div>
@@ -225,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
   
@@ -246,7 +241,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../math/" class="md-tabs__link">
+        <a href="../../../math/" class="md-tabs__link">
           
   
   
@@ -264,11 +259,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../cs/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -290,7 +287,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../web/" class="md-tabs__link">
+        <a href="../../../web/" class="md-tabs__link">
           
   
   
@@ -308,8 +305,6 @@
   
   
   
-    
-  
   
     
     
@@ -317,13 +312,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../ailogic/" class="md-tabs__link">
           
   
   
@@ -355,7 +348,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../oop/" class="md-tabs__link">
+        <a href="../../../oop/" class="md-tabs__link">
           
   
   
@@ -378,7 +371,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../about/" class="md-tabs__link">
+      <a href="../../../../about/" class="md-tabs__link">
         
   
   
@@ -397,7 +390,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../test/" class="md-tabs__link">
+      <a href="../../../../test/" class="md-tabs__link">
         
   
   
@@ -416,7 +409,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../link/" class="md-tabs__link">
+      <a href="../../../../link/" class="md-tabs__link">
         
   
   
@@ -451,7 +444,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Cool Tea" class="md-nav__button md-logo" aria-label="Cool Tea" data-md-component="logo">
+    <a href="../../../.." title="Cool Tea" class="md-nav__button md-logo" aria-label="Cool Tea" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 8V5h-2v3zm0-5c.6 0 1 .2 1.4.6s.6.9.6 1.4v3c0 .6-.2 1-.6 1.4s-.8.6-1.4.6h-2v3c0 1.1-.4 2-1.2 2.8S15.1 17 14 17H8c-1.1 0-2-.4-2.8-1.2S4 14.1 4 13V3h5v2.4L7.2 6.8c-.1.1-.2.3-.2.4v4.3c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5V7.2c0-.2-.1-.3-.2-.4L10 5.4V3z"/></svg>
@@ -481,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   
@@ -532,7 +525,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../math/" class="md-nav__link ">
+            <a href="../../../math/" class="md-nav__link ">
               
   
   
@@ -592,7 +585,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../math/linear%20algebra/" class="md-nav__link ">
+            <a href="../../../math/linear%20algebra/" class="md-nav__link ">
               
   
   
@@ -627,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear%20algebra/linear%20algebra/" class="md-nav__link">
+      <a href="../../../math/linear%20algebra/linear%20algebra/" class="md-nav__link">
         
   
   
@@ -650,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/linear%20algebra/SVD/" class="md-nav__link">
+      <a href="../../../math/linear%20algebra/SVD/" class="md-nav__link">
         
   
   
@@ -704,7 +697,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../math/maths%20analysis/" class="md-nav__link ">
+            <a href="../../../math/maths%20analysis/" class="md-nav__link ">
               
   
   
@@ -739,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/maths%20analysis/maths%20analysis/" class="md-nav__link">
+      <a href="../../../math/maths%20analysis/maths%20analysis/" class="md-nav__link">
         
   
   
@@ -795,7 +788,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../math/discrete/" class="md-nav__link ">
+            <a href="../../../math/discrete/" class="md-nav__link ">
               
   
   
@@ -830,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete/discrete%20maths/" class="md-nav__link">
+      <a href="../../../math/discrete/discrete%20maths/" class="md-nav__link">
         
   
   
@@ -853,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../math/discrete/quadratic-probing/" class="md-nav__link">
+      <a href="../../../math/discrete/quadratic-probing/" class="md-nav__link">
         
   
   
@@ -905,7 +898,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../math/probability/" class="md-nav__link ">
+            <a href="../../../math/probability/" class="md-nav__link ">
               
   
   
@@ -947,6 +940,8 @@
       
   
   
+    
+  
   
   
     
@@ -966,18 +961,21 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cs/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -990,13 +988,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Computer Science
@@ -1035,7 +1033,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cs/sys2/" class="md-nav__link ">
+            <a href="../../sys2/" class="md-nav__link ">
               
   
   
@@ -1070,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys2/sys2/" class="md-nav__link">
+      <a href="../../sys2/sys2/" class="md-nav__link">
         
   
   
@@ -1098,6 +1096,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1136,15 +1136,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cs/sys3/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1163,7 +1163,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Computer system3
@@ -1179,7 +1179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/quantitative/" class="md-nav__link">
+      <a href="../quantitative/" class="md-nav__link">
         
   
   
@@ -1202,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/ILP/" class="md-nav__link">
+      <a href="../ILP/" class="md-nav__link">
         
   
   
@@ -1222,10 +1222,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../cs/sys3/simd/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1236,6 +1243,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1248,7 +1256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/mimd/" class="md-nav__link">
+      <a href="../mimd/" class="md-nav__link">
         
   
   
@@ -1271,7 +1279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/cache/" class="md-nav__link">
+      <a href="../cache/" class="md-nav__link">
         
   
   
@@ -1294,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/memory/" class="md-nav__link">
+      <a href="../memory/" class="md-nav__link">
         
   
   
@@ -1317,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/main-memory/" class="md-nav__link">
+      <a href="../main-memory/" class="md-nav__link">
         
   
   
@@ -1340,7 +1348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/virtual-memory/" class="md-nav__link">
+      <a href="../virtual-memory/" class="md-nav__link">
         
   
   
@@ -1363,7 +1371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/file-sys/" class="md-nav__link">
+      <a href="../file-sys/" class="md-nav__link">
         
   
   
@@ -1386,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/storage/" class="md-nav__link">
+      <a href="../storage/" class="md-nav__link">
         
   
   
@@ -1409,7 +1417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/io/" class="md-nav__link">
+      <a href="../io/" class="md-nav__link">
         
   
   
@@ -1471,7 +1479,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../network/" class="md-nav__link ">
+            <a href="../../../network/" class="md-nav__link ">
               
   
   
@@ -1506,7 +1514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/introduction/" class="md-nav__link">
+      <a href="../../../network/introduction/" class="md-nav__link">
         
   
   
@@ -1529,7 +1537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/application%20layer/" class="md-nav__link">
+      <a href="../../../network/application%20layer/" class="md-nav__link">
         
   
   
@@ -1552,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/transport%20layer/" class="md-nav__link">
+      <a href="../../../network/transport%20layer/" class="md-nav__link">
         
   
   
@@ -1575,7 +1583,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/internet%20layer/" class="md-nav__link">
+      <a href="../../../network/internet%20layer/" class="md-nav__link">
         
   
   
@@ -1598,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/link%20layer/" class="md-nav__link">
+      <a href="../../../network/link%20layer/" class="md-nav__link">
         
   
   
@@ -1659,7 +1667,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../web/" class="md-nav__link ">
+            <a href="../../../web/" class="md-nav__link ">
               
   
   
@@ -1747,7 +1755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/intro/" class="md-nav__link">
+      <a href="../../../web/JS/intro/" class="md-nav__link">
         
   
   
@@ -1770,7 +1778,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/func/" class="md-nav__link">
+      <a href="../../../web/JS/func/" class="md-nav__link">
         
   
   
@@ -1793,7 +1801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/event/" class="md-nav__link">
+      <a href="../../../web/JS/event/" class="md-nav__link">
         
   
   
@@ -1816,7 +1824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/class/" class="md-nav__link">
+      <a href="../../../web/JS/class/" class="md-nav__link">
         
   
   
@@ -1839,7 +1847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/array/" class="md-nav__link">
+      <a href="../../../web/JS/array/" class="md-nav__link">
         
   
   
@@ -1874,10 +1882,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1887,20 +1893,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1913,7 +1916,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             AI
@@ -1924,8 +1927,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1962,15 +1963,15 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../ailogic/" class="md-nav__link ">
               
   
   
@@ -1989,7 +1990,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
             AI Logic
@@ -2005,7 +2006,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../introduction/" class="md-nav__link">
+      <a href="../../../ailogic/introduction/" class="md-nav__link">
         
   
   
@@ -2028,7 +2029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../proposition/" class="md-nav__link">
+      <a href="../../../ailogic/proposition/" class="md-nav__link">
         
   
   
@@ -2051,7 +2052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../first-order-logic/" class="md-nav__link">
+      <a href="../../../ailogic/first-order-logic/" class="md-nav__link">
         
   
   
@@ -2074,7 +2075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../knowledge/" class="md-nav__link">
+      <a href="../../../ailogic/knowledge/" class="md-nav__link">
         
   
   
@@ -2097,7 +2098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../default-logic/" class="md-nav__link">
+      <a href="../../../ailogic/default-logic/" class="md-nav__link">
         
   
   
@@ -2120,7 +2121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../asp/" class="md-nav__link">
+      <a href="../../../ailogic/asp/" class="md-nav__link">
         
   
   
@@ -2143,7 +2144,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../argument/" class="md-nav__link">
+      <a href="../../../ailogic/argument/" class="md-nav__link">
         
   
   
@@ -2163,32 +2164,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    结构化论辩理论
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../ailogic/struct-argu/" class="md-nav__link">
         
   
   
@@ -2199,71 +2178,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      攻击关系
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      击败关系
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      可废止理论
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      可废止理论的外延与结论
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      系统特性
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2276,7 +2190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../game/" class="md-nav__link">
+      <a href="../../../ailogic/game/" class="md-nav__link">
         
   
   
@@ -2299,7 +2213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bayes/" class="md-nav__link">
+      <a href="../../../ailogic/bayes/" class="md-nav__link">
         
   
   
@@ -2429,7 +2343,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../oop/" class="md-nav__link ">
+            <a href="../../../oop/" class="md-nav__link ">
               
   
   
@@ -2464,7 +2378,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/grammar/" class="md-nav__link">
+      <a href="../../../oop/grammar/" class="md-nav__link">
         
   
   
@@ -2544,7 +2458,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/class/class/" class="md-nav__link">
+      <a href="../../../oop/class/class/" class="md-nav__link">
         
   
   
@@ -2567,7 +2481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/class/ctor/" class="md-nav__link">
+      <a href="../../../oop/class/ctor/" class="md-nav__link">
         
   
   
@@ -2590,7 +2504,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/class/dtor/" class="md-nav__link">
+      <a href="../../../oop/class/dtor/" class="md-nav__link">
         
   
   
@@ -2613,7 +2527,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/class/friend/" class="md-nav__link">
+      <a href="../../../oop/class/friend/" class="md-nav__link">
         
   
   
@@ -2636,7 +2550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/class/init-list/" class="md-nav__link">
+      <a href="../../../oop/class/init-list/" class="md-nav__link">
         
   
   
@@ -2659,7 +2573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/class/vfunc/" class="md-nav__link">
+      <a href="../../../oop/class/vfunc/" class="md-nav__link">
         
   
   
@@ -2682,7 +2596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/class/inherit/" class="md-nav__link">
+      <a href="../../../oop/class/inherit/" class="md-nav__link">
         
   
   
@@ -2713,7 +2627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/struct/" class="md-nav__link">
+      <a href="../../../oop/struct/" class="md-nav__link">
         
   
   
@@ -2736,7 +2650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/reference/" class="md-nav__link">
+      <a href="../../../oop/reference/" class="md-nav__link">
         
   
   
@@ -2759,7 +2673,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/memory/" class="md-nav__link">
+      <a href="../../../oop/memory/" class="md-nav__link">
         
   
   
@@ -2782,7 +2696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/stream/" class="md-nav__link">
+      <a href="../../../oop/stream/" class="md-nav__link">
         
   
   
@@ -2805,7 +2719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/container/" class="md-nav__link">
+      <a href="../../../oop/container/" class="md-nav__link">
         
   
   
@@ -2828,7 +2742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/overload/" class="md-nav__link">
+      <a href="../../../oop/overload/" class="md-nav__link">
         
   
   
@@ -2851,7 +2765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/template/" class="md-nav__link">
+      <a href="../../../oop/template/" class="md-nav__link">
         
   
   
@@ -2874,7 +2788,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/iterators/" class="md-nav__link">
+      <a href="../../../oop/iterators/" class="md-nav__link">
         
   
   
@@ -2897,7 +2811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/exception/" class="md-nav__link">
+      <a href="../../../oop/exception/" class="md-nav__link">
         
   
   
@@ -2920,7 +2834,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../oop/design-pattern/design-pattern/" class="md-nav__link">
+      <a href="../../../oop/design-pattern/design-pattern/" class="md-nav__link">
         
   
   
@@ -2980,7 +2894,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../datastructure/" class="md-nav__link ">
+            <a href="../../../datastructure/" class="md-nav__link ">
               
   
   
@@ -3015,7 +2929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/graph/" class="md-nav__link">
+      <a href="../../../datastructure/graph/" class="md-nav__link">
         
   
   
@@ -3038,7 +2952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/midterm/" class="md-nav__link">
+      <a href="../../../datastructure/midterm/" class="md-nav__link">
         
   
   
@@ -3061,7 +2975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/algorithm/" class="md-nav__link">
+      <a href="../../../datastructure/algorithm/" class="md-nav__link">
         
   
   
@@ -3084,7 +2998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/practice/" class="md-nav__link">
+      <a href="../../../datastructure/practice/" class="md-nav__link">
         
   
   
@@ -3122,7 +3036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/" class="md-nav__link">
+      <a href="../../../../about/" class="md-nav__link">
         
   
   
@@ -3144,7 +3058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../test/" class="md-nav__link">
+      <a href="../../../../test/" class="md-nav__link">
         
   
   
@@ -3166,7 +3080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../link/" class="md-nav__link">
+      <a href="../../../../link/" class="md-nav__link">
         
   
   
@@ -3198,61 +3112,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      攻击关系
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      击败关系
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      可废止理论
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      可废止理论的外延与结论
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      系统特性
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -3271,219 +3130,9 @@
   
 
 
-<h1 id="_1">结构化论辩理论</h1>
-<div class="admonition info">
-<p class="admonition-title">推理规则</p>
-<p>设 <span class="arithmatex">\(𝑃𝑟𝑜𝑝\)</span> 是某个逻辑语言下的所有命题集合。推理规则分为硬性规则和可废止规则，
-分别表示为 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛 \rightarrow 𝜙\)</span> 或 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛 \Leftarrow 𝜙\)</span>，
-其中 <span class="arithmatex">\(𝜙, 𝜙_𝑖 \in 𝑃𝑟𝑜𝑝\)</span>。前者意指：当 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛\)</span> 为真时，<span class="arithmatex">\(𝜙\)</span> 必然为真；
-后者意指：一般情况下，当 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛\)</span> 为真时 <span class="arithmatex">\(𝜙\)</span> 为真，但允许在一些例外情况为假。</p>
-</div>
-<p>硬性规则 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛 \rightarrow 𝜙\)</span> 对应于演绎推理中的形式可推演关系
-<span class="arithmatex">\(𝜙_1,\dots,𝜙_𝑛 \models 𝜙\)</span> ，这种推理是可靠的，即前提为真可以确保结论为真。</p>
-<p>运用可废止规则和缺省规则都可以表示不可靠的推理，但二者在处理不可靠知识时有重要区别。  </p>
-<ul>
-<li>在可废止规则中，知识的不可靠性可以表达为<strong>推理关系</strong>的不可靠性。  </li>
-<li>在缺省规则中，知识的不可靠性只能表达为<strong>缺省条件</strong>。</li>
-</ul>
-<p><img src="\img\study\ai\ailogic\argument.png" alt="定义" title="论证定义"></p>
-<p>依据推理关系的不同，论证可分为演绎论证和非演绎论证。</p>
-<p>演绎论证是指推理关系为演绎推理的论证。演绎论证的关键特性是有效性。对于一个有效的演绎论证，其前提真必然导致结论真。</p>
-<div class="admonition info">
-<p class="admonition-title">演绎论证</p>
-<p>设 <span class="arithmatex">\(𝑃𝑟𝑜𝑝\)</span> 是某个逻辑语言下的所有命题集合，<span class="arithmatex">\(𝐴 \subseteq 𝑃𝑟𝑜𝑝\)</span> 是一组假设集合。给定一个论证
-<span class="arithmatex">\(Φ \succ_R 𝜙\)</span>，如果 <span class="arithmatex">\(𝑅\)</span> 中不包含可废止规则，则该论证是一个演绎论证，记作 <span class="arithmatex">\(Φ \vdash_R 𝜙\)</span>。
-如果 <span class="arithmatex">\(Φ \cap 𝐴 = \emptyset\)</span>，则 <span class="arithmatex">\(Φ \vdash_R 𝜙\)</span> 是一个经典演绎论证，否则它是一个基于假设的演绎论证。</p>
-</div>
-<p>一个基于假设的演绎论证的结论为真，当且仅当该论证的所有假设性前提的反对都为假，且所有事实性前提都为真。</p>
-<div class="admonition info">
-<p class="admonition-title">可废止论证</p>
-<p>给定一个论证 <span class="arithmatex">\(Φ \mid\succ_R 𝜙\)</span>，如果 <span class="arithmatex">\(𝑅\)</span> 中包含可废止规则，则该论证是一个可废止论证，记作 <span class="arithmatex">\(Φ \mid\sim_R 𝜙\)</span></p>
-</div>
-<h2 id="_2">攻击关系</h2>
-<div class="admonition info">
-<p class="admonition-title">反对关系</p>
-<p>给定两个命题 <span class="arithmatex">\(𝜙\)</span> 和 <span class="arithmatex">\(𝜓\)</span> ，我们说 <span class="arithmatex">\(𝜙\)</span> 是 <span class="arithmatex">\(𝜓\)</span> 的反对，当：如果 <span class="arithmatex">\(𝜙\)</span> 为真，则 <span class="arithmatex">\(𝜓\)</span> 为假。
-把反对 <span class="arithmatex">\(𝜙\)</span> 的所有命题集合记作 <span class="arithmatex">\(\bar{𝜙}\)</span>。</p>
-</div>
-<p>具有反对关系的一对命题可以同假，但不可同真。如果一对命题既不可同真也不可同假，那么它们是矛盾关系。</p>
-<p>说一个论证<strong>破坏</strong>另外一个论证，如果第一个论证的结论反对第二个论证的<strong>假设性前提</strong>。</p>
-<div class="admonition info">
-<p class="admonition-title">破坏</p>
-<p>设 <span class="arithmatex">\(𝐴\)</span> 是一组假设集合。给定两个论证 <span class="arithmatex">\(Φ_1 \mid\succ_{R_1} 𝜙_1\)</span> 和 <span class="arithmatex">\(Φ_2 \mid\succ_{R_2} 𝜙_2\)</span>，
-如果存在 <span class="arithmatex">\(𝜙 \in Φ_2 \cap 𝐴\)</span> 使得 <span class="arithmatex">\(𝜙_1 \in \bar{𝜙}\)</span>，那么 <span class="arithmatex">\(Φ_1 \mid\sim_{R_1}\)</span>
-在 <span class="arithmatex">\(𝜙\)</span> 上破坏 <span class="arithmatex">\(Φ_2 \mid\succ_{R_2} 𝜙_2\)</span></p>
-</div>
-<p>说一个论证<strong>底切</strong>另一个论证，如果一个论证的结论反对另一个论证的<strong>推理关系</strong>。
-对于一条可废止推理规则，我们说它是可应用的，当其前提为真的时候结论也为真；否则，它不是可应用的。给定可废止规则 <span class="arithmatex">\(𝑑\)</span>，我们用 \
-<span class="arithmatex">\(\text{appl}(𝑑)\)</span> 表示命题“可废止规则 <span class="arithmatex">\(𝑑\)</span> 是可应用的”。</p>
-<div class="admonition info">
-<p class="admonition-title">底切</p>
-<p>给定两个论证 <span class="arithmatex">\(\Phi_1\mid\succ_{R_1} \phi_1\)</span> 和 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span>，
-如果存在 R_2 中存在可废止规则 <span class="arithmatex">\(d\)</span> \
-使得 <span class="arithmatex">\(\phi_1\in\bar{\text{appl}(d)}\)</span>，
-那么说 <span class="arithmatex">\(\Phi_1\mid\succ_{R_1} \phi_1\)</span> 底切 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span>。</p>
-</div>
-<p>如果第一个论证的结论反对第二个论证的<strong>结论</strong>，那么就说一个论证<strong>反驳</strong>另外一个论证。</p>
-<div class="admonition info">
-<p class="admonition-title">反驳</p>
-<p>给定两个论证  <span class="arithmatex">\(\alpha_1 = \Phi_1\mid\succ_{R_1} \phi_1\)</span>
-和 <span class="arithmatex">\(\alpha_2 = \Phi_2\mid\succ_{R_2} \phi_2\)</span>，如果存在 𝛼2 的一个子论证
-<span class="arithmatex">\(\alpha = \Phi\mid\succ_R \phi\)</span>，使得 𝜙 要么是假设要么是一条可废止规则的结论，
-且 <span class="arithmatex">\(\phi_1\in\bar{\phi}\)</span>，那么 <span class="arithmatex">\(\alpha_1\)</span> 在 <span class="arithmatex">\(\alpha\)</span> 上反驳 <span class="arithmatex">\(\alpha_2\)</span>。</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">极大可错子论证</p>
-<p>论证 𝛼 的极大可错子论证的集合 𝑀(𝛼) 是满足如下条件的集合：对于任意 𝛼′ ∈ Sub(𝛼)，𝛼′ ∈ 𝑀(𝛼)，当且仅当：</p>
-<ol>
-<li>
-<p>𝛼′的最后一条推理规则是可废止的或 𝛼′ 是一个假设性前提；  </p>
-</li>
-<li>
-<p>不存在 𝛼′′ ∈ Sub(𝛼)，使得 𝛼′′ ≠ 𝛼, 𝛼′ ∈ Sub(𝛼′′), 且 𝛼′′ 满足条件 1。</p>
-</li>
-</ol>
-</div>
-<div class="admonition info">
-<p class="admonition-title">硬性规则的逆否</p>
-<p>给定一条硬性规则， <span class="arithmatex">\(\phi_1,\cdots,\phi_n\)</span>，其逆否是 \
-<span class="arithmatex">\(\phi_1,\cdots,\phi_{i-1},\neg\phi,\phi_{i+1},\cdots,\phi_n\rightarrow \neg \phi_i\)</span></p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">硬性集合的硬性接续</p>
-<p>给定任意论证集合合 <span class="arithmatex">\(\{\alpha_1,\cdots,\alpha_n\}\)</span>，论证 𝛼 是 \
-<span class="arithmatex">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> 的硬性接续，当且仅当：</p>
-<ul>
-<li>
-<p>𝛼 中包含的假设及可废止规则与 <span class="arithmatex">\(\alpha_1,cdots,\alpha_n\)</span> 中包含的假设及可废止规则相同；  </p>
-</li>
-<li>
-<p>𝛼 中包含的事实性前提及硬性规则集合是 <span class="arithmatex">\(\alpha_1,cdots,\alpha_n\)</span> 中包含的事实性前提及硬性规则集合的超集。</p>
-</li>
-</ul>
-</div>
-<h2 id="_3">击败关系</h2>
-<div class="admonition info">
-<p class="admonition-title">优先级提升方式</p>
-<p>给定集合 S_1和 S_2,有如下三种方式提升优先级：</p>
-<ol>
-<li>
-<p>占优方式：<span class="arithmatex">\(S_1\succeq_{Dom} S_2\)</span> 当且仅当 
-<span class="arithmatex">\(\exist x\in S_1, \exist y\in S_2: x\succeq y\)</span>, 并且 
-<span class="arithmatex">\(\notexist x\in S_1, \notexist y \in S_2: y\succeq x.\)</span></p>
-</li>
-<li>
-<p>精英方式：<span class="arithmatex">\(S_1 \succeq_{Eli} S_2\)</span> 当且仅当 
-<span class="arithmatex">\(\forall x \in S_1,\exist y \in S_2: x \succeq y.\)</span></p>
-</li>
-<li>
-<p>民主方式：<span class="arithmatex">\(S_1 \succeq_{Dem} S_2\)</span> 当且仅当 
-<span class="arithmatex">\(\exist x\in S_1,\forall y\in S_2:x\succeq y.\)</span></p>
-</li>
-</ol>
-</div>
-<div class="admonition note">
-<p class="admonition-title">定理</p>
-<p>给定集合 <span class="arithmatex">\(S_1\)</span> 和 <span class="arithmatex">\(S_2\)</span>，如果 <span class="arithmatex">\(S_1\succeq_{Dom} S_2\)</span> ，那么
-<span class="arithmatex">\(S_1 \succeq_{Eli} S_2\)</span> 且 <span class="arithmatex">\(S_1 \succeq_{Dem} S_2\)</span>，反之不成立。</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">论证之间的优先关系</p>
-<p>给定两个论证 <span class="arithmatex">\(\alpha = \Phi_1\mid\succ_{R_1} \phi_1\)</span> 和 <span class="arithmatex">\(\beta = \Phi_2\mid\succ_{R_2}\phi_2\)</span>，
-设 <span class="arithmatex">\(F_1\subset \Phi_1 \cup R_1\)</span> 和 <span class="arithmatex">\(F_2\subset \Phi_2 \cup R_2\)</span> 分别为两个论证的可错元素集合。
-<span class="arithmatex">\(\alpha \succeq \beta\)</span> 当且仅当 <span class="arithmatex">\(F_1\succeq F_2\)</span></p>
-</div>
-<p>给定两个论证 𝛼 和 𝛽，它们之间的击败关系通过攻击关系和优先关系来定义。</p>
-<div class="admonition info">
-<p class="admonition-title">成功反驳与成功破坏</p>
-<p>给定两个论证 𝛼 和 𝛽：</p>
-<ul>
-<li>
-<p>如果 𝛼 在子论证 𝛽′ 上反驳 𝛽，且 𝛼 ⪰ 𝛽′，则 𝛼 成功反驳 𝛽。</p>
-</li>
-<li>
-<p>如果 𝛼 在 𝛽 的假设性前提 𝜙 上破坏 𝛽，且 𝛼 ⪰ {𝜙}，则 𝛼 成功破坏 𝛽。</p>
-</li>
-</ul>
-</div>
-<div class="admonition info">
-<p class="admonition-title">击败关系</p>
-<p>给定两个论证𝛼 和 𝛽，我们说 𝛼 击败 𝛽，当且仅当：𝛼 底切 𝛽，或者 𝛼 成功反驳 𝛽，或者 𝛼 成功破坏 𝛽。</p>
-</div>
-<h2 id="_4">可废止理论</h2>
-<div class="admonition info">
-<p class="admonition-title">可废止理论</p>
-<p>设 𝐹 ⊆ 𝑃𝑟𝑜𝑝 是一组事实集合，𝑅𝑑 和 𝑅𝑠 分别是定义“推理关系”中所示的一组可废止规则集合和一组硬性规则集合。
-一个可废止理论定义为 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠)。</p>
-</div>
-<h2 id="_5">可废止理论的外延与结论</h2>
-<div class="admonition info">
-<p class="admonition-title">可废止理论的外延与结论</p>
-<p>设 <span class="arithmatex">\(𝐴𝐹_𝑇 = ⟨𝐴𝑅_𝑇 , 𝑎𝑡𝑡𝑎𝑐𝑘𝑠_𝑇 ⟩\)</span> 是由可废止理论 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 产生的一个论辩框架。
-在论辩语义 𝜎 ∈ {𝑎𝑑, 𝑐𝑜, 𝑝𝑟, 𝑔𝑟, 𝑠𝑡, 𝑠𝑠𝑡} 下，我们说：</p>
-<ul>
-<li>
-<p>对于任意 <span class="arithmatex">\(𝐸 \in \Epsilon_\sigma(𝐴𝐹_𝑇 )\)</span>,
- 称 Conc(𝐸) = {Conc(𝛼) | 𝛼 ∈ 𝐸} 是可废止理论 𝑇 的外延。</p>
-</li>
-<li>
-<p>𝜑 是 <span class="arithmatex">\(𝐴𝐹_𝑇\)</span> 的轻信可辩护结论，当且仅当存在论证 𝛼，使得 <span class="arithmatex">\(Conc(𝛼) = 𝜑\)</span>, 且 𝛼 在 𝜎语义下是轻信可辩护的，
-记作 <span class="arithmatex">\(𝑇 \mid\^{\exist}_𝜎 𝜑\)</span>。</p>
-</li>
-<li>
-<p>𝜑 是 𝐴𝐹𝑇 的怀疑可辩护结论，当且仅当对于每个 𝜎 外延 𝐸，存在论证 𝛼 ∈ 𝐸，使得 Conc(𝛼) = 𝜑，
-记作 <span class="arithmatex">\(𝑇 |∼∀𝜎_𝜑\)</span>。</p>
-</li>
-</ul>
-</div>
-<h2 id="_6">系统特性</h2>
-<div class="admonition info">
-<p class="admonition-title">集合的一致性</p>
-<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个可废止理论。对于任意文字集合 𝑆 ⊆ 𝑃𝑟𝑜𝑝,
-设 𝑇ℎ(𝑆) 是集合𝑆 在硬性规则集合 𝑅𝑠 下的闭包。
-它是满足如下条件的极小集合：𝑆 ⊆ 𝑇 ℎ(𝑆)；
-对于任意𝑟 ∈ 𝑅𝑠, 如果 𝑟 的前提都在 𝑇ℎ(𝑆) 中，那么 𝑟 的结论也在 𝑇ℎ(𝑆) 中。</p>
-<ul>
-<li>
-<p>𝑆 是直接一致的，当且仅当 ∄𝑙1, 𝑙2 ∈ 𝑆 使得 𝑙1 = −𝑙2。</p>
-</li>
-<li>
-<p>𝑆 是间接一致的，当且仅当 𝑇 ℎ(𝑆) 是直接一致的。</p>
-</li>
-</ul>
-</div>
-<div class="admonition info">
-<p class="admonition-title">逆否封闭性</p>
-<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个可废止理论。𝑇 是逆否封闭的，当且仅当：
-如果 𝜙1, . . . , 𝜙𝑛 −→𝜙 ∈ 𝑅𝑠，
-则 𝜙1, . . . , 𝜙𝑖1, ¬𝜙, 𝜙𝑖+1, . . . , 𝜙𝑛 −→ ¬𝜙𝑖 ∈ 𝑅𝑠。</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">公理一致性</p>
-<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个可废止理论。𝑇 是公理一致的，当且仅当 𝑇ℎ(𝐹) 是一致的。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">子论证封闭性</p>
-<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个逆否封闭且公理一致的可废止理论，
-𝐸 是 <span class="arithmatex">\(𝐴𝐹_𝑇 = ⟨𝐴𝑅_𝑇 ,𝑎𝑡𝑡𝑎𝑐𝑘𝑠_𝑇 ⟩\)</span> 的一个完全外延。
-对于任意 𝛼 ∈ 𝐸，如果 𝛼′ ∈ Sub(𝛼) 则 𝛼′ ∈ 𝐸。</p>
-</div>
-<details class="note">
-<summary>两条引理</summary>
-<ul>
-<li>
-<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个逆否封闭且公理一致的可废止理论，
-<span class="arithmatex">\(𝛼_1,\dots, 𝛼_𝑛, 𝛼 ∈ 𝐴𝑅_𝑇\)</span>，𝛼 是<span class="arithmatex">\(\{𝛼_1, ..., 𝛼_𝑛\}\)</span> 的硬性接续。
-如果对于任意 <span class="arithmatex">\(𝑖 = 1, ... , 𝑛\)</span>，集合 <span class="arithmatex">\(𝐸 ⊆ 𝐴𝑅_𝑇\)</span> 可防御 <span class="arithmatex">\(𝛼_𝑖\)</span>，则 𝐸 可防御 𝛼。</p>
-</li>
-<li>
-<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个逆否封闭且公理一致的可废止理论，<span class="arithmatex">\(𝛼, 𝛽 ∈𝐴𝑅_𝑇\)</span>。其中，𝛽是可废止论证，
-且 Conc(𝛼) = −Conc(𝛽)。
-那么，对于任意 𝛽′ ∈ 𝑀(𝛽)，存在论证集合𝑀(𝛼) ∪ (𝑀(𝛽)  {𝛽′}) 的硬性接续，
-记作 <span class="arithmatex">\(𝛼^𝑐_𝛽′\)</span>，使得 <span class="arithmatex">\(𝛼^𝑐_𝛽′\)</span> 在 𝛽′ 上反驳 𝛽。</p>
-</li>
-</ul>
-</details>
+  <h1>SIMD</h1>
+
+
 
 
 
@@ -3604,14 +3253,14 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefectch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.path", "navigation.top", "instant", "content.code.annotate", "content.code.copy", "content.code.copy_button", "content.code.select"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefectch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.path", "navigation.top", "instant", "content.code.annotate", "content.code.copy", "content.code.copy_button", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../../../js/custom.js"></script>
+        <script src="../../../../js/custom.js"></script>
       
-        <script src="../../../js/katex.js"></script>
+        <script src="../../../../js/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       

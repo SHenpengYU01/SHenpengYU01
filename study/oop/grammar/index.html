@@ -1125,6 +1125,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1204,6 +1208,52 @@
   
   <span class="md-ellipsis">
     Instruction Level Parallelism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/simd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SIMD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/mimd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIMD
     
   </span>
   
@@ -1896,6 +1946,8 @@
       
         
       
+        
+      
     
     
     
@@ -2146,6 +2198,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ailogic/bayes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    贝叶斯网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2226,6 +2301,8 @@
       
         
           
+        
+      
         
       
         
@@ -3198,6 +3275,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../exception/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    异常处理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../design-pattern/design-pattern/" class="md-nav__link">
         
   
@@ -3945,7 +4045,8 @@
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">){</span><span class="n">x</span><span class="o">++</span><span class="p">;}</span>
 </span></code></pre></div>
 <h2 id="void">void*</h2>
-<p>C++允许将任何类型的指针赋给 <code>void *</code>（这是 <code>void*</code> 的最初的意图，它要求 <code>void*</code> 足够大，以存放任何类型的指针），但不允许将<code>void*</code> 指针赋给任何其他类型的指针。因为C++是类型严格的。在C中两者都可以。</p>
+<p>C++允许将任何类型的指针赋给 <code>void *</code>（这是 <code>void*</code> 的最初的意图，它要求 <code>void*</code> 足够大，以存放任何类型的指针），
+但不允许将<code>void*</code> 指针赋给任何其他类型的指针。因为C++是类型严格的。在C中两者都可以。</p>
 <h2 id="union">union</h2>
 <p>联合体（union）：联合体中的所有成员共享同一块内存空间，因此其内存大小是所有成员中最大成员的大小。</p>
 <h2 id="static">static</h2>
@@ -3963,7 +4064,10 @@
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;B&#39;</span><span class="p">;</span><span class="c1">//错误 &#39;B&#39; 是个字符，为char</span>
 </span></code></pre></div>
 <h2 id="_3">头文件</h2>
-<p><code>#include</code>的头文件如果用标准头文件或标准库一般用<code>&lt;&gt;</code>，而自定义头文件一般用<code>""</code>，便于区分。</p>
+<ul>
+<li><code>#include&lt;&gt;</code>引用的是编译器标准库里的头文件</li>
+<li><code>#include""</code>引用的是程序目录下的头文件</li>
+</ul>
 <p>C++标准库头文件不加<code>.h</code>，而C标准库头文件需要加，如果在 C++ 中使用，通常使用 <code>c</code> 前缀并去掉 <code>.h</code> 后缀，如<code>#include&lt;cstdio&gt;</code></p>
 <p>防止头文件多次声明导致的错误：</p>
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// myheader.h</span>
@@ -4393,96 +4497,10 @@ namespace A {
 
 
 
-  
-    
-  
-  
-    
-  
-
-
-  <aside class="md-source-file">
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Last update">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
-  </span>
-
-    
-    
-      
-  <span class="md-source-file__fact">
-    <span class="md-icon" title="Created">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
-    </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 16, 2025 04:10:41">April 16, 2025</span>
-  </span>
-
-    
-    
-    
-  </aside>
 
 
 
 
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-  <script src="https://giscus.app/client.js"
-  data-repo="SHenpengYU01/giscus-mkdocs-material"
-  data-repo-id="R_kgDON4O90g"
-  data-category="Announcements"
-  data-category-id="DIC_kwDON4O90s4Cm5B_"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="dark"
-  data-lang="en"
-  crossorigin="anonymous"
-  async>
-</script>
-
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    // Set palette on initial load
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate"
-        ? "transparent_dark"
-        : "light"
-
-      // Instruct Giscus to set theme
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    // Register event handlers after documented loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate"
-            ? "transparent_dark"
-            : "light"
-
-          // Instruct Giscus to change theme
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>

@@ -2,302 +2,334 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://note.mythlogos.top/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/about/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/link/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/test/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/argument/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/asp/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/ailogic/bayes/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/default-logic/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/first-order-logic/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/ailogic/game/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/introduction/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/knowledge/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/proposition/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/ailogic/struct-argu/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys2/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys2/sys2/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/ILP/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/cache/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/cache_new/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/file-sys/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/cs/sys3/io/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/main-memory/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/memory/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/quantitative/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/cs/sys3/storage/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/cs/sys3/virtual-memory/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/datastructure/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/datastructure/algorithm/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/datastructure/graph/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/datastructure/interview/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/datastructure/midterm/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/datastructure/practice/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/discrete/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/discrete/discrete%20maths/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/discrete/quadratic-probing/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/linear%20algebra/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/linear%20algebra/SVD/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/linear%20algebra/linear%20algebra/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/maths%20analysis/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/maths%20analysis/maths%20analysis/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/math/probability/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/network/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/network/application%20layer/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/network/internet%20layer/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/network/introduction/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/network/link%20layer/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/network/transport%20layer/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/container/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/oop/exception/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/grammar/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/oop/iterators/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/memory/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/overload/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
+    </url>
+    <url>
+         <loc>https://note.mythlogos.top/study/oop/reference/</loc>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/stream/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/struct/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/template/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/class/class/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/class/ctor/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/class/dtor/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/class/friend/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/class/inherit/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/class/init-list/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/class/vfunc/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/oop/design-pattern/design-pattern/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/CSS/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/HTML/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/array/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/class/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/dom/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/event/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/func/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/intro/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/json/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/note/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
     <url>
          <loc>https://note.mythlogos.top/study/web/JS/practice/</loc>
-         <lastmod>2025-05-11</lastmod>
+         <lastmod>2025-06-03</lastmod>
     </url>
 </urlset>

@@ -15,9 +15,13 @@ delete obj;                  // 调用析构函数(destructor)并释放内存
 ```
 
 - 使用 new 为对象分配内存，必须使用 delete 释放。
-- 使用 new[] 为数组分配内存，必须使用 delete[] 释放数组内存。
+- 使用 new type[] 为数组分配内存，必须使用 delete[] 释放数组内存。
 - delete不能用于释放非new分配的内存。
 - `new (内存地址) 类型(构造参数)` 用于在已分配内存上显示调用构造函数，返回类的对象
+
+    ```cpp
+     Person* person = new (buffer) Person("张三", 30);
+    ```
 
 ## 栈内存管理机制
 

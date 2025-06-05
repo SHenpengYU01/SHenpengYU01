@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2258,6 +2310,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2331,6 +2406,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2673,6 +2752,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2771,6 +2873,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3237,7 +3362,10 @@
 <p>通过论证之间攻击关系对论证状态的影响，来研究论证可接受性是经典抽象论辩理论的主要内容。</p>
 <div class="admonition info">
 <p class="admonition-title">抽象论辩框架</p>
-<p>抽象论辩框架（简称论辩框架）是一个二元组 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，其中 𝐴𝑅 是一组论证的集合，𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 是 𝐴𝑅 上的二元关系，𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 ⊆ 𝐴𝑅 × 𝐴𝑅。用 𝛼 → 𝛽 表示论证 𝛼 攻击论证 𝛽，用 𝑆 → 𝛽 表示论证集合 𝑆 攻击论证 𝛽，意指存在 𝛼 ∈ 𝑆 使得 𝛼 → 𝛽。相似地，可定义 𝛽 → 𝑆。</p>
+<p>抽象论辩框架（简称论辩框架）是一个二元组 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，其中 𝐴𝑅 是一组论证的集合，
+𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 是 𝐴𝑅 上的二元关系，𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 ⊆ 𝐴𝑅 × 𝐴𝑅。
+用 𝛼 → 𝛽 表示论证 𝛼 攻击论证 𝛽，
+用 𝑆 → 𝛽 表示论证集合 𝑆 攻击论证 𝛽，意指存在 𝛼 ∈ 𝑆 使得 𝛼 → 𝛽。相似地，可定义 𝛽 → 𝑆。</p>
 </div>
 <p>论辩框架可以被看作是有向图，即把论证看作有向图的节点而攻击关系看作有向边。这时，也把论辩框架称为论证图。</p>
 <h2 id="_3">论证的可接受性</h2>
@@ -3250,32 +3378,44 @@
 <h2 id="_4">基于外延的语义</h2>
 <div class="admonition info">
 <p class="admonition-title">基于外延的语义</p>
-<p>给定一个抽象论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，论辩语义 𝜎 是一个函数，它把 𝐴𝐹 映射到一组外延的集合，记作 <span class="arithmatex">\(\Epsilon_\sigma(AF)\)</span>。其中，每个外延是一组“集体可接受”的论证集合。</p>
+<p>给定一个抽象论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，论辩语义 𝜎 是一个函数，它把 𝐴𝐹 映射到一组外延的集合，
+记作 <span class="arithmatex">\(\Epsilon_\sigma(AF)\)</span>。其中，每个外延是一组“集体可接受”的论证集合。</p>
 </div>
 <h3 id="_5">可相容外延</h3>
 <div class="admonition info">
 <p class="admonition-title">无冲突</p>
-<p>给定𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，设 𝐸 ⊆ 𝐴𝑅 是一组论证集合。𝐸 是无冲突的，当且仅当 <span class="arithmatex">\(\notexsit \alpha, \beta\in E, \alpha \rightarrow \beta\)</span>。</p>
+<p>给定𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，设 𝐸 ⊆ 𝐴𝑅 是一组论证集合。𝐸 是无冲突的，
+当且仅当 <span class="arithmatex">\(\nexists \alpha, \beta\in E, \alpha \rightarrow \beta\)</span>。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">可防御</p>
-<p>给定𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，设 𝐸 ⊆ 𝐴𝑅 是一组论证集合，\alpha\in AR 是一个论证。E是可防御 <span class="arithmatex">\(\alpha\)</span> ，当且仅当 <span class="arithmatex">\(\forall \beta \in AR\)</span>，如果 <span class="arithmatex">\(\beta \rightarrow \alpha\)</span>，那么 <span class="arithmatex">\(E\rightarrow \beta\)</span>。</p>
+<p>给定𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，设 𝐸 ⊆ 𝐴𝑅 是一组论证集合，<span class="arithmatex">\(\alpha\in AR\)</span> 是一个论证。
+E是可防御 <span class="arithmatex">\(\alpha\)</span> ，当且仅当 <span class="arithmatex">\(\forall \beta \in AR\)</span>，
+如果 <span class="arithmatex">\(\beta \rightarrow \alpha\)</span>，那么 <span class="arithmatex">\(E\rightarrow \beta\)</span>。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">可相容外延</p>
-<p>给定 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，设 𝐸 ⊆ 𝐴𝑅 是一组论证集合。𝐸 是一个可相容外延，当且仅当 𝐸 是无冲突的，且 𝐸 可以防御每个属于 𝐸 的论证。</p>
+<p>给定 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，设 𝐸 ⊆ 𝐴𝑅 是一组论证集合。𝐸 是一个可相容外延，
+当且仅当 𝐸 是无冲突的，且 𝐸 可以防御每个属于 𝐸 的论证。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>设E是一个可相容外延，且E可防御论证 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\alpha'\)</span>。那么：
-- <span class="arithmatex">\(E'=E\cup \{\alpha\}\)</span> 是可相容的。
-- <span class="arithmatex">\(E'\)</span> 可防御 <span class="arithmatex">\(\alpha'\)</span></p>
+<p>设E是一个可相容外延，且E可防御论证 <span class="arithmatex">\(\alpha\)</span> 和 <span class="arithmatex">\(\alpha'\)</span>。那么：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(E'=E\cup \{\alpha\}\)</span> 是可相容的。</p>
+</li>
+<li>
+<p><span class="arithmatex">\(E'\)</span> 可防御 <span class="arithmatex">\(\alpha'\)</span></p>
+</li>
+</ul>
 </div>
 <h3 id="_6">完全外延</h3>
 <p>并非每个可相容外延都包含所有可被该外延防御的论证。为使它包含，采用如下方法：</p>
 <div class="admonition info">
 <p class="admonition-title">特征函数</p>
-<p>抽象论辩框架 架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 的特征函数，记作 <span class="arithmatex">\(F_{AF}\)</span>，定义如下：<span class="arithmatex">\(F_{AF}: 2^{AR}\rightarrow 2^{AR}\)</span>
+<p>抽象论辩框架 架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 的特征函数，记作 <span class="arithmatex">\(F_{AF}\)</span>，
+定义如下：<span class="arithmatex">\(F_{AF}: 2^{AR}\rightarrow 2^{AR}\)</span>
 <span class="arithmatex">\(F_{AF}(S) = \{\alpha| S\text{可防御}\alpha\}\)</span></p>
 </div>
 <p>具体过程为：设 <span class="arithmatex">\(S=\emptyset\)</span>，
@@ -3283,25 +3423,34 @@
 此时，称<span class="arithmatex">\(S_k\)</span>是<span class="arithmatex">\(F_{AF}\)</span>的不动点。这时，集合 𝑆 中包含了所有 𝑆 可防御的论证。我们把这样的集合称为完全外延。</p>
 <div class="admonition info">
 <p class="admonition-title">完全外延</p>
-<p>给定 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，一组论证集合 𝐸 ⊆ 𝐴𝑅 是一个完全外延，当且仅当：𝐸 是一个可相容外延，且对于 𝐴𝑅 中的每个论证 𝛼，如果 𝐸 可防御 𝛼，那么 𝛼 ∈ 𝐸, 即 <span class="arithmatex">\(F_{AF} (𝐸) = 𝐸\)</span>。这时，𝐸 是 <span class="arithmatex">\(F_{AF}\)</span> 的一个不动点。</p>
+<p>给定 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，一组论证集合 𝐸 ⊆ 𝐴𝑅 是一个完全外延，当且仅当：𝐸 是一个可相容外延，
+且对于 𝐴𝑅 中的每个论证 𝛼，如果 𝐸 可防御 𝛼，那么 𝛼 ∈ 𝐸, 即 <span class="arithmatex">\(F_{AF} (𝐸) = 𝐸\)</span>。
+这时，𝐸 是 <span class="arithmatex">\(F_{AF}\)</span> 的一个不动点。</p>
 </div>
 <h3 id="_7">基外延和优先外延</h3>
 <div class="admonition info">
 <p class="admonition-title">基外延和优先外延</p>
-<p>给定 <span class="arithmatex">\(AF=&lt;AR,attacks&gt;，E\subset AR\)</span> 是一组论证集合。
-- E是基外延，当且仅当E是最小的（关于集合包含关系）完全外延。
-- E是一个优先外延，当且仅当E是一个极大的（关于集合包含关系）完全外延。</p>
+<p>给定 <span class="arithmatex">\(AF=&lt;AR,attacks&gt;，E\subset AR\)</span> 是一组论证集合。</p>
+<ul>
+<li>
+<p>E是基外延，当且仅当E是最小的（关于集合包含关系）完全外延。</p>
+</li>
+<li>
+<p>E是一个优先外延，当且仅当E是一个极大的（关于集合包含关系）完全外延。</p>
+</li>
+</ul>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>给定 <span class="arithmatex">\(AF=&lt;AR,attacks&gt;\)</span>，E是AF的基外延，当且仅当E是F_{AF}的最小不动点。
+<p>给定 <span class="arithmatex">\(AF=&lt;AR,attacks&gt;\)</span>，E是AF的基外延，当且仅当 <span class="arithmatex">\(E\)</span> 是 <span class="arithmatex">\(F_{AF}\)</span> 的最小不动点。
 每个优先外延都是完全外延，反之不成立。</p>
 </div>
 <h3 id="_8">稳定外延与半稳定外延</h3>
 <p>考虑另一种语义。</p>
 <div class="admonition info">
 <p class="admonition-title">稳定外延</p>
-<p>给定 <span class="arithmatex">\(AF=&lt;AR,attacks&gt;\)</span>，一组论证集合E是一个稳定外延，当且仅当：E是无冲突的，且对于任意 <span class="arithmatex">\(\alpha\in AR\\ E，E\)</span> 攻击 <span class="arithmatex">\(\alpha\)</span>。</p>
+<p>给定 <span class="arithmatex">\(AF=&lt;AR,attacks&gt;\)</span>，一组论证集合E是一个稳定外延，
+当且仅当：E是无冲突的，且对于任意 <span class="arithmatex">\(\alpha\in AR\\ E，E\)</span> 攻击 <span class="arithmatex">\(\alpha\)</span>。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
@@ -3310,62 +3459,100 @@
 <p>但是并非每个论辩框架都有稳定外延。</p>
 <div class="admonition info">
 <p class="admonition-title">半稳定外延</p>
-<p>给定<span class="arithmatex">\(AF=&lt;AR,attacks&gt;\)</span>，一组论证集合E是一个半稳定外延，当且仅当：E是完全外延，且<span class="arithmatex">\(E\cup E^+\)</span> 是极大的（关于集合包含关系），其中 <span class="arithmatex">\(E^+=\{\alpha\in AR|E攻击\alpha\}\)</span></p>
+<p>给定<span class="arithmatex">\(AF=&lt;AR,attacks&gt;\)</span>，一组论证集合E是一个半稳定外延，
+当且仅当：E是完全外延，且<span class="arithmatex">\(E\cup E^+\)</span> 是极大的（关于集合包含关系），其中 <span class="arithmatex">\(E^+=\{\alpha\in AR|E攻击\alpha\}\)</span></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
 <p>每个稳定外延都是半稳定外延，反之不成立；每个半稳定外延都是优先外延。</p>
 </div>
 <h2 id="_9">基于标记的语义</h2>
-<p>下面介绍基于标记的论辩语义，其基本思想是依据特定的规则给每个论证指派一个“合理的”标签。标签是事先规定好的，只有三种：IN，OUT 和 UNDEC。其中，IN 表示论证的状态为“被接受的”，OUT 表示论证的状态为“被拒绝的”，UNDEC 表示论证的状态是“未确定的”。</p>
+<p>下面介绍基于标记的论辩语义，其基本思想是依据特定的规则给每个论证指派一个“合理的”标签。标签是事先规定好的，只有三种：IN，OUT 和 UNDEC。
+其中，IN 表示论证的状态为“被接受的”，OUT 表示论证的状态为“被拒绝的”，UNDEC 表示论证的状态是“未确定的”。</p>
 <div class="admonition info">
 <p class="admonition-title">标记</p>
-<p>给定一个论辩框架AF=<AR,attacks>,AF的标记定义为一个全函数：L:AR\rightarrow {IN,OUT,UNDEC}。</p>
+<p>给定一个论辩框架AF=<AR,attacks>,AF的标记定义为一个全函数：<span class="arithmatex">\(L:AR\rightarrow \{\text{IN,OUT,UNDEC}\}\)</span>。</p>
 </div>
 <p>用in(L)表示集合<span class="arithmatex">\(\{\alpha|L(\alpha)=UNDEC\}\)</span>，out(L)表示集合<span class="arithmatex">\(\{\alpha|L(\alpha)=OUT\}\)</span>，undec(L)表示集合<span class="arithmatex">\(\{\alpha|L(\alpha)=UNDEC\}\)</span></p>
 <div class="admonition info">
 <p class="admonition-title">合法标记</p>
-<p>设L使论辩框架AF=<AR,attacks>的一个标记，<span class="arithmatex">\(\alpha\in AR\)</span>，有如下定义：
-- <span class="arithmatex">\(L(\alpha)\)</span>=IN是合法的，如果对于任意<span class="arithmatex">\((\beta,\alpha)\in attacks\)</span>，<span class="arithmatex">\(L(\beta)=OUT\)</span>.
-- <span class="arithmatex">\(L(\alpha)=OUT\)</span>是合法的，如果存在 <span class="arithmatex">\((\beta,\alpha)\in attacks\)</span> 使得 <span class="arithmatex">\(L(\beta)=IN\)</span>
-- <span class="arithmatex">\(L(\alpha) = UNDEC\)</span> 是合法的，如果：对于任意 <span class="arithmatex">\((\beta,\alpha)\in attacks\)</span>，<span class="arithmatex">\(L(\beta)\neq IN\)</span>，而且存在 <span class="arithmatex">\((\beta,\alpha)\in attacks\)</span> 使得 𝐿(𝛽) ≠ OUT.</p>
+<p>设L使论辩框架AF=<AR,attacks>的一个标记，<span class="arithmatex">\(\alpha\in AR\)</span>，有如下定义：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(L(\alpha)\)</span>=IN是合法的，如果对于任意<span class="arithmatex">\((\beta,\alpha)\in attacks\)</span>，<span class="arithmatex">\(L(\beta)=OUT\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(L(\alpha)=OUT\)</span>是合法的，如果存在 <span class="arithmatex">\((\beta,\alpha)\in attacks\)</span> 使得 <span class="arithmatex">\(L(\beta)=IN\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(L(\alpha) = UNDEC\)</span> 是合法的，如果：对于任意 <span class="arithmatex">\((\beta,\alpha)\in attacks\)</span>，<span class="arithmatex">\(L(\beta)\neq IN\)</span>，
+而且存在 <span class="arithmatex">\((\beta,\alpha)\in attacks\)</span> 使得 𝐿(𝛽) ≠ OUT.</p>
+</li>
+</ul>
 </div>
 <p>可相容标记与可相容外延对应。</p>
 <div class="admonition info">
 <p class="admonition-title">可相容标记</p>
-<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架，𝐿 是 𝐴𝐹 的一个可相容标记，当且仅当：对于任意 𝛼 ∈ 𝐴𝑅，如果 𝐿(𝑎) = 𝐼𝑁，那么 𝐿(𝛼) = IN 是合法的；如果 𝐿(𝛼) = OUT，那么𝐿(𝛼) = OUT 是合法的。</p>
+<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架，𝐿 是 𝐴𝐹 的一个可相容标记，
+当且仅当：对于任意 𝛼 ∈ 𝐴𝑅，如果 𝐿(𝑎) = 𝐼𝑁，那么 𝐿(𝛼) = IN 是合法的；如果 𝐿(𝛼) = OUT，
+那么𝐿(𝛼) = OUT 是合法的。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理：可相容标记-&gt;可相容标记</p>
-<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架。如果 𝐿 是 𝐴𝐹 的一个可相容标记，那么𝑖𝑛(𝐿) 是 𝐴𝐹 的一个可相容外延。</p>
+<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架。
+如果 𝐿 是 𝐴𝐹 的一个可相容标记，那么𝑖𝑛(𝐿) 是 𝐴𝐹 的一个可相容外延。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理：可相容外延-&gt;可相容标记</p>
-<p>设E是AF=<AR,attacks>的一个可相容外延。那么 <span class="arithmatex">\(L=(E,E^+,AR\(E\cup E^+))\)</span> 是AF的一个可相容标记。其中，<span class="arithmatex">\(E^+=\{\alpha\in AR|E\text{攻击}\alpha\}\)</span></p>
+<p>设E是AF=<AR,attacks>的一个可相容外延。那么 <span class="arithmatex">\(L=(E,E^+,AR\\(E\cup E^+))\)</span> 是AF的一个可相容标记。
+其中，<span class="arithmatex">\(E^+=\{\alpha\in AR|E\text{攻击}\alpha\}\)</span></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">完全标记</p>
-<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个论辩框架，𝐿 是 𝐴𝐹 的一个完全标记，当且仅当：𝐿 是 𝐴𝐹的一个可相容标记，且对于任意 𝛼 ∈ 𝐴𝑅，如果 𝐿(𝛼) = UNDEC，那么 𝐿(𝛼) = UNDEC是合法的。</p>
+<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个论辩框架，𝐿 是 𝐴𝐹 的一个完全标记，
+当且仅当：𝐿 是 𝐴𝐹的一个可相容标记，且对于任意 𝛼 ∈ 𝐴𝑅，如果 𝐿(𝛼) = UNDEC，那么 𝐿(𝛼) = UNDEC是合法的。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">优先、基、稳定与半稳定标记</p>
-<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架，那么：
-- 𝐿 是 𝐴𝐹 的一个优先标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且 𝑖𝑛(𝐿) 是极大的（关于集合包含关系）；
-- 𝐿 是 𝐴𝐹 的一个基标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且 𝑖𝑛(𝐿) 是最小的（关于集合包含关系）；
-- 𝐿 是 𝐴𝐹 的一个稳定标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且 𝑢𝑛𝑑𝑒𝑐(𝐿) = ∅;
-- 𝐿 是 𝐴𝐹 的一个半稳定标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且𝑖𝑛(𝐿) 和 𝑜𝑢𝑡(𝐿)是极大的（关于集合包含关系）。</p>
+<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架，那么：</p>
+<ul>
+<li>
+<p>𝐿 是 𝐴𝐹 的一个优先标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且 𝑖𝑛(𝐿) 是极大的（关于集合包含关系）；</p>
+</li>
+<li>
+<p>𝐿 是 𝐴𝐹 的一个基标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且 𝑖𝑛(𝐿) 是最小的（关于集合包含关系）；</p>
+</li>
+<li>
+<p>𝐿 是 𝐴𝐹 的一个稳定标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且 𝑢𝑛𝑑𝑒𝑐(𝐿) = ∅;</p>
+</li>
+<li>
+<p>𝐿 是 𝐴𝐹 的一个半稳定标记，当且仅当 𝐿 是 𝐴𝐹 的一个完全标记，且𝑖𝑛(𝐿) 和 𝑜𝑢𝑡(𝐿)是极大的（关于集合包含关系）。</p>
+</li>
+</ul>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架，𝜎 ∈ {𝑐𝑜, 𝑝𝑟, 𝑔𝑟, 𝑠𝑡, 𝑠𝑠𝑡} 是完全语义、优先语义、基语义、稳定语义和半稳定语义中的一种论辩语义。- 对于 𝜎 语义下 𝐴𝐹 的任意标记 𝐿，存在相同语义下 𝐴𝐹 的一个外延 𝐸，使得 <span class="arithmatex">\(L=(E,E^+,AR\(E\cup E^+))\)</span>；
-- 对于 𝜎 语义下 𝐴𝐹 的任意外延 𝐸，存在相同语义下 𝐴𝐹 的一个标记 𝐿 使得 𝐸 = 𝑖𝑛(𝐿)。</p>
+<p>设 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 是一个抽象论辩框架，𝜎 ∈ {𝑐𝑜, 𝑝𝑟, 𝑔𝑟, 𝑠𝑡, 𝑠𝑠𝑡}
+是完全语义、优先语义、基语义、稳定语义和半稳定语义中的一种论辩语义。</p>
+<ul>
+<li>
+<p>对于 𝜎 语义下 𝐴𝐹 的任意标记 𝐿，
+存在相同语义下 𝐴𝐹 的一个外延 𝐸，使得 <span class="arithmatex">\(L=(E,E^+,AR \\ (E\cup E^+))\)</span>；</p>
+</li>
+<li>
+<p>对于 𝜎 语义下 𝐴𝐹 的任意外延 𝐸，存在相同语义下 𝐴𝐹 的一个标记 𝐿 使得 𝐸 = 𝑖𝑛(𝐿)。</p>
+</li>
+</ul>
 </div>
 <p>上述定理表明，基于外延的语义和基于标记的语义具有对应关系。不过，这两种的侧重点是不同的。基于外延的语义侧重于语义描述，建立在论证集合的可相容性或特征函数的不动点等概念的基础上。基于标记的方法侧重于过程实现，更适合用于建立相应的算法。</p>
 <h2 id="_10">论证的状态</h2>
-<p>给定一个论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，在论辩语义 𝜎 下，分别用 <span class="arithmatex">\(\Epsilon_{\sigma}(AF)\)</span>，和 <span class="arithmatex">\(\mathcal{L}_\sigma(𝐴𝐹)\)</span> 表示 𝐴𝐹 的外延集合和标记集合。其中，𝜎 ∈ {𝑎𝑑, 𝑐𝑜, 𝑔𝑟, 𝑝𝑟, 𝑠𝑡, 𝑠𝑠𝑡}，分别表示可相容语义、完全语义、基语义、优先语义、稳定语义和半稳定语义。</p>
+<p>给定一个论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，在论辩语义 𝜎 下，分别用 <span class="arithmatex">\(\Epsilon_{\sigma}(AF)\)</span>和
+<span class="arithmatex">\(\mathcal{L}_\sigma(𝐴𝐹)\)</span> 表示 𝐴𝐹 的外延集合和标记集合。
+其中，𝜎 ∈ {𝑎𝑑, 𝑐𝑜, 𝑔𝑟, 𝑝𝑟, 𝑠𝑡, 𝑠𝑠𝑡}，分别表示可相容语义、完全语义、基语义、优先语义、稳定语义和半稳定语义。</p>
 <div class="admonition info">
 <p class="admonition-title">关于外延或标记的论证状态</p>
-<p>给定 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，对于任意 𝐸 ∈ E𝜎(𝐴𝐹)，或者 𝐿 ∈ L𝜎(𝐴𝐹)，可以确定 𝐴𝐹 中各个论证的状态：
+<p>给定 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，对于任意 𝐸 ∈ E𝜎(𝐴𝐹)，或者 𝐿 ∈ L𝜎(𝐴𝐹)，
+可以确定 𝐴𝐹 中各个论证的状态：
 从标记的角度，对于任意 <span class="arithmatex">\(\alpha \in AR\)</span>,
 - <span class="arithmatex">\(\alpha\)</span> 是关于E被接受的，当且仅当 <span class="arithmatex">\(L(\alpha)=IN\)</span>
 - <span class="arithmatex">\(\alpha\)</span> 是关于E被拒绝的，当且仅当 <span class="arithmatex">\(L(\alpha)=OUT\)</span>
@@ -3377,9 +3564,11 @@
 </div>
 <div class="admonition info">
 <p class="admonition-title">论证的辩护状态</p>
-<p>给定一个论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 和一种论辩语义 𝜎 ∈ {𝑎𝑑, 𝑐𝑜, 𝑔𝑟, 𝑝𝑟, 𝑠𝑡, 𝑠𝑠𝑡}，对于任意论证 𝛼 ∈ 𝐴𝑅:
+<p>给定一个论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 和一种论辩语义
+ 𝜎 ∈ {𝑎𝑑, 𝑐𝑜, 𝑔𝑟, 𝑝𝑟, 𝑠𝑡, 𝑠𝑠𝑡}，对于任意论证 𝛼 ∈ 𝐴𝑅:
 - <span class="arithmatex">\(\alpha\)</span> 是怀疑可辩护的，当且仅当对于任意 <span class="arithmatex">\(E\in \Epsilon_{\sigma}(AF)，\alpha\in E\)</span>
-- <span class="arithmatex">\(\alpha\)</span> 是轻信可辩护的，当且仅当存在 <span class="arithmatex">\(E_1，E_2\in \Epsilon_{\sigma}(AF)\)</span>，使得 <span class="arithmatex">\(\alpha\in E_1\)</span>，但 <span class="arithmatex">\(\alpha\notin E_2\)</span>
+- <span class="arithmatex">\(\alpha\)</span> 是轻信可辩护的，当且仅当存在 <span class="arithmatex">\(E_1，E_2\in \Epsilon_{\sigma}(AF)\)</span>，使得 <span class="arithmatex">\(\alpha\in E_1\)</span>，
+但 <span class="arithmatex">\(\alpha\notin E_2\)</span>
 - <span class="arithmatex">\(\alpha\)</span> 是不可辩护的，当且仅当不存在 <span class="arithmatex">\(E\in \Epsilon_{\sigma}(AF)\)</span> ,使得 <span class="arithmatex">\(\alpha \in E\)</span></p>
 </div>
 <h2 id="_11">抽象论辩语义的模块化</h2>
@@ -3387,26 +3576,44 @@
 <h3 id="_12">子框架的语法定义</h3>
 <div class="admonition info">
 <p class="admonition-title">子框架</p>
-<p>给定一个抽象论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 和一组论证 𝐵 ⊆ 𝐴𝑅，设 <span class="arithmatex">\(𝐵^- = \{𝑎 ∈ 𝐴𝑅 \ 𝐵 |∃𝑏 ∈ 𝐵 : (𝑎, 𝑏) ∈ 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠\}\)</span>。把 𝐵− 称为 𝐵 的约束论证。当 <span class="arithmatex">\(𝐵^- = ∅\)</span> 时，由 𝐵 导出的子框架是不受约束的。这时，该子框架可以表示为 <span class="arithmatex">\((𝐵, 𝑅_B)\)</span>，其中 <span class="arithmatex">\(R_B = 𝑎𝑡𝑡𝑎𝑐𝑘𝑠 \cup (𝐵×𝐵)\)</span>。当  <span class="arithmatex">\(B^-\neq \emptyset\)</span> 时，由 𝐵 导出的子框架是受约束的。这时，该子框架可以表示为 <span class="arithmatex">\(( (𝐵, 𝑅_𝐵), (𝐵^-, 𝐼_𝐵))\)</span>，其中 (𝐵−, 𝐼𝐵) 是约束子框架，𝐼𝐵 = 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 ∩ (𝐵− × 𝐵)。</p>
+<p>给定一个抽象论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩ 和一组论证 𝐵 ⊆ 𝐴𝑅，
+设 <span class="arithmatex">\(𝐵^- = \{𝑎 ∈ 𝐴𝑅 \ 𝐵 |∃𝑏 ∈ 𝐵 : (𝑎, 𝑏) ∈ 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠\}\)</span>。
+把 𝐵− 称为 𝐵 的约束论证。当 <span class="arithmatex">\(𝐵^- = ∅\)</span> 时，由 𝐵 导出的子框架是不受约束的。这时，该子框架可以表示为 <span class="arithmatex">\((𝐵, 𝑅_B)\)</span>，
+其中 <span class="arithmatex">\(R_B = 𝑎𝑡𝑡𝑎𝑐𝑘𝑠 \cup (𝐵×𝐵)\)</span>。当  <span class="arithmatex">\(B^-\neq \emptyset\)</span> 时，由 𝐵 导出的子框架是受约束的。
+这时，该子框架可以表示为 <span class="arithmatex">\(( (𝐵, 𝑅_𝐵), (𝐵^-, 𝐼_𝐵))\)</span>，其中 (𝐵−, 𝐼𝐵) 是约束子框架，
+𝐼𝐵 = 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 ∩ (𝐵− × 𝐵)。</p>
 </div>
 <h3 id="_13">抽象论辩框架分解与合并</h3>
 <p>给定一个有向图，由该图的所有强连通分量构成的缩简图是一个有向无环图。一个抽象论辩框架可以被分解为一个由强连通分量构成的缩简图。该缩简图的每个顶点都是一个强连通分量。</p>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>给定一个抽象论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，把 𝐴𝐹 的强连通分量集合记作 <span class="arithmatex">\(SCCF_{AF}\)</span>。对于任意 <span class="arithmatex">\(B\in SCCF_{AF}\)</span>，令 <span class="arithmatex">\(𝑝𝑎(𝐵) = {𝐶 ∈ SCCF_{AF} | 𝑐 ∈ 𝐶, 𝑏 ∈ 𝐵 : (𝑐, 𝑏) ∈ 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠}\)</span>。则如下命题成立：
+<p>给定一个抽象论辩框架 𝐴𝐹 = ⟨𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠⟩，把 𝐴𝐹 的强连通分量集合记作 <span class="arithmatex">\(SCCF_{AF}\)</span>。
+对于任意 <span class="arithmatex">\(B\in SCCF_{AF}\)</span>，令 <span class="arithmatex">\(𝑝𝑎(𝐵) = {𝐶 ∈ SCCF_{AF} | 𝑐 ∈ 𝐶, 𝑏 ∈ 𝐵:(𝑐, 𝑏) ∈ 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠}\)</span>。
+则如下命题成立：
 1. 当 <span class="arithmatex">\(B^-=\emptyset\)</span>，由 B 可以导出一个不受约束子框架 <span class="arithmatex">\((B,R_B)\)</span>
-2. 当 <span class="arithmatex">\(B^-\neq \emptyset\)</span>，由B可以导出一个受约束子框架 <span class="arithmatex">\(((B,R_B), (B^-,I_B))\)</span>,其中 <span class="arithmatex">\(B^-\subset \cup_{C\in pa(B)}C\)</span></p>
+2. 当 <span class="arithmatex">\(B^-\neq \emptyset\)</span>，由B可以导出一个受约束子框架 <span class="arithmatex">\(((B,R_B), (B^-,I_B))\)</span>,
+其中 <span class="arithmatex">\(B^-\subset \cup_{C\in pa(B)}C\)</span></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>设 <span class="arithmatex">\(((B,R_B),(B^-, I_B)^L)\)</span> 和 <span class="arithmatex">\((C,R_C)\)</span> 是 AF=<AR,attacks> 的两个子框架，其中 <span class="arithmatex">\(B^-\subset C\)</span>。下列关系成立：
-1. <span class="arithmatex">\(B\cup B^-\cup C=B\cup C\)</span>
-2. <span class="arithmatex">\(R_B\cup I_B\cup R_C = R_{B\cup C}\)</span>
-3. <span class="arithmatex">\((B\cup C)^- = \emptyset\)</span>
+<p>设 <span class="arithmatex">\(((B,R_B),(B^-, I_B)^L)\)</span> 和 <span class="arithmatex">\((C,R_C)\)</span> 是 AF=<AR,attacks> 的两个子框架，
+其中 <span class="arithmatex">\(B^-\subset C\)</span>。下列关系成立：</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(B\cup B^-\cup C=B\cup C\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(R_B\cup I_B\cup R_C = R_{B\cup C}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((B\cup C)^- = \emptyset\)</span>
 因此，通过合并框架 <span class="arithmatex">\(((B,R_B),(B^-, I_B)^L) 和(C,R_C)\)</span> 可得到不收约束框架 <span class="arithmatex">\((B\cup C,R_{B\cup C})\)</span></p>
+</li>
+</ol>
 </div>
 <h3 id="_14">局部语义</h3>
-<p>设 <span class="arithmatex">\(((B,R_B),(B^-, I_B))\)</span> 和 <span class="arithmatex">\((C,R_C)\)</span> 是 AF=<AR,attacks> 的两个子框架，其中 <span class="arithmatex">\(B^-\subset C\)</span>。设L是 <span class="arithmatex">\((C,R_C)\)</span> 的一个标记。我们把 <span class="arithmatex">\(((B,R_B), (B^-,I_B)^L)\)</span> 称为一个局部标记子框架，意指 <span class="arithmatex">\(B^-\)</span> 中论证的标签要遵循L</p>
+<p>设 <span class="arithmatex">\(((B,R_B),(B^-, I_B))\)</span> 和 <span class="arithmatex">\((C,R_C)\)</span> 是 AF=<AR,attacks> 的两个子框架，其中 <span class="arithmatex">\(B^-\subset C\)</span>。
+设L是 <span class="arithmatex">\((C,R_C)\)</span> 的一个标记。我们把 <span class="arithmatex">\(((B,R_B), (B^-,I_B)^L)\)</span> 称为一个局部标记子框架，意指 <span class="arithmatex">\(B^-\)</span> 中论证的标签要遵循L</p>
 <div class="admonition info">
 <p class="admonition-title">局部标记子框架的标记</p>
 <p>把一个局部标记子框架 <span class="arithmatex">\(((B,R_B),(B^-, I_B)^L)\)</span> 的标记定义为：
@@ -3415,17 +3622,36 @@
 <div class="admonition info">
 <p class="admonition-title">局部标记子框架的合法标记</p>
 <p>设 𝐿′ 是 <span class="arithmatex">\(((B,R_B),(B^-, I_B)^L)\)</span> 的一个标记，对于任意 𝑎 ∈ 𝐵,
-- 𝐿′(𝑎) = 𝐼𝑁 是合法的，当且仅当：对于任意 𝑏 ∈ 𝐵，如果 (𝑏, 𝑎) ∈ 𝑅𝐵，那么 𝑏 在 𝐿′被标记为 𝑂𝑈𝑇；对于任意 𝑏 ∈ 𝐵−，如果 (𝑏, 𝑎) ∈ <span class="arithmatex">\(𝐼_𝐵\)</span>，那么 𝑏 在 𝐿 中被标记为 𝑂𝑈𝑇。
-- 𝐿′(𝑎) = 𝑂𝑈𝑇 是合法的，当且仅当：存在 𝑏 ∈ 𝐵，使得 (𝑏, 𝑎) ∈ 𝑅𝐵，且 𝑏 在 𝐿′ 被标记为 𝐼𝑁；或者存在 <span class="arithmatex">\(𝑏 ∈ 𝐵^−\)</span>，使得 (𝑏, 𝑎) ∈ 𝐼𝐵，且 𝑏 在 𝐿 中被标记为 𝐼𝑁。
-- 𝐿′(𝑎) = 𝑈𝑁𝐷𝐸𝐶 是合法的，当且仅当：不存在 <span class="arithmatex">\(𝑏 ∈ 𝐵 ∪ 𝐵^-\)</span>，使得 (𝑏, 𝑎) ∈ <span class="arithmatex">\(R_B\cup I_B\)</span> 且 𝑏 在 𝐿′ 或 𝐿 中被标记为 𝐼𝑁；存在 <span class="arithmatex">\(𝑏 ∈ 𝐵 ∪ 𝐵^−\)</span>，使得 <span class="arithmatex">\((𝑏, 𝑎) ∈ 𝑅_𝐵 ∪ 𝐼_𝐵\)</span> 且 𝑏 在 𝐿′或 𝐿 中不被标记为 𝑂𝑈𝑇。</p>
+- 𝐿′(𝑎) = 𝐼𝑁 是合法的，当且仅当：对于任意 𝑏 ∈ 𝐵，如果 (𝑏, 𝑎) ∈ 𝑅𝐵，
+那么 𝑏 在 𝐿′被标记为 𝑂𝑈𝑇；对于任意 𝑏 ∈ 𝐵−，如果 (𝑏, 𝑎) ∈ <span class="arithmatex">\(𝐼_𝐵\)</span>，那么 𝑏 在 𝐿 中被标记为 𝑂𝑈𝑇。</p>
+<ul>
+<li>
+<p>𝐿′(𝑎) = 𝑂𝑈𝑇 是合法的，当且仅当：存在 𝑏 ∈ 𝐵，使得 (𝑏, 𝑎) ∈ 𝑅𝐵，且 𝑏 在 𝐿′ 被标记为 
+𝐼𝑁；或者存在 <span class="arithmatex">\(𝑏 ∈ 𝐵^−\)</span>，使得 (𝑏, 𝑎) ∈ 𝐼𝐵，且 𝑏 在 𝐿 中被标记为 𝐼𝑁。</p>
+</li>
+<li>
+<p>𝐿′(𝑎) = 𝑈𝑁𝐷𝐸𝐶 是合法的，当且仅当：不存在 <span class="arithmatex">\(𝑏 ∈ 𝐵 ∪ 𝐵^-\)</span>，使得 (𝑏, 𝑎) ∈ <span class="arithmatex">\(R_B\cup I_B\)</span> 
+且 𝑏 在 𝐿′ 或 𝐿 中被标记为 𝐼𝑁；存在 <span class="arithmatex">\(𝑏 ∈ 𝐵 ∪ 𝐵^−\)</span>，使得 <span class="arithmatex">\((𝑏, 𝑎) ∈ 𝑅_𝐵 ∪ 𝐼_𝐵\)</span> 
+且 𝑏 在 𝐿′或 𝐿 中不被标记为 𝑂𝑈𝑇。</p>
+</li>
+</ul>
 </div>
 <p><img src="\img\study\ai\ailogic\subframe.png" alt="子框架的标记" title="子框架的标记"></p>
 <h3 id="_15">子框架的语义合成</h3>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>给定一个抽象论辩框架 𝐴𝐹 =&lt; 𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 &gt;，<span class="arithmatex">\(B，C\subset AR, B^-\neq \emptyset, C^-=\emptyset, B^-\subset C\)</span>。在论辩语义 <span class="arithmatex">\(\sigma\in \{ad,co,gr,pr\}\)</span>
-1. <span class="arithmatex">\(\mathcal{L}_\sigma((C,R_C))=\{L\cap C| L\in \mathcal{L}_\sigma(AF)\}\)</span>
-2. <span class="arithmatex">\(\mathcal{L}_\sigma(((B,B_R),(B^-,I_B)^{L'})) = \{L\cap (B\cup B^-)|L\in \mathcal{L}_{\sigma}(AF)\}\)</span>，其中<span class="arithmatex">\(L'\in \mathcal{L}_\sigma((C,R_C))\)</span></p>
+<p>给定一个抽象论辩框架 𝐴𝐹 =&lt; 𝐴𝑅, 𝑎𝑡𝑡𝑎𝑐𝑘 𝑠 &gt;，
+<span class="arithmatex">\(B，C\subset AR, B^-\neq \emptyset, C^-=\emptyset, B^-\subset C\)</span>。
+在论辩语义 <span class="arithmatex">\(\sigma\in \{ad,co,gr,pr\}\)</span></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\mathcal{L}_\sigma((C,R_C))=\{L\cap C| L\in \mathcal{L}_\sigma(AF)\}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathcal{L}_\sigma(((B,B_R),(B^-,I_B)^{L'})) = \{L\cap (B\cup B^-)|L\in \mathcal{L}_{\sigma}(AF)\}\)</span>，
+其中 <span class="arithmatex">\(L'\in \mathcal{L}_\sigma((C,R_C))\)</span></p>
+</li>
+</ol>
 </div>
 
 
@@ -3449,7 +3675,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 11, 2025 15:18:09">May 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

@@ -64,6 +64,7 @@ TLB：转译后备缓冲区。硬件缓存，存储最近使用的虚拟页到�
 - 多级结构：将页表划分为多级（如两级、四级），虚拟地址分段用于各级索引。
 
 示例（32位两级页表）：
+
 - 虚拟地址分为：10位页目录索引 + 10位页表索引 + 12位页内偏移。
 - 页目录（Page Directory）：1024项，每项指向一个页表（4KB）。
 - 页表（Page Table）：1024项，每项指向物理页框（4KB页）。
@@ -95,6 +96,7 @@ EAT = (1 - p) \times (T_{hit}) + p \times (T_{fault})
 \]
 
 其中：
+
 - \( p \) 是 **页故障率**（Page Fault Rate），即访问的虚拟地址发生页故障的概率。
 - \( T_{hit} \) 是 **缓存命中的时间**（Time to access memory when there is no page fault），即访问内存时，不发生页故障的时间（通常是对 TLB 或一级缓存的访问时间）。
 - \( T_{fault} \) 是 **页故障时间**（Time to access memory when a page fault occurs），即发生页故障时的访问时间，包括查找页表、磁盘 I/O 等时间。

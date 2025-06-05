@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2162,6 +2214,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2235,6 +2310,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2577,6 +2656,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2675,6 +2777,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3049,17 +3174,22 @@
 <span class="arithmatex">\(a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}\)</span>
 其中，𝑎 是原子公式, not 𝑎 称作 “失败即否定” 公式，或简称 naf 公式。</p>
 </div>
-<p>给定形如上述的一条规则 𝑟，我们用 head(𝑟) 和 body(𝑟) 分别表示 𝑟 的头部和身体，即head(𝑟) = 𝑎0，body(𝑟) = {<span class="arithmatex">\(a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}\)</span>}。为简便起见，我们也把逻辑编程规则称为规则，把逻辑程序称为程序。</p>
+<p>给定形如上述的一条规则 𝑟，我们用 head(𝑟) 和 body(𝑟) 分别表示 𝑟 的头部和身体，
+即 head(𝑟) = 𝑎0，body(𝑟) = {<span class="arithmatex">\(a_1,\dots,a_n \text{not} a_{n+1},\dots,\text{not} a_{n+k}\)</span>}。
+为简便起见，我们也把逻辑编程规则称为规则，把逻辑程序称为程序。</p>
 <p>一些特殊情况：</p>
 <ul>
 <li><span class="arithmatex">\(a_0\leftarrow.(n=0,k=0)\)</span> 称为事实</li>
 <li><span class="arithmatex">\(\leftarrow a_1,\dots,a_n,\text{not} a_{n+1},\dots,a_{n+k}.\)</span>（头部为空或头部为<span class="arithmatex">\(\bot\)</span>）称为约束或目标</li>
 <li><span class="arithmatex">\(a_0\leftarrow,\dots,a_n.(k=0)\)</span> 称为肯定规则</li>
 </ul>
-<p>一个语言 <span class="arithmatex">\(\mathcal{L}\)</span> 的赫布兰德域，记作 <span class="arithmatex">\(HU_{\mathcal{L}}\)</span> ，是所有可以由 <span class="arithmatex">\(\mathcal{L}\)</span> 中的个体常元和函数形成的基项的集合。一个语言 <span class="arithmatex">\(\mathcal{L}\)</span> 的赫布兰德基底，记作 <span class="arithmatex">\(HB_{\mathcal{L}}\)</span> ，是所有可以由 <span class="arithmatex">\(\mathcal{L}\)</span> 中的谓词和 <span class="arithmatex">\(HU_{\mathcal{L}}\)</span> 的项形成的基原子的集合。</p>
+<p>一个语言 <span class="arithmatex">\(\mathcal{L}\)</span> 的赫布兰德域，记作 <span class="arithmatex">\(HU_{\mathcal{L}}\)</span> ,
+是所有可以由 <span class="arithmatex">\(\mathcal{L}\)</span> 中的个体常元和函数形成的基项的集合。一个语言 <span class="arithmatex">\(\mathcal{L}\)</span> 的赫布兰德基底，
+记作 <span class="arithmatex">\(HB_{\mathcal{L}}\)</span> ，是所有可以由 <span class="arithmatex">\(\mathcal{L}\)</span> 中的谓词和 <span class="arithmatex">\(HU_{\mathcal{L}}\)</span> 的项形成的基原子的集合。</p>
 <div class="admonition info">
 <p class="admonition-title">基化</p>
-<p>设 <span class="arithmatex">\(r\)</span> 是语言 <span class="arithmatex">\(\mathcal{L}\)</span> 中的一条规则。𝑟 在 <span class="arithmatex">\(\mathcal{L}\)</span> 中的基化（grounding），记作 ground(𝑟, <span class="arithmatex">\(\mathcal{L}\)</span>)，是用 <span class="arithmatex">\(HU_{\mathcal{L}}\)</span> 中的元素对 𝑟 中的变元进行所有可能的代换而得到的所有规则集合。</p>
+<p>设 <span class="arithmatex">\(r\)</span> 是语言 <span class="arithmatex">\(\mathcal{L}\)</span> 中的一条规则。𝑟 在 <span class="arithmatex">\(\mathcal{L}\)</span> 中的基化（grounding），
+记作 ground(𝑟, <span class="arithmatex">\(\mathcal{L}\)</span>)，是用 <span class="arithmatex">\(HU_{\mathcal{L}}\)</span> 中的元素对 𝑟 中的变元进行所有可能的代换而得到的所有规则集合。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">回答集语言</p>
@@ -3073,8 +3203,10 @@
 </div>
 <h2 id="_2">程序的语义</h2>
 <ul>
-<li>规则 <span class="arithmatex">\(a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}\)</span> 的含义是：如果 <span class="arithmatex">\(a_1, \cdots,a_n\)</span> 为真，而 <span class="arithmatex">\(a_{n+1},\cdots,a_{n+k}\)</span> 中没有一个为真，则 <span class="arithmatex">\(a_0\)</span> 为真。</li>
-<li>约束 <span class="arithmatex">\(\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}\)</span> 的含义是：如果 <span class="arithmatex">\(a_i(1\leq i \geq n)\)</span> 为假或某个 <span class="arithmatex">\(a_j(n+1\leq j \leq n+k)\)</span> 为真。</li>
+<li>规则 <span class="arithmatex">\(a_0\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}\)</span>
+的含义是：如果 <span class="arithmatex">\(a_1, \cdots,a_n\)</span> 为真，而 <span class="arithmatex">\(a_{n+1},\cdots,a_{n+k}\)</span> 中没有一个为真，则 <span class="arithmatex">\(a_0\)</span> 为真。</li>
+<li>约束 <span class="arithmatex">\(\leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}\)</span>
+的含义是：如果 <span class="arithmatex">\(a_i(1\leq i \geq n)\)</span> 为假或某个 <span class="arithmatex">\(a_j(n+1\leq j \leq n+k)\)</span> 为真。</li>
 </ul>
 <p>给定一个程序 Π，它的语义按照它的基程序 ground(Π) 的语义来定义。</p>
 <h3 id="_3">肯定程序的语义</h3>
@@ -3083,10 +3215,17 @@
 <p>程序 <span class="arithmatex">\(\Pi\)</span> 的一个霍布兰德解释是其基地的任意子集，记作 <span class="arithmatex">\(I\subset HB_{\Pi}\)</span>。</p>
 </div>
 <p>设 Π 是一个肯定程序，𝐼 是 Π 的一个赫布兰德解释。称 𝐼 是 Π 的一个<strong>赫布兰德模型</strong>，当
-如下条件成立：
-- 对于每条规则 “𝑎0 ← 𝑎1, . . . , 𝑎𝑛.”，如果 𝑎1, . . . , 𝑎𝑛 关于 𝐼 为真，即 {𝑎1, . . . , 𝑎𝑛} ⊆ 𝐼，那么 𝑎0 也关于 𝐼 为真，则 <span class="arithmatex">\(a_0\in I\)</span>。这时，我们说 𝐼 满足规则 “𝑎0 ← 𝑎1, . . . , 𝑎𝑛.”。
-- 对于每条规则 “← 𝑎1, . . . , 𝑎𝑛.”，如果{𝑎1, . . . , 𝑎𝑛} ⊈ 𝐼，我们说 𝐼 满足规则 “← 𝑎1, . . . , 𝑎𝑛.”。
-我们说一个解释 𝐼 在集合 <span class="arithmatex">\(\{I_1,\dots,I_n\}\)</span> 中是极小的，如果不存在一个 𝑗，1 ≤ 𝑗 ≤ 𝑛，使得 𝐼𝑗 是 𝐼 的真子集。我们说一个解释 𝐼 在集合 {𝐼1, . . . , 𝐼𝑛} 中是最小的，如果对于任何 𝑗，1 ≤ 𝑗 ≤ 𝑛，𝐼 ⊆ 𝐼𝑗。</p>
+如下条件成立：</p>
+<ul>
+<li>对于每条规则 “𝑎0 ← 𝑎1, . . . , 𝑎𝑛.”，如果 𝑎1, . . . , 𝑎𝑛 关于 𝐼 为真，
+即 {𝑎1, . . . , 𝑎𝑛} ⊆ 𝐼，那么 𝑎0 也关于 𝐼 为真，则 <span class="arithmatex">\(a_0\in I\)</span>。
+这时，我们说 𝐼 满足规则 “𝑎0 ← 𝑎1, . . . , 𝑎𝑛.”。</li>
+<li>对于每条规则 “← 𝑎1, . . . , 𝑎𝑛.”，如果{𝑎1, . . . , 𝑎𝑛} ⊈ 𝐼，
+我们说 𝐼 满足规则 “← 𝑎1, . . . , 𝑎𝑛.”。</li>
+</ul>
+<p>我们说一个解释 𝐼 在集合 <span class="arithmatex">\(\{I_1,\dots,I_n\}\)</span> 中是极小的，
+如果不存在一个 𝑗，1 ≤ 𝑗 ≤ 𝑛，使得 𝐼𝑗 是 𝐼 的真子集。
+我们说一个解释 𝐼 在集合 {𝐼1, . . . , 𝐼𝑛} 中是最小的，如果对于任何 𝑗，1 ≤ 𝑗 ≤ 𝑛，𝐼 ⊆ 𝐼𝑗。</p>
 <p>程序 Π 的最小赫布兰德模型，简称最小模型，记作 <span class="arithmatex">\(M_{\Pi}\)</span>。通常把程序 Π 的最小赫布兰德模型称为 Π 的一个<strong>回答集</strong>。</p>
 <div class="admonition info">
 <p class="admonition-title">赫布兰德模型</p>
@@ -3105,7 +3244,8 @@
 <li>计算 $ X_{k+1} = T_{\Pi}(X_k)$。如果 <span class="arithmatex">\(X_{k+1}=X_k\)</span>，则停止并返回 <span class="arithmatex">\(X_k\)</span></li>
 <li>否则，增加k并重复第二步</li>
 </ul>
-<p>对于一个肯定程序 Π 和有穷的赫布兰德基底 <span class="arithmatex">\(HB_\Pi\)</span>，上述算法将会停止。我们用 <span class="arithmatex">\(T_\Pi^\infty\)</span> 或 $ lfp(T_\Pi)$ 表示 <span class="arithmatex">\(T_\Pi\)</span> 的最小不动点。</p>
+<p>对于一个肯定程序 Π 和有穷的赫布兰德基底 <span class="arithmatex">\(HB_\Pi\)</span>，上述算法将会停止。
+我们用 <span class="arithmatex">\(T_\Pi^\infty\)</span> 或 $ lfp(T_\Pi)$ 表示 <span class="arithmatex">\(T_\Pi\)</span> 的最小不动点。</p>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
 <p><span class="arithmatex">\(M_\Pi = lfp(T_\Pi)\)</span></p>
@@ -3115,7 +3255,8 @@
 <p>对于每个不含约束的肯定程序<span class="arithmatex">\(\Pi\)</span>，<span class="arithmatex">\(M_\Pi\)</span> 是唯一的</p>
 </div>
 <h3 id="_4">一般程序的语义</h3>
-<p>当一个逻辑程序中包含形如式 <span class="arithmatex">\(a_0\leftarrow a_1,\dots,a_n \text{not}\ a_{n+1},\dots, \text{not} a_{n+k}\)</span> 的规则时，称之为一般逻辑程序或正规逻辑程序。正规逻辑程序是肯定程序的超集，因为前者允许在规则的身体部分包含算子 not。</p>
+<p>当一个逻辑程序中包含形如式 <span class="arithmatex">\(a_0\leftarrow a_1,\dots,a_n \text{not}\ a_{n+1},\dots, \text{not} a_{n+k}\)</span>
+的规则时，称之为一般逻辑程序或正规逻辑程序。正规逻辑程序是肯定程序的超集，因为前者允许在规则的身体部分包含算子 not。</p>
 <p>给定一个不含约束的正规逻辑程序 Π 和一个候选回答集 𝑆，首先把 Π 转变成一个确定程序 Π
 𝑆。然后，把 𝑆 定义为Π 的一个回答集，如果 𝑆 是 <span class="arithmatex">\(Π^𝑆\)</span> 的回答集。</p>
 <div class="admonition info">
@@ -3135,11 +3276,12 @@
 <span class="arithmatex">\(Π^𝑆2\)</span> = {𝑝 ← 𝑎., 𝑏 ← .}，且 Π𝑆2 的回答集是 𝑆2。<br />
 集合 𝑆 = {𝑎, 𝑏} 不是 Π 的回答集。<span class="arithmatex">\(Π^𝑆\)</span> = {𝑝 ← 𝑎.}，它的回答集为 ∅，与 𝑆 不同  </li>
 </ul>
-<p>对于一个含约束的逻辑程序<span class="arithmatex">\(\Pi\)</span>，把<span class="arithmatex">\(\Pi\)</span>分为两个集合 <span class="arithmatex">\(\Pi_O=\{r|r\in\Pi,r\text{的头部为空}\}\)</span>和 <span class="arithmatex">\(\Pi_C=\Pi / \Pi_O\)</span>。前者是一个不含约束的程序。对于一个基原子公式集合S和一个约束c：
-$$
+<p>对于一个含约束的逻辑程序<span class="arithmatex">\(\Pi\)</span>，把<span class="arithmatex">\(\Pi\)</span>分为两个集合 <span class="arithmatex">\(\Pi_O=\{r|r\in\Pi,r\text{的头部为空}\}\)</span>
+和 <span class="arithmatex">\(\Pi_C=\Pi / \Pi_O\)</span>。前者是一个不含约束的程序。对于一个基原子公式集合S和一个约束c：</p>
+<div class="arithmatex">\[
 \leftarrow a_1,\dots,a_n \text{not} a_{n+1},\dots, \text{not} a_{n+k}
-$$
-我们说S满足c，如果 <span class="arithmatex">\(\{a_0,\dots,a_n\} \subset S\)</span> 或 <span class="arithmatex">\(\{a_{n+1},\dots,a_{n+k}\}\cap S\neq \emptyset\)</span></p>
+\]</div>
+<p>我们说S满足c，如果 <span class="arithmatex">\(\{a_0,\dots,a_n\} \subset S\)</span> 或 <span class="arithmatex">\(\{a_{n+1},\dots,a_{n+k}\}\cap S\neq \emptyset\)</span></p>
 <div class="admonition info">
 <p class="admonition-title">回答集</p>
 <p>一个基原子公式集合S是程序 <span class="arithmatex">\(\Pi\)</span> 的一个回答集，如果S是 <span class="arithmatex">\(\Pi_O\)</span> 的回答集，且满足<span class="arithmatex">\(ground(\Pi_C)\)</span>的所有约束</p>
@@ -3166,7 +3308,7 @@ $$
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 11, 2025 15:18:09">May 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

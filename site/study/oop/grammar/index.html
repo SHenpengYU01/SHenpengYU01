@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1844,6 +1894,8 @@
       
         
       
+        
+      
     
     
     
@@ -2071,6 +2123,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ailogic/game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2151,6 +2226,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2289,6 +2368,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#union" class="md-nav__link">
+    <span class="md-ellipsis">
+      union
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static" class="md-nav__link">
+    <span class="md-ellipsis">
+      static
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       字符串
@@ -2415,15 +2512,6 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       缺省参数
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      引用（Reference）
     </span>
   </a>
   
@@ -2672,6 +2760,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      enum
+    </span>
+  </a>
   
 </li>
       
@@ -2940,6 +3037,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../memory/" class="md-nav__link">
         
   
@@ -3038,6 +3158,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3361,6 +3504,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#union" class="md-nav__link">
+    <span class="md-ellipsis">
+      union
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#static" class="md-nav__link">
+    <span class="md-ellipsis">
+      static
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       字符串
@@ -3487,15 +3648,6 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       缺省参数
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      引用（Reference）
     </span>
   </a>
   
@@ -3747,6 +3899,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#enum" class="md-nav__link">
+    <span class="md-ellipsis">
+      enum
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3770,30 +3931,49 @@
 <h2 id="_1">声明与定义</h2>
 <ul>
 <li>声明：只是说明名字的存在，外部声明使用<code>extern</code>关键字，函数可以不使用：不带函数体的函数名连同参数表或返回值，自动地作为一个声明。</li>
-<li>定义：为名字分配内存，它可以同时是声明。</li>
+<li>
+<p>定义：为名字分配内存，它可以同时是声明。</p>
+</li>
+<li>
+<p>初始化：在变量被声明时给变量赋值，称变量被初始化。声明时未赋值称变量未初始化：<code>int a=0;</code>初始化，而<code>int a;</code>未初始化。</p>
+</li>
+<li>
+<p>C++中函数声明时可以仅给定参数类型而不给参数名称，在函数定义时再给定具体名称，在C中不行。</p>
+</li>
 </ul>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="kt">int</span><span class="p">);</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">){</span><span class="n">x</span><span class="o">++</span><span class="p">;}</span>
+</span></code></pre></div>
 <h2 id="void">void*</h2>
 <p>C++允许将任何类型的指针赋给 <code>void *</code>（这是 <code>void*</code> 的最初的意图，它要求 <code>void*</code> 足够大，以存放任何类型的指针），但不允许将<code>void*</code> 指针赋给任何其他类型的指针。因为C++是类型严格的。在C中两者都可以。</p>
+<h2 id="union">union</h2>
+<p>联合体（union）：联合体中的所有成员共享同一块内存空间，因此其内存大小是所有成员中最大成员的大小。</p>
+<h2 id="static">static</h2>
+<p>static修饰的静态全局或局部变量在<strong>声明时未赋值</strong>时，都会被自动初始化为0，同C语言。</p>
+<ul>
+<li>.data段：包含已初始化的全局变量和静态变量（包括非零的初始化值）</li>
+<li>.bss段：包含未初始化的全局变量和静态变量，或者初始化为零的变量。</li>
+</ul>
 <h2 id="_2">字符串</h2>
 <ul>
 <li>"" 代表字符串字面量（const char[]）</li>
 <li>'' 代表字符字面量（char）</li>
 </ul>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;A&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">//错误 &quot;A&quot; 表示字符串，为 char[2]</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;B&#39;</span><span class="p">;</span><span class="c1">//错误 &#39;B&#39; 是个字符，为char</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">char</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;A&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">//错误 &quot;A&quot; 表示字符串，为 char[2]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;B&#39;</span><span class="p">;</span><span class="c1">//错误 &#39;B&#39; 是个字符，为char</span>
 </span></code></pre></div>
 <h2 id="_3">头文件</h2>
 <p><code>#include</code>的头文件如果用标准头文件或标准库一般用<code>&lt;&gt;</code>，而自定义头文件一般用<code>""</code>，便于区分。</p>
 <p>C++标准库头文件不加<code>.h</code>，而C标准库头文件需要加，如果在 C++ 中使用，通常使用 <code>c</code> 前缀并去掉 <code>.h</code> 后缀，如<code>#include&lt;cstdio&gt;</code></p>
 <p>防止头文件多次声明导致的错误：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// myheader.h</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">#ifndef MYHEADER_H   </span><span class="c1">// 使用头文件名作为前缀</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cp">#define MYHEADER_H</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">// 头文件的实际内容</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="cp">#endif</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1">//C++中也可以在头文件中使用如下简化的预处理指令</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="cp">#pragma once</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// myheader.h</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="cp">#ifndef MYHEADER_H   </span><span class="c1">// 使用头文件名作为前缀</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cp">#define MYHEADER_H</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1">// 头文件的实际内容</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="cp">#endif</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1">//C++中也可以在头文件中使用如下简化的预处理指令</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="cp">#pragma once</span>
 </span></code></pre></div>
 <p>头文件多次声明的例子：<code>main.cpp</code>中include <code>A.h</code>和<code>B.h</code>，而<code>B.h</code>中也include了<code>A.h</code>，那么<code>A.h</code>就在<code>main.cpp</code>中声明了两次。</p>
 <h2 id="_4">作用域</h2>
@@ -3805,11 +3985,11 @@
 <li><strong>组织代码结构</strong>：将相关代码分组，提高可读性和可维护性。</li>
 </ul>
 <h3 id="2">2. <strong>定义命名空间</strong></h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">MySpace</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 函数声明</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/*...*/</span><span class="w"> </span><span class="p">};</span><span class="w"> </span><span class="c1">// 类定义</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// 变量</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">}</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">MySpace</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 函数声明</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/*...*/</span><span class="w"> </span><span class="p">};</span><span class="w"> </span><span class="c1">// 类定义</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"> </span><span class="c1">// 变量</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="p">}</span>
 </span></code></pre></div>
 <ul>
 <li>
@@ -3830,20 +4010,20 @@ namespace A {
 <ul>
 <li>
 <p><strong>作用域解析运算符 <code>::</code></strong>：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">MySpace</span><span class="o">::</span><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 调用MySpace中的函数</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">A</span><span class="o">::</span><span class="n">B</span><span class="o">::</span><span class="n">nestedFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 调用嵌套命名空间中的函数</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">MySpace</span><span class="o">::</span><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 调用MySpace中的函数</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">A</span><span class="o">::</span><span class="n">B</span><span class="o">::</span><span class="n">nestedFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 调用嵌套命名空间中的函数</span>
 </span></code></pre></div>
 </li>
 <li>
 <p><strong><code>using</code> 声明</strong>（引入单个名称）：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">using</span><span class="w"> </span><span class="n">MySpace</span><span class="o">::</span><span class="n">func</span><span class="p">;</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 直接调用</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">using</span><span class="w"> </span><span class="n">MySpace</span><span class="o">::</span><span class="n">func</span><span class="p">;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 直接调用</span>
 </span></code></pre></div>
 </li>
 <li>
 <p><strong><code>using</code> 指令</strong>（引入整个命名空间，慎用）：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">MySpace</span><span class="p">;</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 直接调用</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">MySpace</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 直接调用</span>
 </span></code></pre></div>
 </li>
 <li>
@@ -3854,12 +4034,12 @@ namespace A {
 <ul>
 <li>
 <p>标准库内容位于 <code>std</code> 命名空间：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// 显式使用</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">// 显式使用</span>
 </span></code></pre></div>
 </li>
 <li>
 <p>推荐使用作用域解析或 <code>using</code> 声明，而非全局引入：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"> </span><span class="c1">// 仅引入cout</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"> </span><span class="c1">// 仅引入cout</span>
 </span></code></pre></div>
 </li>
 </ul>
@@ -3867,9 +4047,9 @@ namespace A {
 <ul>
 <li>
 <p>用于限制标识符仅在当前文件可见（内部链接）：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">namespace</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 匿名命名空间</span>
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">internalFunc</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/*...*/</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">}</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">namespace</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// 匿名命名空间</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">internalFunc</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/*...*/</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="p">}</span>
 </span></code></pre></div>
 </li>
 <li>
@@ -3880,8 +4060,8 @@ namespace A {
 <ul>
 <li>
 <p>简化长命名空间名称：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">AB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nn">A</span><span class="o">::</span><span class="nn">B</span><span class="p">;</span><span class="w"> </span><span class="c1">// 别名</span>
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">AB</span><span class="o">::</span><span class="n">nestedFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 等价于A::B::nestedFunc()</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">AB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nn">A</span><span class="o">::</span><span class="nn">B</span><span class="p">;</span><span class="w"> </span><span class="c1">// 别名</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">AB</span><span class="o">::</span><span class="n">nestedFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 等价于A::B::nestedFunc()</span>
 </span></code></pre></div>
 </li>
 </ul>
@@ -3889,22 +4069,22 @@ namespace A {
 <ul>
 <li>
 <p><strong>命名空间扩展</strong>：可在不同位置<strong>扩展</strong>命名空间内容。</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">MySpace</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">anotherFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 添加新函数</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">}</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">MySpace</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">anotherFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 添加新函数</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">}</span>
 </span></code></pre></div>
 </li>
 <li>
 <p><strong>全局命名空间</strong>：通过 <code>::</code> 访问全局作用域：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="w">    </span><span class="o">::</span><span class="n">globalFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 调用全局函数</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="w">    </span><span class="o">::</span><span class="n">globalFunc</span><span class="p">();</span><span class="w"> </span><span class="c1">// 调用全局函数</span>
 </span></code></pre></div>
 </li>
 <li>
 <p><strong>内联命名空间</strong>（C++11）：成员直接可见于外层命名空间，常用于版本控制：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">Lib</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">v1</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">();</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="p">}</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="n">Lib</span><span class="o">::</span><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 实际调用v1中的func</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">Lib</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="kr">inline</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">v1</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">func</span><span class="p">();</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="p">}</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">Lib</span><span class="o">::</span><span class="n">func</span><span class="p">();</span><span class="w"> </span><span class="c1">// 实际调用v1中的func</span>
 </span></code></pre></div>
 </li>
 </ul>
@@ -3915,33 +4095,33 @@ namespace A {
 <li><strong>头文件规范</strong>：在头文件中声明命名空间，避免 <code>using</code> 指令。</li>
 </ul>
 <h3 id="_5">示例代码</h3>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">Math</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Calc</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">}</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="c1">// 使用别名</span>
-</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">MC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nn">Math</span><span class="o">::</span><span class="nn">Calc</span><span class="p">;</span>
-</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
-</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">MC</span><span class="o">::</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// 输出7</span>
-</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="p">}</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">Math</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="k">namespace</span><span class="w"> </span><span class="nn">Calc</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="p">}</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1">// 使用别名</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">MC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nn">Math</span><span class="o">::</span><span class="nn">Calc</span><span class="p">;</span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">MC</span><span class="o">::</span><span class="n">add</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// 输出7</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="p">}</span>
 </span></code></pre></div>
 <details class="info">
 <summary>范围分解符</summary>
 <p>使用范围分解符/作用域解析符 <code>::</code> 可以指定使用哪个范围（全局、类内、结构体内）的变量和函数。
 全局范围<code>::函数/变量名</code>：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(){}</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">struct</span><span class="w"> </span><span class="nc">S</span><span class="p">{</span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(){}</span>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="p">}</span>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="kt">void</span><span class="w"> </span><span class="n">S</span><span class="o">::</span><span class="n">f</span><span class="p">(){</span>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w">    </span><span class="o">::</span><span class="n">a</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">//the gobal a</span>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="w">    </span><span class="o">::</span><span class="n">f</span><span class="p">();</span><span class="w"> </span><span class="c1">//the gobal f，没有::则会递归定义</span>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="p">}</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(){}</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="k">struct</span><span class="w"> </span><span class="nc">S</span><span class="p">{</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">(){}</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="p">}</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="kt">void</span><span class="w"> </span><span class="n">S</span><span class="o">::</span><span class="n">f</span><span class="p">(){</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="o">::</span><span class="n">a</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="c1">//the gobal a</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="o">::</span><span class="n">f</span><span class="p">();</span><span class="w"> </span><span class="c1">//the gobal f，没有::则会递归定义</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="p">}</span>
 </span></code></pre></div>
 </details>
 <h2 id="_6">缺省参数</h2>
@@ -3950,85 +4130,16 @@ namespace A {
 <li>一旦开始使用缺省参数，那么这个参数后面的所有参数都必须是缺省的。</li>
 <li>默认参数的值可以在函数声明时或定义中指定，但<strong>不能在声明和定义中都给出默认值</strong>，否则就会报默认参数重复定义的错误。</li>
 </ul>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">// 函数声明：在声明时为参数指定默认值</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kt">void</span><span class="w"> </span><span class="n">greet</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Guest&quot;</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">times</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()...</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1">// 函数定义：不需要再次指定默认值</span>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="kt">void</span><span class="w"> </span><span class="n">greet</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="cm">/*=&quot;Guest&quot;*/</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">times</span><span class="cm">/*=1*/</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">times</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="p">}</span>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">// 函数声明：在声明时为参数指定默认值</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="kt">void</span><span class="w"> </span><span class="n">greet</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Guest&quot;</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">times</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">main</span><span class="p">()...</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1">// 函数定义：不需要再次指定默认值</span>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="kt">void</span><span class="w"> </span><span class="n">greet</span><span class="p">(</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="cm">/*=&quot;Guest&quot;*/</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">times</span><span class="cm">/*=1*/</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">times</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello, &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="reference">引用（Reference）</h2>
-<p>引用一种是临时、轻量级的资源访问机制，本质是<strong>变量的别名</strong>，引用允许我们通过别名访问变量，而不需要复制其值。
-<strong>1. 格式</strong>：<code>type &amp;ref = variable</code>。
-<strong>2. 特点</strong>：
-- 引用在声明时就必须初始化且之后不能改变引用的对象。
-- 引用本质上是一个别名，它和原始对象共享同一内存地址。
-- 引用用于函数参数传递时，避免了大对象的复制，并且可以在函数内部修改外部对象的值。</p>
-<p><strong>3. 用法</strong>：</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">increment</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="n">x</span><span class="o">++</span><span class="p">;</span><span class="w">  </span><span class="c1">// 通过引用修改外部变量的值</span>
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">}</span>
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="kt">int</span><span class="o">&amp;</span><span class="w"> </span><span class="nf">getMax</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w">  </span><span class="c1">// 返回引用</span>
-</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p">}</span>
-</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
-</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="n">getMax</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="o">=</span><span class="mi">30</span><span class="p">;</span><span class="w">  </span><span class="c1">//现在y=30</span>
-</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="kt">void</span><span class="w"> </span><span class="nf">printValue</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="o">&amp;</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">   </span><span class="c1">//传递大型对象/结构体时尤其重要，可以避免不必要的复制，同时保护原始数据。</span>
-</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w">  </span><span class="c1">// 不能修改 x</span>
-</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="p">}</span>
-</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
-</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="n">printValue</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-</span></code></pre></div>
-<p><strong>4. 与指针的区别</strong>：</p>
-<table>
-<thead>
-<tr>
-<th>特性</th>
-<th>引用（Reference）</th>
-<th>指针（Pointer）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>语法</strong></td>
-<td><code>type &amp;ref = variable;</code></td>
-<td><code>type* ptr = &amp;variable;</code></td>
-</tr>
-<tr>
-<td><strong>是否可为空</strong></td>
-<td>不可为空（必须引用有效的对象）</td>
-<td>可以为空（指向 <code>nullptr</code>）</td>
-</tr>
-<tr>
-<td><strong>是否可以修改指向对象</strong></td>
-<td>不可以修改引用指向的对象</td>
-<td>可以通过修改指针来改变它指向的对象</td>
-</tr>
-<tr>
-<td><strong>内存开销</strong></td>
-<td>引用没有额外的内存开销，它是一个别名</td>
-<td>指针有额外的内存开销（存储指针本身的地址）</td>
-</tr>
-<tr>
-<td><strong>使用场景</strong></td>
-<td>更常用于函数参数传递、返回引用等</td>
-<td>更灵活，可以指向不同的对象，但需要管理内存</td>
-</tr>
-<tr>
-<td><strong>常量引用</strong></td>
-<td><code>const type &amp;</code></td>
-<td><code>const type*</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>5. 注意</strong>：</p>
-<ul>
-<li>No pointers to reference: <code>int&amp; * p;//illegal;</code></li>
-<li>No array of references</li>
-</ul>
 <h2 id="_7">常量相关</h2>
 <h3 id="const">const</h3>
 <p>用于声明常量或常量表达式，表示数据不可修改。</p>
@@ -4254,6 +4365,27 @@ namespace A {
 <li><strong>显式优于隐式</strong>  </li>
 <li>用类型系统（如智能指针）明确表达所有权，而非依赖约定。</li>
 </ol>
+<h2 id="enum">enum</h2>
+<p>C中enum用于定义一组具有关联的<strong>整型常量</strong>。默认情况下，枚举常量会从0开始逐一递增，可以显式指定枚举值大小。</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">enum</span><span class="w"> </span><span class="n">EnumName</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="w">    </span><span class="n">CONSTANT1</span><span class="p">,</span><span class="w">  </span><span class="c1">// 默认为 0</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="w">    </span><span class="n">CONSTANT2</span><span class="p">,</span><span class="w">  </span><span class="c1">// 默认为 1</span>
+</span><span id="__span-27-4"><a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="w">    </span><span class="n">CONSTANT3</span><span class="p">,</span><span class="w">  </span><span class="c1">// 默认为 2</span>
+</span><span id="__span-27-5"><a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="w">    </span><span class="n">constant4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+</span><span id="__span-27-6"><a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="w">    </span><span class="n">constant5</span><span class="w">   </span><span class="c1">//默认为6</span>
+</span><span id="__span-27-7"><a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="p">};</span>
+</span></code></pre></div>
+<p>C++中除了上述用法还引入了强类型枚举（enum class），枚举常量不再自动暴露在作用域中，必须通过EnumName::CONSTANT来访问。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">enum</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">EnumName</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-28-2"><a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="w">    </span><span class="n">CONSTANT1</span><span class="p">,</span>
+</span><span id="__span-28-3"><a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">    </span><span class="n">CONSTANT2</span><span class="p">,</span>
+</span><span id="__span-28-4"><a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">    </span><span class="n">CONSTANT3</span>
+</span><span id="__span-28-5"><a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="p">};</span>
+</span><span id="__span-28-6"><a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">EnumName</span><span class="o">::</span><span class="n">CONSTANT3</span><span class="p">;</span>
+</span></code></pre></div>
+<p>int i=0;</p>
+<p>Interger j = i++;
+++i;</p>
 
 
 
@@ -4276,7 +4408,7 @@ namespace A {
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 11, 2025 15:18:09">May 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

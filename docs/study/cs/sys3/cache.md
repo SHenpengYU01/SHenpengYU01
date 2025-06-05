@@ -103,17 +103,19 @@ Concepts:
 **Cache terms**:
 <img src="\img\study\cs\sys3\cache_terms.png" alt="Cache terms">
 
-### Four questions for cache designers
+### Four questions for cache designers :star:
 
 <img src="\img\study\cs\sys3\cache_design.png" alt="Questions for cache design">
 
 ### 1. Q1: Block Placement
-    - Direct mapped: A cache structure in which each memorylocation is mapped to exactly one locationin the cache.
-    - 2-way set-associative: A cache that has a fixed number oflocations (at least two) where each blockcan be placed.
-    <img src="\img\study\cs\sys3\2way_assosiative.png" alt="2-Way Set-associative">
-    - Fully-associative: A cache structure in which a block can beplaced in any location in the cache.
 
-### 2. Block Identification:
+- Direct mapped: A cache structure in which each memorylocation is mapped to exactly one locationin the cache.
+- 2-way set-associative: A cache that has a fixed number oflocations (at least two) where each block can be placed.
+<img src="\img\study\cs\sys3\2way_assosiative.png" alt="2-Way Set-associative">
+- Fully-associative: A cache structure in which a block can beplaced in any location in the cache.
+
+### 2. Block Identification
+
 <img src="\img\study\cs\sys3\cache_block.png" alt="Cache Block Identification">
 
 ### 3. Block replacement
@@ -143,7 +145,8 @@ When data is written into the cache (on a store), is the data also written to ma
 
 **Write stall**: When the CPU must wait for writes to complete during write through
 
-**Write buffer**: A small cache that can hold a few values waiting to go to main memory. This buffer helps when writes are clustered. It does not entirely eliminate stalls since it is possible for the buffer to fill if the burst is larger than the buffer.  
+**Write buffer**: A small cache that can hold a few values waiting to go to main memory.
+This buffer helps when writes are clustered. It does not entirely eliminate stalls since it is possible for the buffer to fill if the burst is larger than the buffer.  
 
 #### Write misses
 

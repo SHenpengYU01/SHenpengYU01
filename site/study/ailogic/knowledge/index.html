@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2210,6 +2262,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2283,6 +2358,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2625,6 +2704,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2723,6 +2825,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3156,16 +3281,13 @@ ABOX（断言框）：含基句子，阐述个体属于层次的哪个地方。
 </ul>
 <p>本体不能完全描述特定的 “情况” 或 “世界的状态”，而是由一系列句子（称为公理）组成。每个公理都必须在所描述的情况下为真。公理分为三类：断言型（ABox）公理，术语型（TBox）公理和关系型（RBox）公理。</p>
 <ul>
-<li>
-<p>用 ABox 公理断言事实： ABox 公理可以刻画关于命名个体的知识，即它们所属的概念以及它们相互之间的关系。最常见的 ABox 公理是概念断言，如 Mother(julia)，角色断言：parentOf(julia, john)</p>
-</li>
-<li>
-<p>用 TBox 公理表达术语知识： TBox 公理描述概念之间的关系。例如，“所有母亲都是父母”这个事实可以用概念包含表示如下： Mother <span class="arithmatex">\(\sqsubseteq\)</span> Parent</p>
-</li>
-<li>
-<p>用 RBox 公理建模角色之间的关系： RBox 公理是关于角色的特性的。关于概念，描述逻辑支持决策包含公理和角色等价公理。
-parentOf <span class="arithmatex">\(\sqsubseteq\)</span> ancestorOf 公理表示parentOf 是 ancestorOf 的子角色，即由parentOf 关联的每队个体也是由 ancestorOf 关联的个体。</p>
-</li>
+<li>用 ABox 公理断言事实： ABox 公理可以刻画关于命名个体的知识，即它们所属的概念以及它们相互之间的关系。
+最常见的 ABox 公理是概念断言，如 Mother(julia)，角色断言：parentOf(julia, john)</li>
+<li>用 TBox 公理表达术语知识： TBox 公理描述概念之间的关系。例如，“所有母亲都是父母”这个事实可以用概念包含表示如下：
+Mother <span class="arithmatex">\(\sqsubseteq\)</span> Parent</li>
+<li>用 RBox 公理建模角色之间的关系： RBox 公理是关于角色的特性的。关于概念，描述逻辑支持决策包含公理和角色等价公理。
+parentOf <span class="arithmatex">\(\sqsubseteq\)</span> ancestorOf 公理表示parentOf 是 ancestorOf 的子角色，
+即由parentOf 关联的每队个体也是由 ancestorOf 关联的个体。</li>
 </ul>
 <h3 id="_4">概念和角色的构造算子</h3>
 <ul>
@@ -3180,7 +3302,8 @@ parentOf <span class="arithmatex">\(\sqsubseteq\)</span> ancestorOf 公理表示
 ∃parentOf.Female 这个概念描述了那些至少有一个女性的父母，即那些有女儿的人
 (∃parentOf.⊤) ⊓ (∀parentOf.Female) ：描述至少有一个孩子并且所有孩子都是女性的个体。</p>
 <h3 id="_5">描述逻辑的语法</h3>
-<p>形式上，每个描述逻辑本体都基于三组有穷的符号集合：<span class="arithmatex">\(N_C, N_R, N_O\)</span>，它们分别表示概念名集合、角色名集合和个体名集合。这样，三元组 (N_C, N_R, N_O) 构成描述逻辑的名字表。</p>
+<p>形式上，每个描述逻辑本体都基于三组有穷的符号集合：<span class="arithmatex">\(N_C, N_R, N_O\)</span>，它们分别表示概念名集合、角色名集合和个体名集合。
+这样，三元组 (N_C, N_R, N_O) 构成描述逻辑的名字表。</p>
 <p>描述逻辑 <span class="arithmatex">\(\mathcal{ALC}\)</span> 的概念定义如下：</p>
 <div class="admonition info">
 <p class="admonition-title"><span class="arithmatex">\(mathcal{ALC}\)</span></p>
@@ -3196,51 +3319,86 @@ parentOf <span class="arithmatex">\(\sqsubseteq\)</span> ancestorOf 公理表示
 <p class="admonition-title">术语公理</p>
 <p>普通概念包含形如 𝐶 ⊑ 𝐷，其中 𝐶 和 𝐷 是概念。当 𝐶 ⊑ 𝐷 且 𝐷 ⊑ 𝐶 时，记作 𝐶 ≡ 𝐷。</p>
 </div>
-<p>TBox是一组术语公理的有穷集合。TBox $ \mathcal{T}$ 和它的扩张 $ \mathcal{T}'$ 是等价的。 <span class="arithmatex">\(mathcal{T}\)</span> 的扩张是将其定义中的的每个名称替换为该名称所代表的概念。相当于是做代换直到不能代换为止。</p>
+<p>TBox是一组术语公理的有穷集合。TBox $ \mathcal{T}$ 和它的扩张 $ \mathcal{T}'$ 是等价的。 <span class="arithmatex">\(\mathcal{T}\)</span> 的扩张是将其定义中的的每个名称替换为该名称所代表的概念。相当于是做代换直到不能代换为止。</p>
 <div class="admonition info">
 <p class="admonition-title">断言公理</p>
 <ul>
-<li>概念断言是一个形如 <span class="arithmatex">\(a: C\)</span> 的句子，其中 <span class="arithmatex">\(a\in N_O\)</span>, C是一个概念。</li>
-<li>角色断言是一个形如 <span class="arithmatex">\((a,b) : R\)</span> 的句子，其中 <span class="arithmatex">\(a, b\in N_O\)</span>，R是一个角色。</li>
-<li>ABox 是一组断言公理的有穷集合。</li>
+<li>
+<p>概念断言是一个形如 <span class="arithmatex">\(a: C\)</span> 的句子，其中 <span class="arithmatex">\(a\in N_O\)</span>, C是一个概念。</p>
+</li>
+<li>
+<p>角色断言是一个形如 <span class="arithmatex">\((a,b) : R\)</span> 的句子，其中 <span class="arithmatex">\(a, b\in N_O\)</span>，R是一个角色。</p>
+</li>
+<li>
+<p>ABox 是一组断言公理的有穷集合。</p>
+</li>
 </ul>
 </div>
 <div class="admonition info">
 <p class="admonition-title">知识库</p>
 </div>
-<p>在描述逻辑中，一个知识库是一个有序对 <span class="arithmatex">\((\mathcal{T}, \mathcal{A})\)</span>。其中 <span class="arithmatex">\(\mathcal{T}, \mathcal{A}\)</span> 分别是 TBox 和 ABox</p>
+<p>在描述逻辑中，一个知识库是一个有序对 <span class="arithmatex">\((\mathcal{T}, \mathcal{A})\)</span>。其中 <span class="arithmatex">\(\mathcal{T}, \mathcal{A}\)</span>
+分别是 TBox 和 ABox</p>
 <h3 id="_6">描述逻辑的语义</h3>
 <p>描述逻辑的语义通过如下方式定义：把概念解释为个体的集合，而把角色解释为个体有序对的集合。</p>
-<p>一个解释 <span class="arithmatex">\(\mathcal{I}\)</span> 由一个称为 <span class="arithmatex">\(\mathcal{I}\)</span> 的域的集合 <span class="arithmatex">\(\Delta^\mathcal{I}\)</span> 和一个解释函数 <span class="arithmatex">\(·^\mathcal{I}\)</span> 组成，该函数将每个原子概念映射到一个集合 A^\mathcal{I} \subset \Delta^\mathcal{I}，将每个原子角色R映射到二元关系 <span class="arithmatex">\(R^\mathcal{I}\subset \Delta^\mathcal{I} \times \Delta^\mathcal{I}\)</span>，将每个个体名称映射到一个元素 <span class="arithmatex">\(a^\mathcal{I} \in \Delta^\mathcal{I}\)</span></p>
+<p>一个解释 <span class="arithmatex">\(\mathcal{I}\)</span> 由一个称为 <span class="arithmatex">\(\mathcal{I}\)</span> 的域的集合 <span class="arithmatex">\(\Delta^\mathcal{I}\)</span> 和一个解释函数
+<span class="arithmatex">\(·^\mathcal{I}\)</span> 组成，该函数将每个原子概念映射到一个集合 <span class="arithmatex">\(A^\mathcal{I} \subset \Delta^\mathcal{I}\)</span>，
+将每个原子角色R映射到二元关系 <span class="arithmatex">\(R^\mathcal{I}\subset \Delta^\mathcal{I} \times \Delta^\mathcal{I}\)</span>，
+将每个个体名称映射到一个元素 <span class="arithmatex">\(a^\mathcal{I} \in \Delta^\mathcal{I}\)</span></p>
 <div class="admonition info">
 <p class="admonition-title">概念的解释</p>
-<p>给定名字表 <span class="arithmatex">\((𝑁_𝐶, 𝑁_𝑅, 𝑁_𝑂)\)</span>，相应的术语解释定义为 <span class="arithmatex">\(I = (\Delta^\mathcal{I}, ·^\mathcal{I})\)</span>。其中，
-- 非空集合 <span class="arithmatex">\(\Delta^\mathcal{I}\)</span> 成为论域。
-- 解释函数·^I 包括如下映射：
-  - 把每个个体a映射为元素 a^\mathcal{I} \in \Delta^\mathcal{I}
-  - 把每个概念映射为\Delta^\mathcal{I}的子集
-  - 把每个原子角色映射为 \Delta^\mathcal{I} \times \Delta^\mathcal{I}子集
-  使得
-  - <span class="arithmatex">\(\top^I=\Delta^\mathcal{I}\)</span>
-  - <span class="arithmatex">\(\bot^I=\emptyset\)</span>
-  - <span class="arithmatex">\((C\sqcup D)^I = C^I\cup D^I\)</span>
-  - <span class="arithmatex">\((C\sqcap D)^I = C^I\cap D^I\)</span>
-  - <span class="arithmatex">\((\neg C)^I = \Delta^\mathcal{I}\\C^I\)</span>
-  - <span class="arithmatex">\((\forall R.C)^I = \{x\in \Delta^\mathcal{I} | \forall y \text{如果} (x,y)\in R^I，\text{则} y\in C^I\}\)</span>
-  - <span class="arithmatex">\((\exist R.C)^I = \{x\in \Delta^\mathcal{I} | \exist y\in \Delta^I : (x,y)\in R^I，y\in C^I\}\)</span></p>
+<p>给定名字表 <span class="arithmatex">\((𝑁_𝐶, 𝑁_𝑅, 𝑁_𝑂)\)</span>，相应的术语解释定义为 <span class="arithmatex">\(I = (\Delta^\mathcal{I}, ·^\mathcal{I})\)</span>。其中，</p>
+<ul>
+<li>
+<p>非空集合 <span class="arithmatex">\(\Delta^\mathcal{I}\)</span> 成为论域。</p>
+</li>
+<li>
+<p>解释函数 <span class="arithmatex">\(·^I\)</span> 包括如下映射：</p>
+</li>
+<li>
+<p>把每个个体a映射为元素 <span class="arithmatex">\(a^\mathcal{I} \in \Delta^\mathcal{I}\)</span></p>
+</li>
+<li>
+<p>把每个概念映射为 <span class="arithmatex">\(\Delta^\mathcal{I}\)</span> 的子集</p>
+</li>
+<li>
+<p>把每个原子角色映射为 <span class="arithmatex">\(\Delta^\mathcal{I} \times \Delta^\mathcal{I}\)</span> 子集，使得</p>
+</li>
+<li>
+<p><span class="arithmatex">\(\top^I=\Delta^\mathcal{I}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\bot^I=\emptyset\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((C\sqcup D)^I = C^I\cup D^I\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((C\sqcap D)^I = C^I\cap D^I\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\neg C)^I = \Delta^\mathcal{I}\\C^I\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\forall R.C)^I = \{x\in \Delta^\mathcal{I} | \forall y \text{如果} (x,y)\in R^I，\text{则} y\in C^I\}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\exist R.C)^I = \{x\in \Delta^\mathcal{I} | \exist y\in \Delta^I : (x,y)\in R^I，y\in C^I\}\)</span></p>
+</li>
+</ul>
 </div>
 <h2 id="_7">描述逻辑的推理</h2>
-<p><img src="\img\study\ai\ailogic\definition.png"></p>
+<p><img src="\img\study\ai\ailogic\definition.png" alt=""></p>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>对于概念C和D，我们有：
-(1) C 被 D 包含，当且仅当 <span class="arithmatex">\(C\sqcap \neg D\)</span> 不可满足。
-(2) C 与 D 等价，当且仅当 <span class="arithmatex">\(C\sqcap \neg D, \neg C \sqcap D\)</span> 都不可满足
-(3) C与 D 不相交，当且仅当 <span class="arithmatex">\(C\cup D\)</span> 不可满足</p>
+<p>对于概念C和D，我们有：</p>
+<p>(1) C 被 D 包含，当且仅当 <span class="arithmatex">\(C\sqcap \neg D\)</span> 不可满足。</p>
+<p>(2) C 与 D 等价，当且仅当 <span class="arithmatex">\(C\sqcap \neg D, \neg C \sqcap D\)</span> 都不可满足</p>
+<p>(3) C与 D 不相交，当且仅当 <span class="arithmatex">\(C\cup D\)</span> 不可满足</p>
 </div>
 <h3 id="alc">ALC表算法</h3>
 <h4 id="alc_1">关于判断ALC概念可满足性的算法</h4>
-<p><img src="\img\study\ai\ailogic\NNF.png"></p>
+<p><img src="\img\study\ai\ailogic\NNF.png" alt="ALC表算法"></p>
 
 
 
@@ -3263,7 +3421,7 @@ parentOf <span class="arithmatex">\(\sqsubseteq\)</span> ancestorOf 公理表示
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 16, 2025 04:10:41">April 16, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

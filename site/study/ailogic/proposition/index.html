@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2069,15 +2121,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#sat" class="md-nav__link">
-    <span class="md-ellipsis">
-      SAT
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2225,6 +2268,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2298,6 +2364,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2640,6 +2710,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2738,6 +2831,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3138,15 +3254,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#sat" class="md-nav__link">
-    <span class="md-ellipsis">
-      SAT
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3183,14 +3290,14 @@
 </ol>
 <div class="admonition info">
 <p class="admonition-title">定义：命题公式</p>
-<p>命题公式，简称公式，可定义如下：
-(1) 命题符号是公式，称为原子公式。
-(2) 如果 𝜙 和 𝜓 是公式，那么 (¬𝜙), (𝜙 ∧ 𝜓), (𝜙 ∨ 𝜓), (𝜙 → 𝜓), (𝜙 ↔ 𝜓) 也是公式。
-(3) 只有有限次使用 (1) (2) 条款所组成的符号串是公式。
-或可用BNF形式表示如下：
-$$
+<p>命题公式，简称公式，可定义如下：</p>
+<p>(1) 命题符号是公式，称为原子公式。</p>
+<p>(2) 如果 𝜙 和 𝜓 是公式，那么 (¬𝜙), (𝜙 ∧ 𝜓), (𝜙 ∨ 𝜓), (𝜙 → 𝜓), (𝜙 ↔ 𝜓) 也是公式。</p>
+<p>(3) 只有有限次使用 (1) (2) 条款所组成的符号串是公式。
+或可用BNF形式表示如下：</p>
+<div class="arithmatex">\[
 \phi::=p|(\neg \phi)|(\phi\land \phi)|(\phi\lor \phi)|(\phi\rightarrow \phi)|(\phi\leftrightarrow \phi)
-$$</p>
+\]</div>
 </div>
 <p>任意的命题公式有且只有如下形式之一：𝑝，(¬𝜙)，(𝜙∧𝜓)，(𝜙∨𝜓)，(𝜙 → 𝜓)，(𝜙 ↔ 𝜓)。</p>
 <h2 id="_3">语义</h2>
@@ -3238,16 +3345,22 @@ $$</p>
 0, &amp; \text{otherwise}
 \end{cases}\)</span></p>
 </li>
-<li><span class="arithmatex">\(\top^v=1\)</span></li>
-<li><span class="arithmatex">\(\bot^v=0\)</span></li>
+<li>
+<p><span class="arithmatex">\(\top^v=1\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\bot^v=0\)</span></p>
+</li>
 </ul>
 </div>
 <p>一个命题公式在任何真假赋值下均为真，称为重言式；一个命题公式在任何真假赋值下均为假，称为矛盾式；一个命题公式在某个真假赋值为真，称为可满足式。</p>
 <h2 id="_4">逻辑推论</h2>
 <p>给定一组公式集合 <span class="arithmatex">\(\Phi\)</span> 作为前提，我们希望知道 <span class="arithmatex">\(\Phi\)</span> 是否在逻辑上蕴涵某个结论 <span class="arithmatex">\(\phi\)</span>。如果对
-于任何真假赋值 <span class="arithmatex">\(v\)</span>, <span class="arithmatex">\(\Phi^v=1\)</span>  总是蕴涵 <span class="arithmatex">\(\phi^v=1\)</span>，那么我们说 <span class="arithmatex">\(\phi\)</span> 是 <span class="arithmatex">\(\Phi\)</span> 的逻辑推论，记作 <span class="arithmatex">\(\Phi\models \phi\)</span></p>
+于任何真假赋值 <span class="arithmatex">\(v\)</span>, <span class="arithmatex">\(\Phi^v=1\)</span>  总是蕴涵 <span class="arithmatex">\(\phi^v=1\)</span>，那么我们说 <span class="arithmatex">\(\phi\)</span> 是 <span class="arithmatex">\(\Phi\)</span> 的逻辑推论，
+记作 <span class="arithmatex">\(\Phi\models \phi\)</span></p>
 <p>则可进行如下定义：
-给定一组命题公式集合 <span class="arithmatex">\(\Phi\)</span> 和一个命题公式 <span class="arithmatex">\(\phi\)</span>，<span class="arithmatex">\(\Phi\models\phi\)</span> 当且仅当对于任意 <span class="arithmatex">\(v\)</span>，如果 <span class="arithmatex">\(\Phi^v=1\)</span> ，那么 <span class="arithmatex">\(\phi^v=1\)</span></p>
+给定一组命题公式集合 <span class="arithmatex">\(\Phi\)</span> 和一个命题公式 <span class="arithmatex">\(\phi\)</span>，<span class="arithmatex">\(\Phi\models\phi\)</span> 当且仅当对于任意 <span class="arithmatex">\(v\)</span>，
+如果 <span class="arithmatex">\(\Phi^v=1\)</span> ，那么 <span class="arithmatex">\(\phi^v=1\)</span></p>
 <div class="admonition info">
 <p class="admonition-title">定义：有效性</p>
 <p>给定命题逻辑公式 𝜙，如果 <span class="arithmatex">\(\models\phi\)</span>，我们说 𝜙 是有效的。</p>
@@ -3278,7 +3391,8 @@ $$</p>
 <p class="admonition-title">定义：合取范式</p>
 <p>命题公式 𝜙 称为命题公式 𝜓 的合取范式，如果 𝜙 |=| 𝜓，且 𝜙 呈如下形式：
 $ D_1 \land D_2\land\cdots\land D_m$
-其中，<span class="arithmatex">\(D_i(i=1,2,\dots,m)\)</span> 称为 <span class="arithmatex">\(\phi\)</span> 的子句，形如 $ L_1 \lor L_2 \lor \cdots \lor L_n$。   <span class="arithmatex">\(L_j\)</span> 为原子公式或原子公式否定，称 <span class="arithmatex">\(L_i\)</span> 为子句的<strong>文字</strong>。</p>
+其中，<span class="arithmatex">\(D_i(i=1,2,\dots,m)\)</span> 称为 <span class="arithmatex">\(\phi\)</span> 的子句，形如 $ L_1 \lor L_2 \lor \cdots \lor L_n$。
+<span class="arithmatex">\(L_j\)</span> 为原子公式或原子公式否定，称 <span class="arithmatex">\(L_i\)</span> 为子句的<strong>文字</strong>。</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
@@ -3289,7 +3403,10 @@ $ D_1 \land D_2\land\cdots\land D_m$
 MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\(\phi\)</span> 和 <span class="arithmatex">\(\phi \rightarrow \psi\)</span> 可得到 <span class="arithmatex">\(\psi\)</span>。</p>
 <div class="admonition info">
 <p class="admonition-title">形式可推演</p>
-<p>给定一组前提集合 Φ = {𝜙1, 𝜙2, 𝜙3, . . . , , 𝜙𝑛} 和一个结论 𝜓, 其中 𝜙𝑖 和 𝜓 都是公式。我们说从这组前提到这个结论是形式可推演的，记作 Φ ⊢ 𝜓，如果存在一个证明：<span class="arithmatex">\(\psi_1, \psi_2,\cdots,\psi_m\)</span> 使得 <span class="arithmatex">\(\psi_m=\psi\)</span>。其中，每个 <span class="arithmatex">\(\psi_i(i=1,2,3,\dots, m)\)</span> 要么属于 {𝜙1, 𝜙2, 𝜙3, . . . , , 𝜙𝑛}，要么依据 <span class="arithmatex">\({\psi_1,\dots,\psi_{i-1}}\)</span> 中的公式通过应用一条推理规则得到。</p>
+<p>给定一组前提集合 Φ = {𝜙1, 𝜙2, 𝜙3, . . . , , 𝜙𝑛} 和一个结论 𝜓, 其中 𝜙𝑖 和 𝜓 都是公式。
+我们说从这组前提到这个结论是形式可推演的，记作 Φ ⊢ 𝜓，如果存在一个证明：<span class="arithmatex">\(\psi_1, \psi_2,\cdots,\psi_m\)</span> 
+使得 <span class="arithmatex">\(\psi_m=\psi\)</span>。其中，每个 <span class="arithmatex">\(\psi_i(i=1,2,3,\dots, m)\)</span> 要么属于 {𝜙1, 𝜙2, 𝜙3, ..., 𝜙𝑛}，
+要么依据 <span class="arithmatex">\({\psi_1,\dots,\psi_{i-1}}\)</span> 中的公式通过应用一条推理规则得到。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">推理系统的可靠性和完备性</p>
@@ -3306,30 +3423,48 @@ MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\
 <p>采用子句公式表示合取范式：一个子句看出一个文字的集合，一个合取范式看成子句的集合。（不考虑重复和顺序）</p>
 <div class="admonition info">
 <p class="admonition-title">子句公式</p>
-<p>子句公式是子句的集合，可理解为子句的合取。子句是文字的集合，可理解为文字的析取。为了区分这两种集合，我们把文字的集合表示为 [𝐿1, 𝐿2, . . . , 𝐿𝑛]，等价于一个析取式𝐿1∨𝐿2∨· · ·∨𝐿𝑛，其中 𝐿𝑖 (𝑖 = 1, 2, . . . , 𝑛) 是文字；把子句的集合表示为 {𝐷1, 𝐷2, . . . , 𝐷𝑚}，等价于 𝐷1 ∧ 𝐷2 ∧ · · · ∧ 𝐷𝑚，其中 𝐷𝑖 (𝑖 = 1, 2, . . . , 𝑚) 是子句。</p>
+<p>子句公式是子句的集合，可理解为子句的合取。子句是文字的集合，可理解为文字的析取。为了区分这两种集合，
+我们把文字的集合表示为 [𝐿1, 𝐿2, . . . , 𝐿𝑛]，等价于一个析取式𝐿1∨𝐿2∨· · ·∨𝐿𝑛，
+其中 𝐿𝑖 (𝑖 = 1, 2, . . . , 𝑛) 是文字；把子句的集合表示为 {𝐷1, 𝐷2, . . . , 𝐷𝑚}，
+等价于 𝐷1 ∧ 𝐷2 ∧ · · · ∧ 𝐷𝑚，其中 𝐷𝑖 (𝑖 = 1, 2, . . . , 𝑚) 是子句。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">消解规则</p>
-<p>给定两个子句，推出一个新子句：从子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {<span class="arithmatex">\(\bar{𝐿}\)</span>} 推出子句 𝐷1 ∪ 𝐷2。其中，𝐷1 和 𝐷2 可为空集。𝐷1 ∪ 𝐷2 称为输入子句关于 𝐿 的消解式。其中，𝐿 称为 𝐿 的补。对于任意原子命题 <span class="arithmatex">\(p: \bar{p}=\neg p, \bar{\bar{p}}=p\)</span></p>
+<p>给定两个子句，推出一个新子句：从子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {<span class="arithmatex">\(\bar{𝐿}\)</span>} 推出子句 𝐷1 ∪ 𝐷2。
+其中，𝐷1 和 𝐷2 可为空集。𝐷1 ∪ 𝐷2 称为输入子句关于 𝐿 的消解式。
+其中，<span class="arithmatex">\(\bar{L}\)</span> 称为 <span class="arithmatex">\(L\)</span> 的补。对于任意原子命题 <span class="arithmatex">\(p: \bar{p}=\neg p, \bar{\bar{p}}=p\)</span></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">消解推理</p>
-<p>从一个集合 Φ 推出一个子句 𝐷 的推演，记作 Φ ⊢Res 𝐷，是一个子句序列 𝐷1, 𝐷2, . . . , 𝐷𝑛，其中 𝐷𝑛 = 𝐷, 并且对于每个 𝐷𝑖，要么 𝐷𝑖 ∈ Φ，要么 𝐷𝑖 是该推导中前面两个子句的消解式。</p>
+<p>从一个集合 Φ 推出一个子句 𝐷 的推演，记作 Φ ⊢Res 𝐷，是一个子句序列 𝐷1, 𝐷2, . . . , 𝐷𝑛，
+其中 𝐷𝑛 = 𝐷, 并且对于每个 𝐷𝑖，要么 𝐷𝑖 ∈ Φ，要么 𝐷𝑖 是该推导中前面两个子句的消解式。</p>
 </div>
 <h3 id="_9">可靠性、完全性、计算复杂性</h3>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
 <ol>
-<li>设有两个子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {<span class="arithmatex">\(\bar{L}\)</span>}，则 𝐷1 ∪ {𝐿}, 𝐷2 ∪ {<span class="arithmatex">\(\bar{L}\)</span>} |= 𝐷1 ∪ 𝐷2。</li>
-<li>如果 Φ ⊢Res 𝐷 则 Φ |= 𝐷（可靠性）；反之（完备性），不成立。</li>
-<li>消解系统是一个完备的否证系统，即：从一组有穷的前提集 Φ 出发，如果不存在 ⊥ 的证明，那么 Φ 是可满足的。</li>
+<li>
+<p>设有两个子句 𝐷1 ∪ {𝐿} 和 𝐷2 ∪ {<span class="arithmatex">\(\bar{L}\)</span>}，则 𝐷1 ∪ {𝐿}, 𝐷2 ∪ {<span class="arithmatex">\(\bar{L}\)</span>} |= 𝐷1 ∪ 𝐷2。</p>
+</li>
+<li>
+<p>如果 Φ ⊢Res 𝐷 则 Φ |= 𝐷（可靠性）；反之（完备性），不成立。</p>
+</li>
+<li>
+<p>消解系统是一个完备的否证系统，即：从一组有穷的前提集 Φ 出发，
+如果不存在 ⊥ 的证明，那么 Φ 是可满足的。</p>
+</li>
 </ol>
 </div>
-<p>定理2 表明消解推理系统是可靠的，但是不完备。但是，当 <strong><span class="arithmatex">\(D\)</span> 为空子句</strong>时，消解推演及时可靠的又是完备的。</p>
-<p>我们说一个证明系统 𝑅 是完备的，如果每个逻辑推论都有一个证明，即如果Φ |= 𝜙 则Φ ⊢𝑅 𝜙。对于消解系统来说，它是否证完备的，即：从一组有穷的前提集 Φ 出发，如果没有⊥ 的证明，那么 Φ 是可满足的。反之，如果 Φ 是不可满足的，那么就有从 Φ 到 ⊥ 的证明，即Φ ⊢Res ⊥。这是定理3。</p>
+<p>定理2 表明消解推理系统是可靠的，但是不完备。但是，当 <strong><span class="arithmatex">\(D\)</span> 为空子句</strong>时，
+消解推演及时可靠的又是完备的。</p>
+<p>我们说一个证明系统 𝑅 是完备的，如果每个逻辑推论都有一个证明，即如果
+Φ |= 𝜙 则Φ ⊢𝑅 𝜙。对于消解系统来说，它是否证完备的，即：从一组有穷的前提集 Φ 出发，
+如果没有⊥ 的证明，那么 Φ 是可满足的。反之，如果 Φ 是不可满足的，那么就有从 Φ 到 ⊥ 的证明，
+即Φ ⊢Res ⊥。这是定理3。</p>
 <div class="admonition note">
 <p class="admonition-title">消解算法复杂性</p>
-<p>存在一个数字 𝑐 &gt; 1 使得对于每个 𝑛，存在一个不可满足的公式，该公式包括 𝑛 个命题符号，其最小的消解否证包含至少 <span class="arithmatex">\(c^n\)</span> 个步骤。</p>
+<p>存在一个数字 𝑐 &gt; 1 使得对于每个 𝑛，存在一个不可满足的公式，
+该公式包括 𝑛 个命题符号，其最小的消解否证包含至少 <span class="arithmatex">\(c^n\)</span> 个步骤。</p>
 </div>
 <h2 id="_10">霍恩子句逻辑</h2>
 <div class="admonition info">
@@ -3343,15 +3478,21 @@ MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\
 <li><span class="arithmatex">\(\leftarrow q_1,\dots,q_m(m\neq 0)\)</span></li>
 <li><span class="arithmatex">\(\square\)</span>(空语句，上式m=0)</li>
 </ol>
-<p>其中 <span class="arithmatex">\(\leftarrow\)</span> 为逻辑编程惯例写法，约定蕴涵前件的文字之间恒为合取，而蕴涵后件（箭头尖端）的文字之间恒为析取。</p>
-<p>我们把一个形如 𝑝 ← 𝑞1, . . . , 𝑞𝑚 的霍恩子句称为一个过程，把 𝑝 称为过程名，把 {𝑞1, . . . ,𝑞𝑚} 称为过程体，各个 𝑞𝑖 可解释为过程调用。把形如 𝑝 ← 的霍恩子句看作一个事实，而把形如 ← 𝑞1, . . . , 𝑞𝑚 看作一个目标。目标全部由过程调用所组成，常用来表示一个询问。□ 可称
-为停机语句，表示程序执行（成功）终止。</p>
-<p>霍恩子句逻辑就是由这种子句组成的系统。它是命题演算系统的子系统。霍恩子句逻辑程序就是指这样一些被称为过程、目标和事实的霍恩子句的集合。</p>
-<p>当一个霍恩子句刚好包含一个肯定文字时，我们称之为肯定的（或确定的）霍恩子句。当没有肯定文字时，该子句被称为否定霍恩子句。</p>
-<p>例如，子句 [¬𝑝1, ¬𝑝2, . . . , ¬𝑝𝑛, 𝑞] 表示的是 ¬𝑝1 ∨ ¬𝑝2 ∨ · · · ∨ ¬𝑝𝑛 ∨ 𝑞。可以读作：如果 𝑝1 而且 𝑝2 而且 . . . 而且 𝑝𝑛 那么 𝑞。</p>
-<h2 id="sat">SAT</h2>
-<p>SAT 可以被描述为一个约束满足问题。它从一组子句集合出发，寻找一个可以满足这些子句的真假赋值。例如，对于公式 (𝑝 ∨ 𝑞) ∧ (¬𝑝 ∨ 𝑟)，可以找到一个真假赋值 𝑣 满足这个公式.</p>
-<p><img src="\img\study\ai\ailogic\sat.png" alt="DPLL算法"></p>
+<p>其中 <span class="arithmatex">\(\leftarrow\)</span> 为逻辑编程惯例写法，约定蕴涵前件的文字之间恒为合取，
+而蕴涵后件（箭头尖端）的文字之间恒为析取。</p>
+<p>我们把一个形如 𝑝 ← 𝑞1, . . . , 𝑞𝑚 的霍恩子句称为一个过程，把 𝑝 称为过程名，
+把 {𝑞1, . . . ,𝑞𝑚} 称为过程体，各个 𝑞𝑖 可解释为过程调用。
+把形如 𝑝 ← 的霍恩子句看作一个事实，而把形如 ← 𝑞1, . . . , 𝑞𝑚 看作一个目标。
+目标全部由过程调用所组成，常用来表示一个询问。□ 可称为停机语句，表示程序执行（成功）终止。</p>
+<p>霍恩子句逻辑就是由这种子句组成的系统。它是命题演算系统的子系统。
+霍恩子句逻辑程序就是指这样一些被称为过程、目标和事实的霍恩子句的集合。</p>
+<p>当一个霍恩子句刚好包含一个肯定文字时，我们称之为肯定的（或确定的）霍恩子句。
+当没有肯定文字时，该子句被称为否定霍恩子句。</p>
+<p>例如，子句 [¬𝑝1, ¬𝑝2, . . . , ¬𝑝𝑛, 𝑞] 表示的是 ¬𝑝1 ∨ ¬𝑝2 ∨ · · · ∨ ¬𝑝𝑛 ∨ 𝑞。
+可以读作：如果 𝑝1 而且 𝑝2 而且 . . . 而且 𝑝𝑛 那么 𝑞。</p>
+<p>SAT 可以被描述为一个约束满足问题。它从一组子句集合出发，
+寻找一个可以满足这些子句的真假赋值。例如，对于公式 (𝑝 ∨ 𝑞) ∧ (¬𝑝 ∨ 𝑟)，
+可以找到一个真假赋值 𝑣 满足这个公式.</p>
 
 
 
@@ -3374,7 +3515,7 @@ MP规则（肯定前件规则、蕴含消去）：由 <span class="arithmatex">\
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 23, 2025 14:21:03">March 23, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

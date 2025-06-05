@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2189,6 +2241,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2262,6 +2337,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2604,6 +2683,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2702,6 +2804,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3097,14 +3222,15 @@
 <h1 id="_1">缺省逻辑</h1>
 <p>缺省推理属于非单调推理，在本质上是定性的。非单调性：当出现新信息时，已经被推出的错误结论可以被回收。</p>
 <h2 id="_2">缺省规则</h2>
-<p>表示为 <span class="arithmatex">\(\phi: \psi/\eta\)</span>，读作“如果可以证明 𝜙，且 𝜓 是一致的（或者，等价地，不能证明 ¬𝜓，即：例外 ¬𝜓 没有发生），那么可以推出 𝜂。</p>
+<p>表示为 <span class="arithmatex">\(\phi: \psi/\eta\)</span>，读作“如果可以证明 𝜙，且 𝜓 是一致的（或者，等价地，不能证明 ¬𝜓，
+即：例外 ¬𝜓 没有发生），那么可以推出 𝜂。</p>
 <ul>
-<li>例子：
-封闭世界假设：如果一个句子为真，那么知道它为真。依据这个假设，可以把一个应用领域描述为一些公理的集合，并以如下方式来推理：若一个命题不能从公理推出，则它是假的。用缺省规则表示为
-$$
-\frac{\top : \neg \phi}{\neg \phi}
-$$</li>
+<li>例子：</li>
 </ul>
+<p>封闭世界假设：如果一个句子为真，那么知道它为真。依据这个假设，可以把一个应用领域描述为一些公理的集合，并以如下方式来推理：若一个命题不能从公理推出，则它是假的。用缺省规则表示为</p>
+<div class="arithmatex">\[
+\frac{\top : \neg \phi}{\neg \phi}
+\]</div>
 <h2 id="_3">缺省逻辑的语法</h2>
 <div class="admonition info">
 <p class="admonition-title">缺省逻辑的语言</p>
@@ -3114,7 +3240,10 @@ $$</li>
 <p class="admonition-title">缺省规则</p>
 <p>一条缺省规则可以被形式化地表示为：<br />
 <span class="arithmatex">\(\delta=\frac{\phi: \psi_1,...,\psi_n}{\chi}\)</span>
-其中，<span class="arithmatex">\(\phi, \psi_1,...,\psi_n\)</span> 是一阶逻辑公式，𝑛 ≥ 0。公式 𝜑 称为先决条件，<span class="arithmatex">\(\psi_1,...,\psi_n\)</span> 是缺省条件，𝜒 是 𝛿 的结论。有时，用 𝑝𝑟𝑒(𝛿) 表示 𝜑，用 𝑗𝑢𝑠𝑡(𝛿) 表示 <span class="arithmatex">\(\psi_1,...,\psi_n\)</span>，用 𝑐𝑜𝑛𝑠(𝛿)表示 𝜒。对于缺省规则集合 𝐷，用 𝑐𝑜𝑛𝑠(𝐷) 表示 𝐷 中缺省的结论集合。为简便起见，缺省规则也可表示为 <span class="arithmatex">\(\phi : \psi_1,...,\psi_n/\chi\)</span>。</p>
+其中，<span class="arithmatex">\(\phi, \psi_1,...,\psi_n\)</span> 是一阶逻辑公式，𝑛 ≥ 0。公式 𝜑 称为先决条件，<span class="arithmatex">\(\psi_1,...,\psi_n\)</span> 
+是缺省条件，𝜒 是 𝛿 的结论。有时，用 𝑝𝑟𝑒(𝛿) 表示 𝜑，用 𝑗𝑢𝑠𝑡(𝛿) 表示 <span class="arithmatex">\(\psi_1,...,\psi_n\)</span>，
+用 𝑐𝑜𝑛𝑠(𝛿)表示 𝜒。对于缺省规则集合 𝐷，用 𝑐𝑜𝑛𝑠(𝐷) 表示 𝐷 中缺省的结论集合。
+为简便起见，缺省规则也可表示为 <span class="arithmatex">\(\phi : \psi_1,...,\psi_n/\chi\)</span>。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">规范缺省规则</p>
@@ -3122,7 +3251,8 @@ $$</li>
 </div>
 <div class="admonition info">
 <p class="admonition-title">缺省理论</p>
-<p>一个缺省理论是一个二元组 𝑇 = ⟨𝑊, 𝐷⟩, 其中 𝑊 是一阶逻辑公式集合，用于表示已知的或约定的事实集合；𝐷 是一个可数的缺省规则集合。当 𝐷 中所有规则是闭规则时，称理论 𝑇 = ⟨𝑊, 𝐷⟩ 是闭理论。</p>
+<p>一个缺省理论是一个二元组 𝑇 = ⟨𝑊, 𝐷⟩, 其中 𝑊 是一阶逻辑公式集合，用于表示已知的或约定的事实集合；𝐷 是一个可数的缺省规则集合。
+当 𝐷 中所有规则是闭规则时，称理论 𝑇 = ⟨𝑊, 𝐷⟩ 是闭理论。</p>
 </div>
 <h2 id="_4">缺省逻辑的语义</h2>
 <p>给定一个缺省理论，其<strong>语义</strong>指的是可以接受或相信哪些语句。被接受或相信的语句集合称为<strong>外延</strong>。</p>
@@ -3131,19 +3261,24 @@ $$</li>
 <p>在应用缺省规则时，可以指定一个语句集合来作为规则应用的背景，并把被相信成立的语句放在另外一个集合中，于是有</p>
 <div class="admonition info">
 <p class="admonition-title">缺省规则的应用</p>
-<p>给定两个句子集合 Φ 和 Ψ，以及一条缺省规则 <span class="arithmatex">\(\delta = \phi : \psi_1,...,\psi_n/\chi\)</span>，我们说在 Φ 下把 𝛿 应用于 Ψ，意指：如果 𝜑 ∈ Ψ，而且 <span class="arithmatex">\(\neg \phi_1\notin \Phi,...\neg \phi_n \notin \Phi\)</span>，那么 𝜒 ∈ Ψ。当 Φ = Ψ 时，我们也说把 𝛿 应用于 Ψ。</p>
+<p>给定两个句子集合 Φ 和 Ψ，以及一条缺省规则 <span class="arithmatex">\(\delta = \phi : \psi_1,...,\psi_n/\chi\)</span>，
+我们说在 Φ 下把 𝛿 应用于 Ψ，意指：如果 𝜑 ∈ Ψ，
+而且 <span class="arithmatex">\(\neg \phi_1\notin \Phi,...\neg \phi_n \notin \Phi\)</span>，那么 𝜒 ∈ Ψ。当 Φ = Ψ 时，
+我们也说把 𝛿 应用于 Ψ。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">缺省规则的可应用性</p>
-<p>缺省规则 <span class="arithmatex">\(\delta = \phi : \psi_1,...,\psi_n/\chi\)</span> 可应用于一组命题集合 𝐸, 当且仅当 𝜑 ∈ 𝐸，而且 <span class="arithmatex">\(\neg \phi_1\notin E,...\neg \phi_n \notin E\)</span>。</p>
+<p>缺省规则 <span class="arithmatex">\(\delta = \phi : \psi_1,...,\psi_n/\chi\)</span> 可应用于一组命题集合 𝐸, 当且仅当 𝜑 ∈ 𝐸，
+而且 <span class="arithmatex">\(\neg \phi_1\notin E,...\neg \phi_n \notin E\)</span>。</p>
 </div>
 <p>给定 𝑇 和 Φ，如何产生 Ψ？定义Γ算子作用于Φ：</p>
 <div class="admonition info">
 <p class="admonition-title">极小扩充语句集合</p>
-<p>设论 𝑇 = ⟨𝑊, 𝐷⟩ 是一个缺省理论，Γ 为关于 𝐷 的一个算子，Γ 作用于任意的语句集合Φ，产生满足下列三个性质的极小语句集合 Γ(Φ)：
-(i) 𝑊 ⊆ Γ(Φ)。
-(ii) 𝑇 ℎ(Γ(Φ)) = Γ(Φ)，这里 𝑇 ℎ(Γ(Φ)) 为语句集 {𝜙 | Γ(Φ) ⊢ 𝜙}。
-(iii) 对于 𝐷 中的任何缺省规则 <span class="arithmatex">\(\delta = \phi : \psi_1,...,\psi_n/\chi\)</span>，在 Φ 下把 𝛿 应用于 Γ(Φ)，即：如果 𝜑 ∈ Γ(Φ)，而且 ¬𝜓1 ∉ Φ, . . . , ¬𝜓𝑛 ∉ Φ，那么 𝜒 ∈ Γ(Φ)。</p>
+<p>设论 𝑇 = ⟨𝑊, 𝐷⟩ 是一个缺省理论，Γ 为关于 𝐷 的一个算子，Γ 作用于任意的语句集合Φ，产生满足下列三个性质的极小语句集合 Γ(Φ)：</p>
+<p>(i) 𝑊 ⊆ Γ(Φ)。</p>
+<p>(ii) 𝑇 ℎ(Γ(Φ)) = Γ(Φ)，这里 𝑇 ℎ(Γ(Φ)) 为语句集 {𝜙 | Γ(Φ) ⊢ 𝜙}。</p>
+<p>(iii) 对于 𝐷 中的任何缺省规则 <span class="arithmatex">\(\delta = \phi : \psi_1,...,\psi_n/\chi\)</span>，
+在 Φ 下把 𝛿 应用于 Γ(Φ)，即：如果 𝜑 ∈ Γ(Φ)，而且 ¬𝜓1 ∉ Φ, . . . , ¬𝜓𝑛 ∉ Φ，那么 𝜒 ∈ Γ(Φ)。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">外延的不动点定义</p>
@@ -3184,7 +3319,10 @@ $$</li>
 <div class="admonition info">
 <p class="admonition-title">过程树</p>
 <p>设 𝑇 = ⟨𝑊, 𝐷⟩ 是一个缺省理论。𝑇 的过程树定义如下：
-树的每个节点标记 In 命题集合和 Out 命题集合。其中，根节点的 In 命题集合为 𝑇ℎ(𝑊), OUT 命题集合为空集。其他非根节点的 In 命题集合和 Out 命题集合取决于从根节点到该非根节点所应用的缺省规则。设 Π[𝑘] = (𝛿0, . . . , 𝛿𝑘 ) 为过程树中从根节点到某个非根节点的长度为 𝑘 的路径，则该非根节点的 In 命题集合为 𝐼𝑛(Π[𝑘])，Out 命题集合为𝑂𝑢𝑡(Π[𝑘])。
+树的每个节点标记 In 命题集合和 Out 命题集合。其中，根节点的 In 命题集合为 𝑇ℎ(𝑊), OUT 命题集合为空集。
+其他非根节点的 In 命题集合和 Out 命题集合取决于从根节点到该非根节点所应用的缺省规则。
+设 Π[𝑘] = (𝛿0, . . . , 𝛿𝑘 ) 为过程树中从根节点到某个非根节点的长度为 𝑘 的路径，
+则该非根节点的 In 命题集合为 𝐼𝑛(Π[𝑘])，Out 命题集合为𝑂𝑢𝑡(Π[𝑘])。
 从根节点到每个叶节点的路径对应于 𝑇 的一个过程。对于一个过程，如果其中存在一个节点，它的 In 命题集合和 Out 命题集合的交集为非空，那么该过程是失败的。</p>
 </div>
 <p><img src="\img\study\ai\ailogic\process-tree.png" alt="过程树" title="过程树示例"></p>
@@ -3195,11 +3333,11 @@ $$</li>
 </div>
 <div class="admonition info">
 <p class="admonition-title">缺省证明</p>
-<p>设 𝑇 = ⟨𝑊, 𝐷⟩ 是一个规范的缺省理论。称一阶命题 𝜙 是有 𝑇 中的一个缺省证明，记作 <span class="arithmatex">\(T\vdash \phi\)</span>，如果存在 𝐷 的有穷子集的有穷序列 𝐷0, 𝐷1, . . . , 𝐷𝑛，使得：<br />
-(1) 𝑊 ∪ 𝑐𝑜𝑛𝑠(𝐷0) ⊢ 𝜙。<br />
-(2) 对于整数<span class="arithmatex">\(i\)</span>,<span class="arithmatex">\(1 \leq i \leq n\)</span> 及<span class="arithmatex">\(pre(D_{i-1})\)</span>中每一 <span class="arithmatex">\(\phi\)</span>，<span class="arithmatex">\(W\cup cons(D_i) \vdash \phi\)</span><br />
-(3) <span class="arithmatex">\(D_n=\emptyset\)</span><br />
-(4) <span class="arithmatex">\(W\cup \cup^{n}_{i=0} D_i\)</span> 是一致的。  </p>
+<p>设 𝑇 = ⟨𝑊, 𝐷⟩ 是一个规范的缺省理论。称一阶命题 𝜙 是有 𝑇 中的一个缺省证明，记作 <span class="arithmatex">\(T\vdash \phi\)</span>，如果存在 𝐷 的有穷子集的有穷序列 𝐷0, 𝐷1, . . . , 𝐷𝑛，使得：</p>
+<p>(1) 𝑊 ∪ 𝑐𝑜𝑛𝑠(𝐷0) ⊢ 𝜙。  </p>
+<p>(2) 对于整数<span class="arithmatex">\(i\)</span>,<span class="arithmatex">\(1 \leq i \leq n\)</span> 及<span class="arithmatex">\(pre(D_{i-1})\)</span>中每一 <span class="arithmatex">\(\phi\)</span>，<span class="arithmatex">\(W\cup cons(D_i) \vdash \phi\)</span>  </p>
+<p>(3) <span class="arithmatex">\(D_n=\emptyset\)</span>  </p>
+<p>(4) <span class="arithmatex">\(W\cup \cup^{n}_{i=0} D_i\)</span> 是一致的。  </p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
@@ -3208,9 +3346,15 @@ $$</li>
 <h2 id="_8">怀疑的结论或轻信的结论</h2>
 <div class="admonition info">
 <p class="admonition-title">怀疑或轻信的结论</p>
-<p>设 <span class="arithmatex">\(T=&lt;W,D&gt;\)</span> 是一个缺省理论， <span class="arithmatex">\(\phi\)</span> 为一阶命题。那么，<br />
-- T 怀疑推出 <span class="arithmatex">\(\phi\)</span> ，当且仅当对于 T 的所有外延， <span class="arithmatex">\(\phi\)</span> 都在该外延中，即 <span class="arithmatex">\(\phi \in \cap_{E\in ext(T)}E\)</span>；<br />
-- T 轻信推出 <span class="arithmatex">\(\phi\)</span> ，当且仅当存在 T 的某个外延，使得 <span class="arithmatex">\(\phi\)</span> 在该外延中，即 <span class="arithmatex">\(\phi \in \cup_{E\in ext(T)E}\)</span>  </p>
+<p>设 <span class="arithmatex">\(T=&lt;W,D&gt;\)</span> 是一个缺省理论， <span class="arithmatex">\(\phi\)</span> 为一阶命题。那么，  </p>
+<ul>
+<li>
+<p>T 怀疑推出 <span class="arithmatex">\(\phi\)</span> ，当且仅当对于 T 的所有外延， <span class="arithmatex">\(\phi\)</span> 都在该外延中，即 <span class="arithmatex">\(\phi \in \cap_{E\in ext(T)}E\)</span>；</p>
+</li>
+<li>
+<p>T 轻信推出 <span class="arithmatex">\(\phi\)</span> ，当且仅当存在 T 的某个外延，使得 <span class="arithmatex">\(\phi\)</span> 在该外延中，即 <span class="arithmatex">\(\phi \in \cup_{E\in ext(T)E}\)</span></p>
+</li>
+</ul>
 </div>
 
 
@@ -3234,7 +3378,7 @@ $$</li>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 11, 2025 15:18:09">May 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

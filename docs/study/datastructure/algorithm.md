@@ -90,7 +90,9 @@ while(i<n&&j<n){
 
 取所有点x坐标均值作为划分线将点集划分为左右两个部分，分别求其最近点对距离（递归地做），取两者间较小的$\delta$，然后找跨两区域的最近点对：
 在$x\in [\bar{x}-\delta,\bar{x}+\delta]$区域内，按区域中的点的$y_i$坐标从下到达向上计算处于区域$\{x\in[(x,y)|\bar{x}-\delta,\bar{x}+\delta],y\in [y_i,y_i+\delta]\}$中点对的距离，这个区域划分为如下八个正方形：
-![alt text](\img\study\ADS\algorithm\diandui.png)
+
+![alt text](\img\study\ADS\algorithm\diandui.jpg)
+
 由左右区域间最小距离为$\delta$可知，每个正方形中最多一个点，所以遍历最多$O(7n)=O(n)$次，线性时间。
 $T(n)=2T(n/2)+O(n)$
 时间复杂度$O(nlogn)$

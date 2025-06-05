@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2213,6 +2265,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2286,6 +2361,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2628,6 +2707,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2726,6 +2828,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -3144,54 +3269,65 @@
 
 <h1 id="_1">一阶逻辑</h1>
 <h2 id="_2">谓词和量词</h2>
-<p><strong>论域</strong>：所有被讨论对象的集合
+<p><strong>论域</strong>：所有被讨论对象的集合<br />
 <strong>个体</strong>：论域中的元素，即被讨论的对象</p>
-<p><strong>常元</strong>：用于表示确定对象的符号。例如，可
-以用“ZS”表示个体“张三”。
-<strong>变元</strong>：是用于表示给定论域上的任意一个对象的符号。例如，给定全总个体域，语句“𝑥 是学生”中，𝑥 是变元。
-<strong>函词</strong>：给定一个论域，从一组个体到一个个体映
-射关系可以用函词来描述。例如，用 𝑔(ZS) 表示“张三的哥哥”。其中，𝑔(𝑥) 是 𝑥 的函词，表示“𝑥 的哥哥”。</p>
-<p><strong>项</strong>：把个体常元和个体变元统称项。
+<p><strong>常元</strong>：用于表示确定对象的符号。例如，可以用“ZS”表示个体“张三”。<br />
+<strong>变元</strong>：是用于表示给定论域上的任意一个对象的符号。例如，给定全总个体域，语句“𝑥 是学生”中，𝑥 是变元。<br />
+<strong>函词</strong>：给定一个论域，从一组个体到一个个体映射关系可以用函词来描述。
+例如，用 𝑔(ZS) 表示“张三的哥哥”。其中，𝑔(𝑥) 是 𝑥 的函词，表示“𝑥 的哥哥”。  </p>
+<p><strong>项</strong>：把个体常元和个体变元统称项。<br />
 <strong>谓词</strong>：用于描述个体之间的关系。</p>
 <h2 id="_3">一阶语言</h2>
-<p>一阶语言包含七类符号：
-个体常元：a b c
-个体变元：x y z
-函数符号：f g h
-关系符号：F G H
-量词符号：<span class="arithmatex">\(\forall, \exist\)</span>
-联结符号：<span class="arithmatex">\(\lor, \land\)</span>等
+<p>一阶语言包含七类符号：<br />
+个体常元：a b c<br />
+个体变元：x y z<br />
+函数符号：f g h<br />
+关系符号：F G H<br />
+量词符号：<span class="arithmatex">\(\forall, \exist\)</span><br />
+联结符号：<span class="arithmatex">\(\lor, \land\)</span>等<br />
 标点符号：左括号，右括号，逗号</p>
 <details class="info">
 <summary>项</summary>
-<p>项可如下定义：
-(1) 变元和常元是项。
-(2) 如果 t1, . . . , t𝑚 是项，f 是 𝑚 元函数符号，则 f(t1, . . . , t𝑚) 是项。
-(3) 只有有限次使用 (1)(2) 条款生成的符号串才是项。</p>
+<p>项可如下定义：</p>
+<p>(1) 变元和常元是项。</p>
+<p>(2) 如果 t1, . . . , t𝑚 是项，f 是 𝑚 元函数符号，则 f(t1, . . . , t𝑚) 是项。</p>
+<p>(3) 只有有限次使用 (1)(2) 条款生成的符号串才是项。</p>
 </details>
 <details class="info">
 <summary>公式</summary>
-<p>公式可以定义如下：
-(1) F(t1, . . . , t𝑛) 是公式，称为原子公式。其中，F 是 𝑛 元关系符号，且 t1, . . . , t𝑛 是项。
-(2) 如果 t1 和 t2 是项，那么 (t1 ≡ t2) 是原子公式。
-(3) 如果 𝜙 和 𝜓 是公式，且 𝑥 是出现于 𝜙 中的自由变元，则 (¬𝜙)，(𝜙 ∧ 𝜓)，(𝜙 ∨ 𝜓)，(𝜙 → 𝜓), (𝜙 ↔ 𝜓)，(∀𝑥𝜙), (∃𝑥𝜙) 是公式。
-(4) 只有有限次使用 (1)(2)(3) 条款生成的符号串才是公式。</p>
+<p>公式可以定义如下：</p>
+<p>(1) F(t1, . . . , t𝑛) 是公式，称为原子公式。其中，F 是 𝑛 元关系符号，且 t1, . . . , t𝑛 是项。</p>
+<p>(2) 如果 t1 和 t2 是项，那么 (t1 ≡ t2) 是原子公式。</p>
+<p>(3) 如果 𝜙 和 𝜓 是公式，且 𝑥 是出现于 𝜙 中的自由变元，则 (¬𝜙)，(𝜙 ∧ 𝜓)，(𝜙 ∨ 𝜓)，(𝜙 → 𝜓), (𝜙 ↔ 𝜓)，(∀𝑥𝜙), (∃𝑥𝜙) 是公式。</p>
+<p>(4) 只有有限次使用 (1)(2)(3) 条款生成的符号串才是公式。</p>
 </details>
 <details class="info">
 <summary>代换</summary>
-<p>代换 <span class="arithmatex">\(\theta\)</span> 是一个有限的对子集合 <span class="arithmatex">\(\{x_1/t_1,\dots, x_n/t_n\}\)</span>，其中 <span class="arithmatex">\(x_i\)</span> 是变元，<span class="arithmatex">\(t_i\)</span> 是项。如果 <span class="arithmatex">\(\phi\)</span> 是一个公式，<span class="arithmatex">\(\theta\)</span> 是一个代换，则 <span class="arithmatex">\(\phi\theta\)</span> 是一个公式。在该公式中，所有 <span class="arithmatex">\(x_i\)</span> 的出现都被替换为 <span class="arithmatex">\(t_i\)</span>。有时，我们也把 <span class="arithmatex">\(\phi\{x/t\}\)</span>    作 <span class="arithmatex">\(\phi^{x}_t\)</span></p>
+<p>代换 <span class="arithmatex">\(\theta\)</span> 是一个有限的对子集合 <span class="arithmatex">\(\{x_1/t_1,\dots, x_n/t_n\}\)</span>，其中 <span class="arithmatex">\(x_i\)</span> 是变元，<span class="arithmatex">\(t_i\)</span> 是项。
+如果 <span class="arithmatex">\(\phi\)</span> 是一个公式，<span class="arithmatex">\(\theta\)</span> 是一个代换，则 <span class="arithmatex">\(\phi\theta\)</span> 是一个公式。
+在该公式中，所有 <span class="arithmatex">\(x_i\)</span> 的出现都被替换为 <span class="arithmatex">\(t_i\)</span>。有时，我们也把 <span class="arithmatex">\(\phi\{x/t\}\)</span>    作 <span class="arithmatex">\(\phi^{x}_t\)</span></p>
 </details>
 <h2 id="_4">语义</h2>
 <p>给定论域 𝐷，解释是一个映射，把个体符号映射为 𝐷 中的对象，把 𝑛 元函数符号映射为从 𝐷𝑛 到 𝐷 的函数，把 𝑛 元关系符号映射为 𝐷 上的 𝑛 元关系。
 另一方面，对于每个自由变元，可以把论域中的对象指派给它。因此，指派也是一个映射。我们把解释和指派统称作赋值，记作𝑣。</p>
 <details class="info">
 <summary>解释/指派</summary>
-<p>给定论域 <span class="arithmatex">\(D\)</span>，我们有：
-- 对于个体常元 a, 把它解释为的论域中的个体，记作 <span class="arithmatex">\(v(a)\in D\)</span>。
-- 对于 𝑛 元函数符号 f, 把它解释为从 <span class="arithmatex">\(D^n\)</span> 到 𝐷 的函数，记作 <span class="arithmatex">\(v(f): D^n\mapsto D\)</span>
-- 对于 𝑛 元谓词符号 F, 把它解释为 𝐷 上的 𝑛 元关系，记作 <span class="arithmatex">\(v(F)\subset D^n\)</span>
-- 对于自由变元 x，给它指派 𝐷 中的个体，记作 𝑣(x) ∈ 𝐷。
+<p>给定论域 <span class="arithmatex">\(D\)</span>，我们有：</p>
+<ul>
+<li>
+<p>对于个体常元 a, 把它解释为的论域中的个体，记作 <span class="arithmatex">\(v(a)\in D\)</span>。</p>
+</li>
+<li>
+<p>对于 𝑛 元函数符号 f, 把它解释为从 <span class="arithmatex">\(D^n\)</span> 到 𝐷 的函数，记作 <span class="arithmatex">\(v(f): D^n\mapsto D\)</span></p>
+</li>
+<li>
+<p>对于 𝑛 元谓词符号 F, 把它解释为 𝐷 上的 𝑛 元关系，记作 <span class="arithmatex">\(v(F)\subset D^n\)</span></p>
+</li>
+<li>
+<p>对于自由变元 x，给它指派 𝐷 中的个体，记作 𝑣(x) ∈ 𝐷。
 通常把 𝑣(a), 𝑣(f), 𝑣(F), 𝑣(x) 分别记作 <span class="arithmatex">\(a^v,f^v, F^v,x^v\)</span>.</p>
+</li>
+</ul>
 </details>
 <div class="admonition info">
 <p class="admonition-title">项的值</p>
@@ -3199,14 +3335,17 @@
 1. <span class="arithmatex">\(a^v,x^v\in D\)</span>
 2. <span class="arithmatex">\(f(t_1,\dots,t_n)=f^v(t_1^v,\dots,t_n^v)\)</span>.</p>
 </div>
-<p>为了定义公式在赋值之下的真假值，我们约定如下使用符号的规定。设 𝑣 是以 𝐷 为论域的赋值，a ∈ 𝐷, x 是自由变元符号。我们用 <span class="arithmatex">\(v(x/a)\)</span> 表示一个以 𝐷 为论域的赋值，它除了 <span class="arithmatex">\(x^{v(x/a)}=a\)</span> 之外，和 <span class="arithmatex">\(v\)</span> 完全相同。</p>
+<p>为了定义公式在赋值之下的真假值，我们约定如下使用符号的规定。设 𝑣 是以 𝐷 为论域的赋值，a ∈ 𝐷, x 是自由变元符号。
+我们用 <span class="arithmatex">\(v(x/a)\)</span> 表示一个以 𝐷 为论域的赋值，它除了 <span class="arithmatex">\(x^{v(x/a)}=a\)</span> 之外，和 <span class="arithmatex">\(v\)</span> 完全相同。</p>
 <div class="admonition info">
 <p class="admonition-title">公式的真假值</p>
 <ul>
-<li><span class="arithmatex">\(F(t_1,\dots,t_n)=\begin{cases}
+<li>
+<p><span class="arithmatex">\(F(t_1,\dots,t_n)=\begin{cases}
 1,&amp; \text{if}(t_1^v,\cdots,t_n^v)\in F^v\\
 0, &amp; \text{else}
-\end{cases}\)</span></li>
+\end{cases}\)</span></p>
+</li>
 <li>
 <p><span class="arithmatex">\((\neg \phi)^v=\begin{cases}
 1, &amp; \text{if}\phi^v=0\\
@@ -3271,7 +3410,8 @@
 <p>与命题逻辑对应，给定一组一阶公式集合 <span class="arithmatex">\(\Phi\)</span> 作为前提，我们希望知道 <span class="arithmatex">\(\Phi\)</span> 是否在逻辑上蕴涵某个结论 <span class="arithmatex">\(\phi\)</span>。</p>
 <div class="admonition info">
 <p class="admonition-title">逻辑推论</p>
-<p>设 <span class="arithmatex">\(\Phi\)</span> 是一组公式集合，<span class="arithmatex">\(\phi\)</span> 是一个公式。逻辑推论 <span class="arithmatex">\(\Phi \models \phi\)</span> 成立，当且仅当对于任意非空论域 <span class="arithmatex">\(D\)</span> 下的赋值 <span class="arithmatex">\(v\)</span>，如果 <span class="arithmatex">\(\Phi^v=1\)</span> 则 <span class="arithmatex">\(\phi^v=1\)</span>。</p>
+<p>设 <span class="arithmatex">\(\Phi\)</span> 是一组公式集合，<span class="arithmatex">\(\phi\)</span> 是一个公式。逻辑推论 <span class="arithmatex">\(\Phi \models \phi\)</span> 成立，
+当且仅当对于任意非空论域 <span class="arithmatex">\(D\)</span> 下的赋值 <span class="arithmatex">\(v\)</span>，如果 <span class="arithmatex">\(\Phi^v=1\)</span> 则 <span class="arithmatex">\(\phi^v=1\)</span>。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">可满足性与有效性</p>
@@ -3292,27 +3432,33 @@ $$Q_1x_1... Q_nx_n\phi' $$</p>
 <h4 id="_8">一阶消解推演规则</h4>
 <p>当对包含自由变元的子句进行消解时，如果这些子句都是全称量化的，则可以去掉量词。在一阶消解中，需要考虑如何把消解规则应用于包含变元的子句。由于包含变元的子句是全称量化的，在证明可满足性时，可以使用这些字句的实例。</p>
 <ul>
-<li>例：{ [𝑃(𝑥), ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))], [𝑄(𝑥, 𝑦)]} 表示的是 ∀𝑥∀𝑦{ [𝑃(𝑥) ∨ ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))] ∧ 𝑄(𝑥, 𝑦)}。</li>
+<li>例：{ [𝑃(𝑥), ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))], [𝑄(𝑥, 𝑦)]} 表示的是
+ ∀𝑥∀𝑦{ [𝑃(𝑥) ∨ ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))] ∧ 𝑄(𝑥, 𝑦)}。</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">一阶消解推演规则</p>
-<p>给定两个子句 𝑐1 ∪ {𝐿1} 和 𝑐2 ∪ {𝐿2}，如果它们没有公共变元，且存在一个代换 𝜃，使得𝐿1𝜃 = 𝐿2𝜃，那么可以推出子句 (𝑐1 ∪ 𝑐2)𝜃。这时我们说 𝜃 是 𝐿1 和 𝐿2 的合一。</p>
+<p>给定两个子句 𝑐1 ∪ {𝐿1} 和 𝑐2 ∪ {𝐿2}，如果它们没有公共变元，且存在一个代换 𝜃，使得𝐿1𝜃 = 𝐿2𝜃，
+那么可以推出子句 (𝑐1 ∪ 𝑐2)𝜃。这时我们说 𝜃 是 𝐿1 和 𝐿2 的合一。</p>
 </div>
 <h4 id="_9">思科伦化</h4>
 <p>为了把包含存在量化的一阶公式转化为子句公式，需要引入斯科伦常元和斯科伦函数的概念。</p>
 <p>思想：对于包含存在量词的公式，把该存在量词所管辖的变元变成确定的个体。</p>
 <ul>
 <li>∃𝑥F(𝑥) 是可满足的，当且仅当对于某个具体的 𝑎，F(𝑎) 是可满足的，这里a就是思科伦常元。</li>
-<li>∀𝑥∃𝑦G(𝑥, 𝑦)：在这个公式中，变元 𝑦 所指称的个体受变元 𝑥 限制的个体。我们把这限制关系用函数来表达：对于某个函数 f，用 f(𝑥) 来代换 𝑦。</li>
+<li>∀𝑥∃𝑦G(𝑥, 𝑦)：在这个公式中，变元 𝑦 所指称的个体受变元 𝑥 限制的个体。
+我们把这限制关系用函数来表达：对于某个函数 f，用 f(𝑥) 来代换 𝑦。</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">思科伦化</p>
-<p>把 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \exists y \phi\)</span> 变换为 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)\)</span></p>
+<p>把 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \exists y \phi\)</span>
+变换为 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)\)</span></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
 <p>(1) ∃𝑥𝜙 是可满足的，当且仅当 𝜙𝑥𝑎 是可满足的；
-(2) <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \exists y \phi\)</span> 是可满足的，当且仅当 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)\)</span> 是可满足的。其中，𝑎 是 𝜙 中未出现过的新常元，f 是 𝜙中未出现过的新 𝑛 元函词，它们被分别称为斯科伦常元和斯科伦函词。</p>
+(2) <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \exists y \phi\)</span> 是可满足的，
+当且仅当 <span class="arithmatex">\(\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)\)</span> 是可满足的。
+其中，𝑎 是 𝜙 中未出现过的新常元，f 是 𝜙中未出现过的新 𝑛 元函词，它们被分别称为斯科伦常元和斯科伦函词。</p>
 </div>
 <h3 id="_10">赫布兰德定理</h3>
 <p><img alt="赫布兰德定理" src="../../../img/study/ai/ailogic/hebulande.png" /></p>
@@ -3338,7 +3484,7 @@ $$Q_1x_1... Q_nx_n\phi' $$</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 11, 2025 15:18:09">May 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

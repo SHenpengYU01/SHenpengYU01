@@ -16,7 +16,7 @@
         <link rel="prev" href="../argument/">
       
       
-        <link rel="next" href="../../oop/">
+        <link rel="next" href="../game/">
       
       
       <link rel="icon" href="../../../img/favicon.png">
@@ -1121,6 +1121,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1315,6 +1319,52 @@
   
   <span class="md-ellipsis">
     File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IO
     
   </span>
   
@@ -1851,6 +1901,8 @@
       
         
       
+        
+      
     
     
     
@@ -2129,10 +2181,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      可废止理论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      可废止理论的外延与结论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      系统特性
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../game/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2211,6 +2313,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -2553,6 +2659,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../oop/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../oop/memory/" class="md-nav__link">
         
   
@@ -2651,6 +2780,29 @@
   
   <span class="md-ellipsis">
     模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oop/iterators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代器
     
   </span>
   
@@ -2973,6 +3125,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      可废止理论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      可废止理论的外延与结论
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      系统特性
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2995,74 +3174,216 @@
 <h1 id="_1">结构化论辩理论</h1>
 <div class="admonition info">
 <p class="admonition-title">推理规则</p>
-<p>设 𝑃𝑟𝑜𝑝 是某个逻辑语言下的所有命题集合。推理规则分为硬性规则和可废止规则，分别表示为 <span class="arithmatex">\(𝜙_1,..., 𝜙_𝑛 \rightarrow 𝜙\)</span> 或 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛 \Leftarrow 𝜙\)</span>，其中 𝜙, 𝜙𝑖 ∈ 𝑃𝑟𝑜𝑝。前者意指：当 <span class="arithmatex">\(𝜙_1,..., 𝜙_𝑛\)</span> 为真时，𝜙 必然为真；后者意指：一般情况下，当 <span class="arithmatex">\(𝜙_1,..., 𝜙_𝑛\)</span> 为真时 𝜙 为真，但允许在一些例外情况为假。</p>
+<p>设 <span class="arithmatex">\(𝑃𝑟𝑜𝑝\)</span> 是某个逻辑语言下的所有命题集合。推理规则分为硬性规则和可废止规则，
+分别表示为 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛 \rightarrow 𝜙\)</span> 或 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛 \Leftarrow 𝜙\)</span>，
+其中 <span class="arithmatex">\(𝜙, 𝜙_𝑖 \in 𝑃𝑟𝑜𝑝\)</span>。前者意指：当 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛\)</span> 为真时，<span class="arithmatex">\(𝜙\)</span> 必然为真；
+后者意指：一般情况下，当 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛\)</span> 为真时 <span class="arithmatex">\(𝜙\)</span> 为真，但允许在一些例外情况为假。</p>
 </div>
-<p>硬性规则 <span class="arithmatex">\(𝜙_1,..., 𝜙_𝑛 \rightarrow 𝜙\)</span> 对应于演绎推理中的形式可推演关系 <span class="arithmatex">\(\phi_1,\dots,\phi_n\models \phi\)</span> ，这种推理时可靠的，即前提为真可以确保结论为真。</p>
-<p>运用可废止规则和缺省规则都可以表示不可靠的推理，但二者在处理不可靠知识时有重要区别。
-- 在可废止规则中，知识的不可靠行可以表达为<strong>推理关系</strong>的不可靠性。
-- 在缺省规则中，知识的不可靠性只能表达为<strong>缺省条件</strong>。</p>
+<p>硬性规则 <span class="arithmatex">\(𝜙_1,\dots, 𝜙_𝑛 \rightarrow 𝜙\)</span> 对应于演绎推理中的形式可推演关系
+<span class="arithmatex">\(𝜙_1,\dots,𝜙_𝑛 \models 𝜙\)</span> ，这种推理是可靠的，即前提为真可以确保结论为真。</p>
+<p>运用可废止规则和缺省规则都可以表示不可靠的推理，但二者在处理不可靠知识时有重要区别。  </p>
+<ul>
+<li>在可废止规则中，知识的不可靠性可以表达为<strong>推理关系</strong>的不可靠性。  </li>
+<li>在缺省规则中，知识的不可靠性只能表达为<strong>缺省条件</strong>。</li>
+</ul>
 <p><img src="\img\study\ai\ailogic\argument.png" alt="定义" title="论证定义"></p>
 <p>依据推理关系的不同，论证可分为演绎论证和非演绎论证。</p>
 <p>演绎论证是指推理关系为演绎推理的论证。演绎论证的关键特性是有效性。对于一个有效的演绎论证，其前提真必然导致结论真。</p>
 <div class="admonition info">
 <p class="admonition-title">演绎论证</p>
-<p>设 𝑃𝑟𝑜𝑝 是某个逻辑语言下的所有命题集合，𝐴 ⊆ 𝑃𝑟𝑜𝑝 是一组假设集合。给定一个论证 <span class="arithmatex">\(Φ\succ_R 𝜙\)</span>，如果 𝑅 中不包含可废止规则，则该论证是一个演绎论证，记作 <span class="arithmatex">\(Φ \vdash_R 𝜙\)</span>。如果 <span class="arithmatex">\(Φ \cap 𝐴 = \emptyset\)</span>，则 <span class="arithmatex">\(Φ \vdash_R 𝜙\)</span> 是一个经典演绎论证，否则它是一个基于假设的演绎论证。</p>
+<p>设 <span class="arithmatex">\(𝑃𝑟𝑜𝑝\)</span> 是某个逻辑语言下的所有命题集合，<span class="arithmatex">\(𝐴 \subseteq 𝑃𝑟𝑜𝑝\)</span> 是一组假设集合。给定一个论证
+<span class="arithmatex">\(Φ \succ_R 𝜙\)</span>，如果 <span class="arithmatex">\(𝑅\)</span> 中不包含可废止规则，则该论证是一个演绎论证，记作 <span class="arithmatex">\(Φ \vdash_R 𝜙\)</span>。
+如果 <span class="arithmatex">\(Φ \cap 𝐴 = \emptyset\)</span>，则 <span class="arithmatex">\(Φ \vdash_R 𝜙\)</span> 是一个经典演绎论证，否则它是一个基于假设的演绎论证。</p>
 </div>
 <p>一个基于假设的演绎论证的结论为真，当且仅当该论证的所有假设性前提的反对都为假，且所有事实性前提都为真。</p>
 <div class="admonition info">
 <p class="admonition-title">可废止论证</p>
-<p>给定一个论证 <span class="arithmatex">\(\Phi \mid\succ_R \phi\)</span>，如果R中包含可废止规则，则该论证时一个可废止论证，记作 <span class="arithmatex">\(\Phi \mid\sim_R \phi\)</span></p>
+<p>给定一个论证 <span class="arithmatex">\(Φ \mid\succ_R 𝜙\)</span>，如果 <span class="arithmatex">\(𝑅\)</span> 中包含可废止规则，则该论证是一个可废止论证，记作 <span class="arithmatex">\(Φ \mid\sim_R 𝜙\)</span></p>
 </div>
 <h2 id="_2">攻击关系</h2>
 <div class="admonition info">
 <p class="admonition-title">反对关系</p>
-<p>给定两个命题 <span class="arithmatex">\(\phi\)</span> 和 <span class="arithmatex">\(\psi\)</span> ,我们说 <span class="arithmatex">\(\phi\)</span> 是 <span class="arithmatex">\(\psi\)</span> 的反对，当：如果 𝜑 为真，则 𝜓 为假。把反对 𝜑 的所有命题集合记作 <span class="arithmatex">\(\bar{\phi}\)</span>。</p>
+<p>给定两个命题 <span class="arithmatex">\(𝜙\)</span> 和 <span class="arithmatex">\(𝜓\)</span> ，我们说 <span class="arithmatex">\(𝜙\)</span> 是 <span class="arithmatex">\(𝜓\)</span> 的反对，当：如果 <span class="arithmatex">\(𝜙\)</span> 为真，则 <span class="arithmatex">\(𝜓\)</span> 为假。
+把反对 <span class="arithmatex">\(𝜙\)</span> 的所有命题集合记作 <span class="arithmatex">\(\bar{𝜙}\)</span>。</p>
 </div>
 <p>具有反对关系的一对命题可以同假，但不可同真。如果一对命题既不可同真也不可同假，那么它们是矛盾关系。</p>
 <p>说一个论证<strong>破坏</strong>另外一个论证，如果第一个论证的结论反对第二个论证的<strong>假设性前提</strong>。</p>
 <div class="admonition info">
 <p class="admonition-title">破坏</p>
-<p>设A是一组假设集合。给定两个论证 <span class="arithmatex">\(\Phi_1\mid\succ_{R_1} \phi_1\)</span> 和 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span>，如果存在 <span class="arithmatex">\(\phi \in \Phi_2 \cap A\)</span> 使得 <span class="arithmatex">\(\phi_1\in \bar{\phi}\)</span>，那么 <span class="arithmatex">\(\Phi_1\mid\sim_{R_1}\)</span> 在 <span class="arithmatex">\(\phi\)</span> 上破坏 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span></p>
+<p>设 <span class="arithmatex">\(𝐴\)</span> 是一组假设集合。给定两个论证 <span class="arithmatex">\(Φ_1 \mid\succ_{R_1} 𝜙_1\)</span> 和 <span class="arithmatex">\(Φ_2 \mid\succ_{R_2} 𝜙_2\)</span>，
+如果存在 <span class="arithmatex">\(𝜙 \in Φ_2 \cap 𝐴\)</span> 使得 <span class="arithmatex">\(𝜙_1 \in \bar{𝜙}\)</span>，那么 <span class="arithmatex">\(Φ_1 \mid\sim_{R_1}\)</span>
+在 <span class="arithmatex">\(𝜙\)</span> 上破坏 <span class="arithmatex">\(Φ_2 \mid\succ_{R_2} 𝜙_2\)</span></p>
 </div>
 <p>说一个论证<strong>底切</strong>另一个论证，如果一个论证的结论反对另一个论证的<strong>推理关系</strong>。
-对于一条可废止推理规则，我们说它是可应用的，当其前提为真的时候结论也为真；否则，它不是可应用的。给定可废止规则 𝑑，我们用 appl(𝑑) 表示命题“可废止规则 𝑑 是可应用的”。</p>
+对于一条可废止推理规则，我们说它是可应用的，当其前提为真的时候结论也为真；否则，它不是可应用的。给定可废止规则 <span class="arithmatex">\(𝑑\)</span>，我们用 \
+<span class="arithmatex">\(\text{appl}(𝑑)\)</span> 表示命题“可废止规则 <span class="arithmatex">\(𝑑\)</span> 是可应用的”。</p>
 <div class="admonition info">
 <p class="admonition-title">底切</p>
-<p>给定两个论证 <span class="arithmatex">\(\Phi_1\mid\succ_{R_1} \phi_1\)</span> 和 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span>，如果存在 R_2 中存在可废止规则d使得\phi_1\in\bar{\text{\appl}(d)}，那么说 <span class="arithmatex">\(\Phi_1\mid\succ_{R_1} \phi_1\)</span> 底切 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span>。</p>
+<p>给定两个论证 <span class="arithmatex">\(\Phi_1\mid\succ_{R_1} \phi_1\)</span> 和 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span>，
+如果存在 R_2 中存在可废止规则 <span class="arithmatex">\(d\)</span> \
+使得 <span class="arithmatex">\(\phi_1\in\bar{\text{appl}(d)}\)</span>，
+那么说 <span class="arithmatex">\(\Phi_1\mid\succ_{R_1} \phi_1\)</span> 底切 <span class="arithmatex">\(\Phi_2\mid\succ_{R_2} \phi_2\)</span>。</p>
 </div>
 <p>如果第一个论证的结论反对第二个论证的<strong>结论</strong>，那么就说一个论证<strong>反驳</strong>另外一个论证。</p>
 <div class="admonition info">
 <p class="admonition-title">反驳</p>
-<p>给定两个论证  <span class="arithmatex">\(\alpha_1 = \Phi_1\mid\succ_{R_1} \phi_1\)</span> 和 <span class="arithmatex">\(\alpha_2 = \Phi_2\mid\succ_{R_2} \phi_2\)</span>，如果存在 𝛼2 的一个子论证 <span class="arithmatex">\(\alpha = \Phi\mid\succ_R \phi\)</span>，使得 𝜙 要么是假设要么是一条可废止规则的结论，且 <span class="arithmatex">\(\phi_1\in\bar{\phi}\)</span>，那么 <span class="arithmatex">\(\alpha_1\)</span> 在 <span class="arithmatex">\(\alpha\)</span> 上反驳 <span class="arithmatex">\(\alpha_2\)</span>。</p>
+<p>给定两个论证  <span class="arithmatex">\(\alpha_1 = \Phi_1\mid\succ_{R_1} \phi_1\)</span>
+和 <span class="arithmatex">\(\alpha_2 = \Phi_2\mid\succ_{R_2} \phi_2\)</span>，如果存在 𝛼2 的一个子论证
+<span class="arithmatex">\(\alpha = \Phi\mid\succ_R \phi\)</span>，使得 𝜙 要么是假设要么是一条可废止规则的结论，
+且 <span class="arithmatex">\(\phi_1\in\bar{\phi}\)</span>，那么 <span class="arithmatex">\(\alpha_1\)</span> 在 <span class="arithmatex">\(\alpha\)</span> 上反驳 <span class="arithmatex">\(\alpha_2\)</span>。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">极大可错子论证</p>
-<p>论证 𝛼 的极大可错子论证的集合 𝑀(𝛼) 是满足如下条件的集合：对于任意 𝛼′ ∈ Sub(𝛼)，𝛼′ ∈ 𝑀(𝛼)，当且仅当：
-1. 𝛼′的最后一条推理规则是可废止的或 𝛼′ 是一个假设性前提；
-2. 不存在 𝛼′′ ∈ Sub(𝛼)，使得 𝛼′′ ≠ 𝛼, 𝛼′ ∈ Sub(𝛼′′), 且 𝛼′′ 满足条件 1。</p>
+<p>论证 𝛼 的极大可错子论证的集合 𝑀(𝛼) 是满足如下条件的集合：对于任意 𝛼′ ∈ Sub(𝛼)，𝛼′ ∈ 𝑀(𝛼)，当且仅当：</p>
+<ol>
+<li>
+<p>𝛼′的最后一条推理规则是可废止的或 𝛼′ 是一个假设性前提；  </p>
+</li>
+<li>
+<p>不存在 𝛼′′ ∈ Sub(𝛼)，使得 𝛼′′ ≠ 𝛼, 𝛼′ ∈ Sub(𝛼′′), 且 𝛼′′ 满足条件 1。</p>
+</li>
+</ol>
 </div>
 <div class="admonition info">
 <p class="admonition-title">硬性规则的逆否</p>
-<p>给定一条硬性规则， <span class="arithmatex">\(\phi_1,\cdots,\phi_n\)</span>，其逆否是 <span class="arithmatex">\(\phi_1,\cdots,\phi_{i-1},\neg\phi, \phi_{i+1},\cdots,\phi_n\rightarrow \neg \phi_i\)</span></p>
+<p>给定一条硬性规则， <span class="arithmatex">\(\phi_1,\cdots,\phi_n\)</span>，其逆否是 \
+<span class="arithmatex">\(\phi_1,\cdots,\phi_{i-1},\neg\phi,\phi_{i+1},\cdots,\phi_n\rightarrow \neg \phi_i\)</span></p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">硬性集合的硬性接续</p>
-<p>给定任意论证集合合 <span class="arithmatex">\(\{\alpha_1,cdots,\alpha_n\}\)</span>，论证 𝛼 是 <span class="arithmatex">\(\{\alpha_1,cdots,\alpha_n\}\)</span> 的硬性接续，当且仅当：
-- 𝛼 中包含的假设及可废止规则与 <span class="arithmatex">\(\alpha_1,cdots,\alpha_n\)</span> 中包含的假设及可废止规则相同；
-- 𝛼 中包含的事实性前提及硬性规则集合是 <span class="arithmatex">\(\alpha_1,cdots,\alpha_n\)</span> 中包含的事实性前提及硬性规则集合的超集。</p>
+<p>给定任意论证集合合 <span class="arithmatex">\(\{\alpha_1,\cdots,\alpha_n\}\)</span>，论证 𝛼 是 \
+<span class="arithmatex">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> 的硬性接续，当且仅当：</p>
+<ul>
+<li>
+<p>𝛼 中包含的假设及可废止规则与 <span class="arithmatex">\(\alpha_1,cdots,\alpha_n\)</span> 中包含的假设及可废止规则相同；  </p>
+</li>
+<li>
+<p>𝛼 中包含的事实性前提及硬性规则集合是 <span class="arithmatex">\(\alpha_1,cdots,\alpha_n\)</span> 中包含的事实性前提及硬性规则集合的超集。</p>
+</li>
+</ul>
 </div>
 <h2 id="_3">击败关系</h2>
 <div class="admonition info">
 <p class="admonition-title">优先级提升方式</p>
-<p>给定集合 S_1和 S_2,有如下三种方式提升优先级：
-1. 占优方式：<span class="arithmatex">\(S_1\succeq_{Dom} S_2\)</span> 当且仅当 <span class="arithmatex">\(\exist x\in S_1, \exist y\in S_2: x\succeq y\)</span>, 并且 <span class="arithmatex">\(\notexist x\in S_1, \notexist y \in S_2: y\succeq x.\)</span>
-2. 精英方式：<span class="arithmatex">\(S_1 \succeq_{Eli} S_2\)</span> 当且仅当 <span class="arithmatex">\(\forall x \in S_1,\exist y \in S_2: x \succeq y.\)</span>
-3. 民主方式：<span class="arithmatex">\(S_1 \succeq_{Dem} S_2\)</span> 当且仅当 <span class="arithmatex">\(\exist x\in S_1,\forall y\in S_2:x\succeq y.\)</span></p>
+<p>给定集合 S_1和 S_2,有如下三种方式提升优先级：</p>
+<ol>
+<li>
+<p>占优方式：<span class="arithmatex">\(S_1\succeq_{Dom} S_2\)</span> 当且仅当 \
+<span class="arithmatex">\(\exist x\in S_1, \exist y\in S_2: x\succeq y\)</span>, 并且 \
+<span class="arithmatex">\(\notexist x\in S_1, \notexist y \in S_2: y\succeq x.\)</span></p>
+</li>
+<li>
+<p>精英方式：<span class="arithmatex">\(S_1 \succeq_{Eli} S_2\)</span> 当且仅当 \
+<span class="arithmatex">\(\forall x \in S_1,\exist y \in S_2: x \succeq y.\)</span></p>
+</li>
+<li>
+<p>民主方式：<span class="arithmatex">\(S_1 \succeq_{Dem} S_2\)</span> 当且仅当 \
+<span class="arithmatex">\(\exist x\in S_1,\forall y\in S_2:x\succeq y.\)</span></p>
+</li>
+</ol>
 </div>
 <div class="admonition note">
 <p class="admonition-title">定理</p>
-<p>给定集合 S_1和S_2，如果<span class="arithmatex">\(S_1\succeq_{Dom} S_2\)</span> ，那么 <span class="arithmatex">\(S_1 \succeq_{Eli} S_2\)</span> 且 <span class="arithmatex">\(S_1 \succeq_{Dem} S_2\)</span>，反之不成立。</p>
+<p>给定集合 <span class="arithmatex">\(S_1\)</span> 和 <span class="arithmatex">\(S_2\)</span>，如果 <span class="arithmatex">\(S_1\succeq_{Dom} S_2\)</span> ，那么 \
+<span class="arithmatex">\(S_1 \succeq_{Eli} S_2\)</span> 且 <span class="arithmatex">\(S_1 \succeq_{Dem} S_2\)</span>，反之不成立。</p>
 </div>
+<div class="admonition info">
+<p class="admonition-title">论证之间的优先关系</p>
+<p>给定两个论证 <span class="arithmatex">\(\alpha = \Phi_1\mid\succ_R_1 \phi_1\)</span> 和 <span class="arithmatex">\(\beta = \Phi_2\mid\succ_R_2 \phi_2\)</span>，
+设 <span class="arithmatex">\(F_1\subset \Phi_1 \cup R_1\)</span> 和 <span class="arithmatex">\(F_2\subset \Phi_2 \cup R_2\)</span> 分别为两个论证的可错元素集合。
+<span class="arithmatex">\(\alpha \succeq \beta\)</span> 当且仅当 <span class="arithmatex">\(F_1\succeq F_2\)</span></p>
+</div>
+<p>给定两个论证 𝛼 和 𝛽，它们之间的击败关系通过攻击关系和优先关系来定义。</p>
+<div class="admonition info">
+<p class="admonition-title">成功反驳与成功破坏</p>
+<p>给定两个论证 𝛼 和 𝛽：</p>
+<ul>
+<li>
+<p>如果 𝛼 在子论证 𝛽′ 上反驳 𝛽，且 𝛼 ⪰ 𝛽′，则 𝛼 成功反驳 𝛽。</p>
+</li>
+<li>
+<p>如果 𝛼 在 𝛽 的假设性前提 𝜙 上破坏 𝛽，且 𝛼 ⪰ {𝜙}，则 𝛼 成功破坏 𝛽。</p>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">击败关系</p>
+<p>给定两个论证𝛼 和 𝛽，我们说 𝛼 击败 𝛽，当且仅当：𝛼 底切 𝛽，或者 𝛼 成功反驳 𝛽，或者 𝛼 成功破坏 𝛽。</p>
+</div>
+<h2 id="_4">可废止理论</h2>
+<div class="admonition info">
+<p class="admonition-title">可废止理论</p>
+<p>设 𝐹 ⊆ 𝑃𝑟𝑜𝑝 是一组事实集合，𝑅𝑑 和 𝑅𝑠 分别是定义“推理关系”中所示的一组可废止规则集合和一组硬性规则集合。
+一个可废止理论定义为 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠)。</p>
+</div>
+<h2 id="_5">可废止理论的外延与结论</h2>
+<div class="admonition info">
+<p class="admonition-title">可废止理论的外延与结论</p>
+<p>设 <span class="arithmatex">\(𝐴𝐹_𝑇 = ⟨𝐴𝑅_𝑇 , 𝑎𝑡𝑡𝑎𝑐𝑘𝑠_𝑇 ⟩\)</span> 是由可废止理论 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 产生的一个论辩框架。
+在论辩语义 𝜎 ∈ {𝑎𝑑, 𝑐𝑜, 𝑝𝑟, 𝑔𝑟, 𝑠𝑡, 𝑠𝑠𝑡} 下，我们说：</p>
+<ul>
+<li>
+<p>对于任意 <span class="arithmatex">\(𝐸 \in \Epsilon_\sigma(𝐴𝐹𝑇 )\)</span>,
+ 称 Conc(𝐸) = {Conc(𝛼) | 𝛼 ∈ 𝐸} 是可废止理论 𝑇 的外延。</p>
+</li>
+<li>
+<p>𝜑 是 <span class="arithmatex">\(𝐴𝐹_𝑇\)</span> 的轻信可辩护结论，当且仅当存在论证 𝛼，使得 <span class="arithmatex">\(Conc(𝛼) = 𝜑\)</span>, 且 𝛼 在 𝜎语义下是轻信可辩护的，
+记作 <span class="arithmatex">\(𝑇 \mid\^{\exist}_𝜎 𝜑\)</span>。</p>
+</li>
+<li>
+<p>𝜑 是 𝐴𝐹𝑇 的怀疑可辩护结论，当且仅当对于每个 𝜎 外延 𝐸，存在论证 𝛼 ∈ 𝐸，使得 Conc(𝛼) = 𝜑，
+记作 𝑇 |∼∀𝜎 𝜑。</p>
+</li>
+</ul>
+</div>
+<h2 id="_6">系统特性</h2>
+<div class="admonition info">
+<p class="admonition-title">集合的一致性</p>
+<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个可废止理论。对于任意文字集合 𝑆 ⊆ 𝑃𝑟𝑜𝑝,
+设 𝑇ℎ(𝑆) 是集合𝑆 在硬性规则集合 𝑅𝑠 下的闭包。
+它是满足如下条件的极小集合：𝑆 ⊆ 𝑇 ℎ(𝑆)；
+对于任意𝑟 ∈ 𝑅𝑠, 如果 𝑟 的前提都在 𝑇ℎ(𝑆) 中，那么 𝑟 的结论也在 𝑇ℎ(𝑆) 中。</p>
+<ul>
+<li>
+<p>𝑆 是直接一致的，当且仅当 ∄𝑙1, 𝑙2 ∈ 𝑆 使得 𝑙1 = −𝑙2。</p>
+</li>
+<li>
+<p>𝑆 是间接一致的，当且仅当 𝑇 ℎ(𝑆) 是直接一致的。</p>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">逆否封闭性</p>
+<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个可废止理论。𝑇 是逆否封闭的，当且仅当：
+如果 𝜙1, . . . , 𝜙𝑛 −→𝜙 ∈ 𝑅𝑠，
+则 𝜙1, . . . , 𝜙𝑖1, ¬𝜙, 𝜙𝑖+1, . . . , 𝜙𝑛 −→ ¬𝜙𝑖 ∈ 𝑅𝑠。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">公理一致性</p>
+<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个可废止理论。𝑇 是公理一致的，当且仅当 𝑇ℎ(𝐹) 是一致的。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">子论证封闭性</p>
+<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个逆否封闭且公理一致的可废止理论，
+𝐸 是 <span class="arithmatex">\(𝐴𝐹_𝑇 = ⟨𝐴𝑅_𝑇 ,𝑎𝑡𝑡𝑎𝑐𝑘𝑠_𝑇 ⟩\)</span> 的一个完全外延。
+对于任意 𝛼 ∈ 𝐸，如果 𝛼′ ∈ Sub(𝛼) 则 𝛼′ ∈ 𝐸。</p>
+</div>
+<details class="note">
+<summary>两条引理</summary>
+<ul>
+<li>
+<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个逆否封闭且公理一致的可废止理论，
+<span class="arithmatex">\(𝛼_1 . . . , 𝛼_𝑛, 𝛼 ∈ 𝐴𝑅_𝑇\)</span>，𝛼 是{𝛼1 ,..., 𝛼𝑛} 的硬性接续。
+如果对于任意 <span class="arithmatex">\(𝑖 = 1, ... , 𝑛\)</span>，集合 <span class="arithmatex">\(𝐸 ⊆ 𝐴𝑅_𝑇\)</span> 可防御 <span class="arithmatex">\(𝛼_𝑖\)</span>，则 𝐸 可防御 𝛼。</p>
+</li>
+<li>
+<p>设 𝑇 = (𝐹, 𝑅𝑑, 𝑅𝑠) 是一个逆否封闭且公理一致的可废止理论，𝛼, 𝛽 ∈𝐴𝑅𝑇。其中，𝛽是可废止论证，
+且 Conc(𝛼) = −Conc(𝛽)。
+那么，对于任意 𝛽′ ∈ 𝑀(𝛽)，存在论证集合𝑀(𝛼) ∪ (𝑀(𝛽)  {𝛽′}) 的硬性接续，
+记作 <span class="arithmatex">\(𝛼^𝑐_𝛽′\)</span>，使得 <span class="arithmatex">\(𝛼^𝑐_𝛽′\)</span> 在 𝛽′ 上反驳 𝛽。</p>
+</li>
+</ul>
+</details>
 
 
 
@@ -3085,7 +3406,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 11, 2025 15:18:09">May 11, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 26, 2025 03:01:16">May 26, 2025</span>
   </span>
 
     

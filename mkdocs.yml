@@ -164,7 +164,7 @@ plugins:
   - search
   - meta
   - git-revision-date-localized:
-      enable_creation_date: true
+      enable_creation_date: false
       type: date
 
 markdown_extensions:

@@ -115,15 +115,19 @@ nav:
     - AI Logic:
       - study/ailogic/index.md
       - 引论: study/ailogic/introduction.md
-      - 命题逻辑: study/ailogic/proposition.md
-      - 一阶逻辑: study/ailogic/first-order-logic.md
-      - 知识图谱与描述逻辑: study/ailogic/knowledge.md
-      - 缺省逻辑: study/ailogic/default-logic.md
-      - 回答集编程: study/ailogic/asp.md
-      - 经典抽象论辩理论: study/ailogic/argument.md
-      - 结构化论辩理论: study/ailogic/struct-argu.md
-      - 论辩语义的计算方法: study/ailogic/game.md
-      - 贝叶斯网络: study/ailogic/bayes.md
+      - 经典演绎逻辑:
+        - 命题逻辑: study/ailogic/proposition.md
+        - 一阶逻辑: study/ailogic/first-order-logic.md
+        - 知识图谱与描述逻辑: study/ailogic/knowledge.md
+      - 非单调逻辑:
+        - 缺省逻辑: study/ailogic/default-logic.md
+        - 回答集编程: study/ailogic/asp.md
+      - 基于论证的逻辑:
+        - 经典抽象论辩理论: study/ailogic/argument.md
+        - 结构化论辩理论: study/ailogic/struct-argu.md
+        - 论辩语义的计算方法: study/ailogic/game.md
+      - 不确定推理:
+        - 贝叶斯网络: study/ailogic/bayes.md
 
   - Programming:
     - OOP:

@@ -73,7 +73,9 @@
 
 !!! info "项的值"
     一阶逻辑语言的项在以 $D$ 为论域的赋值 $v$ 下的值递归地定义如下：
+
     1. $a^v,x^v\in D$
+    
     2. $f(t_1,\dots,t_n)=f^v(t_1^v,\dots,t_n^v)$.
 
 
@@ -83,17 +85,17 @@
 
 !!! info "公式的真假值"
     - $F(t_1,\dots,t_n)=\begin{cases}
-    1,& \text{if}(t_1^v,\cdots,t_n^v)\in F^v\\
+    1,& \text{if }(t_1^v,\cdots,t_n^v)\in F^v\\
     0, & \text{else}
     \end{cases}$
 
     - $(\neg \phi)^v=\begin{cases}
-    1, & \text{if}\phi^v=0\\
+    1, & \text{if }\phi^v=0\\
     0, & \text{otherwise}
     \end{cases}$
 
     - $(t_1\equiv t_2)=\begin{cases}
-    1,&\text{if}t_1^v, t_2^v \text{is the same in} D\\
+    1,&\text{if }t_1^v, t_2^v \text{is the same in} D\\
     0,&\text{otherwise}
     \end{cases}$
 
@@ -126,7 +128,7 @@
     - $\bot^v=0$
 
     - $\forall x\phi^v=\begin{cases}
-    1,&\text{if}\phi^{v(x/a)}=1,\text{for any } a\in D\\
+    1,&\text{if }\phi^{v(x/a)}=1,\text{for any } a\in D\\
     0,&\text{otherwise}
     \end{cases}$
 
@@ -145,7 +147,9 @@
 
 !!! info "可满足性与有效性"
     设 $\psi$ 是一个一阶公式
+
     - $\psi$ 是有效的，即 $\models \psi$ 当且仅当对于任意论域 $D$ 下任何赋值 $v,\psi^v=1$
+    
     - $\psi$ 是可满足的，当且仅当存在某个论域 $D$ 下的赋值 $v$ 使 $\psi^v=1$
 
 
@@ -166,7 +170,7 @@
 
 #### 一阶消解推演规则
 
-当对包含自由变元的子句进行消解时，如果这些子句都是全称量化的，则可以去掉量词。在一阶消解中，需要考虑如何把消解规则应用于包含变元的子句。由于包含变元的子句是全称量化的，在证明可满足性时，可以使用这些字句的实例。
+当对包含自由变元的子句进行消解时，如果这些子句**都是全称量化**的，则可以去掉量词。在一阶消解中，需要考虑如何把消解规则应用于包含变元的子句。由于包含变元的子句是全称量化的，在证明可满足性时，可以使用这些子句的实例。
 
 - 例：{ [𝑃(𝑥), ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))], [𝑄(𝑥, 𝑦)]} 表示的是
  ∀𝑥∀𝑦{ [𝑃(𝑥) ∨ ¬𝑅(𝑎, 𝑓 (𝑏, 𝑥))] ∧ 𝑄(𝑥, 𝑦)}。
@@ -192,12 +196,11 @@
     变换为 $\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)$
 
 !!! note "定理"
-    (1) ∃𝑥𝜙 是可满足的，当且仅当 𝜙𝑥𝑎 是可满足的；
+    (1) ∃𝑥𝜙 是可满足的，当且仅当 $𝜙^𝑥_𝑎$ 是可满足的；
+
     (2) $\forall x_1\forall x_2\dots\forall x_n \exists y \phi$ 是可满足的，
     当且仅当 $\forall x_1\forall x_2\dots\forall x_n \phi^y_f(x_1,x_2,\dots,x_n)$ 是可满足的。
     其中，𝑎 是 𝜙 中未出现过的新常元，f 是 𝜙中未出现过的新 𝑛 元函词，它们被分别称为斯科伦常元和斯科伦函词。
-
-
 
 
 ### 赫布兰德定理

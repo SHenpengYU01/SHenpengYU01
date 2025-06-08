@@ -80,8 +80,6 @@ TBox是一组术语公理的有穷集合。TBox $ \mathcal{T}$ 和它的扩张 $
     - ABox 是一组断言公理的有穷集合。
 
 
-
-
 !!! info "知识库"
 
 在描述逻辑中，一个知识库是一个有序对 $(\mathcal{T}, \mathcal{A})$。其中 $\mathcal{T}, \mathcal{A}$

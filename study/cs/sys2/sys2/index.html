@@ -4154,14 +4154,14 @@ process
 <ol>
 <li>
 <p>new:
-  <img alt="⭐️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2b50.png" title=":star:" />forK(syscall):返回两值（对父进程：子进程PID；子进程：0），copy两份user space context(pt regs) 重点：fork 出的进程处</p>
+  <img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" />forK(syscall):返回两值（对父进程：子进程PID；子进程：0），copy两份user space context(pt regs) 重点：fork 出的进程处</p>
 </li>
 <li>
 <p>context_switch:切换stack,pc(涉及硬件资源，发生在kernel)
 <img alt="alt text" src="/img/study/cs/sys2/image-33.png" /></p>
 </li>
 </ol>
-<h3 id="process-scheduling">Process scheduling<img alt="⭐️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2b50.png" title=":star:" /></h3>
+<h3 id="process-scheduling">Process scheduling<img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /></h3>
 <p><img alt="alt text" src="/img/study/cs/sys2/image-34.png" /></p>
 <p><img alt="alt text" src="/img/study/cs/sys2/image-35.png" /></p>
 <p><img alt="alt text" src="/img/study/cs/sys2/image-36.png" /></p>
@@ -4269,7 +4269,7 @@ A,B相互等待导致死锁。</li>
 <p>Starvation：</p>
 <h4 id="atomic-variable">Atomic variable</h4>
 <p>支持原子操作的变量，对变量的所有操作都是原子的，不会出现数据竞争。</p>
-<h4 id="_4">三个问题<img alt="⭐️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2b50.png" title=":star:" /></h4>
+<h4 id="_4">三个问题<img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" /></h4>
 <ol>
 <li>Bounded buffer problem:
 有界缓冲区问题，又称为生产者-消费者问题，是并发编程中的经典同步问题。它描述了两个或多个进程或线程在共享有限缓冲区时如何安全有效地交换数据的场景。</li>
@@ -4307,7 +4307,7 @@ A,B相互等待导致死锁。</li>
 <li>
 <p>events type in OS:interrupts(hardware) and exception(software)</p>
 </li>
-<li><img alt="⭐️" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/2b50.png" title=":star:" />syscall(unprivileged):interface between user and kernel mode</li>
+<li><img alt="⭐" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b50.svg" title=":star:" />syscall(unprivileged):interface between user and kernel mode</li>
 <li>U-&gt;K: context is stored in kernel stack(kernel entry does this)</li>
 <li>
 <p>signals,timers and timeouts, user input events,process events, faults and exceptions</p>
@@ -4335,10 +4335,67 @@ stack(per-thread)：不可共享：栈内存是与函数调用紧密绑定的，
 
 
 
+  
+  
 
 
 
 
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+  data-repo="SHenpengYU01/giscus-mkdocs-material"
+  data-repo-id="R_kgDON4O90g"
+  data-category="Announcements"
+  data-category-id="DIC_kwDON4O90s4Cm5B_"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="dark"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>

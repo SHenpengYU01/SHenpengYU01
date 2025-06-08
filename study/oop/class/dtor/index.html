@@ -2581,15 +2581,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 构造函数与析构函数的关系
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3227,15 +3218,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. 构造函数与析构函数的关系
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3261,7 +3243,7 @@
 <ul>
 <li><strong>名称</strong>：析构函数的名称是类名加 <code>~</code> 符号（例如 <code>~MyClass()</code>）。</li>
 <li><strong>没有返回类型</strong>：与构造函数类似，析构函数没有返回类型。</li>
-<li><strong>没有参数</strong>：析构函数不能带参数，因此不能重载。</li>
+<li><strong>没有参数</strong>：析构函数不能带参数，因此<strong>不能重载</strong>。</li>
 <li><strong>自动调用</strong>：当对象生命周期结束时，析构函数会自动调用，通常是对象超出作用域时，或者通过 <code>delete</code> 关键字删除时。</li>
 </ul>
 <h2 id="_2">示例代码：析构函数</h2>
@@ -3300,12 +3282,6 @@
 <li><strong>构造函数</strong>：当对象 <code>obj</code> 被创建时，构造函数分配了动态内存。</li>
 <li><strong>析构函数</strong>：当 <code>obj</code> 超出作用域（即程序结束时），析构函数自动被调用，释放了动态分配的内存。</li>
 </ol>
-<h2 id="3">3. 构造函数与析构函数的关系</h2>
-<ul>
-<li>构造函数在对象创建时被调用，负责初始化对象。</li>
-<li>析构函数在对象销毁时被调用，负责清理资源。</li>
-</ul>
-<p>例如，如果一个类中有动态分配的内存或文件句柄等资源，构造函数会负责分配这些资源，而析构函数则负责释放这些资源。</p>
 
 
 
@@ -3313,10 +3289,67 @@
 
 
 
+  
+  
 
 
 
 
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+  data-repo="SHenpengYU01/giscus-mkdocs-material"
+  data-repo-id="R_kgDON4O90g"
+  data-category="Announcements"
+  data-category-id="DIC_kwDON4O90s4Cm5B_"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="dark"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 
                 
               </article>

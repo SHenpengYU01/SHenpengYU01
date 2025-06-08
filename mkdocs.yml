@@ -163,9 +163,9 @@ plugins:
   - tags
   - search
   - meta
-  - git-revision-date-localized:
-      enable_creation_date: false
-      type: date
+  # - git-revision-date-localized:
+  #     enable_creation_date: false
+  #     type: date
 
 markdown_extensions:
   - pymdownx.highlight:

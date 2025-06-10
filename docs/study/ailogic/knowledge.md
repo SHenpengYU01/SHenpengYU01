@@ -52,17 +52,23 @@ Female ⊓ Parent，Mother ≡ Female ⊓ Parent，Parent ≡ Father ⊔ Mother
 ### 描述逻辑的语法
 
 形式上，每个描述逻辑本体都基于三组有穷的符号集合：$N_C, N_R, N_O$，它们分别表示概念名集合、角色名集合和个体名集合。
-这样，三元组 (N_C, N_R, N_O) 构成描述逻辑的名字表。
+这样，三元组 $(N_C, N_R, N_O)$ 构成描述逻辑的名字表。
 
-描述逻辑 $\mathcal{ALC}$ 的概念定义如下：
+描述逻辑 ALC (ABox Logic)的概念定义如下：
 
 !!! info "$mathcal{ALC}$"
     $\mathcal{ALC}$ 概念集合是满足如下条件的极小集合：
+
     - $\top, \bot$ 是概念
+    
     - $A\in N_C$：每个原子概念是概念
+    
     - 如果C和D是概念，且 $R\in N_R$ 是角色名，那么如下是概念：
+      
       - $C\sqcap D, C\sqcup D, \neg C$ ：概念的交并补是概念
+      
       - $\forall R.C$：一个角色对一个概念的全称约束是一个概念
+      
       - $\exist R.C$：由一个角色对一个概念的存在约束是一个概念
 
 
@@ -81,9 +87,8 @@ TBox是一组术语公理的有穷集合。TBox $ \mathcal{T}$ 和它的扩张 $
 
 
 !!! info "知识库"
-
-在描述逻辑中，一个知识库是一个有序对 $(\mathcal{T}, \mathcal{A})$。其中 $\mathcal{T}, \mathcal{A}$
-分别是 TBox 和 ABox
+    在描述逻辑中，一个知识库是一个有序对 $(\mathcal{T}, \mathcal{A})$。其中 $\mathcal{T}, \mathcal{A}$
+    分别是 TBox 和 ABox
 
 ### 描述逻辑的语义
 
@@ -97,7 +102,7 @@ $·^\mathcal{I}$ 组成，该函数将每个原子概念映射到一个集合 $A
 !!! info "概念的解释"
     给定名字表 $(𝑁_𝐶, 𝑁_𝑅, 𝑁_𝑂)$，相应的术语解释定义为 $I = (\Delta^\mathcal{I}, ·^\mathcal{I})$。其中，
 
-    - 非空集合 $\Delta^\mathcal{I}$ 成为论域。
+    - 非空集合 $\Delta^\mathcal{I}$ 称为论域。
 
     - 解释函数 $·^I$ 包括如下映射：
 
@@ -115,16 +120,30 @@ $·^\mathcal{I}$ 组成，该函数将每个原子概念映射到一个集合 $A
 
       - $(C\sqcap D)^I = C^I\cap D^I$
 
-      - $(\neg C)^I = \Delta^\mathcal{I}\\C^I$
+      - $(\neg C)^I = \Delta^\mathcal{I}\backslash C^I$
 
-      - $(\forall R.C)^I = \{x\in \Delta^\mathcal{I} | \forall y \text{如果} (x,y)\in R^I，\text{则} y\in C^I\}$
+      - $(\forall R.C)^I = \{x\in \Delta^\mathcal{I} | \forall y \text{,如果} (x,y)\in R^I，\text{则} y\in C^I\}$
 
       - $(\exist R.C)^I = \{x\in \Delta^\mathcal{I} | \exist y\in \Delta^I : (x,y)\in R^I，y\in C^I\}$
 
 ## 描述逻辑的推理
 
-<img src="\img\study\ai\ailogic\definition.png" alt="">
+设 $\mathcal{T}$ 是一个 TBox。形式化地，有如下定义：
 
+!!! info "可满足"
+    概念C是关于 $\mathcal{T}$ 可满足的，如果存在 $\mathcal{T}$ 的一个解释 $\mathcal{I}$ ，使得 $C^I$ 非空。
+
+!!! info "包含"
+    关于 $\mathcal{T}$ ，我们说概念C是被包含于D，如果对于$\mathcal{T}$ 的每个解释 $\mathcal{I}，C^I \subseteq D^I$ 成立，
+    记作 $\mathcal{T} \models C\sqsubseteq D$。
+
+!!! info "等价"
+    我们说概念C与D关于 $\mathcal{T}$ 等价，如果对于 $\mathcal{T}$ 的每个解释 $\mathcal{I}，C^I=D^I$，记作 $\mathcal{T}\models C\equiv D$
+
+!!! info "不相交"
+    我们说概念C与D关于 $\mathcal{T}$ 不相交，如果对于 $\mathcal{T}$ 的每个解释 $\mathcal{I} ，C^I\cap D^I=\emptyset$
+
+包含、等价和不相交三种概念可以被规约到可满足问题。
 
 !!! note "定理"
     对于概念C和D，我们有：
@@ -133,7 +152,7 @@ $·^\mathcal{I}$ 组成，该函数将每个原子概念映射到一个集合 $A
 
     (2) C 与 D 等价，当且仅当 $C\sqcap \neg D, \neg C \sqcap D$ 都不可满足
 
-    (3) C与 D 不相交，当且仅当 $C\cup D$ 不可满足
+    (3) C与 D 不相交，当且仅当 $C\sqcup D$ 不可满足
 
 
 ### ALC表算法
@@ -142,9 +161,53 @@ $·^\mathcal{I}$ 组成，该函数将每个原子概念映射到一个集合 $A
 
 <img src="\img\study\ai\ailogic\NNF.png" alt="ALC表算法">
 
+!!! info "ABox的冲突性和完全性"
+    我们称一个ABox $\mathcal{A}$ 包含冲突，如果存在个体名 a 以及概念C使得 $\{a:C,a:\neg C\} \subseteq \mathcal{A}$，或者 $\bot\subseteq \mathcal{A}$。
+    如果 $\mathcal{A}$ 不包含冲突，我们就称其为无冲突的。我们称 $\mathcal{A}$ 是完全的，如果它包含冲突，或者没有一个扩张是可应用的。
 
 
 
+!!! info "表转换规则"
+    \mathcal{A} 是一个ABox。表转换规则包括：
 
+    - ⊓ 规则：如果 𝑥:(𝐶⊓𝐷) ∈ A，而且 {𝑥:𝐶, 𝑥:𝐷} ⊈ A，那么 A′ = A∪{𝑥 : 𝐶, 𝑥 : 𝐷}
 
+    - ⊔ 规则：如果 𝑥 : (𝐶 ⊔ 𝐷) ∈ A，而且 {𝑥:𝐶, 𝑥:𝐷}∩A = ∅，那么 A′ = A ∪ {𝑥 : 𝐶)},A′′= A ∪ {𝑥 : 𝐷}。
+    
+    - ∃ 规则：如果 𝑥 : ∃𝑅.𝐶 ∈ A，而且不存在 𝑧 使得 𝑧 : 𝐶 ∈ A 且 (𝑥, 𝑧) : 𝑅 ∈ A，则对于一个新的个体 𝑦 ∉ A, A′ = A ∪ {𝑦 : 𝐶, (𝑥, 𝑦) : 𝑅}
+
+    - ∀ 规则：如果 𝑥 : ∀𝑅.𝐶 ∈ A 而且 (𝑥, 𝑦) : 𝑅 ∈ A，但 𝑦 : 𝐶 ∉ A，则 A′ = A ∪ {𝑦 : 𝐶}
+
+例：判断 (Professor ⊑ (Person⊓UniversityEmployee) ⊔ (Person⊓ ¬Student)) ⊓ (¬(Professor ⊑ Person)) 的可满足性。
+
+令 \(\mathcal{A}_0 = \{x : ((\neg\text{Professor} \sqcup (\text{Person} \sqcap \text{UniversityEmployee}) \sqcup (\text{Person} \sqcap \neg\text{Student})) \sqcap \text{Professor} \sqcap \neg\text{Person}\}\)。  
+证明过程如下：
+
+1. 由 \(\mathcal{A}_0\) 和 \(\sqcap\) 规则，\(x : \text{Professor}\)  
+2. 由 \(\mathcal{A}_0\) 和 \(\sqcap\) 规则，\(x : \neg\text{Person}\)  
+3. 由 \(\mathcal{A}_0\) 和 \(\sqcap\) 规则，\(x : (\neg\text{Professor} \sqcup (\text{Person} \sqcap \text{UniversityEmployee}) \sqcup (\text{Person} \sqcap \neg\text{Student}))\)  
+   3.1. 由 3 和 \(\sqcup\) 规则，\(x : \neg\text{Professor}\)（包含冲突）  
+   3.2. 由 3 和 \(\sqcup\) 规则，\(x : ((\text{Person} \sqcap \text{UniversityEmployee}) \sqcup (\text{Person} \sqcap \neg\text{Student}))\)  
+      - 3.2.1. 由 3.2 和 \(\sqcup\) 规则，\(x : (\text{Person} \sqcap \text{UniversityEmployee})\)  
+          - 3.2.1.1. 由 3.2.1 和 \(\sqcap\) 规则，\(x : \text{Person}\)（包含冲突）  
+          - 3.2.1.2. 由 3.2.1 和 \(\sqcap\) 规则，\(x : \text{UniversityEmployee}\)  
+      - 3.2.2. 由 3.2 和 \(\sqcup\) 规则，\(x : (\text{Person} \sqcap \neg\text{Student})\)  
+          - 3.2.2.1. 由 3.2.2 和 \(\sqcap\) 规则，\(x : \text{Person}\)（包含冲突）  
+          - 3.2.2.2. 由 3.2.2 和 \(\sqcap\) 规则，\(x : \neg\text{Student}\)  
+
+由于所有分支都包含冲突，因此 \(\mathcal{A}_0\) 不可满足。
+
+#### 涉及普通包含公理的ABox一致性检查算法
+
+上一节介绍的算法适合于 TBox 为空的情况。当 TBox 为非空的时，如果该 TBox 是无环的，那么可以通过扩张去掉 TBox。
+然而，当 TBox 包含形如 𝐶 ⊆ 𝐷 的普通包含公理时，这种扩张变得不再可行。对于存在多条普通包含公理（𝐶1 ⊑ 𝐷1,..., 𝐶𝑛 ⊑ 𝐷𝑛）的情况，
+只要考虑一条公理 ⊤ ⊑ E，其中
+
+$$
+E=(\neg C_1 \sqcup D_1)\sqcap \dots \sqcap (\neg C_n\sqcup D_n)
+$$
+
+公理 ⊤ ⊑ E 意指任何个体都必须属于 E。
+可以通过简单修改上述表算法来纳入这个公理：所有个体（包括原有的个体义记由存在
+规则和全称规则新产生的个体）都被断言属于 E。但是会导致算法不可终止：通过检测循环阻止**存在规则**的实施。
 

@@ -3961,7 +3961,7 @@
 <p>1) 运算符是一元的（一个参数）还是二元的（两个参数）。<br />
 2) 运算符被定义为全局函数（对于一元是一个参数，对于二元是两个参数）还是成员函数（对于一元没有参数，对于二元是一个参数 — 对象变为左侧参数）。</p>
 <h3 id="_2">成员函数实现</h3>
-<p>操作符重载通过成员函数实现时，操作符的左值必须是当前对象本身，右操作数为参数列表中变量</p>
+<p>操作符重载通过成员函数实现时，操作符的<strong>左值必须是当前对象本身</strong>，右操作数为参数列表中变量</p>
 <h3 id="_3">友元函数/全局函数实现</h3>
 <p>操作符重载通过非成员函数实现时，操作符的左值或右值都通过参数列表决定</p>
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">MyClass</span><span class="w"> </span><span class="p">{</span>

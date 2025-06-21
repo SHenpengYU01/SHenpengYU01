@@ -3866,27 +3866,25 @@
 <p>在C++中，<strong>虚函数表（vtable）</strong> 是实现动态绑定或运行时多态的底层机制。它的核心思想是通过<strong>间接寻址</strong>，在程序运行时根据对象的实际类型动态确定调用的函数。以下是虚函数表实现动态绑定的详细过程：</p>
 <h3 id="_6"><strong>动态绑定的核心步骤</strong></h3>
 <ol>
-<li><strong>虚函数表的创建</strong>  </li>
+<li><strong>虚函数表的创建</strong><ul>
 <li>编译器为<strong>每个包含虚函数的类</strong>生成一个虚函数表（全局唯一）。  </li>
 <li>虚表是一个函数指针数组，每个条目对应类的一个虚函数。  </li>
-<li>
-<p><strong>派生类</strong>会继承基类的虚表，并覆盖（Override）基类虚函数的条目，新增的虚函数会追加到虚表末尾。</p>
+<li><strong>派生类</strong>会继承基类的虚表，并覆盖（Override）基类虚函数的条目，新增的虚函数会追加到虚表末尾。</li>
+</ul>
 </li>
-<li>
-<p><strong>虚表指针（vptr）的注入</strong>  </p>
-</li>
+<li><strong>虚表指针（vptr）的注入</strong>  <ul>
 <li>每个对象实例的内存布局中，编译器隐式插入一个指针（<code>vptr</code>），指向其所属类的虚表。  </li>
-<li>
-<p><code>vptr</code>在<strong>对象构造时初始化</strong>，由构造函数负责将其指向正确的虚表。</p>
+<li><code>vptr</code>在<strong>对象构造时初始化</strong>，由构造函数负责将其指向正确的虚表。</li>
+</ul>
 </li>
-<li>
-<p><strong>虚函数调用的寻址</strong>  </p>
-</li>
+<li><strong>虚函数调用的寻址</strong>  <ul>
 <li>当通过基类指针或引用调用虚函数时，编译器生成代码执行以下操作：  <ol>
 <li>通过对象的<code>vptr</code>找到虚表。  </li>
 <li>根据虚函数在虚表中的<strong>偏移量</strong>（由声明顺序决定）找到函数地址。  </li>
 <li>调用该地址指向的函数。</li>
 </ol>
+</li>
+</ul>
 </li>
 </ol>
 <h3 id="_7"><strong>动态绑定过程示例</strong></h3>
@@ -3954,16 +3952,20 @@
 </ul>
 <h3 id="_9"><strong>动态绑定的性能与优化</strong></h3>
 <ol>
-<li><strong>间接调用开销</strong>  </li>
-<li>虚函数调用需要两次内存访问（取<code>vptr</code> → 取虚表条目），比普通函数调用稍慢。  </li>
 <li>
-<p>可能影响CPU指令缓存的局部性。</p>
+<p><strong>间接调用开销</strong>  </p>
+<ul>
+<li>虚函数调用需要两次内存访问（取<code>vptr</code> → 取虚表条目），比普通函数调用稍慢。  </li>
+<li>可能影响CPU指令缓存的局部性。</li>
+</ul>
 </li>
 <li>
 <p><strong>编译器的去虚拟化（Devirtualization）</strong>  </p>
-</li>
+<ul>
 <li>若编译器能在编译期确定对象类型（如<code>Dog* dog = new Dog()</code>），可能直接调用<code>Dog::speak()</code>，跳过虚表查找。  </li>
 <li>常见于简单场景或开启优化（如<code>-O2</code>）。</li>
+</ul>
+</li>
 </ol>
 <h3 id="_10"><strong>动态绑定的本质</strong></h3>
 <p>虚函数表的动态绑定机制，本质是<strong>将函数调用从编译期绑定解耦为运行期绑定</strong>。通过<code>vptr</code>和虚表，C++实现了以下特性：</p>

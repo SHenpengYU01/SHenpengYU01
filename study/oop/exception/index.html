@@ -3751,9 +3751,11 @@
 <h2 id="2">2. <strong>异常处理流程</strong></h2>
 <ol>
 <li>代码在 <code>try</code> 块中执行。</li>
-<li>若 <code>try</code> 块内抛出异常：</li>
+<li>若 <code>try</code> 块内抛出异常：<ul>
 <li>立即退出 <code>try</code> 块，在调用栈中查找匹配的 <code>catch</code> 处理器。</li>
 <li>栈展开（Stack Unwinding）：销毁局部对象（调用析构函数）。</li>
+</ul>
+</li>
 <li>按顺序检查 <code>catch</code> 块，匹配异常类型（支持继承关系）。</li>
 <li>执行匹配的 <code>catch</code> 块代码。</li>
 <li>若未找到匹配的处理器，调用 <code>std::terminate()</code> 终止程序。</li>

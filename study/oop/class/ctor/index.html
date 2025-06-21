@@ -2996,6 +2996,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      基于构造函数的隐式转换
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3857,6 +3866,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      基于构造函数的隐式转换
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -4392,6 +4410,15 @@
 </tr>
 </tbody>
 </table>
+<h2 id="_17">基于构造函数的隐式转换</h2>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">ResId</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">public</span><span class="o">:</span>
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">    </span><span class="n">ResId</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w">  </span><span class="c1">// 单参数构造函数</span>
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="p">};</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="n">ResId</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span></code></pre></div>
+<p>编译器检测到需要 ResId 类型，但提供了 int 类型。所以查找 ResId 类中是否存在单参数构造函数（ResId(int)）</p>
 
 
 

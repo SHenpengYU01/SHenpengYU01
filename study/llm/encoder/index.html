@@ -10,13 +10,9 @@
       
       
       
-        <link rel="canonical" href="https://note.mythlogos.top/study/llm/clip/">
+        <link rel="canonical" href="https://note.mythlogos.top/study/llm/encoder/">
       
       
-        <link rel="prev" href="../">
-      
-      
-        <link rel="next" href="../video-rag/">
       
       
       <link rel="icon" href="../../../img/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>CLIP - Cool Tea</title>
+        <title>Encoder/Decoder - Cool Tea</title>
       
     
     
@@ -80,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#clipcontrastive-language-image-pre-training" class="md-skip">
+        <a href="#encoderdecoder" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CLIP
+              Encoder/Decoder
             
           </span>
         </div>
@@ -276,20 +272,16 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../../ailogic/" class="md-tabs__link">
           
   
@@ -1375,10 +1367,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1391,20 +1381,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1416,7 +1403,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             AI
@@ -2357,8 +2344,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2384,11 +2369,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
           
           
@@ -2411,7 +2396,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             LLM
@@ -2424,31 +2409,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    CLIP
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../clip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2458,323 +2422,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#0-abstract" class="md-nav__link">
-    <span class="md-ellipsis">
-      0. Abstract
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-introduction-and-motivating-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Introduction and Motivating Work
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Introduction and Motivating Work">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      现有工作
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      探索的问题
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-approach" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Approach
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Approach">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-natural-language-supervision" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Natural Language Supervision
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-creating-a-sufficiently-large-dataset" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Creating a Sufficiently Large Dataset
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-selecting-an-efficient-pre-training-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 Selecting an Efficient Pre-Training Method
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24-choosing-and-scaling-a-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 Choosing and Scaling a Model
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.4 Choosing and Scaling a Model">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      （1）图像编码器
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      （2）文本编码器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-training" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 Training
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-experiment" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Experiment
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Experiment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-zero-shot-transfer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1 Zero-Shot Transfer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3.1 Zero-Shot Transfer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#311-motivation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.1 Motivation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#312-using-clip-for-zero-shot-transfer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.2 Using CLIP for Zero-Shot Transfer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#313-initial-comparison-to-visual-n-grams" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.3 Initial Comparison to Visual N-Grams
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-prompt-engineering-and-ensembling" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.4 Prompt Engineering and Ensembling
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#315-analysis-of-zero-shot-clip-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.5 Analysis of Zero-Shot CLIP Performance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-representation-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.2 Representation Learning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-robustness-to-natural-distribution-shift" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.3 Robustness to Natural Distribution Shift
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-comparison-to-human-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 Comparison to Human Performance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-data-overlap-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Data Overlap Analysis
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Data Overlap Analysis">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      研究背景
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      分析方法
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      核心结果
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      关键结论
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-limitations" class="md-nav__link">
-    <span class="md-ellipsis">
-      6 Limitations
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      7 Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3901,37 +3548,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#0-abstract" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      0. Abstract
+      概念总览
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-introduction-and-motivating-work" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Introduction and Motivating Work
+      一、基本定义演化
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Introduction and Motivating Work">
+    <nav class="md-nav" aria-label="一、基本定义演化">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#encoder" class="md-nav__link">
     <span class="md-ellipsis">
-      现有工作
+      编码器（Encoder）
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#decoder" class="md-nav__link">
     <span class="md-ellipsis">
-      探索的问题
+      解码器（Decoder）
     </span>
   </a>
   
@@ -3943,205 +3590,62 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-approach" class="md-nav__link">
+  <a href="#llm-" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Approach
+      二、大语言模型（LLM）中的编码器-解码器架构
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Approach">
+    <nav class="md-nav" aria-label="二、大语言模型（LLM）中的编码器-解码器架构">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#21-natural-language-supervision" class="md-nav__link">
+  <a href="#1-decoder-only" class="md-nav__link">
     <span class="md-ellipsis">
-      2.1 Natural Language Supervision
+      1. 纯解码器架构（Decoder-only）
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#22-creating-a-sufficiently-large-dataset" class="md-nav__link">
+  <a href="#2-" class="md-nav__link">
     <span class="md-ellipsis">
-      2.2 Creating a Sufficiently Large Dataset
+      2. 编码器-解码器架构
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#23-selecting-an-efficient-pre-training-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 Selecting an Efficient Pre-Training Method
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#24-choosing-and-scaling-a-model" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
     <span class="md-ellipsis">
-      2.4 Choosing and Scaling a Model
+      三、多模态模型中的编码器-解码器架构
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2.4 Choosing and Scaling a Model">
+    <nav class="md-nav" aria-label="三、多模态模型中的编码器-解码器架构">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      （1）图像编码器
+      1. 多模态编码器
     </span>
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      （2）文本编码器
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-training" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 Training
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-experiment" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Experiment
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Experiment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-zero-shot-transfer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1 Zero-Shot Transfer
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3.1 Zero-Shot Transfer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#311-motivation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.1 Motivation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#312-using-clip-for-zero-shot-transfer" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.2 Using CLIP for Zero-Shot Transfer
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#313-initial-comparison-to-visual-n-grams" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.3 Initial Comparison to Visual N-Grams
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#314-prompt-engineering-and-ensembling" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.4 Prompt Engineering and Ensembling
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#315-analysis-of-zero-shot-clip-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1.5 Analysis of Zero-Shot CLIP Performance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-representation-learning" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.2 Representation Learning
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-robustness-to-natural-distribution-shift" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.3 Robustness to Natural Distribution Shift
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-comparison-to-human-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 Comparison to Human Performance
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-data-overlap-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Data Overlap Analysis
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. Data Overlap Analysis">
+    <nav class="md-nav" aria-label="1. 多模态编码器">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      研究背景
+      模态特定编码器
     </span>
   </a>
   
@@ -4150,16 +3654,31 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      分析方法
+      统一编码器
     </span>
   </a>
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 多模态解码器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 多模态解码器">
+      <ul class="md-nav__list">
+        
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      核心结果
+      模态特定解码器
     </span>
   </a>
   
@@ -4168,7 +3687,54 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      关键结论
+      统一解码器
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、典型架构模式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、典型架构模式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-encoder-decoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 编码器-解码器（Encoder-Decoder）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-dual-encoder" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 双编码器（Dual-Encoder）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-encoder-decoder-with-frozen-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 编码器-仅解码器（Encoder-Decoder with frozen components）
     </span>
   </a>
   
@@ -4180,18 +3746,243 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#6-limitations" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      6 Limitations
+      五、关键技术组件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、关键技术组件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cross-modal-attention" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 跨模态注意力（Cross-modal Attention）
     </span>
   </a>
   
 </li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 模态融合策略
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 对齐机制
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#7-summary" class="md-nav__link">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      7 Summary
+      六、具体模型实例解析
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、具体模型实例解析">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-clip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. CLIP架构（对比学习）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-blip-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. BLIP-2架构（轻量连接器）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-flamingo" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Flamingo架构（交叉注意力）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      七、训练范式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、训练范式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 预训练阶段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 对齐阶段
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 特定任务微调
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      八、最新趋势
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、最新趋势">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 统一架构
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 大语言模型作为通用接口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 扩散模型作为解码器
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 端到端训练
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      九、性能考虑
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、性能考虑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      效率优化技术
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      十、实际应用指导
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、实际应用指导">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      选择架构的建议
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      部署考虑
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      总结
     </span>
   </a>
   
@@ -4216,242 +4007,286 @@
   
 
 
-<h1 id="clipcontrastive-language-image-pre-training">CLIP(Contrastive Language-Image Pre-training)</h1>
+<h1 id="encoderdecoder">Encoder/Decoder</h1>
+<h2 id="_1">概念总览</h2>
+<p>在<strong>大模型</strong>和<strong>多模态</strong>领域，编码器（Encoder）和解码器（Decoder）已超越传统定义，发展为功能强大的<strong>表示学习</strong>和<strong>生成</strong>组件，负责在不同模态之间建立连接与转换。</p>
+<h2 id="_2">一、基本定义演化</h2>
+<h3 id="encoder"><strong>编码器（Encoder）</strong></h3>
 <ul>
-<li>
-<p>Learning Transferable Visual Models From Natural Language Supervision(2021)</p>
-</li>
-<li>
-<p><a href="https://arxiv.org/pdf/2103.00020">原论文</a></p>
-</li>
-<li>
-<p><a href="https://zhuanlan.zhihu.com/p/1928384119282336791">知乎总结</a></p>
-</li>
+<li><strong>核心功能</strong>：将输入数据（文本、图像、音频等）转换为<strong>紧凑的、信息丰富的内部表示（潜在表示）</strong></li>
+<li><strong>输出特性</strong>：保留语义信息，压缩无关细节，实现跨模态对齐</li>
 </ul>
-<h2 id="0-abstract">0. Abstract</h2>
+<h3 id="decoder"><strong>解码器（Decoder）</strong></h3>
 <ul>
-<li>思想：直接从原始文本学习图像表征，利用互联网海量图文数据的广泛监督资源；传统预设固定有限类别标签的监督学习，限制了模型的通用性和可用性。</li>
-<li>做法：将“预测哪张图片与哪个文本说明（caption）匹配”作为预训练任务，在4亿个（图像-文本）配对数据集上从头训练。</li>
-<li>结果：实现零样本学习（zero-shot）——模型预训练完成后，无需下游任务的任何标注数据，仅通过自然语言描述即可直接完成该任务的预测；在30+计算机视觉数据集上表现优异，零样本情况下匹配ResNet-50在ImageNet上的准确率。</li>
+<li><strong>核心功能</strong>：将编码器的内部表示<strong>重构</strong>或<strong>转换</strong>为目标模态的输出</li>
+<li><strong>输出特性</strong>：根据任务需求生成文本、图像、语音等具体内容</li>
 </ul>
-<p><img src="\img\study\llm\clip-arch.png" alt="alt text"></p>
-<h2 id="1-introduction-and-motivating-work">1. Introduction and Motivating Work</h2>
-<h3 id="_1">现有工作</h3>
+<h2 id="llm-">二、大语言模型（LLM）中的编码器-解码器架构</h2>
+<h3 id="1-decoder-only">1. <strong>纯解码器架构（Decoder-only）</strong></h3>
 <ul>
-<li>NLP领域：Text-to-text标准化输入输出接口的预训练方法，使任务无关模型能零样本迁移到下游数据集；GPT-3等模型无需或少需数据集特定训练数据，就在多个任务上与专用模型竞争力，证明互联网规模文本的监督资源超越高质量人工标注NLP数据集。</li>
-<li>计算机视觉领域：传统依赖ImageNet等人工标注数据集预训练；早期已有探索从图像配对文本中学习视觉表征的工作（如预测文本中的名词形容词、流形学习等），但未实现大规模应用；近年VirTex、ICMLM等基于Transformer的方法虽有进展，但性能远低于主流监督模型。</li>
-<li>弱监督视觉预训练：通过Instagram标签、JFT-300M噪声标签预训练的模型，虽提升迁移性能，但监督类别固定（1000~18291类），缺乏动态输出机制，零样本能力有限。</li>
+<li><strong>代表模型</strong>：GPT系列、LLaMA、PaLM</li>
+<li><strong>特点</strong>：</li>
+<li>编码器和解码器功能合二为一</li>
+<li>使用<strong>因果注意力掩码</strong>确保自回归生成</li>
+<li>训练目标：下一个token预测</li>
 </ul>
-<h3 id="_2">探索的问题</h3>
-<p>通过大规模图文对预训练，能否让模型学习到可迁移的视觉表征，无需任务特定训练即可通过自然语言提示完成预测，实现零样本迁移；填补自然语言监督在视觉领域的规模缺口，验证其在计算机视觉的突破潜力。</p>
-<h2 id="2-approach">2. Approach</h2>
-<h3 id="21-natural-language-supervision">2.1 Natural Language Supervision</h3>
+<h3 id="2-">2. <strong>编码器-解码器架构</strong></h3>
 <ul>
-<li>核心定义：将自然语言作为训练信号，学习视觉与语言的关联，而非依赖固定类别标签</li>
-<li>从自然语言学习的优势：</li>
-<li>容易规模化：无需将标注转化为机器学习兼容格式，可从互联网海量文本中被动学习。</li>
-<li>支持灵活零样本迁移：不仅学习视觉表征，还将其与语言关联，通过自然语言即可引用已学概念或描述新概念。</li>
+<li><strong>代表模型</strong>：T5、BART、UL2</li>
+<li><strong>特点</strong>：</li>
+<li>明确分离编码和解码过程</li>
+<li>适用于<strong>序列到序列</strong>任务（翻译、摘要、问答）</li>
+<li>编码器处理输入，解码器基于编码表示生成输出</li>
 </ul>
-<h3 id="22-creating-a-sufficiently-large-dataset">2.2 Creating a Sufficiently Large Dataset</h3>
-<p>现有数据集局限：</p>
+<h2 id="-">三、多模态模型中的编码器-解码器架构</h2>
+<h3 id="1">1. <strong>多模态编码器</strong></h3>
+<p>将不同模态数据映射到<strong>统一表示空间</strong>：</p>
+<h4 id="_3"><strong>模态特定编码器</strong></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">MultimodalEncoder</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_encoder</span> <span class="o">=</span> <span class="n">TransformerEncoder</span><span class="p">()</span>  <span class="c1"># 文本编码器</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">image_encoder</span> <span class="o">=</span> <span class="n">ViT</span><span class="p">()</span>                <span class="c1"># 图像编码器</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">audio_encoder</span> <span class="o">=</span> <span class="n">Wav2Vec2</span><span class="p">()</span>           <span class="c1"># 音频编码器</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="k">def</span> <span class="nf">encode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">modalities</span><span class="p">):</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="c1"># 将各模态编码到统一空间</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="n">text_emb</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">text_encoder</span><span class="p">(</span><span class="n">modalities</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">])</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        <span class="n">image_emb</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_encoder</span><span class="p">(</span><span class="n">modalities</span><span class="p">[</span><span class="s1">&#39;image&#39;</span><span class="p">])</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="n">audio_emb</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">audio_encoder</span><span class="p">(</span><span class="n">modalities</span><span class="p">[</span><span class="s1">&#39;audio&#39;</span><span class="p">])</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="c1"># 模态融合（可选）</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>        <span class="n">fused_emb</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fuse_modalities</span><span class="p">(</span><span class="n">text_emb</span><span class="p">,</span> <span class="n">image_emb</span><span class="p">,</span> <span class="n">audio_emb</span><span class="p">)</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        <span class="k">return</span> <span class="n">fused_emb</span>
+</span></code></pre></div>
+<h4 id="_4"><strong>统一编码器</strong></h4>
 <ul>
-<li>MS-COCO/Visual Genome：高质量人工标注，但规模小（各约10万张训练图），难以支撑大规模预训练。</li>
-<li>YFCC100M：规模达1亿张，但元数据质量参差不齐</li>
+<li><strong>代表模型</strong>：Flamingo、BLIP-2</li>
+<li><strong>特点</strong>：使用同一个Transformer处理多模态输入，通过特殊token区分模态</li>
 </ul>
-<p>本文自主构建的数据集（WIT，WebImageText）：</p>
+<h3 id="2">2. <strong>多模态解码器</strong></h3>
+<p>根据统一表示生成特定模态输出：</p>
+<h4 id="_5"><strong>模态特定解码器</strong></h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span> <span class="nc">MultimodalDecoder</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_decoder</span> <span class="o">=</span> <span class="n">TransformerDecoder</span><span class="p">()</span>  <span class="c1"># 文本生成</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">image_decoder</span> <span class="o">=</span> <span class="n">DiffusionDecoder</span><span class="p">()</span>   <span class="c1"># 图像生成</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">speech_decoder</span> <span class="o">=</span> <span class="n">Vocoder</span><span class="p">()</span>           <span class="c1"># 语音生成</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="k">def</span> <span class="nf">decode</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">latent</span><span class="p">,</span> <span class="n">target_modality</span><span class="o">=</span><span class="s1">&#39;text&#39;</span><span class="p">):</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="k">if</span> <span class="n">target_modality</span> <span class="o">==</span> <span class="s1">&#39;text&#39;</span><span class="p">:</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">text_decoder</span><span class="p">(</span><span class="n">latent</span><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="k">elif</span> <span class="n">target_modality</span> <span class="o">==</span> <span class="s1">&#39;image&#39;</span><span class="p">:</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_decoder</span><span class="p">(</span><span class="n">latent</span><span class="p">)</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>        <span class="k">elif</span> <span class="n">target_modality</span> <span class="o">==</span> <span class="s1">&#39;audio&#39;</span><span class="p">:</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">speech_decoder</span><span class="p">(</span><span class="n">latent</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="_6"><strong>统一解码器</strong></h4>
 <ul>
-<li>规模：4亿个（图像-文本）配对样本，源自互联网公开来源。</li>
-<li>构建方式：基于50万个查询词（维基百科高频词、高互信息双词短语、维基词条名、WordNet同义词集）搜索，每个查询最多保留2万对，平衡各类概念覆盖。</li>
-<li>特点：文本总词数与GPT-2的训练数据集WebText相当，包含标题、描述、评论等多元文本形式，覆盖广泛视觉概念。</li>
+<li><strong>代表模型</strong>：GATO、Unified-IO</li>
+<li><strong>特点</strong>：单一解码器可生成多种模态输出</li>
 </ul>
-<h3 id="23-selecting-an-efficient-pre-training-method">2.3 Selecting an Efficient Pre-Training Method</h3>
+<h2 id="_7">四、典型架构模式</h2>
+<h3 id="1-encoder-decoder">1. <strong>编码器-解码器（Encoder-Decoder）</strong></h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>文本/图像/音频 → [编码器] → 统一表示 → [解码器] → 文本/图像/音频
+</span></code></pre></div>
+- <strong>适用任务</strong>：跨模态翻译、VQA、图像描述</p>
+<h3 id="2-dual-encoder">2. <strong>双编码器（Dual-Encoder）</strong></h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>文本 → [文本编码器] → 文本表示
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>图像 → [图像编码器] → 图像表示
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>                   ↓
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>            对比学习对齐
+</span></code></pre></div>
+- <strong>代表模型</strong>：CLIP、ALIGN
+- <strong>适用任务</strong>：检索、分类</p>
+<h3 id="3-encoder-decoder-with-frozen-components">3. <strong>编码器-仅解码器（Encoder-Decoder with frozen components）</strong></h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>图像 → [冻结图像编码器] → 图像特征
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                    ↓
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>文本 → [文本编码器] → 查询向量 → [大语言模型解码器] → 答案
+</span></code></pre></div>
+- <strong>代表模型</strong>：BLIP-2、Flamingo
+- <strong>特点</strong>：利用预训练大语言模型的理解能力</p>
+<h2 id="_8">五、关键技术组件</h2>
+<h3 id="1-cross-modal-attention">1. <strong>跨模态注意力（Cross-modal Attention）</strong></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">class</span> <span class="nc">CrossModalAttention</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="c1"># query: 来自模态A</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        <span class="c1"># key, value: 来自模态B</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="n">scores</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">key</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="n">attn_weights</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">dim</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>        <span class="n">output</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">attn_weights</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="k">return</span> <span class="n">output</span>
+</span></code></pre></div>
+<h3 id="2_1">2. <strong>模态融合策略</strong></h3>
 <ul>
-<li>初始尝试：模仿VirTex，联合训练图像CNN与文本Transformer预测图像对应的exact words，但计算效率低</li>
-<li>核心优化：采用对比学习目标（Contrastive Objective），替代生成式/预测式目标：</li>
-<li>任务：给定批量N个图文对，预测N×N可能配对中真实存在的N对。</li>
-<li>实现：联合训练图像编码器与文本编码器，最大化真实配对的余弦相似度，最小化错误配对的相似度，优化对称交叉熵损失。
-  <img src="\img\study\llm\clip-code.png" alt="Numpy-like pseudocode for the core of an implementation of CLIP"></li>
-<li>效率提升：相比词袋预测目标，对比学习使零样本迁移效率提升4倍，成为高效规模化训练的关键。</li>
+<li><strong>早期融合</strong>：在输入级别拼接不同模态</li>
+<li><strong>中期融合</strong>：在特征级别融合</li>
+<li><strong>晚期融合</strong>：在决策级别融合</li>
+<li><strong>交叉融合</strong>：使用注意力机制相互影响</li>
 </ul>
-<p><img src="\img\study\llm\clip-efficiency.png" alt="alt text"></p>
-<div class="admonition note">
-<p class="admonition-title">涉及知识</p>
+<h3 id="3">3. <strong>对齐机制</strong></h3>
 <ul>
-<li><a href="https://note.noughtq.top/ai/ml/7#contrastive-learning">对比学习</a></li>
-<li>交叉熵损失</li>
+<li><strong>对比学习</strong>：拉近相关样本，推远无关样本</li>
+<li><strong>掩码建模</strong>：跨模态掩码预测</li>
+<li><strong>指令调整</strong>：通过指令对齐不同模态</li>
 </ul>
-</div>
-<h3 id="24-choosing-and-scaling-a-model">2.4 Choosing and Scaling a Model</h3>
-<h4 id="1">（1）图像编码器</h4>
+<h2 id="_9">六、具体模型实例解析</h2>
+<h3 id="1-clip">1. <strong>CLIP架构（对比学习）</strong></h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>图像 → ViT编码器 → 图像特征 → 对比损失
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>文本 → Transformer编码器 → 文本特征 → 对比损失
+</span></code></pre></div>
+- <strong>编码器</strong>：双编码器分别处理图像和文本
+- <strong>对齐方式</strong>：对比学习使相关图像-文本对特征相似</p>
+<h3 id="2-blip-2">2. <strong>BLIP-2架构（轻量连接器）</strong></h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>查询图像 → 冻结ViT → 图像特征 → Q-Former → 查询向量
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>                                     ↓
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>文本输入 → 冻结LLM解码器 → 文本输出
+</span></code></pre></div>
+- <strong>编码器</strong>：冻结的图像编码器 + 可训练的Q-Former
+- <strong>解码器</strong>：冻结的大语言模型
+- <strong>创新点</strong>：通过轻量级Q-Former桥接视觉和语言模型</p>
+<h3 id="3-flamingo">3. <strong>Flamingo架构（交叉注意力）</strong></h3>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>图像/视频 → 冻结视觉编码器 → 视觉特征
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>                                    ↓
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>文本 → 可训练语言模型 ← 交叉注意力
+</span></code></pre></div>
+- <strong>编码器</strong>：冻结的视觉编码器
+- <strong>解码器</strong>：在语言模型中插入交叉注意力层处理视觉特征</p>
+<h2 id="_10">七、训练范式</h2>
+<h3 id="1_1">1. <strong>预训练阶段</strong></h3>
 <ul>
-<li>改进型ResNet：基于ResNet-50/101，融合ResNetD结构、抗锯齿池化，用<strong>注意力池化</strong>替代全局平均池化；后续按EfficientNet风格缩放，同步增加宽度、深度和输入分辨率，衍生出RN50x4、RN50x16、RN50x64等变体。</li>
-<li>Vision Transformer（ViT）：遵循原始ViT设计，仅在patch和位置嵌入后添加层归一化，优化初始化</li>
+<li><strong>目标</strong>：学习通用跨模态表示</li>
+<li><strong>任务</strong>：</li>
+<li>掩码语言/图像建模</li>
+<li>图像-文本对比学习</li>
+<li>图像-文本匹配</li>
+<li>跨模态生成</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">涉及知识</p>
+<h3 id="2_2">2. <strong>对齐阶段</strong></h3>
 <ul>
-<li>ResNet, EfficientNet</li>
-<li>注意力池化，抗锯齿池化（池化前进行低通滤波）</li>
-<li>ViT</li>
+<li><strong>目标</strong>：对齐不同模态的语义空间</li>
+<li><strong>方法</strong>：</li>
+<li>指令调优（Instruction Tuning）</li>
+<li>人类反馈强化学习（RLHF）</li>
+<li>对比偏好优化</li>
 </ul>
-</div>
-<h4 id="2">（2）文本编码器</h4>
+<h3 id="3_1">3. <strong>特定任务微调</strong></h3>
 <ul>
-<li>架构：12层Transformer，采用Byte Pair Encoding (BPE)编码（词汇量49152），最大序列长度76，输入添加[SOS]和[EOS]token。</li>
-<li>特征提取：取Transformer最高层在[EOS] token的激活值，经层归一化后线性投影到跨模态嵌入空间。</li>
-<li>缩放策略：仅按图像编码器的宽度缩放比例同步增加文本编码器宽度，不改变深度，因模型性能对文本编码器容量敏感度较低。</li>
+<li><strong>目标</strong>：适应下游任务</li>
+<li><strong>方法</strong>：</li>
+<li>全参数微调</li>
+<li>适配器（Adapter）微调</li>
+<li>提示调优（Prompt Tuning）</li>
 </ul>
-<h3 id="25-training">2.5 Training</h3>
+<h2 id="_11">八、最新趋势</h2>
+<h3 id="1_2">1. <strong>统一架构</strong></h3>
 <ul>
-<li>训练配置：训练5个ResNet变体和3个ViT变体，均训练32个epoch；使用Adam优化器（ResNet：β1=0.9, β2=0.999；ViT：β1=0.9, β2=0.98），解耦权重衰减（0.2），余弦学习率调度，预热2000次迭代。</li>
-<li>关键参数：批量大小32768，温度参数τ（log参数化）动态优化（最大限制100），避免训练不稳定。</li>
-<li>效率优化：混合精度训练、梯度检查点、半精度Adam统计量，嵌入相似度计算分片处理；最大模型RN50x64需592块V100 GPU训练18天，ViT-L/14需256块V100 GPU训练12天。</li>
+<li><strong>趋势</strong>：单一模型处理所有模态编码和解码</li>
+<li><strong>代表</strong>：Unified-IO、GATO、KOSMOS</li>
 </ul>
-<div class="admonition danger">
-<p class="admonition-title">疑问</p>
-<p>这些参数怎么得到的？根据其含义，推测可能值，之后再调节？</p>
-</div>
-<hr />
-<h2 id="3-experiment">3. Experiment</h2>
-<div class="admonition danger">
-<p class="admonition-title">疑问</p>
-<p>实验和对比结果有很多时，如何抓住重点</p>
-</div>
-<h3 id="31-zero-shot-transfer">3.1 Zero-Shot Transfer</h3>
-<h4 id="311-motivation">3.1.1 Motivation</h4>
+<h3 id="2_3">2. <strong>大语言模型作为通用接口</strong></h3>
 <ul>
-<li>零样本定义：不同于传统“ unseen类别”的零样本学习，本文指模型泛化到未见过的数据集（作为“unseen任务”的代理），衡量模型的任务学习能力而非仅表征学习能力。</li>
-<li>参考基准：Visual N-Grams（首个系统研究<strong>零样本迁移</strong>到标准图像分类数据集的方法），其通过视觉n-gram字典匹配类别描述实现零样本分类。</li>
-<li>灵感来源：NLP领域的任务学习现象（如GPT模型预训练中自发学会跨语言音译），验证视觉模型能否通过<strong>自然语言监督自发学习多元任务</strong>。</li>
+<li><strong>趋势</strong>：LLM作为中央处理器，连接各模态编码器</li>
+<li><strong>代表</strong>：LLaVA、MiniGPT-4</li>
 </ul>
-<h4 id="312-using-clip-for-zero-shot-transfer">3.1.2 Using CLIP for Zero-Shot Transfer</h4>
+<h3 id="3_2">3. <strong>扩散模型作为解码器</strong></h3>
 <ul>
-<li>核心逻辑：复用预训练的“图文配对判断”能力，将下游任务类别名转化为文本提示，构建零样本分类器。</li>
-<li>具体步骤：</li>
-<li>文本编码器对下游任务的所有<strong>类别名</strong>（结合提示模板）编码，得到类别文本嵌入。</li>
-<li>图像编码器对输入图像编码，得到图像嵌入。</li>
-<li>计算图像嵌入与各类别文本嵌入的余弦相似度，经温度参数缩放后，通过softmax得到类别概率分布。</li>
-<li>本质：文本编码器作为hypernetwork，根据自然语言描述生成线性分类器权重，图像编码器提供视觉特征，无需修改模型结构。</li>
+<li><strong>趋势</strong>：使用扩散模型高质量生成多模态内容</li>
+<li><strong>代表</strong>：DALL-E 2、Stable Diffusion、AudioLDM</li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">涉及知识</p>
+<h3 id="4">4. <strong>端到端训练</strong></h3>
 <ul>
-<li>hypernetwork</li>
+<li><strong>趋势</strong>：联合优化所有组件，而非冻结部分</li>
+<li><strong>挑战</strong>：计算成本高，但性能更好</li>
 </ul>
-</div>
-<h4 id="313-initial-comparison-to-visual-n-grams">3.1.3 Initial Comparison to Visual N-Grams</h4>
-<ul>
-<li>性能突破：CLIP在三大数据集上大幅超越Visual N-Grams——ImageNet Top-1准确率从11.5%提升至76.2%，aYahoo从72.4%提升至98.4%，SUN从23.0%提升至58.5%。</li>
-<li>公平性说明：性能提升源于多方面（数据集规模10倍扩大、计算量提升1000倍、Transformer架构应用），并非仅方法差异，但验证了自然语言监督规模化后的潜力。</li>
-<li>基线验证：在YFCC100M数据集上训练CLIP ResNet-50，零样本性能与Visual N-Grams相当，证明方法有效性。</li>
-</ul>
-<h4 id="314-prompt-engineering-and-ensembling">3.1.4 Prompt Engineering and Ensembling</h4>
-<ul>
-<li>prompt工程必要性：下游任务类别名多为单个单词，与预训练文本（多为完整句子）分布差异大，且存在多义词歧义（如“crane”可指起重机或鸟类）。</li>
-<li>有效模板：默认使用“A photo of a {label}.”，明确文本与图像内容的关联，单模板即可使ImageNet准确率提升1.3%；针对特定任务定制模板（如细分类添加“a type of pet”，OCR添加引号，卫星图像添加“satellite photo”）进一步优化。</li>
-<li>集成策略：在嵌入空间对多个不同prompt生成的分类器进行集成（如“big {label}”“small {label}”），缓存平均文本嵌入，不增加推理成本；ImageNet上集成80个prompt，准确率再提升3.5%。</li>
-</ul>
-<h4 id="315-analysis-of-zero-shot-clip-performance">3.1.5 Analysis of Zero-Shot CLIP Performance</h4>
-<ul>
-<li>与全监督基线对比：在27个数据集上，零样本CLIP在16个数据集上超越ResNet-50线性探针（全监督），尤其在细分类（Stanford Cars+28.9%）、动作识别（Kinetics700+14.5%）、地理定位（Country211+22.5%）任务上优势显著；在CIFAR10/100、ImageNet等通用分类任务上性能接近。</li>
-<li>优势任务原因：自然语言监督包含动词、属性等多元概念，相比ImageNet的名词中心监督，更适配动作识别等任务。</li>
-<li>薄弱任务：卫星图像分类（EuroSAT）、肿瘤检测（PatchCamelyon）、计数（CLEVRCounts）等复杂/抽象任务，零样本性能接近随机，反映模型对未见过的特殊任务泛化不足。</li>
-<li>与少样本对比：零样本CLIP性能匹配4-shot线性探针，ImageNet上等效16-shot性能；说明自然语言描述的“显式概念指定”，比从少量样本中“隐式推断概念”更高效。</li>
-</ul>
-<h3 id="32-representation-learning">3.2 Representation Learning</h3>
-<ul>
-<li>评估方式：采用线性探针（Linear Probe）评估——固定预训练模型参数，仅训练一层逻辑回归分类器，避免微调掩盖预训练表征的缺陷，且便于跨模型公平对比。</li>
-<li>核心结果：</li>
-<li>12数据集套件（Kornblith et al.）：CLIP的ViT-L/14@336px超越Noisy Student EfficientNet-L2（当前SOTA），平均提升2.6%；小尺寸CLIP模型（如RN50）超越ImageNet-1K预训练的ResNet，略逊于ImageNet-21K预训练的BiT-M。</li>
-<li>27数据集扩展套件：CLIP所有模型在计算效率上超越现有系统，最佳模型平均提升达5%；自监督模型（如SimCLRv2）在扩展套件上表现更优，说明任务多样性对评估通用表征的重要性。</li>
-<li>任务适配性：在OCR（Rendered SST2）、动作识别（UCF101）、细分类（Stanford Cars）等任务上大幅超越现有模型，在ImageNet等传统数据集上接近SOTA，证明表征的通用性。</li>
-<li>模型效率：ViT架构的CLIP比ResNet架构高效3倍，相同计算预算下能学习到更优表征，验证了Transformer在视觉-语言跨模态学习中的优势。</li>
-</ul>
-<h3 id="33-robustness-to-natural-distribution-shift">3.3 Robustness to Natural Distribution Shift</h3>
-<p>这部分是CLIP的核心亮点之一，重点验证模型<strong>泛化能力</strong>是否优于传统全监督模型。</p>
+<h2 id="_12">九、性能考虑</h2>
+<h3 id="_13"><strong>效率优化技术</strong></h3>
 <ol>
-<li><strong>评估基准</strong>：选用7个分布偏移数据集，覆盖自然变体（ImageNet-V2）、风格迁移（ImageNet-Sketch）、物体遮挡/变形（ObjectNet）、真实场景（ImageNet-R）等场景。</li>
-<li><strong>核心结果</strong>：<ul>
-<li>零样本CLIP的“鲁棒性差距”（分布内ImageNet vs 分布外数据集的性能差）缩小<strong>75%</strong>，远优于全监督ResNet-101；</li>
-<li>例如：ResNet-101在ImageNet上Top-1准确率78.5%，在ObjectNet上仅17.9%；零样本CLIP在ImageNet上76.2%，在ObjectNet上达42.0%，泛化能力显著更强。</li>
-</ul>
+<li><strong>参数高效微调</strong>：</li>
+<li>LoRA（低秩适应）</li>
+<li>适配器（Adapter）</li>
+<li>
+<p>前缀调优（Prefix Tuning）</p>
 </li>
-<li><strong>关键发现</strong>：<ul>
-<li>全监督模型过度依赖ImageNet数据集的<strong>虚假相关性</strong>（如“狗”常与“草地”绑定），分布偏移后性能暴跌；</li>
-<li>CLIP的自然语言监督让模型学习到概念本身（如“狗”的视觉特征），而非数据集偏差，更贴近人类直觉；</li>
-<li>若将CLIP微调适配ImageNet，分布内准确率提升9.2%，但分布外平均准确率略有下降，说明监督适配会强化数据集特定偏差。</li>
-</ul>
+<li>
+<p><strong>计算优化</strong>：</p>
 </li>
+<li>梯度检查点</li>
+<li>混合精度训练</li>
+<li>
+<p>模型并行</p>
+</li>
+<li>
+<p><strong>推理优化</strong>：</p>
+</li>
+<li>量化</li>
+<li>知识蒸馏</li>
+<li>缓存机制</li>
 </ol>
-<h3 id="4-comparison-to-human-performance">4 Comparison to Human Performance</h3>
-<p>仅以Oxford-IIIT Pets数据集为例，聚焦样本效率差异：</p>
-<ul>
-<li>CLIP零样本准确率远超人类零样本；</li>
-<li>人类1-shot准确率提升显著，CLIP零样本仍领先，但人类从少量样本中学习的能力（样本效率）优于模型。</li>
-</ul>
-<h2 id="5-data-overlap-analysis">5. Data Overlap Analysis</h2>
-<h3 id="_3">研究背景</h3>
-<p>预训练数据集（4亿图文对）源自互联网，可能与下游评估数据集存在无意识重叠，若重叠严重会导致评估结果失真（无法反映真实泛化能力）。本文未采用“预训练前删除下游数据集”的方案（会限制基准测试范围），而是通过量化分析，明确重叠对性能的影响。</p>
-<h3 id="_4">分析方法</h3>
+<h2 id="_14">十、实际应用指导</h2>
+<h3 id="_15"><strong>选择架构的建议</strong></h3>
+<table>
+<thead>
+<tr>
+<th>任务类型</th>
+<th>推荐架构</th>
+<th>理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>跨模态检索</strong></td>
+<td>双编码器</td>
+<td>计算效率高，适合大规模检索</td>
+</tr>
+<tr>
+<td><strong>视觉问答</strong></td>
+<td>编码器-解码器</td>
+<td>需要理解视觉内容并生成答案</td>
+</tr>
+<tr>
+<td><strong>图像描述生成</strong></td>
+<td>编码器-仅解码器</td>
+<td>利用预训练语言模型的生成能力</td>
+</tr>
+<tr>
+<td><strong>多模态对话</strong></td>
+<td>统一编码器-解码器</td>
+<td>需要处理多轮、多模态交互</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_16"><strong>部署考虑</strong></h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 部署友好的多模态编码器-解码器</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">class</span> <span class="nc">DeployableMultimodalModel</span><span class="p">:</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="c1"># 分离编码和解码便于缓存</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">encoder</span> <span class="o">=</span> <span class="n">MultimodalEncoder</span><span class="p">()</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">decoder</span> <span class="o">=</span> <span class="n">MultimodalDecoder</span><span class="p">()</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># 缓存编码结果</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="k">def</span> <span class="nf">process</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_data</span><span class="p">,</span> <span class="n">generate_output</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>        <span class="c1"># 1. 编码（可缓存）</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>        <span class="n">input_hash</span> <span class="o">=</span> <span class="n">hash_input</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        <span class="k">if</span> <span class="n">input_hash</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">:</span>
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>            <span class="n">latent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">[</span><span class="n">input_hash</span><span class="p">]</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>            <span class="n">latent</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">encoder</span><span class="p">(</span><span class="n">input_data</span><span class="p">)</span>
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">cache</span><span class="p">[</span><span class="n">input_hash</span><span class="p">]</span> <span class="o">=</span> <span class="n">latent</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+</span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>        <span class="c1"># 2. 解码（如果需要）</span>
+</span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>        <span class="k">if</span> <span class="n">generate_output</span><span class="p">:</span>
+</span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">decoder</span><span class="p">(</span><span class="n">latent</span><span class="p">)</span>
+</span><span id="__span-9-21"><a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>        <span class="k">return</span> <span class="n">latent</span>
+</span></code></pre></div>
+<h2 id="_17">总结</h2>
+<p>在大模型和多模态领域，<strong>编码器</strong>负责将多模态输入映射到<strong>统一语义空间</strong>，而<strong>解码器</strong>负责从该空间<strong>生成</strong>特定模态的输出。当前趋势是：</p>
 <ol>
-<li><strong>数据集拆分</strong>：对35个下游评估数据集，用自定义近重复检测器（抗图像缩放、压缩、旋转等变换）筛选出“与预训练数据重叠的样本（Overlap子集）”和“无重叠的干净样本（Clean子集）”，保留原始完整数据集（All子集）作为参考；</li>
-<li><strong>性能对比</strong>：计算CLIP RN50x64在三个子集上的零样本准确率，以“All-Clean”量化重叠导致的性能膨胀；</li>
-<li><strong>统计验证</strong>：通过二项式显著性检验和99.5% Clopper-Pearson置信区间，判断重叠对性能的影响是否显著。</li>
+<li><strong>统一化</strong>：单一模型处理所有模态</li>
+<li><strong>模块化</strong>：通过冻结和微调特定组件实现高效训练</li>
+<li><strong>可扩展性</strong>：支持新模态的快速集成</li>
+<li><strong>交互性</strong>：支持复杂多模态交互任务</li>
 </ol>
-<h3 id="_5">核心结果</h3>
-<ol>
-<li><strong>重叠比例低</strong>：35个数据集中9个无任何检测到的重叠（如MNIST、CLEVR、GTSRB等合成/专用数据集，或ObjectNet等时间上晚于预训练数据的数据集）；整体中位数重叠率2.2%，平均重叠率3.2%；</li>
-<li><strong>性能影响极小</strong>：绝大多数数据集的性能膨胀（All-Clean）不超过0.1%，仅7个数据集超过该阈值，且仅2个经Bonferroni校正后统计显著；最大性能膨胀为Birdsnap（重叠率12.1%）的0.6%；</li>
-<li><strong>特殊案例</strong>：Country211重叠率最高（21.5%，因部分数据源自YFCC100M，而预训练数据包含YFCC100M过滤子集），但性能膨胀仅0.2%，原因是预训练文本多不涉及地理定位任务相关描述，重叠样本未提供有效任务监督。</li>
-</ol>
-<h3 id="_6">关键结论</h3>
-<p>预训练数据与下游数据集的重叠程度低，且对零样本性能的影响极小，CLIP的优异表现主要源于真实泛化能力，而非数据泄露。该结果与此前大规模预训练（如Instagram预训练、JFT-300M预训练）的重叠分析结论一致，验证了评估结果的可信度。</p>
-<h2 id="6-limitations">6 Limitations</h2>
-<details class="note">
-<summary>局限性</summary>
-<ol>
-<li>
-<p>任务性能不均衡，复杂任务表现薄弱</p>
-<ul>
-<li>零样本性能仅在部分任务上接近全监督基线，在细粒度分类（如车型区分、花卉物种识别、飞机变体分类）、抽象任务（如图像中物体计数）、专用任务（如卫星图像分类、淋巴结肿瘤检测、车辆距离判断）上表现较差，部分场景准确率接近随机水平。</li>
-</ul>
-</li>
-<li>
-<p>计算与数据成本高昂，模型性能依赖大规模预训练</p>
-<ul>
-<li>未解决深度学习“数据饥渴”的核心问题，而是通过海量互联网图文数据补偿，若按每秒1张图的速率浏览，遍历32个训练周期的所有图像需405年，数据获取与训练成本极高。</li>
-</ul>
-</li>
-<li>
-<p>功能灵活性有限，仅支持“从给定类别文本中选择匹配图像”的分类任务，无法像图像描述（Image Captioning）那样生成全新文本输出，缺乏开放域表达能力。</p>
-</li>
-<li>
-<p>少样本学习能力不足，现有少样本应用需依赖线性分类器适配，未能有效融合零样本的强先验知识与少样本的任务特异性信息。</p>
-</li>
-<li>
-<p>方法学与数据偏见问题</p>
-<ul>
-<li>模型开发过程中依赖下游数据集的验证集指导调优，与真实零样本场景（无任何任务相关数据）存在差异，可能高估实际性能。</li>
-<li>评估数据集为现有监督数据集集合，存在任务覆盖偏向性，未能完全反映零样本迁移的真实能力。</li>
-<li>训练数据源自未过滤的互联网图文对，不可避免学习到社会偏见（如种族、性别相关的刻板印象），可能导致歧视性分类结果。</li>
-</ul>
-</li>
-</ol>
-</details>
-<h2 id="7-summary">7 Summary</h2>
-<ol>
-<li>提出“对比学习+自然语言监督”的跨模态预训练范式，验证了语言作为通用视觉监督信号的有效性；</li>
-<li>构建4亿规模图文数据集（WIT），为后续跨模态研究奠定数据基础；</li>
-<li>实现首个在30+视觉任务上零样本性能接近全监督模型的系统，突破传统视觉模型的泛化瓶颈；</li>
-<li>全面分析模型的鲁棒性、数据效率及社会影响，为通用视觉模型的发展提供参考。</li>
-</ol>
-<!-- ### 未来研究方向
-
-1.  **融合生成式目标**：结合caption预测等生成式任务，提升模型对复杂概念的表达能力；
-2.  **提升数据效率**：减少对海量预训练数据的依赖，探索小数据场景下的自然语言监督方法；
-3.  **缓解模型偏见**：优化训练数据过滤、类别设计与去偏算法，提升模型的公平性；
-4.  **多模态拓展**：拓展至视频、音频、3D点云等模态，构建更通用的跨模态感知系统；
-5.  **增强语言理解**：提升模型对复杂文本的理解能力，支持更灵活的零样本任务适配。 -->
+<p>理解编码器和解码器在这些领域中的演变和应用，是掌握现代多模态AI系统的关键。</p>
 
 
 

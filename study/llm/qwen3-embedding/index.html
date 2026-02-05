@@ -2220,7 +2220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../dim-reduction.md" class="md-nav__link">
+      <a href="../../ml/dim-reduction.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3868,7 +3868,7 @@
 </ul>
 <div class="admonition danger">
 <p class="admonition-title">问题</p>
-<p>对Qwen3之前的系列模型没有了解，需要回看吗</p>
+<p>对 Qwen 系列的基础模型没有了解，需要回看吗</p>
 </div>
 <h2 id="abstract">Abstract</h2>
 <ul>
@@ -3911,14 +3911,12 @@
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>&lt;|think&gt;\n\n&lt;/think&gt;\n\n
 </span></code></pre></div>
 <ul>
-<li>分数计算：通过计算“是”/“否”的概率得出相关性分数：<span class="arithmatex">\(\text{score}(q,d)=\frac{e^{P(\text{yes}|I,q,d)}}{e^{P(\text{yes}yes|I,q,d)}+e^{P(\text{no}|I,q,d)}}\)</span></li>
+<li>分数计算：通过计算“是”/“否”的概率得出相关性分数：</li>
 </ul>
+<p><span class="arithmatex">\(\text{score}(q,d)=\frac{e^{P(\text{yes}|I,q,d)}}{e^{P(\text{yes}yes|I,q,d)}+e^{P(\text{no}|I,q,d)}}\)</span></p>
 </li>
 </ul>
 <p>两种模型均基于Qwen3密集版本，提供0.6B、4B、8B三种参数规模。</p>
-<div class="admonition danger">
-<p class="admonition-title">因果注意力</p>
-</div>
 <h2 id="3-models-training">3 Models Training</h2>
 <p><img src="\img\study\llm\qwen3embed-training.png" alt="alt text"></p>
 <h3 id="31-training-objective">3.1 Training Objective</h3>
@@ -3927,9 +3925,14 @@
 <li><strong>重排序模型</strong>：使用监督微调损失，鼓励模型为正确标签分配更高概率。</li>
 </ul>
 <div class="admonition warning">
-<p class="admonition-title">对比损失</p>
+<p class="admonition-title">InfoNEC对比损失</p>
 <ul>
 <li>用于度量样本间相似性或差异性的损失函数，核心目标是让模型学习到 “相似样本的表征更接近，不相似样本的表征更远离” 的特征，广泛应用于表征学习、检索、聚类等任务</li>
+<li>
+<div class="arithmatex">\[
+  L_i = -\log\left( \frac{\exp(\text{sim}(x_i, y_i)/\tau)}{\sum_{j=1}^N \exp(\text{sim}(x_i, y_j)/\tau)} \right)
+  \]</div>
+</li>
 </ul>
 </div>
 <h3 id="32-multi-stage-training">3.2 Multi-stage Training</h3>

@@ -1,8 +1,19 @@
-  [data-md-color-scheme="youtube"] {
-    --md-primary-fg-color:        #EE0F0F;
-    --md-primary-fg-color--light: #ECB7B7;
-    --md-primary-fg-color--dark:  #90030C;
+  [data-md-color-scheme="sapphire"] {
+    --md-primary-fg-color: #2C5AA0;
+    --md-primary-fg-color--light: #A8C5EA;
+    --md-primary-fg-color--dark: #1A3A6B;
   }
+[data-md-color-scheme="amethyst"] {
+  --md-primary-fg-color: #6A5ACD;
+  --md-primary-fg-color--light: #C9C2F0;
+  --md-primary-fg-color--dark: #4B3D8C;
+}
+[data-md-color-scheme="graphite"] {
+  --md-primary-fg-color: #4A5568;
+  --md-primary-fg-color--light: #CBD5E0;
+  --md-primary-fg-color--dark: #2D3748;
+}
+
   [data-md-color-scheme="slate"] {
     --md-hue: 200; 
   }

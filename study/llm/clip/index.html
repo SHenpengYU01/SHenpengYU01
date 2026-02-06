@@ -4351,10 +4351,12 @@
 <h4 id="312-using-clip-for-zero-shot-transfer">3.1.2 Using CLIP for Zero-Shot Transfer</h4>
 <ul>
 <li>核心逻辑：复用预训练的“图文配对判断”能力，将下游任务类别名转化为文本提示，构建零样本分类器。</li>
-<li>具体步骤：</li>
+<li>具体步骤：<ol>
 <li>文本编码器对下游任务的所有<strong>类别名</strong>（结合提示模板）编码，得到类别文本嵌入。</li>
 <li>图像编码器对输入图像编码，得到图像嵌入。</li>
 <li>计算图像嵌入与各类别文本嵌入的余弦相似度，经温度参数缩放后，通过softmax得到类别概率分布。</li>
+</ol>
+</li>
 <li>本质：文本编码器作为hypernetwork，根据自然语言描述生成线性分类器权重，图像编码器提供视觉特征，无需修改模型结构。</li>
 </ul>
 <div class="admonition warning">
@@ -4385,10 +4387,12 @@
 <h3 id="32-representation-learning">3.2 Representation Learning</h3>
 <ul>
 <li>评估方式：采用线性探针（Linear Probe）评估——固定预训练模型参数，仅训练一层逻辑回归分类器，避免微调掩盖预训练表征的缺陷，且便于跨模型公平对比。</li>
-<li>核心结果：</li>
+<li>核心结果：<ul>
 <li>12数据集套件（Kornblith et al.）：CLIP的ViT-L/14@336px超越Noisy Student EfficientNet-L2（当前SOTA），平均提升2.6%；小尺寸CLIP模型（如RN50）超越ImageNet-1K预训练的ResNet，略逊于ImageNet-21K预训练的BiT-M。</li>
 <li>27数据集扩展套件：CLIP所有模型在计算效率上超越现有系统，最佳模型平均提升达5%；自监督模型（如SimCLRv2）在扩展套件上表现更优，说明任务多样性对评估通用表征的重要性。</li>
 <li>任务适配性：在OCR（Rendered SST2）、动作识别（UCF101）、细分类（Stanford Cars）等任务上大幅超越现有模型，在ImageNet等传统数据集上接近SOTA，证明表征的通用性。</li>
+</ul>
+</li>
 <li>模型效率：ViT架构的CLIP比ResNet架构高效3倍，相同计算预算下能学习到更优表征，验证了Transformer在视觉-语言跨模态学习中的优势。</li>
 </ul>
 <h3 id="33-robustness-to-natural-distribution-shift">3.3 Robustness to Natural Distribution Shift</h3>
@@ -4422,6 +4426,13 @@
 <li><strong>性能对比</strong>：计算CLIP RN50x64在三个子集上的零样本准确率，以“All-Clean”量化重叠导致的性能膨胀；</li>
 <li><strong>统计验证</strong>：通过二项式显著性检验和99.5% Clopper-Pearson置信区间，判断重叠对性能的影响是否显著。</li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">概念</p>
+<ul>
+<li>二项式显著性检验：用来检验只有两种互斥结果的观测数据，是否符合某个预设概率的统计检验，基于二项分布做显著性判断</li>
+<li>Clopper-Pearson置信区间：针对二项分布成功概率 p 的精确置信区间，也叫精确二项置信区间</li>
+</ul>
+</div>
 <h3 id="_5">核心结果</h3>
 <ol>
 <li><strong>重叠比例低</strong>：35个数据集中9个无任何检测到的重叠（如MNIST、CLEVR、GTSRB等合成/专用数据集，或ObjectNet等时间上晚于预训练数据的数据集）；整体中位数重叠率2.2%，平均重叠率3.2%；</li>

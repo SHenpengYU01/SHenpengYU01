@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://note.mythlogos.top/study/aichip/tomasula/">
+        <link rel="canonical" href="https://note.mythlogos.top/study/aichip/parallel-training/">
       
       
-        <link rel="prev" href="../rob/">
+        <link rel="prev" href="../ai-chip-rf/">
       
       
-        <link rel="next" href="../memory/">
+        <link rel="next" href="../../cpp/">
       
       
       <link rel="icon" href="../../../img/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Tomasula Algorithm - Cool Tea</title>
+        <title>Parallel Training - Cool Tea</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tomasula" class="md-skip">
+        <a href="#parallel-training" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tomasula Algorithm
+              Parallel Training
             
           </span>
         </div>
@@ -2673,6 +2673,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -2713,6 +2717,28 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -2763,19 +2789,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../tomasulo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2785,7 +2802,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -2984,6 +3000,297 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Parallel Training
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Parallel Training
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#neural-network-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neural Network training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-distributed-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Distributed Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Parallelism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forward-pass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forward Pass
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backward-pass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backward Pass
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weight-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weight Update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allreduce-implementation-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      AllReduce Implementation Choices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AllReduce Implementation Choices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ring-allreduce-two-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Ring" AllReduce two stages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Parallelism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline parallel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pipeline parallel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel-training-gpipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Parallel Training: GPipe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Parallel: Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Parallel: Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tensor parallelism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tensor parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-wise-partitioning-allgather-between-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Row-wise Partitioning: Allgather between Layers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-wise-partitioning-reducescatter-between-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Column-wise Partitioning: ReduceScatter between Layers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reducing-synchronization-by-alternating-partitioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reducing Synchronization By Alternating Partitioning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intra-layer-parallel-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intra-Layer Parallel: Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-pattern-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Pattern Review
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -4015,6 +4322,242 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#neural-network-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Neural Network training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-distributed-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Distributed Training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Parallelism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#forward-pass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Forward Pass
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backward-pass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Backward Pass
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weight-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weight Update
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allreduce-implementation-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      AllReduce Implementation Choices
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AllReduce Implementation Choices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ring-allreduce-two-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Ring" AllReduce two stages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Parallelism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model Parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline parallel
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pipeline parallel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel-training-gpipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Parallel Training: GPipe
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Parallel: Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline-parallel-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Parallel: Challenges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor-parallelism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tensor parallelism
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tensor parallelism">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#row-wise-partitioning-allgather-between-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Row-wise Partitioning: Allgather between Layers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#column-wise-partitioning-reducescatter-between-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Column-wise Partitioning: ReduceScatter between Layers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reducing-synchronization-by-alternating-partitioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reducing Synchronization By Alternating Partitioning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intra-layer-parallel-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intra-Layer Parallel: Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-pattern-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Communication Pattern Review
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -4032,7 +4575,437 @@
   
 
 
-<h1 id="tomasula">Tomasula</h1>
+<h1 id="parallel-training">Parallel Training</h1>
+<!-- Parallel training 中 tensor parallel 按行/按列切参数、Alternative Partitioning、每一种切法对应的通信；AllReduce 通信的细节（例如轮数、通信量） -->
+
+<ul>
+<li>
+<p>Four Components of AI System:</p>
+<p><img src="\img\study\ai-chip\4components.png" alt="alt text"></p>
+</li>
+</ul>
+<h2 id="neural-network-training">Neural Network training</h2>
+<p><img src="\img\study\ai-chip\neural-net-train.png" alt="alt text"></p>
+<ol>
+<li>Start with randomly initialized weights</li>
+<li>Iterate through your data a mini-batch of training data samples at a time:<ul>
+<li>Forward pass</li>
+<li>Backward pass</li>
+<li>Weight update</li>
+</ul>
+</li>
+</ol>
+<p>Here is an example, Each layer:</p>
+<ul>
+<li>Input: vector</li>
+<li>Output: vector</li>
+<li>Learned parameters (weights): projection matrix</li>
+<li>Operations:<ol>
+<li>Multiply the input vector with the matrix</li>
+<li>Apply a point-wise nonlinearity, say, ReLU</li>
+</ol>
+</li>
+</ul>
+<p><strong>Forward Pass</strong>:</p>
+<ul>
+<li>
+<p>A minibatch of 2 samples:</p>
+<p><img src="\img\study\ai-chip\batch-2sample.png" alt="alt text"></p>
+</li>
+</ul>
+<p><strong>Compute Loss</strong>:</p>
+<p><img src="\img\study\ai-chip\forward-loss.png" alt="alt text"></p>
+<ul>
+<li>Loss function: Produces a loss value that indicates how “wrong” the network was<ul>
+<li>Compares the output to the ground truth for each sample</li>
+<li>Exact function math varies by task</li>
+</ul>
+</li>
+<li>Goal of training: minimize the loss value<ul>
+<li>Update network weights so the predicted output closely matches ground truth</li>
+</ul>
+</li>
+</ul>
+<p><strong>Backward Pass</strong>:</p>
+<p><img src="\img\study\ai-chip\backward-pass.png" alt="alt text"></p>
+<ul>
+<li>Goal: compute the gradients to the layer weights</li>
+<li>Implementation: “back propagating” the loss through layers<ul>
+<li>Each layer computes weight gradient, used to update the weights</li>
+<li>Each layer computes activation gradient, to be backpropagated to preceding layer</li>
+</ul>
+</li>
+</ul>
+<p><strong>Backward Pass-Compute dW</strong>:</p>
+<p><img src="\img\study\ai-chip\compute-dw.png" alt="alt text"></p>
+<p><strong>Weight Update</strong>:</p>
+<ul>
+<li>SGD:<ul>
+<li>Input: Weight W, gradient dW</li>
+<li>Output: updated weight</li>
+<li>Operation: Increment each weight with the corresponding gradient value
+<img src="\img\study\ai-chip\sgd.png" alt="alt text"></li>
+</ul>
+</li>
+<li>
+<p>Momentum:</p>
+<ul>
+<li>Input: Weight W, gradient dW</li>
+<li>States: 1 momenta (～model)</li>
+<li>Output: updated weight</li>
+<li>Operation: Update internal state with weight gradient, then update weights using internal state</li>
+</ul>
+<p><img src="\img\study\ai-chip\sgd-momentum.png" alt="alt text">
+- Adam:
+- States: 1 momentum, 1 variance
+- reading and updating momentum/variance/parameters</p>
+</li>
+</ul>
+<p>One Iteration for a layer:</p>
+<p><img src="\img\study\ai-chip\iteration.png" alt="alt text"></p>
+<h2 id="why-distributed-training">Why Distributed Training</h2>
+<ul>
+<li>Challenge from Model Side: Larger models<ul>
+<li>Language models (GPT-3): 175B parameters</li>
+<li>Recommender models: largest ones are reaching O(1B) parameters</li>
+<li>Vision models: deeper and wider Resnets and ResNeXTs</li>
+</ul>
+</li>
+<li>Challenge from Dataset Side: Larger datasets<ul>
+<li>Recommender data (user behavior): terabytes to petabytes</li>
+<li>Image data: 1B Instagram dataset, JFT (300M images)</li>
+</ul>
+</li>
+<li>Challenge from System Side:<ul>
+<li>The memory size of a single accelerator, e.g., GPU, is 80GB.</li>
+</ul>
+</li>
+</ul>
+<p>Therefore, the solution is <strong>scaling out computing</strong></p>
+<ul>
+<li>
+<p>Parallelism Taxonomy:</p>
+<p><img src="\img\study\ai-chip\parallelism.png" alt="alt text"></p>
+</li>
+</ul>
+<h2 id="data-parallelism">Data Parallelism</h2>
+<p>Each worker:</p>
+<ul>
+<li>Model: has a copy of the entire neural network model</li>
+<li>Dataset: responsible for compute of a portion of data (training minibatch)</li>
+</ul>
+<h3 id="forward-pass">Forward Pass</h3>
+<ul>
+<li>Computes output activations for its portion of minibatch</li>
+<li>
+<p>No communication is needed</p>
+<p><img src="\img\study\ai-chip\data-paral-forward.png" alt="alt text"></p>
+</li>
+</ul>
+<h3 id="backward-pass">Backward Pass</h3>
+<ul>
+<li>Computes activation gradients for its portion of minibatch</li>
+<li>
+<p>Computes contribution to the weight gradient based on its portion of minibatch</p>
+<ul>
+<li>All workers’ contributions must be summed before weight update</li>
+</ul>
+<p><img src="\img\study\ai-chip\data-paral-backward.png" alt="alt text"></p>
+</li>
+</ul>
+<h3 id="weight-update">Weight Update</h3>
+<ol>
+<li>
+<p>Each of N workers accumulates gradients:</p>
+<ul>
+<li>Summing 1/N gradients collected from (N – 1) peers</li>
+</ul>
+</li>
+<li>
+<p>Each worker updates its model:</p>
+<ul>
+<li>Each worker updates its copy of the model with combined gradients from all 4 workers</li>
+</ul>
+<p><img src="\img\study\ai-chip\data-paral-update.png" alt="alt text"></p>
+</li>
+</ol>
+<h3 id="allreduce-implementation-choices">AllReduce Implementation Choices</h3>
+<p><strong>“Ring” AllReduce (Baidu)</strong>:</p>
+<ul>
+<li>For any topology that contains a 1D torus (ring)</li>
+<li>Each worker communicates with 2 neighbors</li>
+<li>2(N – 1) steps, worker sends/receives 1/N of all bytes<ul>
+<li>Each step requires a synchronization -&gt; 2(N – 1) syncs total</li>
+<li>Each worker needs CPU and GPU cycles to do ring AllReduce</li>
+</ul>
+</li>
+</ul>
+<h4 id="ring-allreduce-two-stages">"Ring" AllReduce two stages</h4>
+<ol>
+<li>Reduce_scatter: N-1 rounds, M/N data per round</li>
+<li>
+<p>Allgather: N-1 rounds, M/N data per round</p>
+</li>
+<li>
+<p>N: number of GPUs, M: data size</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">AllReduce Example</p>
+<ul>
+<li>
+<p>#GPU = 4</p>
+<p><img src="\img\study\ai-chip\allreduce-ring.png" alt="alt text"></p>
+</li>
+<li>
+<p>Initial States: Partitioning of an array into N=4 chunks</p>
+<p><img src="\img\study\ai-chip\ring-initial.png" alt="alt text"></p>
+</li>
+<li>
+<p>Reduce_scatter stage:</p>
+<p><img src="\img\study\ai-chip\ring-scatter.gif" alt="alt text"></p>
+</li>
+<li>
+<p>Allgather stage:</p>
+<p><img src="\img\study\ai-chip\ring-allgather.gif" alt="alt text"></p>
+</li>
+</ul>
+</div>
+<p><strong>“In-switch” AllReduce</strong>:</p>
+<ul>
+<li>Each worker communicates with the switch</li>
+<li>Only one step, a worker sends/receives N of all bytes<ul>
+<li>All workers work in a lock step.</li>
+</ul>
+</li>
+</ul>
+<h3 id="challenges">Challenges</h3>
+<p><strong>Strong scaling</strong> (increase the number of workers, keep minibatch size constant)</p>
+<ul>
+<li>Certain layers require minimum minibatch sizes to properly operate<ul>
+<li>Example: batch normalization (BN) generally requires 16+ samples</li>
+</ul>
+</li>
+<li>Maybe lower GPU utilization</li>
+</ul>
+<p><strong>Weak scaling</strong> (increase the number of workers, increase minibatch size)</p>
+<ul>
+<li>Training networks with large minibatches requires hyper-parameter adjustment<ul>
+<li>Learning rate schedule, BN decay, …</li>
+<li>Example: R50 (SGD up to bs=16K, LARS above 16K, …)</li>
+</ul>
+</li>
+<li>Often increase the amount of work required to reach the same model accuracy</li>
+</ul>
+<p><strong>Workload Increasing with Batch Size</strong>:</p>
+<ul>
+<li>
+<p>Epochs to reach the same model accuracy(from various submissions to MLPerf v0.7)</p>
+<p><img src="\img\study\ai-chip\workload-graph.png" alt="alt text"></p>
+</li>
+</ul>
+<h2 id="model-parallelism">Model Parallelism</h2>
+<ul>
+<li>
+<p>Inter-layer Parallel (aka Pipeline Parallel): A worker is responsible for its portion of the layers</p>
+<p><img src="\img\study\ai-chip\inter-layer-parallel.png" alt="alt text">
+- Intra-layer Parallel (aka Tensor Parallel): A worker is responsible for its portion of each layer</p>
+<p><img src="\img\study\ai-chip\intra-layer-parallel.png" alt="alt text"></p>
+</li>
+</ul>
+<h3 id="pipeline-parallel">Pipeline parallel</h3>
+<ul>
+<li>
+<p>Pipeline Parallel Training:</p>
+<p><img src="\img\study\ai-chip\pipeline-parallel.png" alt="alt text"></p>
+</li>
+<li>
+<p>Idle bubbles: 12/18 step-slots</p>
+</li>
+<li>For N workers: (N-1)/N idle slots</li>
+</ul>
+<h4 id="pipeline-parallel-training-gpipe">Pipeline Parallel Training: GPipe</h4>
+<ul>
+<li>
+<p>Key idea: <strong>subminibatches</strong></p>
+<p><img src="\img\study\ai-chip\gpipe.png" alt="alt text"></p>
+</li>
+<li>
+<p>2 subminibatches</p>
+<ul>
+<li>2x more steps</li>
+<li>Each step is 1/2 comput</li>
+</ul>
+</li>
+<li>Idle bubbles: 12/24 step-slots</li>
+<li>N workers, K subminibatches:<ul>
+<li>2(N+K-1) steps for fwd/bwd</li>
+<li>Total step-slots: 2N(N+K-1)</li>
+<li>Idle step-slots: 2N(N-1)</li>
+<li>Fraction of idle slots: (N-1)/(N+K-1)<ul>
+<li>K=N -&gt; 50%</li>
+<li>K=4N -&gt; 20%</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="pipeline-parallel-communication">Pipeline Parallel: Communication</h4>
+<ul>
+<li>
+<p>A worker communicates with its 2 neighbors</p>
+<ul>
+<li>1D mesh topology</li>
+<li>1D torus when interleaving layers</li>
+</ul>
+</li>
+<li>
+<p>Communication in each step of the fwd and bwd pass</p>
+<ul>
+<li>Activations in fwd, activation gradients in bwd</li>
+</ul>
+</li>
+<li>
+<p>Overlap communication with computation</p>
+<ul>
+<li>Very hard</li>
+</ul>
+</li>
+</ul>
+<h4 id="pipeline-parallel-challenges">Pipeline Parallel: Challenges</h4>
+<ul>
+<li>Load balancing workload across workers is difficult<ul>
+<li>Different layers of a network can take different amounts of time</li>
+<li>Leads to even busy slots for other workers idling for portions of time</li>
+</ul>
+</li>
+<li>Lots of computation to hide communication</li>
+<li>Idle slots reduce scaling efficiency<ul>
+<li>Many subminibatches help with this, but run into the same problems as strong-scaling of data-parallel.</li>
+</ul>
+</li>
+</ul>
+<h3 id="tensor-parallelism">Tensor parallelism</h3>
+<ul>
+<li>Idea: Partition a given layer's weights among the workers</li>
+<li>Address some of the pipeline parallel challenges<ul>
+<li>idle slots, load imbalance</li>
+</ul>
+</li>
+<li>
+<p>Two variants:</p>
+<ul>
+<li>Row-wise partitioning</li>
+<li>Column-wise partitioning</li>
+</ul>
+<p><img src="\img\study\ai-chip\partitioning.png" alt="alt text"></p>
+</li>
+</ul>
+<h4 id="row-wise-partitioning-allgather-between-layers">Row-wise Partitioning: Allgather between Layers</h4>
+<p><img src="\img\study\ai-chip\row-wise.png" alt="alt text"></p>
+<p>Each worker:</p>
+<ul>
+<li>W: Has a portion of weight rows</li>
+<li>X: All of input activations X</li>
+<li>Y: Computes a portion of output activations</li>
+</ul>
+<h4 id="column-wise-partitioning-reducescatter-between-layers">Column-wise Partitioning: ReduceScatter between Layers</h4>
+<p><img src="\img\study\ai-chip\row-wise-reducescatter.png" alt="alt text"></p>
+<p>Each worker:</p>
+<ul>
+<li>W: Has a portion of weight rows</li>
+<li>X: All of input activations X</li>
+<li>Y: Computes a portion of output activations</li>
+</ul>
+<h4 id="reducing-synchronization-by-alternating-partitioning">Reducing Synchronization By Alternating Partitioning</h4>
+<p><img src="\img\study\ai-chip\alternating.png" alt="alt text"></p>
+<ul>
+<li>Note: no communication is needed for two matrices</li>
+<li>Worker i produces output, which is its input for the next layer</li>
+</ul>
+<p><img src="\img\study\ai-chip\alternating2.png" alt="alt text"></p>
+<h4 id="intra-layer-parallel-communication">Intra-Layer Parallel: Communication</h4>
+<ul>
+<li>Row-wise in forward becomes Col-wise in backward</li>
+<li>Col-wise in forward becomes Row-wise in backward</li>
+<li>Row-wise:<ul>
+<li>Fwd: allgather</li>
+<li>Bwd: reduce_scatter</li>
+</ul>
+</li>
+<li>Col-wise:<ul>
+<li>Fwd: reduce_scatter</li>
+<li>Bwd: allgather</li>
+</ul>
+</li>
+<li>When row- and col- are alternated:<ul>
+<li>Allreduce every two layers, in fwd and bwd</li>
+<li>Halves the synchronizations compared to not alternating</li>
+</ul>
+</li>
+</ul>
+<h4 id="application">Application</h4>
+<ul>
+<li>
+<p><strong>Tensor Parallelism for Transformer Block</strong>：</p>
+<p><img src="\img\study\ai-chip\tensor4transformer.png" alt="alt text"></p>
+</li>
+<li>
+<p>Attention: column-wise + row-wise.</p>
+</li>
+<li>MLP: column-wise + row-wise.</li>
+</ul>
+<h2 id="communication-pattern-review">Communication Pattern Review</h2>
+<p><strong>Communication Pattern Summary</strong>:</p>
+<ul>
+<li>
+<p>Data Parallel:</p>
+<ul>
+<li>Allreduce of weights</li>
+<li>Can be overlapped with computation</li>
+</ul>
+</li>
+<li>
+<p>Pipeline Parallel:</p>
+<ul>
+<li>Point-wise communication of activations and activation gradients</li>
+<li>Hard to overlap with computation</li>
+<li>Hard to load-balance</li>
+</ul>
+</li>
+<li>
+<p>Tensor Parallel:</p>
+<ul>
+<li>Allgather, Reduce_scatter of activations and activation gradients</li>
+<li>Allreduce if row-wise and col-wise partitioning is alternated</li>
+<li>Hard to overlap with computation</li>
+</ul>
+</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Networks and dataset are getting larger to set new state of art results</li>
+<li>Scale-out enables these neural networks to be trained</li>
+</ul>
+<p>Success requires many optimized components:</p>
+<ul>
+<li>
+<p>Hardware:</p>
+<ul>
+<li>Fast accelerators for DL</li>
+<li>High-bandwidth, low-latency interconnects</li>
+</ul>
+</li>
+<li>
+<p>Software:</p>
+<ul>
+<li>Math libraries (CUDNN, CUBLAS, MKL, CANN …)</li>
+<li>Collective communication libraries (NCCL, Horovod,  …)</li>
+<li>Training frameworks (MindSpore, PyTorch, TensoFlow, HugeCTR, …)</li>
+<li>Proper choice of parallelism (manual, MeshTensorFlow, Gshard, ZeRO)</li>
+</ul>
+</li>
+</ul>
 
 
 

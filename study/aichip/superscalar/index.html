@@ -2658,6 +2658,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -2698,6 +2702,28 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -2751,7 +2777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tomasula/" class="md-nav__link">
+      <a href="../tomasulo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2954,6 +2980,28 @@
   
   <span class="md-ellipsis">
     AI Chip+Runtime+Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parallel-training/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parallel Training
     
   </span>
   
@@ -4216,20 +4264,19 @@
 <p>Dependences</p>
 <p><img src="\img\study\ai-chip\superscalar-dependences.png" alt="alt text"></p>
 <h3 id="tradeoffs">Tradeoffs</h3>
-<p>Advantages</p>
+<p><strong>Advantages</strong></p>
 <ul>
-<li>Higher instruction throughput </li>
-<li>Higher IPC: instructions per cycle (i.e., lower CPI)</li>
+<li>Higher instruction throughput: Higher IPC: instructions per cycle (lower CPI)</li>
 </ul>
-<p>Disadvantages</p>
+<p><strong>Disadvantages</strong></p>
 <ul>
-<li>Higher complexity for dependence checking<ul>
+<li>Higher <strong>complexity for dependence checking</strong><ul>
 <li>Require checking within a pipeline stage</li>
 <li>Register renaming becomes more complex in an OoO processor</li>
 <li>Potentially lengthens critical path delay  clock cycle time</li>
 </ul>
 </li>
-<li>More hardware resources needed</li>
+<li>More <strong>hardware resources</strong> needed</li>
 </ul>
 <h2 id="vector-instruction">Vector instruction</h2>
 <p>Flynn's Taxonomy of Computers</p>
@@ -4298,7 +4345,7 @@
 <h3 id="advantages-and-disadvatages">Advantages and disadvatages</h3>
 <p>Advantages</p>
 <ul>
-<li>No need for dependency checking between instructions
+<li>No need for <strong>dependency checking</strong> between instructions
     (only one instruction in pipeline from a single thread)</li>
 <li>No need for branch prediction logic</li>
 <li>Otherwise-bubble cycles used for executing useful instructions from different threads</li>
@@ -4306,13 +4353,13 @@
 </ul>
 <p>Disadvantages</p>
 <ul>
-<li>Extra hardware complexity: multiple hardware contexts (PCs, register files, …), thread selection logic</li>
-<li>Reduced single thread performance (one instruction fetched every N cycles from the same thread) </li>
+<li>Extra <strong>hardware complexity</strong>: multiple hardware contexts (PCs, register files, …), thread selection logic</li>
+<li><strong>Reduced single thread performance</strong> (one instruction fetched every N cycles from the same thread) </li>
 <li>Resource contention between threads in caches and memory</li>
 <li>Some dependency checking logic between threads remains (load/store)</li>
 </ul>
 <h2 id="multi-core">Multi-core</h2>
-<p>Idea: Put multiple cores on the same die. </p>
+<p><strong>Idea</strong>: Put multiple cores on the same die.</p>
 <p>Technology scaling (Moore’s Law) enables more transistors to be placed on the same die area</p>
 <p>What else could you do with the die area you dedicate to multiple processors?</p>
 <ul>
@@ -4337,21 +4384,21 @@
 </ul>
 <p>Multi-core disadvantages</p>
 <ul>
-<li>Requires parallel tasks/threads to improve performance (parallel programming)</li>
+<li>Requires parallel tasks/threads to improve performance (<strong>parallel programming</strong>)</li>
 <li>Resource sharing can reduce single-thread performance</li>
 <li>Shared hardware resources need to be managed</li>
 <li>Number of pins limits data supply for increased demand</li>
 </ul>
 <h4 id="why-multi-core-over-large-superscalar">Why Multi-Core over Large Superscalar</h4>
-<p>Technology push</p>
+<p><strong>Technology push</strong>:</p>
 <ul>
-<li>Instruction issue queue size limits the cycle time of the superscalar, OoO processor -&gt; diminishing performance<ul>
+<li><strong>Instruction issue queue</strong> size limits the cycle time of the superscalar, OoO processor -&gt; diminishing performance<ul>
 <li>Quadratic increase in complexity with issue width</li>
 </ul>
 </li>
-<li>Large, multi-ported register files to support large instruction windows and issue widths -&gt; more resources, reduced frequency or longer RF access, 6diminishing performance</li>
+<li><strong>Large, multi-ported register files</strong> to support large instruction windows and issue widths -&gt; more resources, reduced frequency or longer RF access, 6diminishing performance</li>
 </ul>
-<p>Application pull</p>
+<p><strong>Application pull</strong>:</p>
 <ul>
 <li>Multiple applications run on your CPU</li>
 </ul>

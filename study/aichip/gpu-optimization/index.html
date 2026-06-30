@@ -4625,11 +4625,13 @@ Peak bandwidth utilization occurs when all threads in a warp access one cache li
 </ul>
 <h4 id="shared-memory-bank-conflicts">Shared Memory Bank Conflicts</h4>
 <ul>
-<li>Bank conflict tree
-    <img src="\img\study\ai-chip\bank-conflict.png" alt="alt text"></li>
 <li>
-<p>N-way bank conflicts
-    <img src="\img\study\ai-chip\bank-conflict2.png" alt="alt text"></p>
+<p>Bank conflict tree</p>
+<p><img src="\img\study\ai-chip\bank-conflict.png" alt="alt text"></p>
+</li>
+<li>
+<p>N-way bank conflicts</p>
+<p><img src="\img\study\ai-chip\bank-conflict2.png" alt="alt text"></p>
 </li>
 <li>
 <p>If strided accesses are needed, some optimization techniques can help</p>
@@ -4698,8 +4700,10 @@ Peak bandwidth utilization occurs when all threads in a warp access one cache li
 <ul>
 <li>Tiled Matrix Multiplication: Achieve better on-chip RAM locality by computing
  on smaller tiles or blocks that fit in the RAMs</li>
-<li>Tiled implementation operates on submatrices (tiles or blocks) that fit fast RAMs (cache, scratchpad, RF)
-    <img src="\img\study\ai-chip\tiled-mul.png" alt="alt text"></li>
+<li>
+<p>Tiled implementation operates on submatrices (tiles or blocks) that fit fast RAMs (cache, scratchpad, RF)</p>
+<p><img src="\img\study\ai-chip\tiled-mul.png" alt="alt text"></p>
+</li>
 </ul>
 <h4 id="gpu-matrix-matrix-multiplication">GPU: Matrix-Matrix Multiplication</h4>
 <ul>
@@ -4721,12 +4725,18 @@ Peak bandwidth utilization occurs when all threads in a warp access one cache li
 </span></code></pre></div>
 <h4 id="gpu-tiled-matrix-matrix-multiplication">GPU: Tiled Matrix-Matrix Multiplication</h4>
 <ul>
-<li>Insight: Some of the threads in the same thread block use the same input data
-    <img src="\img\study\ai-chip\mat-mul-reuse.png" alt="alt text"></li>
-<li>Step 1: Load the first tile of each input matrix to shared memory (each thread loads one element)
-    <img src="\img\study\ai-chip\tiled-mul1.png" alt="alt text"></li>
-<li>Step 2: Each thread computes its partial sum from the tiles in shared memory (threads wait for each other to finish)
-    <img src="\img\study\ai-chip\tiled-mul2.png" alt="alt text"></li>
+<li>
+<p>Insight: Some of the threads in the same thread block use the same input data</p>
+<p><img src="\img\study\ai-chip\mat-mul-reuse.png" alt="alt text"></p>
+</li>
+<li>
+<p>Step 1: Load the first tile of each input matrix to shared memory (each thread loads one element)</p>
+<p><img src="\img\study\ai-chip\tiled-mul1.png" alt="alt text"></p>
+</li>
+<li>
+<p>Step 2: Each thread computes its partial sum from the tiles in shared memory (threads wait for each other to finish)</p>
+<p><img src="\img\study\ai-chip\tiled-mul2.png" alt="alt text"></p>
+</li>
 </ul>
 <details class="note">
 <summary>Code</summary>
@@ -4816,8 +4826,10 @@ Peak bandwidth utilization occurs when all threads in a warp access one cache li
 <ul>
 <li>A GPU uses a SIMT pipeline to save area on control logic:
  Groups scalar threads into warps</li>
-<li>Branch divergence occurs when threads inside warps branch to different execution paths
-    <img src="\img\study\ai-chip\branch-divergence.png" alt="alt text"></li>
+<li>
+<p>Branch divergence occurs when threads inside warps branch to different execution paths</p>
+<p><img src="\img\study\ai-chip\branch-divergence.png" alt="alt text"></p>
+</li>
 </ul>
 <h4 id="simt-utilization">SIMT Utilization</h4>
 <ul>
@@ -4865,8 +4877,10 @@ Peak bandwidth utilization occurs when all threads in a warp access one cache li
 </ul>
 <p>Divergence-Free Mapping:</p>
 <ul>
-<li>All active threads belong to the same warp
-    <img src="\img\study\ai-chip\divergence-free2.png" alt="alt text"></li>
+<li>
+<p>All active threads belong to the same warp</p>
+<p><img src="\img\study\ai-chip\divergence-free2.png" alt="alt text"></p>
+</li>
 <li>
 <p>Program with high SIMD utilization:</p>
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">__shared__</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">partialSum</span><span class="p">[]</span>
@@ -4887,8 +4901,8 @@ Peak bandwidth utilization occurs when all threads in a warp access one cache li
 <ul>
 <li>Use atomic operations to prevent data races when more than one thread need to update the same memory location</li>
 <li>
-<p>Atomic operations serialize the execution if there are atomic conflicts:
-    <img src="\img\study\ai-chip\atomic-op.png" alt="alt text"></p>
+<p>Atomic operations serialize the execution if there are atomic conflicts:</p>
+<p><img src="\img\study\ai-chip\atomic-op.png" alt="alt text"></p>
 </li>
 <li>
 <p>Computation</p>

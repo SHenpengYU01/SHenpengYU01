@@ -4459,10 +4459,13 @@
 </ul>
 </li>
 </ul>
-<p>Advantages:</p>
+<p><strong>Advantages</strong>:</p>
 <p>1) Architectural state is precise within an execution.
 2) Architectural state is consistent across different runs of the program -&gt; Easier to debug programs</p>
-<p>Disadvantage: Preserving order adds overhead, reduces performance, increases complexity, reduces scalability</p>
+<p><strong>Disadvantage</strong>:</p>
+<ul>
+<li>Preserving order adds overhead, reduces performance, increases complexity, reduces scalability</li>
+</ul>
 <h3 id="memory-ordering-in-a-mimd-processor">Memory Ordering in a MIMD Processor</h3>
 <p>Each processor’s memory operations are in sequential order with respect to the “thread” running on that processor (assume each processor obeys the von Neumann model)</p>
 <p>Multiple processors execute memory operations concurrently</p>
@@ -4523,7 +4526,7 @@
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>STORE-LOAD barrier
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>LOAD B    // 保证在 STORE A 对其他核心可见后，才读取 B
 </span></code></pre></div></li>
-<li><strong>特性</strong>：这是<strong>最昂贵的屏障</strong>，因为它要求写缓冲（store buffer）完全清空并刷新到缓存/内存，才能读取新值。x86 的 <code>mfence</code> 即提供这种全功能屏障（但 x86 下 Store-Load 以外的重排限制较少）。</li>
+<li><strong>特性</strong>：这是<strong>最昂贵的屏障</strong>，因为它要求写缓冲（store buffer）完全清空并刷新到缓存/内存，才能读取新值。x86 的 <code>mfence</code> 提供这种屏障</li>
 <li><strong>典型用途</strong>：实现<strong>顺序一致性</strong>的跨线程同步，例如无锁算法中的发布-订阅模式：线程 1 写数据，写标志；线程 2 读标志，读数据。若线程 2 先读到新标志但读到的数据是旧的（因重排），则会出错。Store-Load 屏障可阻止这种“写后读”的重排。</li>
 </ul>
 </div>
@@ -4575,7 +4578,7 @@
 </tbody>
 </table>
 <ul>
-<li>The stronger memory model leads to lower performance/higher overhead</li>
+<li>The stronger memory model leads to <strong>lower performance</strong>/higher overhead</li>
 <li>The stronger memory model makes programmers’ life easier</li>
 </ul>
 <h2 id="sequential-consistency">Sequential Consistency</h2>
@@ -4614,6 +4617,7 @@ Load-Store
 Store-Store</p>
 <p><strong>Total Store Order == SC + Store buffer</strong>:</p>
 <ul>
+<li>SC: Sequential Consistency</li>
 <li>Committing a store instruction means the data is stored in <strong>store buffer</strong>, rather than cache hierarchy. </li>
 <li>The store instruction writes in a local store buffer and then proceed to next instruction (e.g., load) immediately. </li>
 <li>The cache will pull writes out of the store buffer when ready.</li>
@@ -4629,7 +4633,7 @@ Store-Store</p>
 <p><img src="\img\study\ai-chip\cache-code.png" alt="alt text"></p>
 <ul>
 <li>Is it possible to print “Hello” and “ZJU” on real hardware?<ul>
-<li>2-&gt;4-&gt;1-&gt;3 or 2-&gt;4-&gt;3-&gt;1</li>
+<li>under total store order: 2-&gt;4-&gt;1-&gt;3 or 2-&gt;4-&gt;3-&gt;1</li>
 </ul>
 </li>
 </ul>
@@ -4640,22 +4644,22 @@ Store-Store</p>
 </ul>
 <p><strong>Partial Store Order == Total Store Order + Write coalescing</strong>：</p>
 <ul>
-<li>Write coalescing: merge writes to the same cache line inside the write buffer to save memory bandwidth</li>
+<li><strong>Write coalescing</strong>: merge writes to the same cache line inside the write buffer to save memory bandwidth</li>
 <li>Store-store order is not preserved.</li>
 </ul>
 <p><strong>Intuitive Example of Write Coalescing</strong>：</p>
 <p><img src="\img\study\ai-chip\write-coalescing.png" alt="alt text"></p>
 <h2 id="why-cache-consistency-even-matter">Why Cache Consistency Even Matter?</h2>
 <ul>
-<li>Ease of debugging<ul>
+<li><strong>Ease of debugging</strong><ul>
 <li>It is nice to have the same execution done at different times to have the same order of execution -&gt; Repeatability</li>
 </ul>
 </li>
-<li>Correctness<ul>
+<li><strong>Correctness</strong><ul>
 <li>Can we have incorrect execution if the order of memory operations is different from the point of view of different processors?</li>
 </ul>
 </li>
-<li>Performance and overhead<ul>
+<li><strong>Performance and overhead</strong><ul>
 <li>Enforcing a strict “sequential ordering” can make life harder for the hardware designer in implementing performance enhancement techniques (e.g., OoO execution, caches)</li>
 </ul>
 </li>
@@ -4663,15 +4667,17 @@ Store-Store</p>
 <h2 id="protecting-shared-data">Protecting Shared Data</h2>
 <p>When Could Order Affect Correctness: When protecting shared data</p>
 <ul>
-<li>Threads are not allowed to update shared data concurrently
-For correctness purposes</li>
-<li>Accesses to shared data are encapsulated inside critical sections or protected via synchronization constructs (locks, semaphores, condition variables)</li>
+<li>Threads are not allowed to update shared data concurrently<ul>
+<li>For correctness purposes</li>
+</ul>
+</li>
+<li>Accesses to shared data are encapsulated inside <strong>critical sections</strong> or protected via <strong>synchronization constructs</strong> (locks, semaphores, condition variables)</li>
 <li><strong>Mutual exclusion principle</strong>: Only one thread can execute a critical section at a given time.</li>
 <li>A multiprocessor should provide the correct execution of synchronization primitives to enable the programmer to protect shared data</li>
 </ul>
 <h3 id="supporting-mutual-exclusion">Supporting Mutual Exclusion</h3>
 <ul>
-<li>Programmer relies on hardware primitives to support correct synchronization<ul>
+<li>Programmer relies on <strong>hardware primitives</strong> to support correct synchronization<ul>
 <li>If hardware primitives are not correct (or unpredictable), programmer’s life is tough</li>
 <li>If hardware primitives are correct but not easy to reason about or use, programmer’s life is still tough</li>
 </ul>
@@ -4696,13 +4702,13 @@ For correctness purposes</li>
 <ul>
 <li>Decisions very much affected by cycle time</li>
 <li>Small, lower associativity; latency is critical</li>
-<li>Tag store and data store usually accessed in parallel</li>
+<li>Tag store and data store usually <strong>accessed in parallel</strong></li>
 </ul>
 <p><strong>Second-level caches</strong>:</p>
 <ul>
 <li>Decisions need to balance hit rate and access latency</li>
 <li>Usually large and highly associative; latency not as important</li>
-<li>Tag store and data store can be accessed serially</li>
+<li>Tag store and data store can be <strong>accessed serially</strong></li>
 </ul>
 <p><strong>Serial vs. Parallel access of levels</strong>:</p>
 <ul>

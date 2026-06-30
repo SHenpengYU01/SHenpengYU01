@@ -4112,8 +4112,7 @@
 </ul>
 <h2 id="_1">数据并行</h2>
 <ul>
-<li>每张卡(共N张)有完整模型副本，切分训练数据</li>
-<li><strong>前向/反向</strong>：各卡独立计算，<strong>无需通信</strong>。</li>
+<li>每张卡(共N张)有完整模型副本，切分训练数据。<strong>前向/反向</strong>：各卡独立计算，<strong>无需通信</strong>。</li>
 <li>Fwd：
     <img src="data-parallel.png" width=200 alt="alt text"></li>
 <li>Bwd：
@@ -4130,9 +4129,7 @@
 <li>每轮收发 = <strong>M / N</strong> 字节（M 为总梯度大小）。</li>
 <li>单卡总发送 = 单卡总接收 = <strong>(N-1) × (M/N)</strong>。</li>
 <li><strong>单卡总吞吐（Tx+Rx）</strong> = <strong>2M(N-1) / N</strong> ≈ 2M（当 N 较大时）。</li>
-<li><strong>扩展性评价</strong>(增加卡数)：</li>
-<li><strong>强扩展</strong>（固定总 Batch）：每卡 Batch 变小，BN 不准，显存利用率低。</li>
-<li><strong>弱扩展</strong>（增大总 Batch）：需调整 LR、优化器，收敛至同样精度 Epoch 可能增加。</li>
+<li><strong>扩展性评价</strong>(增加worker卡数)：<strong>强扩展</strong>（固定总 Batch）：每卡 Batch 变小，BN 不准，显存利用率低。<strong>弱扩展</strong>（增大总 Batch）：需调整 LR、优化器，收敛至同样精度 Epoch 可能增加。</li>
 <li><strong>优点</strong>：<strong>通信可与反向计算重叠</strong>（算完一层梯度即可同步该层）。</li>
 </ul>
 <h2 id="_2">模型并行</h2>

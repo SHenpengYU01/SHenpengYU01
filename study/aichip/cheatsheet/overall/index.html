@@ -10,28 +10,24 @@
       
       
       
-        <link rel="canonical" href="https://note.mythlogos.top/study/aichip/cache/">
+        <link rel="canonical" href="https://note.mythlogos.top/study/aichip/cheatsheet/overall/">
       
       
-        <link rel="prev" href="../gpu-optimization/">
       
       
-        <link rel="next" href="../cache-coherence/">
-      
-      
-      <link rel="icon" href="../../../img/favicon.png">
+      <link rel="icon" href="../../../../img/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
     
     
       
-        <title>Cache - Cool Tea</title>
+        <title>Overall - Cool Tea</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.d7758b05.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d7758b05.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -52,9 +48,9 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#memory-hierarchy-and-caches" class="md-skip">
+        <a href="#1" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Cool Tea" class="md-header__button md-logo" aria-label="Cool Tea" data-md-component="logo">
+    <a href="../../../.." title="Cool Tea" class="md-header__button md-logo" aria-label="Cool Tea" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 8V5h-2v3zm0-5c.6 0 1 .2 1.4.6s.6.9.6 1.4v3c0 .6-.2 1-.6 1.4s-.8.6-1.4.6h-2v3c0 1.1-.4 2-1.2 2.8S15.1 17 14 17H8c-1.1 0-2-.4-2.8-1.2S4 14.1 4 13V3h5v2.4L7.2 6.8c-.1.1-.2.3-.2.4v4.3c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5V7.2c0-.2-.1-.3-.2-.4L10 5.4V3z"/></svg>
@@ -114,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cache
+              Overall
             
           </span>
         </div>
@@ -221,7 +217,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+      <a href="../../../.." class="md-tabs__link">
         
   
     
@@ -240,7 +236,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cs/" class="md-tabs__link">
+        <a href="../../../cs/" class="md-tabs__link">
           
   
     
@@ -260,7 +256,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cv/" class="md-tabs__link">
+        <a href="../../../cv/" class="md-tabs__link">
           
   
     
@@ -276,21 +272,17 @@
         
   
   
-    
-  
   
     
     
       
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../ailogic/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../ailogic/" class="md-tabs__link">
           
   
     
@@ -319,7 +311,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../cpp/" class="md-tabs__link">
+        <a href="../../../cpp/" class="md-tabs__link">
           
   
     
@@ -340,7 +332,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../about/" class="md-tabs__link">
+      <a href="../../../../about/" class="md-tabs__link">
         
   
     
@@ -357,7 +349,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../test/" class="md-tabs__link">
+      <a href="../../../../test/" class="md-tabs__link">
         
   
     
@@ -374,7 +366,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../link/" class="md-tabs__link">
+      <a href="../../../../link/" class="md-tabs__link">
         
   
     
@@ -408,7 +400,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Cool Tea" class="md-nav__button md-logo" aria-label="Cool Tea" data-md-component="logo">
+    <a href="../../../.." title="Cool Tea" class="md-nav__button md-logo" aria-label="Cool Tea" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 8V5h-2v3zm0-5c.6 0 1 .2 1.4.6s.6.9.6 1.4v3c0 .6-.2 1-.6 1.4s-.8.6-1.4.6h-2v3c0 1.1-.4 2-1.2 2.8S15.1 17 14 17H8c-1.1 0-2-.4-2.8-1.2S4 14.1 4 13V3h5v2.4L7.2 6.8c-.1.1-.2.3-.2.4v4.3c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5V7.2c0-.2-.1-.3-.2-.4L10 5.4V3z"/></svg>
@@ -438,7 +430,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -486,7 +478,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cs/" class="md-nav__link ">
+            <a href="../../../cs/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -543,7 +535,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cs/sys2/" class="md-nav__link ">
+            <a href="../../../cs/sys2/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -577,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys2/sys2/" class="md-nav__link">
+      <a href="../../../cs/sys2/sys2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -650,7 +642,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cs/sys3/" class="md-nav__link ">
+            <a href="../../../cs/sys3/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -684,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/quantitative/" class="md-nav__link">
+      <a href="../../../cs/sys3/quantitative/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -706,7 +698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/ILP/" class="md-nav__link">
+      <a href="../../../cs/sys3/ILP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -728,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/simd/" class="md-nav__link">
+      <a href="../../../cs/sys3/simd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/mimd/" class="md-nav__link">
+      <a href="../../../cs/sys3/mimd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -772,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/cache/" class="md-nav__link">
+      <a href="../../../cs/sys3/cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -794,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/memory/" class="md-nav__link">
+      <a href="../../../cs/sys3/memory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -816,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/main-memory/" class="md-nav__link">
+      <a href="../../../cs/sys3/main-memory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/virtual-memory/" class="md-nav__link">
+      <a href="../../../cs/sys3/virtual-memory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/file-sys/" class="md-nav__link">
+      <a href="../../../cs/sys3/file-sys/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -882,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/storage/" class="md-nav__link">
+      <a href="../../../cs/sys3/storage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -904,7 +896,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cs/sys3/io/" class="md-nav__link">
+      <a href="../../../cs/sys3/io/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -965,7 +957,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../network/" class="md-nav__link ">
+            <a href="../../../network/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -999,7 +991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/introduction/" class="md-nav__link">
+      <a href="../../../network/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1021,7 +1013,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/application layer.md" class="md-nav__link">
+      <a href="../../../network/application layer.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1043,7 +1035,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/transport layer.md" class="md-nav__link">
+      <a href="../../../network/transport layer.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1065,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/internet layer.md" class="md-nav__link">
+      <a href="../../../network/internet layer.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1087,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../network/link layer.md" class="md-nav__link">
+      <a href="../../../network/link layer.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1161,7 +1153,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cv/" class="md-nav__link ">
+            <a href="../../../cv/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1195,7 +1187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/introduction/" class="md-nav__link">
+      <a href="../../../cv/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1217,7 +1209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/image-formation/" class="md-nav__link">
+      <a href="../../../cv/image-formation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1239,7 +1231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/image-process/" class="md-nav__link">
+      <a href="../../../cv/image-process/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1261,7 +1253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/optimization/" class="md-nav__link">
+      <a href="../../../cv/optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1283,7 +1275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/image-matching/" class="md-nav__link">
+      <a href="../../../cv/image-matching/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1305,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/stiching/" class="md-nav__link">
+      <a href="../../../cv/stiching/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1327,7 +1319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/sfm/" class="md-nav__link">
+      <a href="../../../cv/sfm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1349,7 +1341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cv/depth-estimation/" class="md-nav__link">
+      <a href="../../../cv/depth-estimation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1375,10 +1367,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1393,20 +1383,17 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1418,7 +1405,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             AI
@@ -1465,7 +1452,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ailogic/" class="md-nav__link ">
+            <a href="../../../ailogic/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1499,7 +1486,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/introduction/" class="md-nav__link">
+      <a href="../../../ailogic/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1568,7 +1555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/proposition/" class="md-nav__link">
+      <a href="../../../ailogic/proposition/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1590,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/first-order-logic/" class="md-nav__link">
+      <a href="../../../ailogic/first-order-logic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1612,7 +1599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/knowledge/" class="md-nav__link">
+      <a href="../../../ailogic/knowledge/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1687,7 +1674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/default-logic/" class="md-nav__link">
+      <a href="../../../ailogic/default-logic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1709,7 +1696,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/asp/" class="md-nav__link">
+      <a href="../../../ailogic/asp/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1786,7 +1773,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/argument/" class="md-nav__link">
+      <a href="../../../ailogic/argument/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1808,7 +1795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/struct-argu/" class="md-nav__link">
+      <a href="../../../ailogic/struct-argu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1830,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/game/" class="md-nav__link">
+      <a href="../../../ailogic/game/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1903,7 +1890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/bayes/" class="md-nav__link">
+      <a href="../../../ailogic/bayes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1933,7 +1920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ailogic/review/" class="md-nav__link">
+      <a href="../../../ailogic/review/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2012,7 +1999,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../ml/" class="md-nav__link ">
+            <a href="../../../ml/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2046,7 +2033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/basic-term/" class="md-nav__link">
+      <a href="../../../ml/basic-term/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2068,7 +2055,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/linear-model/" class="md-nav__link">
+      <a href="../../../ml/linear-model/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2090,7 +2077,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/decision-tree/" class="md-nav__link">
+      <a href="../../../ml/decision-tree/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2112,7 +2099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/neural/" class="md-nav__link">
+      <a href="../../../ml/neural/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2134,7 +2121,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/svm/" class="md-nav__link">
+      <a href="../../../ml/svm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2156,7 +2143,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/bayes/" class="md-nav__link">
+      <a href="../../../ml/bayes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2178,7 +2165,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/ensamble/" class="md-nav__link">
+      <a href="../../../ml/ensamble/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2200,7 +2187,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/clustering/" class="md-nav__link">
+      <a href="../../../ml/clustering/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2222,7 +2209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/dim-reduction.md" class="md-nav__link">
+      <a href="../../../ml/dim-reduction.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2244,7 +2231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/traits/" class="md-nav__link">
+      <a href="../../../ml/traits/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2266,7 +2253,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/semi-supervised/" class="md-nav__link">
+      <a href="../../../ml/semi-supervised/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2288,7 +2275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/probability-graph/" class="md-nav__link">
+      <a href="../../../ml/probability-graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2310,7 +2297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/rule-learning/" class="md-nav__link">
+      <a href="../../../ml/rule-learning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2332,7 +2319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ml/rl/" class="md-nav__link">
+      <a href="../../../ml/rl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2401,7 +2388,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../llm/" class="md-nav__link ">
+            <a href="../../../llm/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2435,7 +2422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/word2vec1/" class="md-nav__link">
+      <a href="../../../llm/word2vec1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2457,7 +2444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/bert/" class="md-nav__link">
+      <a href="../../../llm/bert/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2479,7 +2466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/vit/" class="md-nav__link">
+      <a href="../../../llm/vit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2501,7 +2488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/clip/" class="md-nav__link">
+      <a href="../../../llm/clip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2523,7 +2510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/video-rag/" class="md-nav__link">
+      <a href="../../../llm/video-rag/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2545,7 +2532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/mrag-survey/" class="md-nav__link">
+      <a href="../../../llm/mrag-survey/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2567,7 +2554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/qwen3-embedding/" class="md-nav__link">
+      <a href="../../../llm/qwen3-embedding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2589,7 +2576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/qwen3-vl-embedding/" class="md-nav__link">
+      <a href="../../../llm/qwen3-vl-embedding/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2611,7 +2598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../llm/encoder/" class="md-nav__link">
+      <a href="../../../llm/encoder/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2638,8 +2625,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2683,16 +2668,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -2710,7 +2695,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_4">
             <span class="md-nav__icon md-icon"></span>
             人工智能芯片与系统
@@ -2726,7 +2711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bases/" class="md-nav__link">
+      <a href="../../bases/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2748,7 +2733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3laws/" class="md-nav__link">
+      <a href="../../3laws/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2770,7 +2755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rob/" class="md-nav__link">
+      <a href="../../rob/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2792,7 +2777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tomasulo/" class="md-nav__link">
+      <a href="../../tomasulo/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2814,7 +2799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../memory/" class="md-nav__link">
+      <a href="../../memory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2836,7 +2821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gpu/" class="md-nav__link">
+      <a href="../../gpu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2858,7 +2843,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../gpu-optimization/" class="md-nav__link">
+      <a href="../../gpu-optimization/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2877,31 +2862,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Cache
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../cache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -2911,404 +2875,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why cache
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-cache-works-locality" class="md-nav__link">
-    <span class="md-ellipsis">
-      Why cache works: locality
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Why cache works: locality">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exploit-temporal-locality" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exploit temporal locality
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exploit-spatial-locality" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exploit spatial locality
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cache-hierarchy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache hierarchy
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache hierarchy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hierarchical-latency-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hierarchical latency analysis
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cache-basics-and-operation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache basics and operation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache basics and operation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is cache
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache Metrics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#addressing-the-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Addressing the Cache
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-basics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache Basics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-placement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache: Placement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache: Placement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#direc-mapped-cache-placement-and-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direc-Mapped Cache: Placement and Access
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#full-associativity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Full Associativity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set-associative-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set-Associative Cache
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#associativity-and-tradeoffs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Associativity and tradeoffs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#memory-roofline-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Memory roofline model
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-replacement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache: Replacement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache: Replacement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementing-lru" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementing LRU
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optimal-policy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Optimal policy
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-write-policy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache: Write policy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instruction-vs-data-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instruction vs. Data Caches
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-misses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache misses
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache misses">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#compulsory-miss" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compulsory miss
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#capacity-miss" class="md-nav__link">
-    <span class="md-ellipsis">
-      Capacity miss
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conflict-miss" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conflict miss
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cache-performance" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache performance
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache performance">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#miss-rate-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      Miss rate Examples
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache Size
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#block-size" class="md-nav__link">
-    <span class="md-ellipsis">
-      Block Size
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#associativity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Associativity
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cache-in-a-multi-core-cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache in a multi-core CPU
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache in a multi-core CPU">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#private-vs-shared-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Private vs. Shared caches
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Private vs. Shared caches">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#resource-sharing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resource sharing
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#shared-caches-betweent-cores" class="md-nav__link">
-    <span class="md-ellipsis">
-      Shared caches betweent cores
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#preserve-coherence-and-consistence" class="md-nav__link">
-    <span class="md-ellipsis">
-      Preserve coherence and consistence
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -3321,7 +2887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cache-coherence/" class="md-nav__link">
+      <a href="../../cache-coherence/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3343,7 +2909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cache-consistency/" class="md-nav__link">
+      <a href="../../cache-consistency/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3365,7 +2931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../dl-accelerator/" class="md-nav__link">
+      <a href="../../dl-accelerator/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3387,7 +2953,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai-processor/" class="md-nav__link">
+      <a href="../../ai-processor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3409,7 +2975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ai-chip-rf/" class="md-nav__link">
+      <a href="../../ai-chip-rf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3431,7 +2997,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../parallel-training/" class="md-nav__link">
+      <a href="../../parallel-training/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3560,7 +3126,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../cpp/" class="md-nav__link ">
+            <a href="../../../cpp/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -3594,7 +3160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/grammar/" class="md-nav__link">
+      <a href="../../../cpp/grammar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3671,7 +3237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/class/class/" class="md-nav__link">
+      <a href="../../../cpp/class/class/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3693,7 +3259,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/class/ctor/" class="md-nav__link">
+      <a href="../../../cpp/class/ctor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3715,7 +3281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/class/dtor/" class="md-nav__link">
+      <a href="../../../cpp/class/dtor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3737,7 +3303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/class/friend/" class="md-nav__link">
+      <a href="../../../cpp/class/friend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3759,7 +3325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/class/init-list/" class="md-nav__link">
+      <a href="../../../cpp/class/init-list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3781,7 +3347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/class/vfunc/" class="md-nav__link">
+      <a href="../../../cpp/class/vfunc/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3803,7 +3369,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/class/inherit/" class="md-nav__link">
+      <a href="../../../cpp/class/inherit/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3833,7 +3399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/struct/" class="md-nav__link">
+      <a href="../../../cpp/struct/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3855,7 +3421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/reference/" class="md-nav__link">
+      <a href="../../../cpp/reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3877,7 +3443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/memory/" class="md-nav__link">
+      <a href="../../../cpp/memory/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3899,7 +3465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/stream/" class="md-nav__link">
+      <a href="../../../cpp/stream/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3921,7 +3487,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/container/" class="md-nav__link">
+      <a href="../../../cpp/container/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3943,7 +3509,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/overload/" class="md-nav__link">
+      <a href="../../../cpp/overload/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3965,7 +3531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/template/" class="md-nav__link">
+      <a href="../../../cpp/template/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -3987,7 +3553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/iterators/" class="md-nav__link">
+      <a href="../../../cpp/iterators/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4009,7 +3575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/exception/" class="md-nav__link">
+      <a href="../../../cpp/exception/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4031,7 +3597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cpp/design-pattern/design-pattern/" class="md-nav__link">
+      <a href="../../../cpp/design-pattern/design-pattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4112,7 +3678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/intro/" class="md-nav__link">
+      <a href="../../../web/JS/intro/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4134,7 +3700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/func/" class="md-nav__link">
+      <a href="../../../web/JS/func/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4156,7 +3722,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/event/" class="md-nav__link">
+      <a href="../../../web/JS/event/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4178,7 +3744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/class/" class="md-nav__link">
+      <a href="../../../web/JS/class/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4200,7 +3766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../web/JS/array/" class="md-nav__link">
+      <a href="../../../web/JS/array/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4259,7 +3825,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../datastructure/" class="md-nav__link ">
+            <a href="../../../datastructure/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -4293,7 +3859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/graph/" class="md-nav__link">
+      <a href="../../../datastructure/graph/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4315,7 +3881,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/midterm/" class="md-nav__link">
+      <a href="../../../datastructure/midterm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4337,7 +3903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/algorithm/" class="md-nav__link">
+      <a href="../../../datastructure/algorithm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4359,7 +3925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../datastructure/practice/" class="md-nav__link">
+      <a href="../../../datastructure/practice/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4396,7 +3962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../about/" class="md-nav__link">
+      <a href="../../../../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4417,7 +3983,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../test/" class="md-nav__link">
+      <a href="../../../../test/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4438,7 +4004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../link/" class="md-nav__link">
+      <a href="../../../../link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -4469,8 +4035,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4479,316 +4043,73 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-cache" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      Why cache
+      1. 通用性能公式
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-cache-works-locality" class="md-nav__link">
+  <a href="#2-von-neumann" class="md-nav__link">
     <span class="md-ellipsis">
-      Why cache works: locality
+      2. Von Neumann / 单周期 / 多周期 / 流水线
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Why cache works: locality">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#exploit-temporal-locality" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exploit temporal locality
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exploit-spatial-locality" class="md-nav__link">
-    <span class="md-ellipsis">
-      Exploit spatial locality
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cache-hierarchy" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      Cache hierarchy
+      3. 数据依赖与寄存器重命名
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Cache hierarchy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#hierarchical-latency-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hierarchical latency analysis
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cache-basics-and-operation" class="md-nav__link">
+  <a href="#4-robreorder-buffer" class="md-nav__link">
     <span class="md-ellipsis">
-      Cache basics and operation
+      4. ROB（Reorder Buffer）
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Cache basics and operation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      What is cache
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-metrics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache Metrics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#addressing-the-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Addressing the Cache
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-basics" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache Basics
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-placement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache: Placement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache: Placement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#direc-mapped-cache-placement-and-access" class="md-nav__link">
-    <span class="md-ellipsis">
-      Direc-Mapped Cache: Placement and Access
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#full-associativity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Full Associativity
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#set-associative-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set-Associative Cache
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#associativity-and-tradeoffs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Associativity and tradeoffs
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#memory-roofline-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      Memory roofline model
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-replacement" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache: Replacement
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache: Replacement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#implementing-lru" class="md-nav__link">
-    <span class="md-ellipsis">
-      Implementing LRU
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optimal-policy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Optimal policy
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-write-policy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache: Write policy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#instruction-vs-data-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instruction vs. Data Caches
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cache-misses" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cache misses
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache misses">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#compulsory-miss" class="md-nav__link">
-    <span class="md-ellipsis">
-      Compulsory miss
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#capacity-miss" class="md-nav__link">
-    <span class="md-ellipsis">
-      Capacity miss
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conflict-miss" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conflict miss
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cache-performance" class="md-nav__link">
+  <a href="#5-tomasula" class="md-nav__link">
     <span class="md-ellipsis">
-      Cache performance
+      5. Tomasula：三大结构与时间点（重点）
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cache performance">
+    <nav class="md-nav" aria-label="5. Tomasula：三大结构与时间点（重点）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#miss-rate-examples" class="md-nav__link">
+  <a href="#51-register-renaming-table-rf" class="md-nav__link">
     <span class="md-ellipsis">
-      Miss rate Examples
+      5.1 Register Renaming Table / RF 表
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#cache-size" class="md-nav__link">
+  <a href="#52-reservation-stationrs" class="md-nav__link">
     <span class="md-ellipsis">
-      Cache Size
+      5.2 Reservation Station（RS）
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#block-size" class="md-nav__link">
+  <a href="#53-cdbcommon-data-bus" class="md-nav__link">
     <span class="md-ellipsis">
-      Block Size
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#associativity" class="md-nav__link">
-    <span class="md-ellipsis">
-      Associativity
+      5.3 CDB（Common Data Bus）
     </span>
   </a>
   
@@ -4800,59 +4121,218 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cache-in-a-multi-core-cpu" class="md-nav__link">
+  <a href="#6-tomasulaooo" class="md-nav__link">
     <span class="md-ellipsis">
-      Cache in a multi-core CPU
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cache in a multi-core CPU">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#private-vs-shared-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Private vs. Shared caches
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Private vs. Shared caches">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#resource-sharing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Resource sharing
+      6. Tomasula/OOO 题模板
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#shared-caches-betweent-cores" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#7-superscalar-simd-multi-core" class="md-nav__link">
     <span class="md-ellipsis">
-      Shared caches betweent cores
+      7. Superscalar / SIMD / Multi-core
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#preserve-coherence-and-consistence" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#8-gpu" class="md-nav__link">
     <span class="md-ellipsis">
-      Preserve coherence and consistence
+      8. GPU 架构与优化
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 存储层次与存储技术
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Cache 基础
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-cache-miss" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Cache miss 分类与降低方法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Cache 写策略
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-cache-coherence" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Cache Coherence（一致性）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-msi-mesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. MSI / MESI 状态协议
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-memory-consistency-barrier" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Memory Consistency / Barrier
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. AI 加速器动机与原则
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-systolic-array-tpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. 矩阵乘单元 / Systolic Array / TPU
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-ascend-davinci-aicore" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Ascend / DaVinci AICore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-cann-mindspore" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. CANN / MindSpore / 图优化
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-parallel-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Parallel Training 总览
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-data-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Data Parallel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-pipeline-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Pipeline Parallel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-tensor-parallel" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Tensor Parallel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-allreduce-ring-allreduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. AllReduce / Ring AllReduce（重点）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-roofline" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Roofline 例题答案模板
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-performance-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Performance Analysis 例题答案模板
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Cache 例题答案模板
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-pipelinedooo-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Pipelined/OOO CPU 例题做法压缩
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. 考试易错点
+    </span>
+  </a>
   
 </li>
       
@@ -4875,613 +4355,352 @@
   
 
 
-<h1 id="memory-hierarchy-and-caches">Memory Hierarchy and Caches</h1>
-<h2 id="why-cache">Why cache</h2>
-<p>Problem of <a href="../memory/#ideal-memory">idea memory</a>:</p>
+  <h1>Overall</h1>
+
+<style>
+@page { size: A4 portrait; margin: 5mm; }
+body {
+  font-family: "Noto Sans CJK SC", "Microsoft YaHei", "SimSun", sans-serif;
+  font-size: 7px;
+  line-height: 1.08;
+  column-count: 2;
+  column-gap: 8px;
+}
+h1 {
+  column-span: all;
+  font-size: 15px;
+  text-align: center;
+  margin: 0 0 4px;
+}
+h2 {
+  font-size: 10px;
+  margin: 4px 0 1px;
+  padding-bottom: 0.5px;
+  border-bottom: 0.7px solid #000;
+  break-after: avoid;
+}
+h3 {
+  font-size: 8.5px;
+  margin: 2px 0 0;
+  padding-bottom: 0.5px;
+  border-bottom: 0.7px solid #000;
+  break-after: avoid;
+}
+p, ul, ol, li, td, th, blockquote {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+p, ul, ol { margin: 0 0 1px; }
+ul, ol { padding-left: 1.05em; }
+li { margin: 0; }
+strong { font-weight: 700; }
+code {
+  font-size: 6.5px;
+  padding: 0;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-all !important;
+}
+pre, pre code {
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-all !important;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 6.4px;
+  margin: 0 0 2px;
+  break-inside: avoid;
+}
+th, td { border: 0.4px solid #999; padding: 0.5px 1px; vertical-align: top; }
+blockquote { margin: 1px 0; padding-left: 2px; border-left: 1px solid #999; }
+hr { border: 0; border-top: 0.6px solid #999; margin: 2px 0; }
+</style>
+
+<h3 id="1">1. 通用性能公式</h3>
+<p><strong>Execution time</strong>：单指令 <code>CPI × clock cycle time</code>；程序 <code>T = IC × CPI_avg × T_clk</code>。多周期 CPU：<code>CPI_avg = Σ f_i × cycles_i</code>。若有 cache miss：<code>T = T_base + (#memory accesses) × miss rate × miss penalty</code>。</p>
+<p><strong>Amdahl 定律</strong>：若可并行比例为 <code>f</code>，处理器数 <code>N</code>，<code>Speedup = 1 / ((1-f)+f/N)</code>；上限 <code>1/(1-f)</code>。并行部分不是免费：同步、负载不均、资源争用都会降低收益。</p>
+<p><strong>Little 定律</strong>：<code>L = λW</code>。硬件里常写：<code>concurrency/buffer size = throughput × latency</code>。例：12GB/s、100ns → 约 <code>1200B</code>? 注意单位：<code>12×10^9 B/s ×100×10^-9s=1200B</code></p>
+<p><strong>Roofline</strong>：<code>AI = total OPs(or FLOPs) / memory bytes</code>；<code>attainable throughput = min(peak compute, AI × peak bandwidth)</code>。拐点/ridge point：<code>AI* = peak compute / peak bandwidth</code>。<code>AI &lt; AI*</code> memory-bound；<code>AI &gt; AI*</code> compute-bound。优化判断：实测点接近 roofline → 已接近充分优化；离 roofline 很远 → 算子实现、并行度、访存、向量化仍有问题。</p>
+<p><strong>AMAT</strong>：<code>AMAT = hit time + miss rate × miss penalty</code>。若题目说 miss access time 已包含 hit time，则用 <code>hit_rate×hit_time + miss_rate×miss_time</code>；没说明通常按前者。</p>
+<h3 id="2-von-neumann">2. Von Neumann / 单周期 / 多周期 / 流水线</h3>
+<p><strong>Von Neumann 两点</strong>：stored program（指令和数据存于统一线性内存）；sequential instruction processing（in-order commitment）。</p>
+<p><strong>Single-cycle</strong>：<code>CPI=1</code>，但 <code>T_clk</code> 由最慢指令决定。没有程序员不可见中间状态。</p>
+<p><strong>Multi-cycle</strong>：把指令分成若干状态，一条指令多周期，<code>T_clk</code> 变短；不同指令周期数不同。ISA 只规定 <code>AS→AS'</code>，微结构可加入不可见状态 <code>MS</code>。</p>
+<p><strong>Pipeline</strong>：把指令处理分为 IF/ID/EX/MEM/WB 等阶段，不同指令占不同阶段。稳态理想 <code>CPI≈1</code>，提升 throughput 而非单条 latency。总周期粗略：<code>k + n - 1 + stalls</code>（k 为阶段数）。</p>
+<p><strong>Hazard</strong>：结构冒险（硬件资源冲突）、数据冒险、控制冒险。数据依赖：RAW 真依赖必须遵守；WAR/WAW 是名称依赖，可用 renaming 消除。Forwarding/bypass 可减少 RAW stall；<strong>load-use</strong> 常仍需等待；branch 需要预测/flush。</p>
+<h3 id="3">3. 数据依赖与寄存器重命名</h3>
+<p>WAR/WAW 本质是 architectural register 名字不够，不是值依赖。</p>
+<p><strong>Renaming 核心</strong>：把 architectural register 映射到 physical register / ROB entry / RS tag。后续消费者不再看“R3”，而是看“产生当前 R3 新值的 tag”。这样同名但无关的值被拆开。</p>
+<h3 id="4-robreorder-buffer">4. ROB（Reorder Buffer）</h3>
+<p><strong>目的</strong>：out-of-order complete，但 in-order commit，保证 precise exception。异常发生时，已 commit 的都是老指令，新指令可 flush。</p>
+<p><strong>ROB 流程</strong>：
+1. <strong>in-order Decode</strong>/rename 按程序顺序分配 ROB entry，目的寄存器 rename 到该 entry。
+2. <strong>OoO Execute</strong>: 可乱序完成，结果先写 ROB，不直接写 architectural state。
+3. <strong>In-order Commit</strong> 只检查 ROB head。若 head ready 且无异常，写回寄存器/内存；若异常，flush 后跳异常处理。</p>
+<p><strong>ROB 可存字段</strong>：busy/valid、dest architectural reg、value、ready、exception、PC/order。Load/store 常还需地址/数据/是否可提交。</p>
+<p><strong>为什么 precise exception 需要 in-order commit</strong>：如果新指令先把结果写入寄存器/内存，老指令再异常，体系结构状态无法恢复到“异常指令之前”的顺序状态。</p>
+<h3 id="5-tomasula">5. Tomasula：三大结构与时间点（重点）</h3>
+<p>Why OoO？</p>
 <ul>
-<li>Bigger is slower</li>
-<li>Faster is more expensive</li>
-<li>Higher bandwidth is more expensive</li>
+<li>In-order 里，一条长延迟指令会把后面的独立指令也挡住。</li>
+<li>OoO 让“数据已就绪”的指令先执行，提升吞吐。</li>
 </ul>
-<p>CPU wants both fast (~1ns) and large memory (GB) without modifying user code.
- But we cannot achieve both with a single level of memory</p>
+<p><img src= "inorder-vs-ooo.png" width=300 alt=""></p>
+<p><strong>Tomasulo 三组件</strong>：Register Rename/Alias Table，Reservation Station，Common Data Bus(CDB)。现代处理器常再加 ROB 以保证 precise exception。</p>
+<p><img src= "tomasulo-components.png" width=300 alt=""></p>
+<h4 id="51-register-renaming-table-rf">5.1 Register Renaming Table / RF 表</h4>
+<p>表项：<code>Valid/V</code>、<code>Tag</code>、<code>Value</code>。<code>V=0</code>寄存器的新值尚未产生，<code>Tag</code> 指向将产生它的 RS entry 或 ROB/physical reg。</p>
+<p><strong>ID/rename 时更新</strong>：
+1. 若有空 RS，指令占用一个 RS entry，记该 entry 的 tag。
+2. 对每个源寄存器：若 RF/RAT 中 <code>V=1</code>，把 value 复制到 RS.source.value 并设 <code>source.V=1</code>；若 <code>V=0</code>，把 producer tag 复制到 RS.source.tag 并设 <code>source.V=0</code>。
+3. 对目的寄存器：RF/RAT[dest].tag = 当前 RS tag，<code>V=0</code>。这一步就是 register renaming，可消除之后指令看到的 WAR/WAW。
+4. 若无空 RS，则 issue/rename stall。</p>
+<p><strong>CDB/WB 时更新</strong>：执行完成后，FU 申请 CDB，广播 <code>(tag,value)</code>。所有 RS 监听：若某 source.tag 匹配广播 tag，则写入 value 并把 source.V 置 1。RF/RAT 也监听：只有当 RF/RAT[reg].tag 仍等于广播 tag，才写 value 并置 <code>V=1</code>；若 tag 不匹配，说明该 architectural reg 已被更新指令重新 rename，不能覆盖。</p>
+<h4 id="52-reservation-stationrs">5.2 Reservation Station（RS）</h4>
+<p>RS 是等待区/调度窗口。常见字段：<code>Busy/Valid</code>、<code>Op</code>、<code>DestTag</code>、<code>src1/src2: V/Tag/Value</code>可能还有 immediate、地址、ROB id。</p>
+<p><strong>RS 的意义</strong>：把等待操作数的指令从流水线前端移开，让无关指令继续进入；每条指令在 RS 中等自己的源 tag/value。所有源 <code>V=1</code> 且 FU 可用时 wakeup/select/dispatch。执行顺序按 dataflow，不按原程序顺序。</p>
+<p><strong>RS 更新规则</strong>：
+- 插入时填操作码、目的 tag、两个源的 value/tag。
+- 等待时监听 CDB，匹配 tag 就抓值。
+- ready 后发送到功能部件；执行完成并广播后，RS entry 释放。</p>
+<h4 id="53-cdbcommon-data-bus">5.3 CDB（Common Data Bus）</h4>
+<p>广播完成结果 <code>(tag,value)</code>；一个周期通常只能广播有限个结果，所以可能发生 CDB arbitration。CDB 同时唤醒消费者和更新 RF/RAT。</p>
+<p><img src= "modern-pipeline.png" width=300 alt=""></p>
+<h3 id="6-tomasulaooo">6. Tomasula/OOO 题模板</h3>
+<p><strong>常见答案句</strong>：WAW hazard 例：<code>I2</code> 和 <code>I4</code> 都写 <code>$s4</code>。解决：register renaming，把两个 <code>$s4</code> 的不同版本映射到不同 ROB/RS/physical tag，commit 时保持程序顺序。</p>
+<p><strong>填表小心</strong>：fully pipelined FU 表示可每周期启动新操作，但 latency 多周期；non-pipelined 才必须等整条操作结束。in-order commit/precise exception 表示新指令即使早完成，也只能在所有更老指令 commit 后 W。</p>
+<p><strong>关键性能限制</strong>:</p>
 <ul>
-<li>
-<p>Idea:</p>
-<ul>
-<li>Have multiple levels of storage (progressively bigger and slower as the levels are farther from the processor) and</li>
-<li>Ensure most of the data the processor needed is kept in the fast(er) level(s).</li>
+<li><strong>指令窗口</strong> = RS 中未发射 + ROB 中未提交的指令总数。越大，可发现的并行性越高，但硬件（CAM、仲裁）开销剧增。</li>
+<li><strong>延迟容忍度</strong>：由窗口大小决定；若一条长延迟指令，需巨大窗口才能继续填充独立指令。</li>
 </ul>
-</li>
-<li>
-<p>New Memory Hierarchy</p>
-<p><img src="\img\study\ai-chip\mem-hie.png" alt="alt text"></p>
-</li>
-</ul>
-<h2 id="why-cache-works-locality">Why cache works: locality</h2>
+<h3 id="7-superscalar-simd-multi-core">7. Superscalar / SIMD / Multi-core</h3>
+<p><strong>Superscalar</strong>：一周期 fetch/decode/issue 多条指令，需要<strong>同周期依赖检测</strong>和<strong>多个功能部件</strong>。issue width 越大，issue queue、multi-port RF、bypass 网络复杂度快速上升，收益递减。多核优于超大单核：应用可并行、多程序负载多，单核 ILP 有限。</p>
+<p><strong>Flynn 分类</strong>：SISD；SIMD（vector/array）；MISD 少见，近似 systolic/streaming；MIMD 多指令多数据（多核、多线程）。</p>
+<p><strong>SIMD vs SIMT</strong>：SIMD 由程序显式写向量宽度；SIMT 用<strong>线程编程</strong>，硬件把一组线程组成 warp，warp 内执行同一指令。GPU 本质是用 SPMD 编程模型跑在 SIMD/SIMT 硬件上。</p>
+<p><strong>Fine-grained Multithreading</strong>: 每周期切换到另一个线程，以确保同一线程中的两条指令不会同时进入指令流水线。无需指令间依赖检测、分支预测，提高吞吐量；但硬件开销大（多套线程上下文），单线程性能下降</p>
+<h3 id="8-gpu">8. GPU 架构与优化</h3>
+<p><strong>CUDA 映射</strong>：Grid → (Thread)Blocks → Threads；硬件：GPU → SM → CUDA cores/SIMT lanes；warp 通常 32 consecutive threads，是基本调度单位。一个 thread block 可被调度到一个 SM；block 间顺序不保证。</p>
 <ul>
+<li><strong>SPMD</strong>（编程模型）：程序员编写一份源代码，运行在多个处理单元上，处理不同的数据（如CUDA Kernel）。</li>
+<li><strong>SIMD</strong>（硬件指令级并行）：一条指令直接控制多个数据通道（如CPU的AVX指令）。</li>
+<li><strong>SIMT</strong>（硬件架构模型）：是SPMD编程模型在SIMD硬件上的具体实现。将大量标量线程动态捆绑为固定大小的“线程束（Warp）”，将Warp内的线程一一映射到SIMD通道上。</li>
+<li>本质关系：SIMT牺牲了SIMD“全速无分支”的极致效率，换取了类似SPMD“易于编程、处理复杂分支”的灵活性，是一种权衡产物。</li>
+</ul>
+<p>如何<strong>优化global mem access</strong>: multithreading, memory coalescing, shared memory</p>
+<p><strong>Latency hiding</strong>：GPU 用 fine-grained multithreading(FGMT) 在 long-latency memory 时切换 warp。Occupancy = active warps / max warps。occupancy 太低无法隐藏延迟；太高也可能受寄存器/shared memory 限制而不一定更快。</p>
+<p><strong>Memory coalescing</strong>：同一 warp 连续线程访问连续/对齐地址 → 合并为少数 memory transaction；stride/随机访问导致 transaction 多，带宽浪费。</p>
+<div style="display: flex; gap: 16px; justify-content: center;">
+  <img src="uncoalesced.png" style="width:49%;" />
+  <img src="coalesced.png" style="width:49%;" />
+</div>
+
+<p><strong>Shared memory / tiling</strong>：把全局内存 tile 搬到 shared memory，<code>__syncthreads()</code> 后复用，减少 DRAM 访问。矩阵乘典型：加载 <code>A_tile/B_tile</code>，每个线程算一个/多个 C 元素。注意 bank conflict：多个线程访问同一 bank 不同地址会串行；padding 可缓解。</p>
+<p><strong>GPU 优化关键词</strong>：coalesced global load/store；shared-memory tiling；减少 divergence；提高 arithmetic intensity；减少 register spilling；合适 block size；使用 warp-level primitive；避免非合并原子/随机访存。</p>
+<h3 id="9">9. 存储层次与存储技术</h3>
+<p><strong>理想内存</strong>：零延迟、无限容量、无限带宽、零成本，但现实中 bigger/slower、faster/expensive、bandwidth/ports/banks expensive。</p>
+<p><strong>层次</strong>：寄存器/FF 最快最贵；SRAM 用于 cache/shared memory/global buffer；DRAM/HBM 容量大但延迟高；SSD/disk 更慢更便宜。SRAM 适合片上缓冲，DRAM 优化更多面向容量/带宽而非延迟。</p>
+<p><strong>DRAM子系统</strong>：Channel-&gt;DIMM-&gt;Rank-&gt;Chip-Bank-&gt;Row/Column; DRAM由于capacitor漏点需refresh，有耗能，降低性能和QoS</p>
+<p><strong>DRAM row buffer</strong>：顺序访问 row-buffer hit 多，吞吐高；随机访问 row-buffer miss 多，ACTIVATE/PRECHARGE 开销大，吞吐差。</p>
+<p><img src= "row-buffer.png" width=200 alt=""></p>
+<h3 id="10-cache">10. Cache 基础</h3>
+<p><strong>局部性原理</strong>：temporal locality：最近访问很快再访问；spatial locality：相邻地址很快被访问。Cache 自动利用局部性；accelerator 常用 software-managed buffer/scratchpad 利用固定模式。</p>
+<p><strong>地址分解</strong>：<code>[tag | index | block offset]</code>。<code>offset bits = log2(block size)</code>；<code>#blocks B = capacity C / block size b</code>；<code>#sets S = B / associativity N</code>；<code>index bits = log2(S)</code>；<code>tag bits = address bits - index - offset</code>。</p>
+<p><strong>访问步骤</strong>：用 index 读 tag/data store；检查 valid；比较 tag；hit 则返回；miss 则按替换策略选 victim，把 memory block 调入，必要时写回 dirty victim。</p>
+<p><strong>组织</strong>：direct-mapped：<code>N=1,S=B</code>，简单快但 conflict 多。fully associative：<code>N=B,S=1</code>，冲突少但比较器多。N-way set associative：<code>1&lt;N&lt;B,S=B/N</code>，折中。</p>
+<p><img src= "2way-cache.png" width=300 alt=""></p>
+<p><strong>Replacement</strong>：invalid first；否则 Random/FIFO/LRU/PLRU/Hybrid。LRU 不总优：4-way cache 循环访问 A,B,C,D,E 会 0% hit（set thrashing），Random 可能更好。</p>
+<p><strong>Block size 取舍</strong>：太小利用不了空间局部性、tag overhead 大；太大 block 数减少、可能浪费带宽和容量、时间局部性下降。</p>
+<p><strong>多级缓存</strong>：
+- 一级缓存追求低延迟，容量小、低相联度，tag 与数据<strong>并行</strong>读取，设计受时钟周期限制；
+- 二级缓存侧重均衡命中率，大容量高相联度，延迟次要，tag 与数据可<strong>串行</strong>读取；
+- 多级串行访问模式下一级缓存过滤大部分访存，两级缓存访问流量、管理策略均不相同。</p>
+<h3 id="11-cache-miss">11. Cache miss 分类与降低方法</h3>
+<ul>
+<li><strong>Compulsory/cold miss</strong>：第一次访问该 block，任何 cache 都 miss；可用 prefetch 缓解。</li>
+<li><strong>Capacity miss</strong>：即使 <em>fully associative</em> 且同容量最优替换仍会 miss，因为工作集大于 cache。</li>
+<li><strong>Conflict miss</strong>：不是 compulsory，也不是 capacity，由映射冲突导致；增加 associativity、victim cache、更好 indexing、随机化、软件布局可缓解。</li>
+</ul>
+<h3 id="12-cache">12. Cache 写策略</h3>
+<ol>
+<li>write miss 时：write-allocate（默认，先把整行读入 cache 再写）或 write-no-allocate（常用于 IO/streaming，直接写内存，不污染 cache）。</li>
 <li>
-<p>Locality: One’s recent past is a very good predictor of his/her near future.</p>
+<p>write hit后：write-back（默认，只写 cache，evict dirty 时写内存）或 write-through（cache 和内存同时写）。</p>
 </li>
 <li>
-<p>Temporal Locality: A program tends to reference the same memory location many
- times and all within a small window of time</p>
+<p><strong>Write-back</strong>：省带宽、合并多次写；需要 dirty bit，一致性复杂</p>
 </li>
-<li>Spatial Locality: A program tends to reference nearby memory locations within a window of time<ul>
-<li>most notable examples:<ol>
-<li>instruction memory references -&gt; most sequential/streaming</li>
-<li>references to arrays/vectors -&gt; often streaming/strided</li>
+<li><strong>Write-through</strong>：简单、下层始终新、evict 不写回；但带宽开销大。</li>
+<li><strong>I-cache/D-cache</strong>：L1 常 split（I/D 各自低延迟、避免结构冲突）；更高层常 unified（空间动态共享）。</li>
 </ol>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="exploit-temporal-locality">Exploit temporal locality</h3>
+<h3 id="13-cache-coherence">13. Cache Coherence（一致性）</h3>
+<p><strong>Coherence vs Consistency</strong>：coherence 关注同一 memory location/cache block 的多核访问顺序，是局部顺序；consistency 关注不同处理器对所有 memory operations 的全局可见顺序，是程序员-微结构契约。</p>
+<p><strong>硬件组成</strong>：cores + private caches + interconnect + memory。Interconnect：snoop/bus 或 directory。更新策略：invalidate 或 update。</p>
+<p><img src= "cache-coherence-arch.png" width=200 alt=""></p>
+<p><strong>Snooping/bus</strong>：所有 cache 监听总线命令，适合小规模；一次一个事务，可广播 invalidation/read miss。</p>
+<p><strong>Directory</strong>：每个 block 有 home node 维护目录；local node 发请求，home node 转发给 remote/sharer/owner。可扩展到 many-core，避免全局广播。</p>
+<p><strong>Directory 字段</strong>：state bits；owner id（<code>log2N</code> bits，拥有唯一 dirty/modified copy 的 cache）；sharer list（N-bit one-hot，记录哪些 core/cache 有该 block 的副本）。</p>
+<h3 id="14-msi-mesi">14. MSI / MESI 状态协议</h3>
+<p><strong>MSI</strong>：I invalid：本 cache 无该 block；S shared：一个或多个 cache 有 clean copy，只读；M modified：唯一 dirty copy，可本地读写，内存旧。Read miss 取数；write 需要 invalidate 其他副本；M 被别人读时需提供/写回并转 S。</p>
+<p><img src= "cache-state-diagrams.png" width=350 alt=""></p>
+<p><strong>MESI</strong> 在 MSI 上加 E exclusive：唯一 clean copy。E 状态本地读/写无需 bus；本地写 E→M 不发 invalidate。远端读 E→S；远端写 E→I。</p>
+<p><img src= "msi-mesi.png" width=250 alt=""></p>
+<h3 id="15-memory-consistency-barrier">15. Memory Consistency / Barrier</h3>
+<p><strong>Ordering</strong>：硬件为了性能会乱序执行/提交/可见，但程序员需要某种“约定顺序”。越强的 consistency model 越容易编程、越难高性能。</p>
+<p><strong>四类 barrier</strong>：Load-Load/Load-Store/Store-Store/Store-Load(最昂贵)：前序访存操作不可重排至后序访存操作之后</p>
+<p><strong>模型对比</strong>：Sequential Consistency 最强，四种 barrier 都保证；TSO(Total Store Order)（x86/64）通常允许 Store-Load 重排；PSO(ARM) 更弱；更弱模型性能更高但程序员需显式 fence/atomic。</p>
+<h3 id="16-ai">16. AI 加速器动机与原则</h3>
+<p><strong>DNN 特性</strong>：Conv/FC/Attention 主要是矩阵乘/MAC，计算量占比很高；访存模式较固定（Activation/FC: Burst; Conv/Pooling/Attention: <strong>Burst+Stride</strong>）；DRAM 访问能耗远高于 multiply。目标：提高 throughput、降低能耗（减少内存、buffer访问），可牺牲通用性。</p>
+<p><strong>DSA 五原则</strong>：
+1. Global Buffer/Scratchpad：用专用片上存储减少搬运距离，替代复杂 cache。
+2. 简化控制：省掉复杂 OoO/预测/大 cache，把面积给计算阵列和片上存储。
+3. 并行计算模块：直接支持矩阵/向量级操作。
+4. 量化：FP16/BF16/INT8 等降低计算与带宽。
+5. 专用编程语言/编译器/runtime：让软件<strong>显式管理</strong>数据搬运和调度。</p>
+<p><strong>CPU vs DSA</strong>：CPU：cache、superscalar、inter-instruction parallelism、full functionality、低延迟、general language。DSA：global buffer、in-order/simple、intra-instruction parallelism、partial functionality、高吞吐、domain-specific language。</p>
+<p><strong>Cache vs Buffer</strong>:buffer能耗低，面积小，手动管理</p>
+<p>AI加速器集中在<strong>推理而非训练</strong>：AI训练内存带宽往往是整体性能的瓶颈，AI加速器不能明显地提高内存带宽的利用效率。由于推理加速器能把模型存到AI芯片上，可提高10+倍能耗比；训练加速器不能把模型和中间结果都存到芯片上</p>
+<h3 id="17-systolic-array-tpu">17. 矩阵乘单元 / Systolic Array / TPU</h3>
+<p><code>C=A×B</code>。Scalar: 16^3=4096 次；Vector 可并行一个维度；Matrix unit 一条指令/一拍完成 tile 乘，算力密度高但灵活性低。</p>
+<p><strong>Systolic array</strong>：二维 PE 阵列，数据有节奏地在阵列中流动。PE 更新：<code>Right = Left</code>，<code>Down = Upper</code>，<code>Cell += Upper × Left</code>。优势：权重/激活/partial sum 在片上复用，减少 global buffer/DRAM 访问。周期数T=3N-2，N为方阵宽</p>
+<p><img src="systolic-array.png" width=300 alt=""></p>
+<p><strong>TPU v1</strong>：核心是 256×256 MAC systolic array + Unified Buffer；推理场景，模型可预存 DDR，输入经 PCIe 来。</p>
+<h3 id="18-ascend-davinci-aicore">18. Ascend / DaVinci AICore</h3>
+<p><strong>Cube 模块（算力担当）</strong>：矩阵乘单元。FP16：一拍做 16×16 与 16×16 矩阵乘；INT8：16×32 与 32×16。Accumulator 做 <code>C=A×B+C</code>，支持卷积 bias/累加。L0A/L0B/L0C 分别存左矩阵、右矩阵、结果/中间结果；A/B DFF 和 Accum DFF 缓存当前 tile。</p>
+<p><strong>Vector 模块（多面手）</strong>：支持 FP16/FP32 等向量运算，连续/固定间隔/VA 不规则寻址。UB 保存源/目的操作数，一般 32B 对齐。L0C→UB 搬运可经 Vector Unit 做 ReLU/格式转换。</p>
+<p><strong>Scalar 模块（司令部）</strong>：像小 CPU，负责循环控制、分支、Cube/Vector/MTE 指令地址和参数计算。</p>
+<p><strong>MTE（Memory Transfer Engine）</strong>：负责 Global Memory/UB/L0A 等之间的数据搬运与格式转换，如 padding、transpose。</p>
+<p><strong>L2 Buffer vs L2 Cache</strong>：同一介质两种模式。Buffer 程序员可见、地址空间与 DDR/HBM 不重合；Cache 对程序员不可见，作为 DDR/HBM 高速缓存。</p>
+<h3 id="19-cann-mindspore">19. CANN / MindSpore / 图优化</h3>
+<p><strong>CANN</strong>：介于 AI chip 和 AI framework 之间，提供计算加速库、芯片算子库。CUDA 对 NVIDIA，CANN 对 Ascend。</p>
+<p><strong>算子开发</strong>：Tensor是存储算子输入数据与输出数据的容器，于Device memory中；TBE DSL：Python，高封装，适合简单算术逻辑/内置矩阵池化，入门低但复杂逻辑受限。TIK：Python，直接控制搬运和 schedule，适合复杂算子，性能潜力高但入门难。AI CPU：C++，用于 AI Core 不易实现或快速打通网络，但性能低。</p>
+<p><strong>图优化</strong>：CSE 公共子表达式消除；算子融合把 Conv/BN/ReLU 等相邻算子合并，减少中间张量读写，提高局部性和带宽利用。MindSpore：自动并行、图算融合、内存优化、流水线执行、自动微分、类型推导、二阶优化等。</p>
+<h3 id="20-parallel-training">20. Parallel Training 总览</h3>
+<p>Backward 计算约为 forward 的 2×，且需要 forward activations，存在 RAW dependency。分布式训练动机：模型大、数据大、单卡内存有限，所以要scale-out。模型训练4组成：computing, storage, networking, compiling</p>
+<p><strong>并行分类</strong>：Data Parallel；Model Parallel → Intra-layer/Tensor Parallel, Inter-layer/Pipeline Parallel；Hybrid Parallel。</p>
+<h3 id="21-data-parallel">21. Data Parallel</h3>
 <ul>
-<li>Idea: Store recently accessed data in automatically managed fast memory(cache)</li>
-<li>Anticipation: same mem. location will be accessed again soon</li>
-<li>Temporal locality principle:<ul>
-<li>Recently accessed data will be again accessed in the near future</li>
+<li>每张卡(worker)(共N张)有完整模型副本，切分训练数据。<strong>前向/反向</strong>：各卡独立计算，<strong>无需通信</strong>。</li>
+<li>Fwd 和 Bwd
+    <!-- <img src="data-parallel.png" width=200 alt="alt text">
+    <img src="data-parallel2.png" width=200 alt="alt text"> --></li>
 </ul>
-</li>
-</ul>
-<h3 id="exploit-spatial-locality">Exploit spatial locality</h3>
+<div style="display: flex; gap: 16px; justify-content: center;">
+  <img src="data-parallel.png" style="width:45%;" />
+  <img src="data-parallel2.png" style="width:45%;" />
+</div>
+
 <ul>
-<li>Idea: Store data in addresses adjacent to the recently accessed one in automatically-managed fast memory<ul>
-<li>logically divide memory into equal-size blocks</li>
-<li>Fetch to cache the accessed block in its entirely</li>
+<li><strong>权重更新</strong>：需对 N 张卡的梯度求平均（Summing 1/N gradients），通信原语为 <strong>AllReduce</strong>。</li>
+<li><strong>Ring AllReduce</strong>: 拓扑1D torus(ring)；每个 worker 只和两个邻居通信;两阶段：</li>
+<li><strong>Reduce-Scatter</strong>（N-1 steps）：每步每卡只负责汇总最终结果的 1/N 块。</li>
+<li><strong>AllGather</strong>（N-1 steps）：将汇总好的块广播给所有卡。<ul>
+<li>共 2(N – 1) steps, worker sends/receives 1/N of all bytes</li>
+<li>每步都要同步 -&gt; 2(N – 1) syncs total</li>
 </ul>
 </li>
-<li>Anticipation: nearby memory location will be accessed soon</li>
-<li>Temporal locality principle:<ul>
-<li>Nearby data in memory will be accessed in the near future</li>
+<li><strong>单卡(worker)通信量</strong>：</li>
+<li>每轮收发 = <strong>M / N</strong> 字节（M 为总数据量）。</li>
+<li>单卡总发送 = 单卡总接收 = <strong>2(N-1) × (M/N)</strong>。</li>
+<li><strong>单卡总吞吐（Tx+Rx）</strong> = <strong>2M(N-1) / N</strong> ≈ 2M（当 N 较大时）。</li>
 </ul>
-</li>
-</ul>
-<h2 id="cache-hierarchy">Cache hierarchy</h2>
+<div style="display: flex; gap: 16px; justify-content: center;">
+  <img src="reduce-scatter.png" style="width:45%;" />
+  <img src="all-gather.png" style="width:45%;" />
+</div>
+
 <ul>
-<li>The cache needs to be tightly integrated into the pipeline<ul>
-<li>Ideally, access in 1-cycle so that load-dependent operations do not stall</li>
+<li><strong>扩展性评价</strong>(增加卡数)：<strong>强扩展</strong>（固定总 Batch）：每卡 Batch 变小，BN 不准，显存利用率低。<strong>弱扩展</strong>（增大总 Batch）：需调整 LR、优化器，收敛至同样精度 Epoch 可能增加。</li>
+<li><strong>优点</strong>：<strong>通信可与反向计算重叠</strong>（算完一层梯度即可同步该层）。</li>
+</ul>
+<h3 id="22-pipeline-parallel">22. Pipeline Parallel</h3>
+<ul>
+<li><strong>定义</strong>：按网络层切分，每张卡负责若干层。</li>
+<li><strong>通信模式</strong>：点对点（P2P）传输<strong>激活值（前向）</strong>和<strong>激活梯度（反向）</strong>。</li>
+<li>一般流水线：(N-1)/N idle slots</li>
+<li><strong>gpipe</strong>: N workers, K subminibatches<ul>
+<li><strong>2(N + K – 1)</strong> steps for fwd/bwd</li>
+<li>Total step-slots: <strong>2N(N + K – 1)</strong></li>
+<li>Idle step-slots: <strong>2N(N – 1)</strong></li>
+<li>空闲率: <strong>(N – 1)/(N + K – 1)</strong>
+<img src="gpipe.png" width=300 alt="alt text"></li>
+<li>K 越大，气泡占比越小；但当N增大时，需同比例增大K维持效率</li>
 </ul>
 </li>
-<li>High frequency pipeline -&gt; Cannot make the cache large(to ensure access in 1-cycle)</li>
+<li>挑战：存在空闲气泡;各层计算负载难均衡（计算量不同）<strong>难与计算重叠</strong>（顺序依赖，等上游数据到达才能计算）</li>
 </ul>
-<p>But, we want a large cache AND a pipelined design</p>
+<h3 id="23-tensor-parallel">23. Tensor Parallel</h3>
 <ul>
-<li>Idea: Cache hierarchy</li>
-</ul>
-<p><img src="\img\study\ai-chip\mem-hie-full.png" alt="alt text"></p>
-<h3 id="hierarchical-latency-analysis">Hierarchical latency analysis</h3>
-<ul>
-<li>For a given <strong>memory hierarchy level i</strong> it has a technology-intrinsic access time of <span class="arithmatex">\(t_i\)</span>,
- The perceived access time <span class="arithmatex">\(T_i\)</span> is longer than <span class="arithmatex">\(t_i\)</span></li>
-<li>Except for the outer-most hierarchy, when looking for a given address there is<ul>
-<li>a chance (hit-rate <span class="arithmatex">\(hr_i\)</span>) you “hit” and access time is <span class="arithmatex">\(t_i\)</span></li>
-<li>a chance (miss-rate <span class="arithmatex">\(mr_i\)</span>) you “miss” and access time <span class="arithmatex">\(t_i + T_{i+1}\)</span></li>
-<li><span class="arithmatex">\(hr_i + mr_i =1\)</span></li>
+<li><strong>定义</strong>：将<strong>单层内</strong>的权重矩阵按行或列切分到多卡</li>
+<li><strong>Row-wise</strong>：权重按行切分<ul>
+<li><strong>Fwd: AllGather</strong> 拼凑输出; <strong>Bwd: ReduceScatter</strong></li>
+<li>每卡算出部分行结果，需聚合；反向时梯度需按行散播累加。</li>
 </ul>
 </li>
-<li>Thus,
-    <span class="arithmatex">\(T_i=hr_i*t_i + mr_i*(t_i+T_{i+1})\)</span><br />
-<span class="arithmatex">\(T_i = t_i + mr_i*T_{i+1}\)</span></li>
-<li>Our goal: achieve desired <span class="arithmatex">\(T_i\)</span> within allowed cost</li>
-<li><span class="arithmatex">\(T_i \approx t_i\)</span> is desirable when<ul>
-<li>keep <span class="arithmatex">\(mr_i\)</span> low:<ol>
-<li>increasing capacity <span class="arithmatex">\(C_i\)</span>, but beware of increasing <span class="arithmatex">\(t_i\)</span></li>
-<li>use smarter cache management(anticipate what is needed and not needed)</li>
+<li><strong>Column-wise</strong>：权重按列切分<ul>
+<li>Fwd: ReduceScatter 累加部分和; Bwd: Allgather</li>
+<li>每卡算出的列结果需相加；反向时需将完整梯度广播回各列</li>
+</ul>
+</li>
+</ul>
+<div style="display: flex; gap: 16px; justify-content: center;">
+  <img src="row-allgather.png" style="width:45%;" />
+  <img src="column-reduce-scatter.png" style="width:45%;" />
+</div>
+
+<ul>
+<li>
+<p><strong>交替切分</strong>—— 减少通信的关键</p>
+<ul>
+<li><strong>策略</strong>：第 K 层用<strong>行并行</strong>，第 K+1 层用<strong>列并行</strong>。</li>
+<li><strong>通信优化逻辑</strong>：行并行的输出是按<strong>行切分</strong>的（Worker i 持有连续行区间）。列并行要求输入也按<strong>行切分</strong>（因为列切权重与输入行相乘是独立的）。</li>
+<li><strong>结论</strong>：行并行 → 列并行，<strong>跨层通信为 0</strong>（无需 AllGather 或 ReduceScatter）。</li>
+<li><strong>交替后的整体开销</strong>：<ul>
+<li>若顺序为 <strong>行→列→行</strong>，则只有在<strong>列→行</strong>的边界需要做一次 <strong>AllReduce</strong>。</li>
+<li><strong>对比无交替</strong>（每层都通信）：同步次数<strong>减半（减少 50%）</strong>。
+<img src="alternating.png" width=300 alt="alt text"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>挑战：<strong>难与计算重叠</strong></p>
+</li>
+<li><strong>ZeRO（零冗余优化器）</strong>：将优化器状态（动量、方差）、梯度和模型参数<strong>切分到各卡</strong>，解决单卡显存不足。代价是<strong>增加了少量通信量</strong>。</li>
+</ul>
+<h3 id="24-allreduce-ring-allreduce">24. AllReduce / Ring AllReduce（重点）</h3>
+<p><strong>AllReduce</strong>：每个 worker 起始有长度 M 的向量，结束时每个 worker 都有全体 worker 的规约结果（sum/avg/max）。Data parallel 用于梯度平均；tensor parallel 也可能在<strong>交替 row/col</strong> 时用。</p>
+<p><strong>考试常见判断</strong>：不是所有 worker 两两互发完整 M。worker 需要 CPU/GPU cycles 做规约，可能与计算重叠但也可能成为瓶颈。</p>
+<h3 id="26-roofline">26. Roofline 例题答案模板</h3>
+<p>题：Conv 10000 OP /1000B，5.8 TOP/s；FC 30000/1000B，7.9；Attention 50000/1000B，6.1。图中峰值 12 TOP/s，ridge AI=20 OP/B。</p>
+<p>计算：peak compute=<code>12 TOP/s</code>；bandwidth=<code>12/20=0.6 TB/s=600 GB/s</code>。AI：Conv=10，FC=30，Attention=50 OP/B。Roof 上限：Conv=<code>min(12,10×0.6)=6 TOP/s</code>；FC=<code>12</code>；Attention=<code>12</code>。</p>
+<p>放点：Conv <code>(10,5.8)</code> 接近 6，几乎 fully optimized，memory-bound。FC <code>(30,7.9)</code> 低于 12，不充分，compute-bound。Attention <code>(50,6.1)</code> 低于 12，不充分，compute-bound。若 Conv 另一实现只是让计算单元更快，吞吐不一定提高，因为 Conv 已 memory-bound；应优化访存/提高 AI/减少 bytes。</p>
+<h3 id="27-performance-analysis">27. Performance Analysis 例题答案模板</h3>
+<p>题：clock=2ns；load 4cyc、store 6、arith 2、branch 3；mix=20/10/50/20%。</p>
+<p>(a) <code>CPI=0.2×4+0.1×6+0.5×2+0.2×3=3.0</code>。</p>
+<p>(b) miss penalty=100ns，hit time=1 cycle=2ns，miss rate=1.4%。<code>AMAT=2+0.014×100=3.4ns</code>（若题目把 miss time 当总 miss access，则 <code>0.986×2+0.014×100≈3.372ns</code>，写清假设）。</p>
+<p>(c) 100 instr，avg 1.3 mem access/instr。Base=<code>100×3×2=600ns</code>。Miss extra=<code>100×1.3×0.014×100=182ns</code>。Total≈<code>782ns</code>。</p>
+<p>(d) 2-way miss rate=1.0%，clock 增为 <code>2×1.05=2.1ns</code>。Base=<code>100×3×2.1=630ns</code>；miss extra=<code>100×1.3×0.01×100=130ns</code>；total=<code>760ns</code>。所以 2-way 更快（760ns &lt; 782ns），虽然 clock 变慢，但 miss 降低收益更大。</p>
+<h3 id="28-cache">28. Cache 例题答案模板</h3>
+<p>题：32B cache，block=4B，byte-addressable，序列 <code>0x8,0x28,0x8,0x88,0x8,0x28</code>。Block number=<code>addr/4</code>：<code>2,10,2,34,2,10</code>。</p>
+<p><strong>Direct mapped</strong>：B=8，S=8，index=<code>block mod 8</code>，三者 index 都是 2。结果：M(C), M(C), M(conflict), M(C), M(conflict), M(conflict)，hit rate=0/6。第一次访问某 block 即 compulsory，即使同时造成替换也优先记 compulsory。</p>
+<p><strong>2-way set associative</strong>：B=8，N=2，S=4，index=<code>block mod 4</code>，三者仍同 set=2，但 set 有 2 ways。LRU 过程：2 M；10 M；2 H；34 M evict 10；2 H；10 M(conflict)。hit rate=2/6。</p>
+<p><strong>Fully associative</strong>：8 ways，三个 block 都能同时放下：2 M；10 M；2 H；34 M；2 H；10 H。hit rate=3/6。最高：fully associative。</p>
+<h3 id="29-pipelinedooo-cpu">29. Pipelined/OOO CPU 例题做法压缩</h3>
+<p><strong>流水线表通用技巧</strong>：若有 RAW，消费者 E 起点 ≥ 生产者结果可用周期；若 FU fully pipelined，只限制 start rate；若 precise exception，W 必须严格按程序顺序。in-order dispatch 机器中，前面一条因 RAW 等待会挡住后面独立指令；OOO 用 RS 把等待指令移开。</p>
+<h3 id="30">30. 考试易错点</h3>
+<ol>
+<li><code>tag</code> 不是值；<code>valid=0</code> 表示等 tag 对应的未来值。</li>
+<li>CDB 更新 RF 时必须检查当前 tag 是否仍匹配，避免旧 producer 覆盖新 rename。</li>
+<li>ROB 解决 precise exception；RS 解决等待/乱序调度；renaming 解决 WAR/WAW。</li>
+<li>Ring AllReduce 是 ReduceScatter + AllGather，不是单纯 all-to-all。</li>
+<li>Tensor parallel 的 row/column 通信按 PPT：row fwd Allgather，column fwd ReduceScatter；backward 相反；交替每两层 AllReduce。</li>
+<li>Cache miss 分类先看是否第一次访问 block；直接映射冲突多，fully associative 不一定现实最快。</li>
+<li>Coherence 是 same address/block；Consistency 是 all memory operations。</li>
+<li>Roofline 中实测点低于 roof 不等于一定 memory-bound；bound 看 AI 与 ridge，优化程度看离 roof 的距离。</li>
 </ol>
-</li>
-<li>keep <span class="arithmatex">\(T_{i+1}\)</span> low<ol>
-<li>faster lower hierarchies, but beware of increasing cost</li>
-<li>introduce intermediate hierarchies as a compromise</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="cache-basics-and-operation">Cache basics and operation</h2>
-<h3 id="what-is-cache">What is cache</h3>
-<ul>
-<li>Any structure that “memorizes” frequently used results/data<ul>
-<li>to avoid repeating the long-latency operations required to reproduce/fetch the results/data from scratch</li>
-<li>e.g., a web cache</li>
-</ul>
-</li>
-<li>Most commonly in the processor design context:
- <em>an automatically-managed memory structure</em><ul>
-<li>e.g., memorize in fast SRAM the most frequently or recently accessed DRAM
- memory locations to avoid repeatedly paying for the DRAM access latency</li>
-</ul>
-</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-concept.png" alt="alt text"></p>
-<h3 id="cache-metrics">Cache Metrics</h3>
-<ul>
-<li><strong>Average memory access time(AMAT)</strong>:<ul>
-<li>AMAT=(hit-rate * hit-latency) + (miss-rate * miss-latency)</li>
-</ul>
-</li>
-</ul>
-<h3 id="addressing-the-cache">Addressing the Cache</h3>
-<p><img src="\img\study\ai-chip\cache-addressing.png" alt="alt text"></p>
-<p>Cache access:</p>
-<p>1) index into the tag and data stores with index bits in address; 
-  2) checks valid bit in tag store;
-  3) compares tag bits in address with the stored tag in tag store;
-  4) If a block is in the cache (cache hit), the stored tag should be valid and
-   match the tag of the block, and read out data.</p>
-<h3 id="cache-basics">Cache Basics</h3>
-<ul>
-<li>
-<p><strong>Cache Block (line)</strong>: Unit of storage in the cache</p>
-<ul>
-<li>Memory is logically divided into blocks that map to potential locations in the cache. </li>
-</ul>
-</li>
-<li>
-<p>On a reference:</p>
-<ul>
-<li>HIT: If in cache, use cached data instead of accessing memory</li>
-<li>MISS: If not in cache, bring block into cache<ul>
-<li>May have to evict some other block</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>For high cache hit rate, important cache design decisions:</p>
-<ul>
-<li><strong>Placement</strong>: where and how to place/find a block in cache?</li>
-<li><strong>Replacement</strong>: what data to remove to make room in cache?</li>
-<li><strong>Granularity of management</strong>: large or small blocks? Subblocks?</li>
-<li><strong>Write policy</strong>: what do we do about writes?</li>
-<li><strong>Instructions/data</strong>: do we treat them separately?</li>
-</ul>
-</li>
-</ul>
-<h3 id="cache-placement">Cache: Placement</h3>
-<ul>
-<li>A key question: How to <strong>map chunks of the main memory</strong> address space to blocks in the cache?</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-placement.png" alt="alt text"></p>
-<p><strong>Three Cache Organization Methods</strong>:</p>
-<ul>
-<li><strong>Fully-associative</strong>: A chunk can go to any cache block in the cache</li>
-<li><strong>Direct mapped</strong>: A chunk can go to only one cache block in the cache</li>
-<li><strong>Set-associative</strong>: A chunk can go to N cache blocks in the N-way set-associative cache</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-map.png" alt="alt text"></p>
-<h4 id="direc-mapped-cache-placement-and-access">Direc-Mapped Cache: Placement and Access</h4>
-<p><img src="\img\study\ai-chip\cache-direct.png" alt="alt text"></p>
-<ul>
-<li>Two blocks in memory that map to the same index in the cache cannot be present in the cache at the same time<ul>
-<li>one index -&gt; one entry</li>
-</ul>
-</li>
-<li>Main advantage: easy to implement</li>
-<li>Main issue: Can lead to 0% hit rate if more than one block accessed
- in an interleaved manner map to the same index<ul>
-<li>Asumme addresses A and B have the same index bits but different interleaved manner map to the same index</li>
-<li>A,B,A,B,A,B,...-&gt;conflict in the cache index</li>
-<li>All accesses are conflict misses</li>
-</ul>
-</li>
-</ul>
-<h4 id="full-associativity">Full Associativity</h4>
-<p><img src="\img\study\ai-chip\cache-full.png" alt="alt text"></p>
-<ul>
-<li>Advantage: high utilization of cache blocks</li>
-<li>Issue: can lead to extremely <strong>difficult to implement</strong> when the number of cache blocks in the cache is large<ul>
-<li>Number of cache blocks in modern CPU reaches 32M/64=512K.</li>
-<li>Choosing one out of 512K cache lines is extremely <strong>costly</strong>.</li>
-</ul>
-</li>
-</ul>
-<h4 id="set-associative-cache">Set-Associative Cache</h4>
-<ul>
-<li><strong>2-way cache</strong>: have 2 columns of 4 blocks</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-2way.png" alt="alt text"></p>
-<ul>
-<li><strong>4-way Set Associativity</strong></li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-4way.png" alt="alt text"></p>
-<ul>
-<li>Advantages: accommodates conflicts better(fewer conflict misses)<ul>
-<li>Assume addresses A and B have the same index bits but different tag bits</li>
-<li>A, B, A, B, A, B, A, B, … -&gt; store in the cache set</li>
-<li>All accesses are cache hit</li>
-</ul>
-</li>
-<li>Issue of Set-associative cache<ul>
-<li>more complex, slower access, larger tag store</li>
-</ul>
-</li>
-</ul>
-<h4 id="associativity-and-tradeoffs">Associativity and tradeoffs</h4>
-<ul>
-<li>Degree of associativity: how many blocks can map to the same index(or set)?</li>
-<li>Higher associativity:<ul>
-<li>higher hit rate</li>
-<li><strong>slower</strong> cache access time(hit latency and data access latency)</li>
-<li>more <strong>expensive</strong> hardware(more components)</li>
-</ul>
-</li>
-<li>Diminishing returns from higher associativity</li>
-</ul>
-<h4 id="memory-roofline-model">Memory roofline model</h4>
-<p><img src="\img\study\ai-chip\mem-roofline.png" alt="alt text"></p>
-<h3 id="cache-replacement">Cache: Replacement</h3>
-<ul>
-<li>Replacement in set-associative caches</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-replacement.png" alt="alt text"></p>
-<ul>
-<li>
-<p>Key challenge: which cache block in a set be replaced once new block comes?</p>
-</li>
-<li>
-<p>Any invalid block first</p>
-</li>
-<li>If all are valid, consult the replacement policy:<ul>
-<li>Random</li>
-<li>FIFO</li>
-<li>Least recently used(LRU)</li>
-<li>Hybrid replacement policies</li>
-<li>Optimal replacement policy?</li>
-</ul>
-</li>
-</ul>
-<h4 id="implementing-lru">Implementing LRU</h4>
-<ul>
-<li>Idea: Evict the least recently accessed block</li>
-<li>Problem: need to keep track of access ordering of blocks(challeging in hardware)</li>
-<li>Approximatoins of LRU:</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Pseudo LRU for 8-way set-associated cache</p>
-<ul>
-<li>
-<p>Assume 8 blocks (L0~L7) for a set, 7 rule bits (B0~B6).</p>
-</li>
-<li>
-<p>PLRU Replacement Way Selection: choosing the suitable way (L0~L7) based on the PLRU bits.</p>
-</li>
-<li>
-<p>PLRU Bits Updating Rule: updating PLRU bits after replacing the way (L0~L7).</p>
-</li>
-</ul>
-<p><img src="\img\study\ai-chip\pseudo-lru.png" alt="alt text"></p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">LRU or Random</p>
-<ul>
-<li>LRU is not always better than random:<ul>
-<li>Example: 4-way cache, cyclic references to A, B, C, D, E</li>
-</ul>
-</li>
-<li><strong>Set thrashing</strong>: When the "program working set" in a set is larger than set associativity<ul>
-<li>Random replacement policy is better when thrashing occurs(example above)</li>
-</ul>
-</li>
-<li>Which one is better in practice?<ul>
-<li>depends on workload</li>
-<li>average hit rate of LRU and Random are similar</li>
-</ul>
-</li>
-<li>Best of both worlds: hybrid of LRU and Random<ul>
-<li>intel CPU uses the hybrid approach</li>
-</ul>
-</li>
-</ul>
-</div>
-<h4 id="optimal-policy">Optimal policy</h4>
-<p>Belady’s OPT (Optimal Replacement)</p>
-<ul>
-<li>replace the block that is going to be referenced furthest in the future by the program</li>
-<li>No possibility to implement in theory</li>
-</ul>
-<h3 id="cache-write-policy">Cache: Write policy</h3>
-<p>Where should you write the result of a store? One policy for each step.</p>
-<ul>
-<li>
-<p>Step1: store ins -&gt; cache(<strong>write miss</strong>), either policy works</p>
-<ul>
-<li>write-allocate(memory, default):<ul>
-<li>allocate the cache line(put it in the cache)</li>
-<li>issue: read an entire cache block from memory</li>
-</ul>
-</li>
-<li>write-no-allocate policy(PCIe/IO):<ul>
-<li>write in directly to memory without allocation in cache</li>
-<li>ignore cache</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Step2: cache -&gt; memory(<strong>write hit</strong>), either policy works:</p>
-<ul>
-<li>write-back policy(default):<ul>
-<li>writes it to the cache and wait until the cache kicks the cache block out</li>
-</ul>
-</li>
-<li>write-through policy(streaming write instruction):<ul>
-<li>writes it to the cache and memory right away</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">write-back vs. write-through</p>
-<p><strong>Write-back</strong>:</p>
-<ul>
-<li>Write goes to cache; cache writes to main memory (evicted)</li>
-<li>Can <strong>combine multiple writes</strong> to the same block before eviction<ul>
-<li>potentially saves bandwidth between cache levels and saves energy</li>
-</ul>
-</li>
-<li>But need a bit in the tag store indicating the block is "<strong>dirty</strong>/modified"</li>
-</ul>
-<p><strong>Write-through</strong>:</p>
-<ul>
-<li>Write goes to <strong>memory and cache</strong></li>
-<li><strong>Simpler</strong>, evictions do not need to write to memory</li>
-<li>All levels are up to date: consistency——simpler cache coherence
- because no need to check close-to-processor caches' tag stores for presence</li>
-<li>But more memory <strong>bandwidth intensive</strong>; no combining of writes</li>
-</ul>
-</div>
-<h3 id="instruction-vs-data-caches">Instruction vs. Data Caches</h3>
-<p>Core question: separate of unified</p>
-<p>Pros and cons of unified cache:</p>
-<ul>
-<li>Pros: Dynamic sharing of cache space: no overprovisioning that might happen with static partitioning (i.e., separate I and D caches)</li>
-<li>Instructions and data can thrash each other (i.e., no guaranteed space for either)</li>
-<li>I and D are accessed in different places in the pipeline. Where do we place the unified cache for fast access?</li>
-</ul>
-<p>Modern CPU:</p>
-<ul>
-<li><strong>First level</strong> caches are almost always <strong>split</strong></li>
-<li><strong>Higher level</strong> caches are almost always <strong>unified</strong></li>
-</ul>
-<h3 id="cache-misses">Cache misses</h3>
-<h4 id="compulsory-miss">Compulsory miss</h4>
-<ul>
-<li>Defined as the <strong>first reference</strong> to an address (block), always resulting in a miss</li>
-</ul>
-<p>How to reduce:</p>
-<ul>
-<li>cache cannot help</li>
-<li>prefetching can help:anticipate which block will be need soon</li>
-</ul>
-<h4 id="capacity-miss">Capacity miss</h4>
-<ul>
-<li>defined as the misses that would occur <strong>even in a fully-associative</strong> cache (with optimal replacement) of the same capacity</li>
-<li>Cause: cache is too small to hold everything needed</li>
-</ul>
-<p>How to reduce:</p>
-<ul>
-<li>Utilize cache space better: keep blocks that will be referenced</li>
-<li>Software management: divide working set and computation such that each “computation phase” fits in cache</li>
-</ul>
-<h4 id="conflict-miss">Conflict miss</h4>
-<ul>
-<li>defined as any miss that is neither a compulsory nor a capacity miss</li>
-</ul>
-<p>How to reduce:</p>
-<ul>
-<li>More associativity</li>
-<li>Other ways to get more associativity without making the cache associative<ul>
-<li>Victim cache</li>
-<li>Better, randomized indexing</li>
-<li>Software hints?</li>
-</ul>
-</li>
-</ul>
-<h2 id="cache-performance">Cache performance</h2>
-<p>Three fundamental goals:</p>
-<ul>
-<li>Reducing miss rate<ul>
-<li>Caveat: reducing miss rate can reduce performance if more costly-to-refetch blocks are evicted</li>
-</ul>
-</li>
-<li>Reducing miss latency or miss cost</li>
-<li>Reducing hit latency or hit cost</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Cache Terminology</p>
-<ul>
-<li>Capacity(C): the number of data bytes a cache stores</li>
-<li>Block size(b): bytes of data brought into cache at once</li>
-<li>Number of blocks(B=C/b): number of blocks in cache</li>
-<li>Degree of associativity(N): number of blocks in a set</li>
-<li>Number of sets(S=B/N): each memory address maps to exactly one cache set</li>
-</ul>
-</div>
-<table>
-<thead>
-<tr>
-<th>Organization</th>
-<th>Number of Ways (N)</th>
-<th>Number of Sets (S = B/N)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Direct Mapped</td>
-<td>1</td>
-<td>B</td>
-</tr>
-<tr>
-<td>N-Way Set Associative</td>
-<td>1 &lt; N &lt; B</td>
-<td>B / N</td>
-</tr>
-<tr>
-<td>Fully Associative</td>
-<td>B</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3 id="miss-rate-examples">Miss rate Examples</h3>
-<ul>
-<li>
-<p>Capacity (C = 8 words)</p>
-</li>
-<li>
-<p>Block size (b = 1 word)</p>
-</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-eg1.png" alt="alt text"></p>
-<p><img src="\img\study\ai-chip\cache-eg2.png" alt="alt text"></p>
-<ul>
-<li>Block size (b = 2 words)</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-eg2-2way.png" alt="alt text"></p>
-<p><img src="\img\study\ai-chip\cache-eg2-2way2.png" alt="alt text"></p>
-<h3 id="cache-size">Cache Size</h3>
-<p>Cache size: total data (not including tag) capacity</p>
-<ul>
-<li>Bigger can exploit <strong>temporal locality</strong> better but not always better</li>
-<li>Too large a cache adversely affects hit and miss <strong>latency</strong><ul>
-<li>smaller is faster =&gt; bigger is slower</li>
-<li>access time may degrade critical path</li>
-</ul>
-</li>
-<li>Too small a cache<ul>
-<li>doesn’t exploit temporal locality well</li>
-<li>useful data replaced often</li>
-</ul>
-</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-size.png" alt="alt text"></p>
-<ul>
-<li><strong>Working set</strong>: the whole set of data the executing application references<ul>
-<li>Within a time interval</li>
-</ul>
-</li>
-</ul>
-<h3 id="block-size">Block Size</h3>
-<ul>
-<li>Block size is the data that is associated with an address tag</li>
-<li>Too small blocks<ul>
-<li>don't exploit <strong>spatial locality</strong> well</li>
-<li>have larger tag overhead</li>
-</ul>
-</li>
-<li>Too large blocks<ul>
-<li>too few total # of blocks -&gt; less <strong>temporal locality</strong> exploitation</li>
-<li>waste of cache space and bandwidth/energy if spatial locality is not high</li>
-</ul>
-</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-block-size.png" alt="cache block size"></p>
-<h3 id="associativity">Associativity</h3>
-<ul>
-<li>
-<p>How many blocks can be present in the same index(i.e.,set)</p>
-</li>
-<li>
-<p><strong>Large associativity</strong></p>
-<ul>
-<li>lower miss rate(reduced conflicts)</li>
-<li>higher hit latency and area cost(plus diminishing results)</li>
-</ul>
-</li>
-<li><strong>Smaller associativity</strong><ul>
-<li>lower hit rate</li>
-<li>lower cost</li>
-<li>lower hit latency(especially important for L1 cache)</li>
-</ul>
-</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-associativity.png" alt="alt text"></p>
-<h2 id="cache-in-a-multi-core-cpu">Cache in a multi-core CPU</h2>
-<ul>
-<li>Cores want a consistent view of memory</li>
-<li>Cache in a multi-core system
-    <img src="\img\study\ai-chip\cache-multi-core.png" alt="Cache in a multi-core system"></li>
-</ul>
-<p>How to design cache for multiple cores?</p>
-<h3 id="private-vs-shared-caches">Private vs. Shared caches</h3>
-<ul>
-<li><strong>Private cache</strong>: cache belongs to one core(a shared block can be in multiple caches)</li>
-<li><strong>Shared cache</strong>: Cache is shared by multiple cores</li>
-</ul>
-<p><img src="\img\study\ai-chip\cache-private-shared.png" alt="alt text"></p>
-<h4 id="resource-sharing">Resource sharing</h4>
-<ul>
-<li><strong>Idea</strong>:  Instead of dedicating a hardware resource to a hardware context,
- allow multiple contexts to use it</li>
-<li>Example resources: functional units, pipeline, caches, buses, memory</li>
-</ul>
-<p><strong>Advantages</strong>:</p>
-<ul>
-<li>Resource sharing improves utilization/efficiency  throughput<ul>
-<li>When a resource is left idle by one thread, another thread can use it; no need to replicate shared data</li>
-</ul>
-</li>
-<li><strong>Reduces communication latency</strong><ul>
-<li>For example, data shared between multiple threads can be kept in the same cache in multithreaded processors</li>
-</ul>
-</li>
-<li>Compatible with the shared memory programming model</li>
-</ul>
-<p><strong>Disadvantages</strong>:</p>
-<ul>
-<li>Resource sharing results in <strong>contention for resources</strong><ul>
-<li>When the resource is not idle, another thread cannot use it</li>
-<li>If space is occupied by one thread, another thread needs to re-occupy it</li>
-</ul>
-</li>
-<li>Sometimes reduces each or some thread’s performance<ul>
-<li>Thread performance can be worse than when it is run alone</li>
-</ul>
-</li>
-<li><strong>Eliminates performance isolation</strong> -&gt; inconsistent performance across runs<ul>
-<li>Thread performance depends on co-executing threads</li>
-<li>Uncontrolled (free-for-all) sharing <strong>degrades QoS</strong></li>
-<li>Causes unfairness, starvation</li>
-</ul>
-</li>
-</ul>
-<p>Need to efficiently and fairly utilize shared resources</p>
-<h4 id="shared-caches-betweent-cores">Shared caches betweent cores</h4>
-<p><strong>Advantages</strong>:</p>
-<ul>
-<li>High <strong>effective capacity</strong></li>
-<li><strong>Dynamic partitioning</strong> of available cache space<ul>
-<li>No fragmentation due to static partitioning</li>
-<li>If one core does not utilize some space, another core can</li>
-</ul>
-</li>
-<li>Easier to maintain coherence (a cache block is in a single location)</li>
-</ul>
-<p><strong>Disadvantages</strong>:</p>
-<ul>
-<li>Slower access (cache not tightly coupled with the core)</li>
-<li>Cores incur <strong>conflict misses</strong> due to other cores’ accesses<ul>
-<li>Misses due to inter-core interference</li>
-<li>Some cores can destroy the hit rate of other cores</li>
-</ul>
-</li>
-<li>Guaranteeing a minimum level of service (or fairness) to each core is harder (how much space, how much bandwidth?)</li>
-</ul>
-<h3 id="preserve-coherence-and-consistence">Preserve coherence and consistence</h3>
-<p><strong>Cache coherence and Memory consistency</strong>:</p>
-<ul>
-<li>Coherence is about ordering of operations from different processors <strong>to the same memory location</strong><ul>
-<li>local ordering of accesses to each cache block</li>
-</ul>
-</li>
-<li>Consistency is about ordering off <strong>all memory operations</strong> from different processors(i.e. to different memory locations)<ul>
-<li>global ordering of accesses to all memory locations</li>
-</ul>
-</li>
-</ul>
 
 
 
@@ -5654,14 +4873,14 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefectch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.path", "navigation.top", "instant", "content.code.annotate", "content.code.copy", "content.code.copy_button", "content.code.select"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefectch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.path", "navigation.top", "instant", "content.code.annotate", "content.code.copy", "content.code.copy_button", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
-        <script src="../../../js/custom.js"></script>
+        <script src="../../../../js/custom.js"></script>
       
-        <script src="../../../js/katex.js"></script>
+        <script src="../../../../js/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       

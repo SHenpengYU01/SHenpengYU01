@@ -4493,6 +4493,8 @@
 </ul>
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Update vs. Invalidate</p>
 <table>
 <thead>
 <tr>
@@ -4529,6 +4531,7 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h2 id="cache-tags">Cache Tags</h2>
 <h3 id="msi-protocol">MSI Protocol</h3>
 <ul>
@@ -4625,12 +4628,12 @@
 <p><img src="\img\study\ai-chip\cache-switch.png" alt="alt text"></p>
 <p>Regarding a cache block:</p>
 <ul>
-<li>Home Node: the node owns the corresponding directory, each cache block can have different home node</li>
-<li>Local Node: the node initiates the cache read/write requests</li>
-<li>Remote Node: the node passively responses to the action from the home node</li>
+<li><strong>Home Node</strong>: the node owns the corresponding directory, each cache block can have different home node</li>
+<li><strong>Local Node</strong>: the node initiates the cache read/write requests</li>
+<li><strong>Remote Node</strong>: the node passively responses to the action from the home node</li>
 </ul>
 <h3 id="directory-basic-operations">Directory: Basic Operations</h3>
-<p>Local node:</p>
+<p><strong>Local node</strong>:</p>
 <ul>
 <li>On a bus read: send out getS request to directory node, after receiving the data, set the cache’s bit.</li>
 <li>On a bus write: send out getEx request to directory node<ul>
@@ -4639,7 +4642,7 @@
 </ul>
 </li>
 </ul>
-<p>Directory node:</p>
+<p><strong>Directory node</strong>:</p>
 <ol>
 <li>Receives getS, getEx requests from nodes</li>
 <li>Based on different cache states:<ol>

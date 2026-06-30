@@ -4368,6 +4368,7 @@
 <li><strong>RAT(Alising Table)</strong> 记录寄存器当前对应的 RS Tag，做重命名</li>
 <li><strong>CDB</strong> 广播 {Tag, Value}，唤醒等待的 RS</li>
 </ul>
+<p><img src= "tomasulo-components.png" width=250 alt=""></p>
 <h2 id="3-tomasulo">3. Tomasulo 算法四阶段</h2>
 <h3 id="1-issue-in-order">(1) Issue（译码/分配）—— In-order</h3>
 <ul>
@@ -4417,9 +4418,10 @@
 <li><strong>Architectural RAT</strong>：仅在 ROB 提交（Commit）时更新（精确状态）。</li>
 <li><strong>异常处理</strong>：冲刷投机指令，将 Architectural RAT 复制回 Frontend RAT → 恢复精确状态。</li>
 </ul>
+<p><img src= "in-order-vs-ooo.png" width=300 alt=""></p>
 <h2 id="7">7. 关键性能限制</h2>
 <ul>
-<li><strong>指令窗口 (Instruction Window)</strong> = RS 中未发射 + ROB 中未提交的指令总数。</li>
+<li><strong>指令窗口</strong> = RS 中未发射 + ROB 中未提交的指令总数。</li>
 <li>窗口越大，可发现的并行性越高，但硬件（CAM、仲裁）开销剧增。</li>
 <li><strong>延迟容忍度</strong>：由窗口大小决定；若一条长延迟指令，需巨大窗口才能继续填充独立指令。</li>
 </ul>

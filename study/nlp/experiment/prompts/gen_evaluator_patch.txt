@@ -1,0 +1,12 @@
+You are improving an evaluator rubric for cultural-effectiveness assessment of Chinese-to-English social media UGC translation.
+
+## CURRENT RUBRIC
+{skill_body}
+
+Given the aligned and misaligned cases below (misaligned means your score disagreed with the gold score), propose 1-3 concrete patches.
+Use diff-style markers:
+- `# ADD AFTER: <exact existing line>` followed by the new text to insert.
+- `# REPLACE: <exact existing line>` followed by the replacement text.
+If no marker matches, append the patch at the end.
+
+Focus on clarifying dimension definitions, adding common failure-mode warnings, and correcting criteria that led to misalignment.

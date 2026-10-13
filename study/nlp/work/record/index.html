@@ -1,0 +1,5180 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A site for learning and sharing.">
+      
+      
+      
+        <link rel="canonical" href="https://note.mythlogos.top/study/nlp/work/record/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.3">
+    
+    
+      
+        <title>实习记录——社媒翻译与评估智能体协同进化研究 - Cool Tea</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.d7758b05.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="graphite" data-md-color-primary="blue-grey" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Cool Tea" class="md-header__button md-logo" aria-label="Cool Tea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 8V5h-2v3zm0-5c.6 0 1 .2 1.4.6s.6.9.6 1.4v3c0 .6-.2 1-.6 1.4s-.8.6-1.4.6h-2v3c0 1.1-.4 2-1.2 2.8S15.1 17 14 17H8c-1.1 0-2-.4-2.8-1.2S4 14.1 4 13V3h5v2.4L7.2 6.8c-.1.1-.2.3-.2.4v4.3c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5V7.2c0-.2-.1-.3-.2-.4L10 5.4V3z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cool Tea
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              实习记录——社媒翻译与评估智能体协同进化研究
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="graphite" data-md-color-primary="blue-grey" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SHenpengYU01/SHenpengYU01" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cool-tea
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../cs/" class="md-tabs__link">
+          
+  
+    
+  
+  Computer Science
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../cv/" class="md-tabs__link">
+          
+  
+    
+  
+  Computer Vision
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../ailogic/" class="md-tabs__link">
+          
+  
+    
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../cpp/" class="md-tabs__link">
+          
+  
+    
+  
+  Programming
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../test/" class="md-tabs__link">
+        
+  
+    
+  
+  Test
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../link/" class="md-tabs__link">
+        
+  
+    
+  
+  Links
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Cool Tea" class="md-nav__button md-logo" aria-label="Cool Tea" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 19h16v2H4zM20 8V5h-2v3zm0-5c.6 0 1 .2 1.4.6s.6.9.6 1.4v3c0 .6-.2 1-.6 1.4s-.8.6-1.4.6h-2v3c0 1.1-.4 2-1.2 2.8S15.1 17 14 17H8c-1.1 0-2-.4-2.8-1.2S4 14.1 4 13V3h5v2.4L7.2 6.8c-.1.1-.2.3-.2.4v4.3c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.5V7.2c0-.2-.1-.3-.2-.4L10 5.4V3z"/></svg>
+
+    </a>
+    Cool Tea
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SHenpengYU01/SHenpengYU01" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cool-tea
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cs/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Computer Science
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Science
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cs/sys2/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Computer system2
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Computer system2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys2/sys2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Summary
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cs/sys3/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Computer system3
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Computer system3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/quantitative/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quantitative Approaches
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/ILP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instruction Level Parallelism
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/simd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SIMD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/mimd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MIMD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/cache/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cache
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/main-memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Main Memory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/virtual-memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Memory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/file-sys/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/storage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storage Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cs/sys3/io/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IO
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../network/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Network
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Network
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../network/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../network/application layer.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Application Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../network/transport layer.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Transport Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../network/internet layer.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Internet Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../network/link layer.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Link Layer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cv/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Computer Vision
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/image-formation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Image formation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/image-process/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Image processing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Optimization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/image-matching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Image matching
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/stiching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Image stiching
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/sfm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Structure from motion
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cv/depth-estimation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Depth estimation and 3D reconstruction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../ailogic/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    AI Logic
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            AI Logic
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    引论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_3" id="__nav_4_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    经典演绎逻辑
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            经典演绎逻辑
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/proposition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    命题逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/first-order-logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    一阶逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/knowledge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    知识图谱与描述逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_4" id="__nav_4_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    非单调逻辑
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            非单调逻辑
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/default-logic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    缺省逻辑
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/asp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    回答集编程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_5" id="__nav_4_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    基于论证的逻辑
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            基于论证的逻辑
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/argument/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    经典抽象论辩理论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/struct-argu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    结构化论辩理论
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/game/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    论辩语义的计算方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_6" id="__nav_4_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    不确定推理
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            不确定推理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/bayes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    贝叶斯网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ailogic/review/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    复习总结
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../ml/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Machine learning
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Machine learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/basic-term/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基本术语和模型评估
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/linear-model/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    线性模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/decision-tree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    决策树
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/neural/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    神经网络
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/svm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    支持向量机
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/bayes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    贝叶斯分类器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/ensamble/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    集成学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/clustering/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    聚类
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/dim-reduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    降维与度量学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/traits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    特征选择与稀疏学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/semi-supervised/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    半监督学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/probability-graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    概率图模型
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/rule-learning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    规则学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ml/rl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    强化学习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../llm/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    LLM
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            LLM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/word2vec1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Word2Vec
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/bert/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bert
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/vit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vit
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/clip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CLIP
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/video-rag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VideoRAG
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/mrag-survey/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Multimodal RAG survey
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/qwen3-embedding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qwen3 Embedding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/qwen3-vl-embedding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Qwen3-VL-Embedding
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../llm/encoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encoder/Decoder
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    NLP
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            NLP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ctx2skill/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context2Skill
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../culture-mt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cluture-MT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../aichip/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    人工智能芯片与系统
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            人工智能芯片与系统
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/3laws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Three laws
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/bases/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/rob/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reorder Buffer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/tomasulo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tomasula Algorithm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/gpu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/gpu-optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPU Optimization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/cache/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cache
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/cache-coherence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cache Coherence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/cache-consistency/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cache Consistency
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/dl-accelerator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DeepLearning Accelerator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/ai-processor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Processor
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/ai-chip-rf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Chip+Runtime+Framework
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../aichip/parallel-training/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Parallel Training
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Programming
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Programming
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../cpp/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    C++
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            C++
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/grammar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    C++ 基础语法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_3" id="__nav_5_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    类
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            类
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/class/class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基本概念
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/class/ctor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    构造函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/class/dtor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    析构函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/class/friend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    友元函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/class/init-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    初始化列表
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/class/vfunc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    虚函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/class/inherit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    继承
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/struct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    结构体
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/reference/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    引用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    内存管理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    流
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/container/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    容器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/overload/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    重载
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    模版
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/iterators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    迭代器
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/exception/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    异常处理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../cpp/design-pattern/design-pattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    设计模式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    JavaScript
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            JavaScript
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础语法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/func/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    事件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/dom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DOM
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/class/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    类
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../web/JS/array/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数组
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../datastructure/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Data Structure
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Data Structure
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datastructure/graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graph
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datastructure/midterm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Structure
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datastructure/algorithm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Algorithm
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../datastructure/practice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Test
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../link/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#78" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.8
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.8">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      理解师兄的说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skill" class="md-nav__link">
+    <span class="md-ellipsis">
+      Skill基础概念
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Skill基础概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#progressive-disclosure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Progressive Disclosure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#79" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.9
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.9">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ctx2skill" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ctx2Skill
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cultural-mt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cultural-MT
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#710" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.10
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#713" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.13
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#culture-mt" class="md-nav__link">
+    <span class="md-ellipsis">
+      CULTURE-MT 发布情况确认
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benchmark-benchmarkmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      整理的相关 Benchmark（写入 benchmark.md）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      关键发现
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#714" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.14
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7.14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      检索方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心结论
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      对创新点定位的约束
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#727" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.27
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#728" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.28
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#729" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.29
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#730" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.30
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#731" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.31
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.4
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.5
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#816" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.16
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#99" class="md-nav__link">
+    <span class="md-ellipsis">
+      9.9
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      个人总结
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">实习记录——社媒翻译与评估智能体协同进化研究</h1>
+<ul>
+<li>首先明确方向：<ul>
+<li>社媒翻译的难点</li>
+<li>已有哪些工作解决这些难点，这些工作有什么局限性/有哪些可以提升的地方</li>
+<li>我该从哪里找创新点</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="78">7.8</h2>
+<ul>
+<li>目标：从整体上明确问题定义，以及研究方向：</li>
+</ul>
+<h3 id="_2">理解师兄的说明</h3>
+<p>说明原文如下：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>首先可以了解Anthropic的Skill、结构，调用的原理，progressive disclosure。
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>不过，科研中的skill，虽然借鉴了Anthropic的skill，通常简化很多，比如往往是单个文件，也没有progressive disclosure机制。更像是把一段guideline插入提示词context中。另外，业界skill常常是human-crafted（比如CC库里面的那些），而科研时，很多方法的skill，是LLM自己自动生成。
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>skill的研究大概聚焦于这几个方面：
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>- skill的自动生成、迭代（refine）。如果单个task有多个skill，还会涉及到检索。生成往往基于对正确、错误trajectory的提炼。
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>- skill+self-evolution等机制，比如不训练policy，只迭代skill。
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>- skill+训练的方法，比如训练policy model更好地使用skill。也有训练skill generator的。
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>聚焦的任务，以agent的居多，但总体比较广泛。
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>和skill方法比较相似的，是experience-based method (Expel)、procedural memory这些早期工作。区别可能在于skill对raw trajectory的加工更多，另一方面就是踩了Anthropic skill的热点
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>一些代表性论文——
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>方法类：
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>- skillRL，Trace2Skill（skill merge的机制），SkillX（skill的level划分），CoEvoSkills（结合self-evolution）、Ctx2Skill（和你的工作比较像）、SkillOS（训练skill generator，我觉得意义有限）
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>另外我觉得还不错的：MemSkill（memory任务，和SkillRL像）、SkillRouter（讨论skill的retrieval）、XSkill（比较normal，多模态）、D2Skill。
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>eval类：
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>- skillsbench：基于海量的skill做评测。和科研自己构造的那种skill差别较大。你的工作应该用不到
+</span></code></pre></div>
+<p><strong>个人理解</strong>：</p>
+<ul>
+<li>上述主要说明了Skill的研究方向和已有的相关工作</li>
+<li>做的是Agent Skill相关内容，本质是提示词工程的演进：Agent = LLM + Harness，Skill是一种Harness。我们的目标是提升Agent解决<strong>各种问题</strong>（编码、问答、数学等不同领域）的能力，LLM改变不了，只能改变Harness。Harness最初只是简答的提示词，后来演进为结构性的框架，不过本质还是LLM的输入，改变的是输入内容的管理方式（Prompt为手动管理，而harness框架可以通过约束让LLM自己管理上下文）。</li>
+</ul>
+<h3 id="skill">Skill基础概念</h3>
+<p><strong>《Equipping agents for the real world with Agent Skills》</strong>
+- <strong>链接</strong>：https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+- <strong>说明</strong>：Anthropic发布Agent Skills的官方工程博客，是理解Skill概念的<strong>第一手材料</strong>。详细介绍了Skill的目录结构、SKILL.md格式、YAML frontmatter以及Progressive Disclosure的三层设计。</p>
+<p><strong>《Building Agents with Skills: Equipping Agents for Specialized Work》</strong>
+- <strong>链接</strong>：https://claude.com/blog/building-agents-with-skills-equipping-agents-for-specialized-work
+- <strong>说明</strong>：后续博文，解释了为什么从“构建专用Agent”转向“构建Skill”这一范式转变，以及Skill如何把通用Agent变成领域专家。</p>
+<p><strong>Agent Skills开放标准官网</strong>
+- <strong>链接</strong>：https://agentskills.io/
+- <strong>说明</strong>：Anthropic于2025年12月将Agent Skills发布为开放标准。</p>
+<p><strong>anthropics/skills</strong>
+- <strong>链接</strong>：https://github.com/anthropics/skills
+- <strong>说明</strong>：Anthropic官方Skill示例库，包含PDF处理等真实Skill案例。可以直观理解Skill的文件结构和写法。</p>
+<h4 id="progressive-disclosure">Progressive Disclosure</h4>
+<p><strong>渐进式披露</strong> 是其核心设计理念，采用三层架构：</p>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>内容</th>
+<th>加载时机</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一层</td>
+<td>元数据（技能名称、简短描述）</td>
+<td>智能体启动时预加载到系统提示</td>
+</tr>
+<tr>
+<td>第二层</td>
+<td>SKILL.md完整内容</td>
+<td>模型判断技能相关时加载</td>
+</tr>
+<tr>
+<td>第三层</td>
+<td>附加文件（脚本、参考资料等）</td>
+<td>按需加载或执行</td>
+</tr>
+</tbody>
+</table>
+<p>这种设计让技能库可以包含海量信息却不怕超出上下文窗口限制。科研场景中的skill通常简化很多——往往是单个文件、没有progressive disclosure机制，本质上就是把一段guideline插入prompt context中。</p>
+<h2 id="79">7.9</h2>
+<ul>
+<li>阅读Ctx2Skill论文，了解其框架，知道“协同”的概念</li>
+<li>阅读culture-mt数据集论文，了解后续需要用到的文化翻译方面的数据集结构</li>
+</ul>
+<h3 id="ctx2skill">Ctx2Skill</h3>
+<p>Ctx2Skill 通过<strong>对抗性自我对弈</strong>（挑战者与推理者各带 Proposer/Generator 协同进化）与<strong>动态选择机制</strong>（跨时间重放，乘积式解决率 + 拉普拉斯平滑），巧妙绕过"无反馈"与"高成本"两大障碍。实验设计全面：宏观有跨模型/跨类别的解决率，微观有五维度技能质量评估与详尽消融/变体分析，并验证了技能的可迁移性与可解释性。整体证明：在不更新参数、不依赖外部信号的前提下，仅凭上下文本身即可自主演化出有效、可复用、可解释的自然语言技能。</p>
+<p>个人理解：</p>
+<ul>
+<li>Ctx2Skill 设计了一个多LM循环对抗的Skill生成框架，并且通过self-replay机制动态地选择历史skill中，那些能平衡解决最容易与最难问题的最优skill，这有效增强了该系统的鲁棒性。</li>
+<li>我学习到的核心思想：对抗式生成，注意解决对抗式生成中生成越来越极端偏置的问题，找到生成的平衡点</li>
+</ul>
+<h3 id="cultural-mt">Cultural-MT</h3>
+<p>CULTURE-MT 的核心贡献在于把"翻译好不好"从字面正确性推进到"文化有效性"——译文是否让目标语读者正确理解原意并产生相当的情感共鸣。论文构建了首个面向社媒 UGC 翻译的多领域、多形态基准（1,002 条 × 14 领域 × 4 类型），并显式区分"文化负载符号"与"UGC 特定语言风格"两个被既有工作混淆的维度。配套训练的 JUDGER（微调 Qwen3-32B，准确率 86.03%、κ=0.72）使大规模自动评测成为可能。实验用 15 个模型证明：传统 BLEU/ChrF/COMET 对文化差异几乎失明，而文化有效性呈现清晰 scaling 趋势；基于 Qwen3-8B 的文化有效性自我精炼训练将 3 分样本从 4.09% 提升至 28.24%，且在多基准上 Ineff. 最低，仅以边际通用性能代价换取显著 UGC 增益。整体证明：面向文化感知 UGC 生成，必须超越字面正确性、走向文化有效翻译。</p>
+<h2 id="710">7.10</h2>
+<ul>
+<li>
+<p>Ctx2Skill项目代码阅读，具体技术细节已整理入文档</p>
+<ul>
+<li>api_client.py 是公共底座--统一封装 OpenAI / Azure 客户端,所有脚本通过 create_client() 拿一个支持 chat.completions.create 的对象。</li>
+<li>selfplay_loop.py(核心)实现多智能体自博弈:Challenger 出题、Reasoner 解题、Judge 二值打分,再由 Proposer→Generator
+双侧各自把成败经验沉淀为自然语言"技能";跑完用 hard/easy set 做交叉回放选出最佳技能版本。</li>
+<li>infer.py 在推理时按 context_id 把对应技能拼进 system message;eval.py / eval_ignore_none.py 用 LLM-as-Judge 打分(两者仅失败处理不同)。</li>
+</ul>
+<p>代码风格统一:标准库 + tqdm/pyyaml/openai 三依赖,ThreadPoolExecutor 按 context/样本并行,JSONL 流式读写,全程带断点续跑(按 context_id/idx去重)和重试容错。所有"智能体"都是冻结的同一组 LM,真正随迭代演化的是磁盘上的技能文本--这是整个项目的核心设计。</p>
+</li>
+</ul>
+<h2 id="713">7.13</h2>
+<ul>
+<li>进一步了解CULTURE-MT benchmark</li>
+<li>搜集整理其他后续可能用得到的benchmark</li>
+</ul>
+<h3 id="culture-mt">CULTURE-MT 发布情况确认</h3>
+<ul>
+<li><strong>数据集已公开</strong>：HuggingFace <code>Wulinjuan/CULTURE-MT</code>（1,002 条 UGC 笔记，14 领域 × 4 类型，中译英，cc-by-nc-4.0）。</li>
+<li><strong>排行榜</strong>：<code>Wulinjuan/CULTURE-MT</code> Space（Gradio leaderboard，可提交译文由 JUDGER 评测）。</li>
+<li><strong>代码未公开</strong>：GitHub 无官方仓库（作者账号下仓库均与本论文无关），评测脚本未释出。</li>
+<li><strong>JUDGER 权重未开放下载</strong>：只能通过排行榜提交由其托管 JUDGER 评测，无法本地复现自动评估。</li>
+</ul>
+<h3 id="benchmark-benchmarkmd">整理的相关 Benchmark（写入 benchmark.md）</h3>
+<p>以 CULTURE-MT 论文 §2 相关工作引用的基准为线索，经 arXiv 核实标题与作者后整理，共 9 个，分 4 类：</p>
+<ol>
+<li><strong>社媒 / 在线内容翻译基准</strong>（最相关）：RedTrans、Seed-X、DITING、TransBench</li>
+<li><strong>俚语 / 文化感知专项</strong>：SlangDIT、SLANG、Cultural Awareness MT</li>
+<li><strong>通用翻译基线</strong>（CULTURE-MT 用作对照）：FLORES</li>
+<li><strong>CULTURE-MT 自身</strong></li>
+</ol>
+<p>另补充 3 个同属社媒场景但非翻译基准（CULTURE-MT 引用）：RedOne、SNS-Bench、MultiSocial。</p>
+<h3 id="_3">关键发现</h3>
+<ul>
+<li>既有基准普遍只覆盖"<strong>文化负载符号</strong>"维度，普遍忽视"<strong>UGC 语言风格</strong>"与"<strong>情感/社交共鸣</strong>"——CULTURE-MT 是首个同时覆盖这三者的社媒 UGC 翻译基准，这正是其切入空白。</li>
+<li>各基准的 GitHub / HuggingFace 仓库可用性已逐条核实并记录于 benchmark.md（含仓库内容、是否开源权重等）。</li>
+</ul>
+<h2 id="714">7.14</h2>
+<ul>
+<li>找主题相关的工作：多智能体（社媒）翻译，整理入 <code>multi-agent-translation-survey.md</code></li>
+</ul>
+<h3 id="_4">检索方法</h3>
+<ul>
+<li>用 firecrawl research 语义检索（多角度提问：多智能体协作翻译 / translator+evaluator 协同进化 / 自奖励翻译 / 社媒文化翻译 / 评估器漂移与 reward hacking）。</li>
+<li>关键论文全文深读验证：RIVAL（arXiv:2506.05070）、SCORE（arXiv:2606.04507）。</li>
+</ul>
+<h3 id="_5">核心结论</h3>
+<p><strong>Q1：translator + evaluator 协同进化有人做过吗？-- 做过，但不在我的交叉点上。</strong></p>
+<ul>
+<li>翻译域<strong>已有</strong> RIVAL：RM 与 LLM 交替更新、对抗 min-max、做字幕翻译，但仍受 reward hacking 困扰。这是最大撞车风险。</li>
+<li>通用域：Mutual-Taught、Cooper、Self-Rewarding LM、Meta-Rewarding。</li>
+<li>其他任务：SCORE（深度研究，直接点出"静态评估器无法随求解器进化"的痛点）、JarvisEvo（图像编辑）、TriPlay-RL（安全）。</li>
+<li><strong>真实空白</strong>：在社媒 UGC + 文化有效性翻译上，用 NL 结构化评估器（非标量 RM）与翻译器协同进化，以 Ctx2Skill 式 cross-time replay 抗漂移（非对抗、非在线重训 RM）--无人做过。</li>
+</ul>
+<p><strong>Q2：多智能体翻译四类范式</strong>：角色分工（TransAgents/TACTIC/MAATS）、评估侧多智能体（M-MAD）、对抗博弈（RIVAL/Dual Learning）、自精炼自奖励（SSR-Zero/TEaR）。</p>
+<h3 id="_6">对创新点定位的约束</h3>
+<ul>
+<li><strong>不能</strong>宣称"首创 translator+evaluator 协同进化"--RIVAL 已做。</li>
+<li>三差异化：① NL 文化有效性评估器 vs 标量 RM；② 社媒 UGC + 情感共鸣 vs 字幕；③ cross-time replay 抗漂移 vs 对抗 min-max / 在线重训 RM。</li>
+<li>动机有 precedents：SCORE 提出"静态评估器无法随求解器进化"，Spontaneous Reward Hacking 实证自评 reward hacking。</li>
+<li>附带发现可补 benchmark.md 的基准：CSM-MTBench（中文社媒，直接对照）、Xiaohongshu MT in the Wild（同平台用户侧）等 8 个。</li>
+</ul>
+<!-- ## 7.20-26 社会实践 -->
+
+<h2 id="727">7.27</h2>
+<p>梳理trace2skill论文：</p>
+<p>Trace2Skill 将大量 agent 执行轨迹（成功+失败）并行分析、提出轨迹级 skill patch，
+再通过层次化合并（many-to-one consolidation）压缩为一个静态可移植技能目录。
+支持 deepening（从人工技能出发补全）和 creation（从弱 LLM 草稿创建）两种模式。
+实验覆盖 spreadsheet、数学、DocVQA、PDF/PPTX/DOCX，演化后技能可跨模型规模、
+跨模型家族、跨分布（OOD）迁移。</p>
+<p>个人理解：</p>
+<ul>
+<li>核心 idea 是<strong>把 agent 踩过的坑和走通的流程归纳为可复用 SOP</strong>：
+  轨迹经验 &gt; 参数生成技能 &gt; 无技能；静态合并技能 &gt; 检索式 memory &gt; 顺序编辑。</li>
+<li>三个关键设计决策值得记住：</li>
+<li><strong>并行 many-to-one consolidation</strong> vs 顺序编辑：解耦 trace 分析顺序依赖，
+     高频模式自动提升为 SOP，低频细节路由到 references，效率高很多。</li>
+<li><strong>静态技能目录</strong> vs 测试时检索 memory：把证据归纳为全局规则而非 isolated
+     memory 条目，避免检索质量波动，也无需测试时检索开销。</li>
+<li><strong>Agentic error analyst</strong> vs 单次 LLM 错误分析：能检查 artifact、对比
+     ground truth、验证 fix，避免把日志表象当成根因——这对文件/工具型 agent
+     任务尤其重要。</li>
+<li>与 Ctx2Skill 的对比：Ctx2Skill 是<strong>对抗生成 + 动态选择</strong>（无轨迹，仅靠上下文
+  自我对弈），Trace2Skill 是<strong>轨迹归纳 + 静态合并</strong>（有轨迹，用执行信号驱动）。
+  两者都产出可迁移的自然语言技能，但信号来源不同——前者靠模型自己出题自己评，
+  后者靠真实执行结果的成败反馈。</li>
+<li>对我工作的启示：如果社媒翻译 agent 能收集到执行轨迹（成功/失败翻译案例），
+  可以用 Trace2Skill 的思路把常见翻译陷阱和工作流归纳为技能；层次化合并机制
+  也可以用来合并多个语言对/领域下的 patch。</li>
+</ul>
+<h2 id="728">7.28</h2>
+<p>梳理skillrl论文：</p>
+<ul>
+<li>SkillRL 的核心 idea 是：不要把 agent 的历史经验当成 raw memory 反复检索，
+  而是先把成功/失败轨迹蒸馏成更紧凑的 skill，再把这些 skill 放进 RL 训练循环里，
+  让 <strong>技能库与策略共同演化</strong>。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>experience-based distillation</strong>：成功轨迹提炼“该怎么做”，
+     失败轨迹提炼“哪里会错、为什么错、下次如何避免”，
+     让 failure 也成为高价值训练信号。</li>
+<li><strong>hierarchical SkillBank</strong>：把技能分成 general skills
+     和 task-specific skills，前者提供跨任务策略原则，
+     后者补充环境/任务专属套路。</li>
+<li><strong>recursive skill evolution</strong>：当验证集暴露新 failure mode 时，
+     不只是继续调 policy，还会补写/改写技能库，形成
+     “policy 变强 → 暴露新问题 → skill 补全 → policy 再提升”的闭环。</li>
+<li>和普通 memory 方法相比，SkillRL 真正强调的是
+  <strong>abstraction 优于记忆本身</strong>：raw trajectory 虽然信息全，
+  但噪声大、token 重、难迁移；skill 是压缩过的可执行经验。</li>
+<li>对我工作的启发：如果希望 agent 真正持续进化，
+  不能只做轨迹存档或 episodic retrieval，而要把经验整理成结构化技能，
+  并让这些技能参与后续训练/推理过程。</li>
+</ul>
+<h2 id="729">7.29</h2>
+<p>梳理skillx论文：</p>
+<ul>
+<li>SkillX 的核心 idea 是：用强 agent 的执行经验，自动构建一个
+  <strong>可检索、可迁移、可插拔的分层 SkillKB</strong>，再把它注入给较弱的 base agents，
+  让弱模型直接站在强模型积累的经验上工作。</li>
+<li>它和 SkillRL 很像，都是把经验从 raw memory 提升成 skill；但 SkillX 更强调
+  <strong>技能知识库本身的结构设计与迁移使用</strong>，而不是 skill 与 RL policy 的联合优化。</li>
+<li>SkillX 最值得记住的三点设计：</li>
+<li><strong>Multi-Level Skills Design</strong>：把技能拆成 planning / functional / atomic 三层，
+     分别对应高层规划、中层功能套路和底层 API/工具细节。</li>
+<li><strong>Iterative Skills Refinement</strong>：SkillKB 不是一次性提炼完就结束，
+     而是根据新轨迹持续做合并、过滤、改写，逐步压缩冗余、提升表达质量。</li>
+<li><strong>Exploratory Skills Expansion</strong>：不仅被动总结已有数据，还会主动探索
+     低覆盖区域和高失败模式，补出训练数据里原本没有显式出现的新技能。</li>
+<li>这篇工作的关键判断是：可迁移经验不能只是“保留经历”，而要整理成
+  <strong>分层、条目化、轻量检索</strong> 的 skill 结构；这样才能既压缩上下文，又提升跨模型迁移性。</li>
+<li>对我工作的启发：如果后续要做 agent skill system，重点不只是“存什么经验”，
+  更是“按什么抽象层级组织经验、如何持续 refinement、以及如何把 skill 以低成本注入推理过程”。</li>
+</ul>
+<h2 id="730">7.30</h2>
+<p>梳理coevoskills论文：</p>
+<ul>
+<li>CoEvoSkills 的核心 idea 是：复杂 agent skill 不能只靠一次性写出来，
+  而要让 <strong>skill generator</strong> 和 <strong>surrogate verifier</strong> 一起协同进化——
+  一边反复修 skill，一边反复补测试，逐步逼近隐藏 oracle 的真实要求。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>tool 与 skill 的区分</strong>：skill 不是单个函数或 prompt，
+     而是包含 instructions、scripts、references 的多文件 package，
+     因此生成难度和验证难度都远高于 tool generation。</li>
+<li><strong>co-evolutionary verification</strong>：由于真实环境通常只给 pass/fail，
+     看不到隐藏测试细节，所以作者让 verifier 独立构造 proxy tests，
+     把稀疏 reward 变成高密度、可执行的修正反馈。</li>
+<li><strong>iterative refinement + test escalation</strong>：当 proxy test 通过但 oracle 仍失败时，
+     不是只改 skill，也会继续强化 verifier 的测试集，
+     让“修 skill”和“补验证标准”同步演化。</li>
+<li>这篇论文最值得记住的判断是：<strong>skill 质量不只取决于 generator，
+  也取决于 verifier 能不能持续制造足够接近真值的训练压力。</strong></li>
+<li>和人工 skills / one-shot self-generation 相比，
+  CoEvoSkills 强调的不是“更会写”，而是“更会在外部反馈下持续修正”，
+  这也是它能超过 human-authored skills 的关键原因。</li>
+<li>对我工作的启发：如果做社媒翻译 agent 的 skill evolution，
+  重点可能不只是让 translator 生成更好的 skill，
+  还要让 evaluator / verifier 也随之演化；否则 solver 变强后，
+  静态评估器很容易失真、漏检，最终限制整个系统上限。</li>
+</ul>
+<h2 id="731">7.31</h2>
+<p>梳理<code>memskill</code>和<code>skillrouter</code>论文：</p>
+<ul>
+<li><strong>MemSkill</strong> 的核心 idea 是：agent memory 不该只靠固定的
+  add / update / delete 之类手工 operation，
+  而要把“怎么构造 memory”抽象成可学习、可进化的 <strong>memory skills</strong>。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>memory bank / skill bank 分离</strong>：前者存某条具体 trace 的记忆，
+     后者存跨任务可复用的 memory behaviors，
+     因此系统学到的不只是“记了什么”，更是“该怎么记”。</li>
+<li><strong>controller + executor</strong>：controller 为当前 span 选 Top-K skills，
+     executor 再在这些 skills 条件下一次性生成 memory updates，
+     用 span-level 处理替代逐 turn 记忆维护。</li>
+<li><strong>designer 驱动的 skill evolution</strong>：周期性分析 hard cases，
+     细化旧 skills、增加新 skills，
+     让 memory construction policy 和 skill bank 同时进化。</li>
+<li>这篇论文最值得记住的判断是：<strong>memory system 的关键不只是存储结构，
+  而是“记忆构造行为”本身能不能被持续学习和修正。</strong></li>
+<li>和 MemoryBank / Mem0 / A-MEM 这类更偏静态 pipeline 的方法相比，
+  MemSkill 真正改变的是：把 memory behavior 本身变成了 skill object，
+  因而能更自然地适应不同任务、不同历史结构与不同 agent 形态。</li>
+<li><strong>SkillRouter</strong> 的核心 idea 是：在大规模 skill registry 里，
+  决定 routing 成败的往往不是 skill 的 <code>name + description</code>，
+  而是藏在 <strong>skill body</strong> 里的功能细节；
+  只靠 metadata 会严重误路由。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>body-access 诊断</strong>：在约 80K skill pool 上，
+     只移除 body 就让多种 retrieval / reranking baseline 的 Hit@1
+     下降 37–44 个百分点，说明缺失的是 body-resident signal，
+     而不是简单的文本长度优势。</li>
+<li><strong>body-aware retrieve-and-rerank</strong>：先用 encoder 从大池子里取 top-K，
+     再用 cross-encoder 基于全字段做细粒度重排，
+     把 body 真正纳入上游 skill routing。</li>
+<li><strong>false-negative filtering + listwise reranking</strong>：在 skill 高度重叠的池子里，
+     训练信号很容易被近重复 skill 污染，
+     而 pointwise loss 也不足以解决候选之间的细粒度竞争。</li>
+<li>这篇论文最值得记住的判断是：<strong>agent 不一定要一开始看到完整 skill body，
+  但 router 最好要能看到；否则上游 shortlist 一错，下游 agent 很难补救。</strong></li>
+<li>两篇论文放在一起看，一个在研究 <strong>怎么把经验沉淀成更好的 skill / memory</strong>，
+  一个在研究 <strong>当 skill 数量爆炸后，怎么把对的 skill 找出来</strong>；
+  前者解决“skill 如何形成与进化”，后者解决“skill 如何在规模化生态里被命中”。</li>
+<li>对我工作的启发：如果以后做可演化的翻译 / 社媒 agent，
+  不只要考虑 skill 会不会生成和更新，
+  还要考虑 skill 数量变多以后，router 是否还能从大量相似技能中
+  稳定选中真正有用的那几个；
+  否则 skill ecosystem 越大，反而越容易在入口处失效。</li>
+</ul>
+<h2 id="81">8.1</h2>
+<p>梳理<code>lightmem</code>：</p>
+<ul>
+<li><strong>LightMem</strong> 的核心 idea 是：长时程 agent memory 的问题不只是“能不能记”，
+  而是现有系统通常把太多冗余原文、过细的更新粒度和过重的在线维护
+  一起塞进推理环路，导致 memory 成本过高。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>sensory memory 预压缩</strong>：先用轻量压缩模型过滤掉大量低价值 token，
+     不让所有原始历史都直接进入 memory construction pipeline。</li>
+<li><strong>topic-aware short-term memory</strong>：不是按固定 turn / session 切块，
+     而是结合 attention 与 similarity 做 topic segmentation，
+     让后续摘要发生在更自然的语义单元上。</li>
+<li><strong>sleep-time long-term update</strong>：在线阶段先做 soft insert，
+     离线再并行整理、去重、更新，
+     把最昂贵也最容易出错的 memory consolidation 从实时推理里解耦出来。</li>
+<li>这篇论文最值得记住的判断是：<strong>memory system 不一定要每一步都立刻“整理好”，
+  很多时候先保住信息、后离线整合，反而更稳也更便宜。</strong></li>
+<li>和 MemoryOS / Mem0 / A-MEM 这类偏重在线 memory maintenance 的方法相比，
+  LightMem 真正改变的是：把 memory pipeline 明确拆成
+  “预过滤 → 短期组织 → 睡眠期更新”三层，
+  用更接近人类记忆的流程去平衡效果与成本。</li>
+</ul>
+<h2 id="82">8.2</h2>
+<p>梳理<code>token pilot</code> 论文：</p>
+<ul>
+<li><strong>TokenPilot</strong> 的核心 idea 是：context management 不能只看“压掉了多少 token”，
+  还要看这些压缩、截断和重排会不会破坏 backend 的 prompt cache 对齐；
+  否则上下文虽然变短，推理反而可能更贵。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>ingestion-aware compaction</strong>：在消息进入上下文前先做 prefix stabilization，
+     把工作目录、时间戳、session id、tool schema 抖动等易变字段替换成稳定占位符，
+     同时对 HTML、日志、重复 read 结果做规则化减噪。</li>
+<li><strong>recoverable reduction</strong>：不是粗暴截断，而是把完整 payload 存进外部 registry，
+     默认只保留压缩视图，必要时再通过 recovery tool 取回全量内容，
+     以此兼顾轻量上下文和任务可完成性。</li>
+<li><strong>lifecycle-aware eviction</strong>：上下文片段不是任务一完成就删，
+     而是显式维护 active / completed / evictable 三态，
+     只有当 residual utility 真正耗尽时才移除，避免后续任务反复从头读同一份环境信息。</li>
+<li>这篇论文最值得记住的判断是：<strong>更短的上下文不一定更便宜；
+  如果它打断了 prefix continuity、诱发了更多 cache miss 和重复探索，
+  系统总成本反而可能上升。</strong></li>
+<li>两篇论文放在一起看，LightMem 更像是在研究
+  <strong>agent memory 内部怎样分层、怎样更新才更省</strong>，
+  TokenPilot 则是在研究
+  <strong>agent runtime 层面的上下文工程怎样设计，才能既压缩历史又保住缓存收益</strong>；
+  前者更偏 memory architecture，后者更偏 serving / inference systems。</li>
+<li>对我工作的启发：如果以后做长期运行的翻译 / 社媒 agent，
+  不能只想着“存什么 memory”或“删掉哪些历史”，
+  还要考虑这些操作是否会破坏缓存复用、迫使 agent 重新探索环境；
+  否则即使 memory 逻辑本身没问题，系统级成本也可能在长 session 中失控。</li>
+</ul>
+<h2 id="84">8.4</h2>
+<p>梳理<code>d2skill</code> 论文：</p>
+<ul>
+<li><strong>D2Skill</strong> 的核心 idea 是：技能库不能只做“轨迹级引导 + 静态复用”，
+  而要在训练中与策略协同进化——用<strong>任务技能（高层规划）+ 步骤技能（局部修正）</strong>
+  两层粒度组织经验，并通过配对 rollout 估计技能效用、动态检索与剪枝，
+  让“策略变强 → 技能更新 → 策略再变强”的闭环成立。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>paired rollout 事后效用</strong>：同一策略下基线组与技能注入组各跑 N/2 条轨迹，
+     用两组成功率差构造事后信号——任务级信号共享给整组任务技能、轨迹级信用
+     <span class="arithmatex">\(c_i=Y_i-\bar Y_g^{\text{base}}\)</span> 分给检索到的步骤技能，再以 EMA 更新每条技能的效用。</li>
+<li><strong>两阶段检索 + 效用感知排序</strong>：先用相似度阈值召回候选，再用
+     “语义相似度 + UCB 式探索”打分注入 top-k；效用不只用于检索，还用于定期剪枝
+     （容量上限 + 保护窗口），防止技能库无界膨胀。</li>
+<li><strong>反思生成双粒度技能</strong>：只在表现差时触发，从失败轨迹定位<strong>最早错误步骤</strong> <span class="arithmatex">\(o_j\)</span>，
+     产出任务技能（检索键 = 任务）与步骤技能（检索键 = (任务, 观测)），去重后入库。</li>
+<li>这篇论文最值得记住的判断是：<strong>技能不仅要“被积累”，还要在训练中被估值、被管理；
+  局部修正与全局规划同样重要。</strong> 消融中去掉技能管理下降最大（~10 个点），
+  证实动态维护是关键增益来源；去掉任务/步骤技能任一也一致下降，
+  说明两层粒度缺一不可。</li>
+<li>与 SkillRL 的对比：两者都是“技能库 + 策略”联合，但 SkillRL 的技能是轨迹级引导、
+  每任务只检索一次；D2Skill 增加步骤技能（每步按观测检索）、显式估计效用并动态剪枝，
+  且技能生成与管理都在训练期、不依赖特权验证轨迹。</li>
+<li>分析里两个值得注意的点：① 评估时去掉技能库，D2Skill 训练出的策略仍不弱于 GRPO
+  → 部分增益被<strong>内化进策略</strong>；② 训练开销接近 GRPO、约 1.7× 快于 SkillRL
+  （批量嵌入检索 + 增量更新，低开销）。</li>
+<li>对我工作的启发：如果做社媒翻译 agent 的 skill evolution，技能层级除了“任务级策略”，
+  还应沉淀<strong>步骤级修正</strong>（例如某个局部文化检查点 / 翻译决策上的失败修复）；同时要像
+  D2Skill 一样给每条技能打效用分、定期淘汰，避免技能库越积越多反而污染检索。</li>
+</ul>
+<p>梳理<code>xskill</code> 论文：</p>
+<ul>
+<li><strong>XSKILL</strong> 的核心 idea 是：多模态智能体的持续学习不能只靠文本轨迹日志，
+  而要把“经验（action 级战术）+ 技能（task 级工作流）”两种互补知识
+  <strong>锚定在视觉观测上</strong>做提取与检索——无参数更新，纯靠外部知识库持续积累与改进。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>视觉锚定摘要 + 跨 rollout 批判</strong>：把交错图像观测与轨迹文本联合分析，
+     记录“什么视觉证据驱动了什么动作”，再对成功/失败轨迹做对比分析提炼因果因素，
+     产出经验更新（add/modify）与技能片段（工作流 + 工具模板，具体实体换占位符）。</li>
+<li><strong>层级知识整合</strong>：经验按相似度阈值合并去重、超容量按泛化性删除；
+     技能文档逐节更新/合并/删除、超长时自评估精炼——把瞬时洞察沉淀为可泛化智慧。</li>
+<li><strong>任务分解检索 + 上下文适配</strong>：把任务拆成多个抽象子任务分别检索经验，
+     再按当前视觉上下文改写经验、剪裁技能工作流与代码模板，以非规定性参考注入提示词。</li>
+<li>这篇论文最值得记住的判断是：<strong>多模态的决策信号在图像里，纯文本轨迹抓不住</strong>——
+  知识提取与检索必须锚定视觉观测才能可靠检索、适配；同时消融显示
+  <strong>知识积累质量（Phase 1）比检索机制（Phase 2）更关键</strong>。</li>
+<li>两知识流互补的行为证据：技能把执行错误率 29.9% → 15.3%（语法/工具名错误大降，
+  专治“工具使用低效”）；经验改变工具选择分布（代码解释器占比上升，专治“编排僵化”）。</li>
+<li>分析里值得注意的点：① rollout 越多，跨 rollout 批判提炼的经验/技能质量越高；
+  ② 跨基准零样本迁移优于全部基线；③ 跨模型迁移给<strong>弱/开源模型</strong>效果混合
+  （Average@4 下降但 Pass@4 因探索增加而上升）→ 基础模型能力是有效迁移的前提。</li>
+<li>与我之前读的对比：D2Skill 是“技能库 + 策略 RL 联合训练”（配对 rollout 打分），
+  XSKILL 是<strong>纯训练-free 的知识积累</strong>（不训策略），更接近 Ctx2Skill 的无参数路线，
+  但增加了“视觉锚定”这一多模态特有维度。</li>
+<li>对我工作的启发：做社媒翻译 agent 时，“锚定在什么信号上”值得借鉴——翻译的成败
+  信号虽在文本里，但文化差异、图片-文本对应的判断点也常依赖视觉/多模态上下文；
+  若要加入跨模型迁移，需注意弱模型可能被外部知识干扰。</li>
+</ul>
+<h2 id="85">8.5</h2>
+<p>梳理 <code>veriskill</code> 论文：</p>
+<ul>
+<li><strong>VeriSkill</strong> 的核心 idea 是：程序验证里的失败轨迹不是单纯的 bad case，
+  而是可以反向驱动 skill 进化的训练信号；它不是只修一次 prompt，
+  而是做一个 <strong>失败归因 → 诊断提炼 → 技能修正 → 再验证</strong> 的闭环。</li>
+<li>这篇工作最重要的三点设计：</li>
+<li><strong>责任归因 (Attribution)</strong>：先判断一次验证失败是否真的来自技能缺陷，
+     避免把工具噪声、任务难度或偶然失败误判成 skill 问题；</li>
+<li><strong>诊断性教训提炼 (Diagnostic Signatures)</strong>：把 verifier 的黑盒反馈压缩成
+     可复用的 lesson，而不是保留原始失败日志；</li>
+<li><strong>可执行验证 (Executable Verification)</strong>：候选 skill 不能只“看起来更合理”，
+     还必须通过验证检查，且不能破坏程序语义。</li>
+<li>这篇论文最值得记住的判断是：<strong>程序验证场景里，skill 进化的关键不在于“会不会改”，
+  而在于能不能把稀疏、黑盒的失败反馈变成可执行、可筛选、语义安全的修正闭环。</strong></li>
+<li>和一般的 skill self-evolution 方法相比，VeriSkill 更强调验证约束和语义保持；
+  和 CoEvoSkills / Trace2Skill 这些轨迹归纳类工作放在一起看，可以把它理解成
+  <strong>从“提炼经验”进一步走到“受约束地修复技能”</strong>。</li>
+<li>对我工作的启发：如果后续做翻译 / 评估 agent 的 skill evolution，不能只收集成功案例，
+  还要把失败归因和 verifier feedback 变成可复用的修正信号；否则 skill 只会越写越像经验总结，
+  很难真正形成稳定的自我进化闭环。</li>
+</ul>
+<h2 id="816">8.16</h2>
+<h2 id="99">9.9</h2>
+<p>设计并实现社媒翻译协同进化可行性验证实验：</p>
+<ul>
+<li>在 <code>work/experiment-culture-coevo-pilot.md</code> 中完成端到端 pilot 方案，基于 CULTURE-MT 300 条子集验证"translator skill + evaluator skill"双侧协同进化 + cross-time replay 的可行性。</li>
+<li>方案要点：冻结 LLM（Qwen3-32B / GPT-4o-mini），用自然语言 skill 分别指导翻译与评估；每轮迭代后由 Skill Generator 从成功/失败案例中提取 patch；通过固定 dev probe set 回放历史版本，以拉普拉斯平滑后的乘积解决率选出最优 (translator, evaluator) 版本对。</li>
+<li>评估设计：以 Quadratic Weighted Kappa vs JUDGER/human 衡量 evaluator 进化，以 JUDGER 平均得分衡量 translator 进化，并设置 shortcut probe 检测漂移、双侧/单侧/replay 消融对比。</li>
+<li>已实现可跑通代码骨架：</li>
+<li><code>experiment/config.yaml</code>：模型、数据、实验超参；</li>
+<li><code>experiment/prepare_data.py</code>：下载 CULTURE-MT 并分层抽样；</li>
+<li><code>experiment/run_pilot.py</code>：主循环（翻译 → 评估 → patch → replay → 测试）；</li>
+<li><code>experiment/src/{client,translate,evaluate,skill_manager,patch_generator,replay,metrics}.py</code>：核心模块；</li>
+<li><code>experiment/skills/</code>：translator/evaluator 初始 skill；</li>
+<li><code>experiment/prompts/</code>：翻译、评估、patch 生成 prompt 模板；</li>
+<li><code>experiment/README.md</code>：运行说明；</li>
+<li><code>experiment/third_party/README.md</code>：待拉取的 M-MAD / TACTIC / Ctx2Skill / SSR-Zero 参考仓库说明。</li>
+<li>受限于当前环境安全分类器临时不可用，GitHub 仓库克隆（M-MAD、TACTIC 等）未能自动执行；已给出 exact clone 命令，可在分类器恢复后一键补拉。</li>
+<li>预期该 pilot 可在约 12K LLM calls、数美元成本内跑通，成功后直接扩展为毕业设计正式实验；若失败则快速转向自训 judge 的 fallback。</li>
+</ul>
+<h2 id="_7">个人总结</h2>
+<p>本次实习围绕毕业设计课题《社媒翻译与评估智能体协同进化研究》展开，主要任务是完成该方向的文献调研与方法体系梳理、相关数据集与基准的核实
+，以及课题创新点的初步定位，为后续开展方法复现与实验打好基础。</p>
+<p>一、主要工作</p>
+<p>在方法体系梳理方面，我以 Agent Skills 的基础概念为起点，系统阅读并梳理了 skill
+方向十余篇核心论文，初步建立起对这一方法范式的整体认知：科研中的 skill 可视作把一段可复用、可迭代的指导性文本插入提示词上下文的
+"harness"，其研究大致围绕自动生成与迭代（Ctx2Skill、Trace2Skill）、与自我进化机制结合（CoEvoSkills）、与策略训练的耦合（SkillRL、D2Ski
+ll）、多层级技能库组织（SkillX、MemSkill）、以及大规模 skill
+的检索与上下文管理（SkillRouter、LightMem、TokenPilot）等方向展开。我还通读了 Ctx2Skill
+的开源代码，理解了其"挑战者—推理者—评判者"自博弈循环、把成功与失败轨迹沉淀为自然语言技能、再经跨时间回放动态选择最优技能的完整流程，体
+会到"真正随迭代演化的是技能文本而非模型参数"这一核心设计。</p>
+<p>在数据与评测方面，我深入了解了 CULTURE-MT 这一面向社媒 UGC 翻译的基准，认识到 BLEU、ChrF、COMET
+等传统指标对文化差异几乎"失明"，而"文化有效性"——译文能否让目标语读者正确理解原意并产生相当的情感共鸣——才是社媒翻译真正的难点。我对相关
+benchmark 做了系统核实与归类，发现既有基准普遍只覆盖"文化负载符号"这一维度、忽视 UGC 语言风格与情感共鸣，这恰是本课题可能的切入空白。</p>
+<p>在多智能体翻译方向的补充调研中，我梳理了角色分工、评估侧多智能体、对抗博弈、自精炼自奖励等主要范式，并结合 RIVAL、SCORE
+等工作确认了课题的差异化位置：在社媒 UGC + 文化有效性场景下，用自然语言结构化评估器（而非标量奖励模型）与翻译器协同进化，并借鉴
+Ctx2Skill 的跨时间回放机制抑制评估漂移——这一交叉点尚无先例。</p>
+<p>二、收获与认识</p>
+<p>这段实习让我在研究方法与科研素养上收获良多：一是理解了"从文献找空白、由空白定创新"的完整过程，认识到 novelty
+是相对其他方法而言的，既要借鉴也须防止撞车；二是体会到 AI 辅助科研的实际价值——借助 AI
+可显著加速文献梳理、代码理解与调研整理，但关键的方法判断仍需自己把关；三是对课题的认识从"概念模糊"走向"定位清晰"，明确了要解决什么问题
+、采用什么范式、与哪些已有工作区分开，为下一步动手实践指明了方向。</p>
+<p>三、不足与下一步计划</p>
+<p>同时也应正视自身的不足：前期节奏不够稳定、整体进展偏慢；对核心方法的理解大多停留在框架层面，深度不足；尚未真正进入代码复现与实验阶段，
+工程与复现能力有待加强。</p>
+<p>下一步我计划先复现代码开源的基线工作（如 Trace2Skill），读懂其具体实现后向社媒翻译与文化有效性方向迁移，搭建 translator / judge 两套
+skill 协同进化的实验框架，跑通"初版方法到评测"的完整流程，再围绕性能与 novelty 反复迭代。</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  <h2 id="__comments">Comments</h2>
+  <!-- Insert generated snippet here -->
+  <script src="https://giscus.app/client.js"
+  data-repo="ManageSite/giscus-mkdocs-material"
+  data-repo-id="R_kgDON4O90g"
+  data-category="Announcements"
+  data-category-id="DIC_kwDON4O90s4Cm5B_"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="bottom"
+  data-theme="dark_dimmed"
+  data-lang="en"
+  crossorigin="anonymous"
+  async>
+</script>
+
+  <!-- Synchronize Giscus theme with palette -->
+  <script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    // Set palette on initial load
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate"
+        ? "transparent_dark"
+        : "light"
+
+      // Instruct Giscus to set theme
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    // Register event handlers after documented loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate"
+            ? "transparent_dark"
+            : "light"
+
+          // Instruct Giscus to change theme
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024-2025 Cool Tea <a href="#__consent">Change cookie settings</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.prefectch", "navigation.instant.progress", "navigation.tracking", "navigation.indexes", "navigation.path", "navigation.top", "instant", "content.code.annotate", "content.code.copy", "content.code.copy_button", "content.code.select"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../../../../js/custom.js"></script>
+      
+        <script src="../../../../js/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

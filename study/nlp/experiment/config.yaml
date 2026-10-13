@@ -1,0 +1,41 @@
+# Pilot config for culture-coevo experiment
+
+model:
+  provider: openai          # openai | azure
+  model_name: gpt-4o-mini   # or qwen3-32b-instruct if using local/vllm
+  api_base: null
+  api_key_env: OPENAI_API_KEY
+  temperature_translate: 0.6
+  temperature_evaluate: 0.6
+  temperature_generate: 0.8
+  max_tokens: 1024
+
+data:
+  hf_dataset: Wulinjuan/CULTURE-MT
+  total_samples: 200        # pilot 用 200 条以控制成本；可扩到 300/完整 1002
+  train_ratio: 0.50
+  dev_ratio: 0.25
+  test_ratio: 0.25
+  seed: 42
+  # fallback local path if HF unavailable
+  local_path: null
+
+experiment:
+  name: culture-coevo-pilot
+  iterations: 5
+  patches_per_side: 3
+  replay_window: 3
+  cases_for_patch: 20
+  success_ratio: 0.5
+  # score buckets for "solve" definition in replay
+  buckets: [2, 3, 4, 5]   # 1-2 -> 0, 3 -> 1, 4 -> 2, 5 -> 3
+
+paths:
+  skills: skills
+  prompts: prompts
+  data: data
+  outputs: outputs
+
+logging:
+  verbose: true
+  cache_calls: true
